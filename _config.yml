@@ -1,5 +1,5 @@
 markdown: rdiscount
 pygments: true
-permalink: /articles/:title.html
+permalink: /:title.html
 name: "吕小荣"
 markdown: rdiscount
