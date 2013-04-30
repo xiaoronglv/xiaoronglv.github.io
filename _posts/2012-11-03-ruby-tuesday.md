@@ -1,5 +1,5 @@
 ---
-title: Ruby Tuesday第一次线下活动
+title: 第一次Ruby Tuesday线下活动
 layout: post
 guid: Gq5da6iuwf0p53131
 tags:
