@@ -1,7 +1,7 @@
 ---
-title: What’s LocatorPlus?
+title: What’s LocatorPlus
 layout: post
-guid: 0Htih4vpa9Qq
+guid: 0Htih4vpa9Qq12
 tags:
   - 
 ---

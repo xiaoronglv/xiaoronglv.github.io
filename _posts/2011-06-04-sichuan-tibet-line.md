@@ -1,7 +1,7 @@
 ---
 title: 川藏线趣闻
 layout: post
-guid: MTMhPyDfdj9v
+guid: MTMhPyDfdj9v2
 ---
 
 <span class="image-1200">![](/media/files/2011/jun/04.jpg)</span>

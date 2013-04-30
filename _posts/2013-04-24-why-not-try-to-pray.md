@@ -1,7 +1,7 @@
 ---
-title: why not try to pray？
+title: why not try to pray
 layout: post
-guid: jM9uanKlT7z23
+guid: jM9uanKlT7z2346
 tags:
   - 
 ---

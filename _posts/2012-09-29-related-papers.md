@@ -1,7 +1,7 @@
 ---
-title: 如何推荐相关文献？
+title: 如何推荐相关文献
 layout: post
-guid: uD9P4iAGJh5L158
+guid: uD9P4iAGJh5L15828
 tags:
   - 
 ---

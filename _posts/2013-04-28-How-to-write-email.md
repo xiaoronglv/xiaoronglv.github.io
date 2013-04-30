@@ -1,7 +1,7 @@
 ---
 title: 如何写一封漂亮的邮件
 layout: post
-guid: moATRezDB0Dv
+guid: moATRezDB0Dv47
 tags:
   - 沟通
 ---

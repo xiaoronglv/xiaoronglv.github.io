@@ -1,7 +1,7 @@
 ---
 title: 控制情绪tips
 layout: post
-guid: My2MbGjIUdJU
+guid: My2MbGjIUdJU20
 tags:
   - 
 ---

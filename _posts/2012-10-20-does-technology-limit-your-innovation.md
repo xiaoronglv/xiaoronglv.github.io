@@ -1,7 +1,7 @@
 ---
-title: 技术会不会限制想象力?
+title: 技术会不会限制想象力
 layout: post
-guid: Gq5da6iuwf0p001
+guid: Gq5da6iuwf0p00129
 tags:
   - 
 ---

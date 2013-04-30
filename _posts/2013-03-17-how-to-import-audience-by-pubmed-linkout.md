@@ -1,7 +1,7 @@
 ---
-title: 如何制作医学期刊的PubMed LinkOut文件 ?
+title: 通过PubMed LinkOut推广医学期刊
 layout: post
-guid: uD9P4iAGJh5L161
+guid: uD9P4iAGJh5L16139
 tags:
   - 
 ---

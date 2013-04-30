@@ -1,7 +1,7 @@
 ---
 title: Say Goodbye to SNS
 layout: post
-guid: cuBaiwBiiMKp32
+guid: cuBaiwBiiMKp326
 tags:
   - 
 ---

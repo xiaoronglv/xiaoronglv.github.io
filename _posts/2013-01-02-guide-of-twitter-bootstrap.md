@@ -1,7 +1,7 @@
 ---
 title: Guide of Twitter Bootstrap
 layout: post
-guid: uFhXLl1hcPRG0391
+guid: uFhXLl1hcPRG039134
 tags:
   - 
 ---

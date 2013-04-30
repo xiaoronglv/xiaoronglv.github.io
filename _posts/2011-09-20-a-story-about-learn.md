@@ -1,7 +1,7 @@
 ---
-title: 一个故事
+title: 一个关于学习的故事
 layout: post
-guid: cuBaiwBiiMKp9
+guid: cuBaiwBiiMKp94
 tags:
   - 
 ---

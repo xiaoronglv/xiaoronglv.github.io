@@ -1,11 +1,10 @@
 ---
-title: 如何构建自己的理论体系？
+title: 如何构建自己的理论体系
 layout: post
-guid: cuBaiwBiiMKp32
+guid: cuBaiwBiiMKp325
 tags:
   - 
 ---
-
 
 在我的Google Reader中,订阅了很多产品经理,交互设计师,互联网观察员的文章,每天早晨坐车上班时可以把业界内新闻,别人的感悟浏览一遍.如果碰到精辟的文章我一般就邮件转发到我的Evernote中.
 

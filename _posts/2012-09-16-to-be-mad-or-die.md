@@ -1,7 +1,7 @@
 ---
 title: 也曾狂热过
 layout: post
-guid: uFhXLl1hcPRG46
+guid: uFhXLl1hcPRG4623
 tags:
   - 
 ---

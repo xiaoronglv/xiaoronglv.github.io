@@ -1,7 +1,7 @@
 ---
 title: Google Scholar支持多种结构化数据标准
 layout: post
-guid: lGvnjByj8Rpc
+guid: lGvnjByj8Rpc11
 tags:
   - 
 ---

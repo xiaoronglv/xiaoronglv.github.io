@@ -1,7 +1,7 @@
 ---
 title: 读书笔记：The Talent Code
 layout: post
-guid: NDTybnNGDhge061
+guid: NDTybnNGDhge06142
 tags:
   - 
 ---

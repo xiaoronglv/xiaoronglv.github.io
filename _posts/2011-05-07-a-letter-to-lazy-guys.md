@@ -1,7 +1,7 @@
 ---
 title: 致伸手党的一封信
 layout: post
-guid: QLBrHo4RBszi
+guid: QLBrHo4RBszi1
 tags:
   - 
 ---

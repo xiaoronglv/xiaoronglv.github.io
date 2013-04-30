@@ -1,7 +1,7 @@
 ---
-title: AMR 与 Web Service Lite的区别
+title: AMR与Web Service Lite的区别
 layout: post
-guid: uFhXLl1hcPRG071
+guid: uFhXLl1hcPRG07122
 tags:
   - 
 ---

@@ -1,7 +1,7 @@
 ---
 title: 抛弃WordPress，迁移到Jekyll
 layout: post
-guid: vVaqCnt9VKEp421
+guid: vVaqCnt9VKEp42148
 tags:
   - 
 ---

@@ -1,7 +1,7 @@
 ---
-title: 如何写一封漂亮的邮件
+title: 我的贵人
 layout: post
-guid: d5CebzxP9Y8D
+guid: d5CebzxP9Y8D3
 tags:
   - 
 ---
