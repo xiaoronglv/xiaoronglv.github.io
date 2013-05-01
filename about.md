@@ -7,7 +7,7 @@ layout: page
 吕小荣  *Ryan Lee*  
 
 
-医学硕士  
+前医生  
 主修老年医学  
 目前在丁香园工作  
 Product Manager   
