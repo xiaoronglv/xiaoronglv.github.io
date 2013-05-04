@@ -11,13 +11,13 @@ tags:
 
 这种学习方式十分低效，而且完全没有必要。Rails是一套web开发最佳实践，涉及很多先进的前后端知识。作为菜鸟，你应该先理解MVC框建，然后逐步歼灭其他知识点。这样学习曲线会比较平滑。
 
-Kavin在Tearhour曾经说过：他希望打造一个学习的温室，让新手逐步掌握Rails的知识点。而不是一开始就研究的太深，遭受很多挫折，最后耗尽了所有的学习积极性。
+[Kavin](http://ruby-china.org/knwang)在[Tearhour](http://teahour.fm/2013/02/03/learning-ruby-and-rails.html)曾经说过：他希望打造一个学习的温室，让新手逐步掌握Rails的知识点。而不是一开始就研究的太深，遭受很多挫折，最后耗尽了所有的学习积极性。
 
-我觉得极有道理，这也是我为什么推荐Code School的原因。
+我觉得极有道理，这也是我为什么推荐[Code School](http://www.codeschool.com)的原因。
 
 ## CodeSchool是什么？
 
-由全世界优秀开发者、设计师所录制的编程教学视频。每看完一个视频，需要完成视频中的小任务。在完成任务的过程中会有：
+全世界优秀开发者、设计师录制了编程教学视频，并且模拟实战场景，这就是CodeSchool。每看完一个视频，需要完成视频中的小任务，就像打怪一样。如果搞不定，没关系！在完成任务的过程中会有：
 
 1. 提示
 2. 官方api文档
@@ -46,6 +46,10 @@ Kavin在Tearhour曾经说过：他希望打造一个学习的温室，让新手�
 
 
 <span class="image-1200">![](/media/files/2013/may/04.png)</span>
+
+## 其他相关资料
+
+玎玎： [Rails初学者指南](http://yedingding.com/2013/04/22/rails-for-beginners.html)
 
 
 
