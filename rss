@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.name}}</title>
+		<description>医学互联网产品的点点滴滴</description>
+		<link>http://mednoter.com</link>
+		<language>zh-cn</language>
+		<copyright>Copyright 2012-2013, mednoter.com</copyright>
+		<atom:link href="http://mednoter.com.com/rss" rel="self" type="application/rss+xml" />
+		{% for post in site.posts limit:10 %}
+		<item> 
+			<title>{{ post.title }}</title> 
+			<link>http://mednoter.com{{ post.url }}</link>
+			<guid>{{ post.guid }}</guid>
+			<description>{{ post.content | xml_escape }}</description> 
+			<category></category> 
+			<author>xiaoronglv@hotmail.com (Ryan Lee)</author> 
+			<copyright></copyright> 
+			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate> 
+		</item> 
+		{% endfor %}
+	</channel>
+</rss>
