@@ -51,6 +51,8 @@ tags:
 
 玎玎： [Rails初学者指南](http://yedingding.com/2013/04/22/rails-for-beginners.html)
 
+doubanclaimcd2ed88d852fd54a
+
 
 
 
