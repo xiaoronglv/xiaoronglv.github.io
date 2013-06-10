@@ -6,8 +6,6 @@ tags:
   - 
 ---
 
-昨天又有同学调侃我「吕经理」，丫又欠抽了。
-
 产品经理（Product Manager）只是个的岗位名称，没有任何行政权利，严格来讲并不是真的经理。他可以是程序员，可以是内容编辑，可以是CEO，也可以是扫地神僧，是个很虚的角色。但有一点很明确，他一定是为产品背黑锅的人（责任人）。
 
 要成为一个前10%优秀的Product Manager，需要很多优秀的素质，比如：
@@ -31,7 +29,7 @@ tags:
 
 Github是一个代码托管网站，每天都有几千个优质的开源项目发布。用户可以对每个项目打星、Fork。
 
-[Github Explore](https://github.com/explore) 展示每日、每周、每天的优质项目。我每天都会去浏览一下，收集优秀的设计、算法、项目。如果自己做产品需要某些功能模块，拿来即用，避免重复造轮子。
+[Github Explore](https://github.com/explore) 展示每日、每周、每月的优质项目。我每天都会去浏览一下，收集优秀的设计、算法、项目。如果自己做产品需要某些功能模块，拿来即用，避免重复造轮子。
 
 这是我标星的项目列表： [https://github.com/xiaoronglv/following](https://github.com/xiaoronglv/following)
 
