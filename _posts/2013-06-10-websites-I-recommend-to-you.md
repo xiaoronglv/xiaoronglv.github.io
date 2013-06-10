@@ -6,28 +6,24 @@ tags:
   - 
 ---
 
-昨天又有同学调侃我为「吕经理」。你丫又欠抽了，「产品经理」只是个的岗位名称，并不是真的经理。
+昨天又有同学调侃我为「吕经理」。丫又欠抽了，产品经理（Product Manager）只是个的岗位名称，没有任何行政权利，因此并不是真的经理。产品经理可以是程序员，可以是内容编辑，可以是CEO，也可以是扫地神僧，是个很虚的角色。但有一点很明确，他一定是为产品背黑锅的人（责任人）。
 
-产品经理是个很虚的角色，可以是程序员，可以是编辑，可以是CEO，也可以是扫地神僧。有一点很明确，他一定是为产品背黑锅的人（责任人）。要成为一个前10%优秀的Product Manager，需要很多优秀的素质，比如：
+要成为一个前10%优秀的Product Manager，需要很多优秀的素质，比如：
 
-1. 视野
-	
+1. 视野  
 	能够看到行业发展趋势，顺势而为，不逆天而行。
 	
-2. 沟通
-
+2. 沟通  
 	消除团队成员之间因知识结构偏差，让沟通顺畅，保证产品的实现与产品的预期一致。
 
-3. 简单化
-
+3. 简单化  
 	以最少的投入换取最大的价值。投入20%，换取80%的收益。
 	
-4. Cross Function
-
+4. Cross Function  
 	技术水平中等水平，知道如何实现，不对技术团队提无边无际的需求；
 	懂设计，能敏感的挑出优秀的设计稿。
 
-项目执行力、文案功底、优先级控制等等，不再一一描述了。既然产品经理需要如此多的素质，有哪些好的学习渠道来提升自己呢？
+还有很多，如项目执行力、文案功底、把控优先级等等，就不再一一描述了。既然产品经理需要如此多的素质，有哪些好的学习渠道来提升自己呢？
 
 ## Github Explore
 
@@ -37,20 +33,16 @@ Github是一个代码托管网站，每天都有几千个优质的开源项目�
 
 这是我标星的项目列表： [https://github.com/xiaoronglv/following](https://github.com/xiaoronglv/following)
 
-* [Flat UI](https://github.com/designmodo/Flat-UI)
-	
+* [Flat UI](https://github.com/designmodo/Flat-UI)  
 	扁平化设计，今年的设计新风潮
 	
-* [Twitter Bootstrap](https://github.com/twitter/bootstrap)
-
+* [Twitter Bootstrap](https://github.com/twitter/bootstrap)  
 	学习 Twitter 前端框架的命名规范
 
-* [Helios](https://github.com/helios-framework/helios)
-
+* [Helios](https://github.com/helios-framework/helios)  
 	一个基于 Ruby 的iOS后端框架
 
-* [intro.js](https://github.com/usablica/intro.js)
-
+* [intro.js](https://github.com/usablica/intro.js)  
 	精美的新手引导页面，提高产品的转化率。
 	
 …
@@ -79,7 +71,6 @@ Github 是代码的海洋，只要有心，你总能捡到你喜欢的贝壳。
 * [Running](http://www.quora.com/Running)
 
 Quora 中的优质答案，等待你去认识、学习、实践，有的需要一年，有的一辈子。
-
 
 ## Hacker News
 
