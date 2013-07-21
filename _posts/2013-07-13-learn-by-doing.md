@@ -23,7 +23,7 @@ tags:
 
 1. 商业项目用PHP。开发速度快，入行门槛低，程序员满大街都是，招人方便。
 2. 自有项目用Java。稳定，性能好。
-3. iOS，Android没的选择，用OC 和 Java，你懂的。
+3. iOS，Android没的选择，用OC 和 Java。
 
 因为我的好友Sam是PHP黑、Java黑，并极力的向我推荐Ruby，我就鬼使神差的选择了Ruby。回首往事，这其是不是一个明智的选择。
 
@@ -85,6 +85,7 @@ CodeSchool的有些课程是免费的，体验一下
 
 
 TeaHour是程序员创办的Podcast，里面有一期介绍菜鸟如何学习编程，你可以听一下。
+
 [learning ruby and rails](http://teahour.fm/2013/02/03/learning-ruby-and-rails.html)
 
 
