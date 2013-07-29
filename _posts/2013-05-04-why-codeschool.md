@@ -1,5 +1,5 @@
 ---
-title: 学编程，为什么推荐CodeSchool？
+title: 学编程，为什么推荐CodeSchool
 layout: post
 guid: TsJiUoKHucFI
 tags:

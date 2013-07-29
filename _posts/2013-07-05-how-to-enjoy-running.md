@@ -1,5 +1,5 @@
 ---
-title: How to enjoy running？
+title: How to enjoy running
 layout: post
 guid: zaaCGgN7gjGd2
 tags:

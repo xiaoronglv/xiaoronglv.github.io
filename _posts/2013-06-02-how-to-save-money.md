@@ -1,5 +1,5 @@
 ---
-title: 收入不高时如何存钱？
+title: 收入不高时如何存钱
 layout: post
 guid: 146foAVcAqf9
 tags:
