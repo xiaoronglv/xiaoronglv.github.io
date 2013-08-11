@@ -1,5 +1,5 @@
 ---
-title: Review:和邵海杨聊运维
+title: Review：和邵海杨聊运维
 layout: post
 guid: 39MoswrDa6SF2
 tags:
