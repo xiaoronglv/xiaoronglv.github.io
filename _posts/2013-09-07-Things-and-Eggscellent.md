@@ -117,5 +117,5 @@ GTD不是花哨的工具，不是教条，而是一套任务管理流程，它�
 
 3. 开启番茄钟，逐个歼灭任务，尽情享用你的番茄吧。
 
-<span class="image-1000">![](/media/files/2013/sep/07-3.jpg)</span>
+<span class="image-1000">![](/media/files/2013/sep/07-3.png)</span>
 
