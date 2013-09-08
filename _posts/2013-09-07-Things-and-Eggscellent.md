@@ -109,7 +109,7 @@ GTD不是花哨的工具，不是教条，而是一套任务管理流程，它�
 
 ## 如何将番茄与GTD工具无缝整合？
 
-我寻求过将番茄钟与GTD工具结合起来的方法，徒劳无果，就放弃了。直到昨天小明向我推荐Eggscellent，一见钟情，爽爆了。
+我寻求过将番茄钟与GTD工具结合起来的方法，徒劳无果，就放弃了。直到昨天小明向我推荐[Eggscellent](http://www.eggscellentapp.com)，一见钟情，爽爆了。
 
 1. 目前Eggscellent支持Things、OmniFocus、Reminder，我在Eggscellent的设置菜单中选中Things。
 
