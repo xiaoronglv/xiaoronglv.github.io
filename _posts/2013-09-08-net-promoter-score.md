@@ -1,11 +1,11 @@
 ---
 title: 用户净推荐值
 layout: post
-guid: 3MiIwPX2r7wd1
+guid: fsqUhLn2IbQ6
 tags:
   - 
 ---
-<span class="image-800">![英语流利说截图](/media/files/2013/sep/08-01.png)</span>
+<span class="image-800"><a href="/media/files/2013/sep/08-04-NPS.graffle">![英语流利说截图](/media/files/2013/sep/08-01.png)</a></span>
 
 今天使用iOS版本的英语流利说时，在它的setting页面发现了一个十分有趣的「真爱大调查」。设计者将Icon设置为鲜红色，有意引导户去提交调查。
 
@@ -67,5 +67,3 @@ NPS与VC的本质相同。只不过NPS是用户的主观打分，VC是一个客�
 
 1. NPS是评价产品经理绩效的一个不错指标；
 2. 合理使用NPS，可以帮助产品经理在渠道推广和产品优化之间排好优先级。
-
-
