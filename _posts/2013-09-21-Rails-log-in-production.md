@@ -1,7 +1,7 @@
 ---
 title: 查询 Rails 生产环境下日志
 layout: post
-guid: wSBONVRQe6Al0
+guid: wSBONVRQe6Al1
 tags:
   - 
 ---
@@ -12,4 +12,4 @@ tags:
 
 假如你是用Capistrano部署Rails应用，log应该在这个位置：
 
-```.../appname/shared/log</code>```
+```.../appname/shared/log```
