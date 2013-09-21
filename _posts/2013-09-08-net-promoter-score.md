@@ -5,7 +5,7 @@ guid: fsqUhLn2IbQ6
 tags:
   - 
 ---
-<span class="image-800"><a href="/media/files/2013/sep/08-04-NPS.graffle">![英语流利说截图](/media/files/2013/sep/08-01.png)</a></span>
+<span class="image-800">![英语流利说截图](/media/files/2013/sep/08-01.png)</span>
 
 今天使用iOS版本的英语流利说时，在它的setting页面发现了一个十分有趣的「真爱大调查」。设计者将Icon设置为鲜红色，有意引导户去提交调查。
 
@@ -54,13 +54,13 @@ tags:
 
 <span class="image-800">![英语流利说截图](/media/files/2013/sep/08-03.png)</span>
 
-病毒传播系数（Virality Coefficient， VC），即单个用户会将病毒（产品）传播给几个人。
+病毒传播系数（Virality Coefficient， VC），单个用户会将病毒（产品）传播给几个人，是采用技术手段量化的客观指标。
 
 VC = infected users / user 
 
-单个用户平均传播的越多，系数越大，此时配合一些[冰毒传播奇技淫巧](http://techcrunch.com/2011/12/26/eight-ways-go-viral/)，很快就能使产品如滚雪球般越做越大。
+单个用户平均传播的越多，系数越大，此时配合一些[病毒传播奇技淫巧](http://techcrunch.com/2011/12/26/eight-ways-go-viral/)，很快就能使产品如滚雪球般越做越大。
 
-NPS与VC的本质相同。只不过NPS是用户的主观打分，VC是一个客观量化指标。
+NPS与VC的本质相同，只不过NPS是用户的主观打分，VC是一个客观量化指标。
 
 
 ## 小结
