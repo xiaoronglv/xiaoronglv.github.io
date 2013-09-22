@@ -8,9 +8,8 @@ tags:
 
 本周往返上海时，火车很抖，不方便看书。手边也没有什么有趣的内容，于是就勉强听了一期Teahour。
 
-之所以勉强，是因为25期的话题是运维。本以为又是一个屌丝的负能量吐槽，听了5分钟就发现内容好的出人意料。
+之所以勉强，是因为25期的话题是运维[1]。本以为又是一个屌丝的负能量吐槽，听了5分钟就发现内容好的出人意料。
 
-[25期Teahour：和又拍云的邵海杨聊运维](http://teahour.fm/2013/07/22/interview-with-shaohaiyang-about-upyun-devops.html)
 
 
 ## Reputation
@@ -69,8 +68,7 @@ tags:
 写下来，自勉。
 
 
+> 参考资料
 
-
- 
-
+> 1. [Teahour：和又拍云的邵海杨聊运维](http://teahour.fm/2013/07/22/interview-with-shaohaiyang-about-upyun-devops.html)
 
