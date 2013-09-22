@@ -16,7 +16,7 @@ tags:
 
 ## NLM Bibliographic Product
 
-<span class="image-600">![](/media/files/2012/mar/18-1.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/18-1.png)</span>
 
 
 **Catfile**  
@@ -43,15 +43,15 @@ LocatorPlus是Web版的编目信息查看工具,可以查看NLM及其他图书�
 
 **按内容**
 
-<span class="image-600">![](/media/files/2012/mar/18-2.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/18-2.png)</span>
 
 **按数据来源**
 
-<span class="image-600">![](/media/files/2012/mar/18-3.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/18-3.png)</span>
 
 ## LSIOU
 
-<span class="image-600">![](/media/files/2012/mar/18-4.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/18-4.png)</span>
 
 LSIOU(List of Serials Indexed for Online Users)包括所有曾经被Medline收录,并且用MeSH词标引过的期刊.这些期刊可能已经停刊,刊名或许已经改变,或者不再被medline收录.只要曾经被收录过,它就会在LSIOU中留下足迹.
 

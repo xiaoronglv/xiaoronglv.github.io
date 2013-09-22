@@ -2,4 +2,5 @@ markdown: rdiscount
 pygments: true
 permalink: /:title.html
 name: "吕小荣的笔记"
+url: "http://mednoter.com"
 markdown: rdiscount

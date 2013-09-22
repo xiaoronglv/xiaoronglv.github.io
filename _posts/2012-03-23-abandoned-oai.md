@@ -6,7 +6,7 @@ tags:
   - 
 ---
 
-<span class="image-1200">![](/media/files/2012/mar/23.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2012/mar/23.png)</span>
 
 ## OAI产生的背景
 

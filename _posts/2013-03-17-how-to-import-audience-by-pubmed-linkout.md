@@ -13,7 +13,7 @@ tags:
 
 众所周知，PubMed是一个摘要数据库，并不收录全文。PubMed做了一个两全其美的方案，方便用户下载全文，同时推广出版商的品牌，即通过LinkOut 链接到出版商网站。比如Plos One的这篇文章：
 
-<span class="image-1200">![](/media/files/2013/mar/17-1.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2013/mar/17-1.png)</span>
 
 
 ## LinkOut对期刊有哪些好处？

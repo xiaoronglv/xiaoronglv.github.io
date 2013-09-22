@@ -7,7 +7,7 @@ tags:
 ---
 
 
-<span class="image-1200">![](/media/files/2012/mar/16.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2012/mar/16.png)</span>
 
 XML格式的MeSH中,语义相近的词(Term)被归为一个概念(Concept),概念与补充概念词(Supplementary Concept Records)不同,请勿混淆.每个主题词有多个概念构成,每个概念又由多个同义词构成,例如:
 

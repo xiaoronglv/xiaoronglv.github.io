@@ -10,7 +10,7 @@ tags:
 ## MeSH Browser
 
 
-<span class="image-1200">![http://www.nlm.nih.gov/mesh/MBrowser.html](/media/files/2012/mar/15.png)</span>
+<span class="image-1200">![http://www.nlm.nih.gov/mesh/MBrowser.html]({{ site.url }}/media/files/2012/mar/15.png)</span>
  
 
 ## MeSH Browser介绍
@@ -45,7 +45,7 @@ Etc.
 
 浏览单个主题词时,与之相关的各个字段都会显示出来,比如收录指南,定义等.
 
-<span class="image-1200">![](/media/files/2012/mar/15-1.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2012/mar/15-1.png)</span>
 
 
 **概念视图(Concept View)**

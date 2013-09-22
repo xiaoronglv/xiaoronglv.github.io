@@ -5,7 +5,7 @@ guid: 4QnNKKE4vCkV44
 tags:
   - 
 ---
-<span class="image-1000">![](/media/files/2013/apr/06.png)</span>
+<span class="image-1000">![]({{ site.url }}/media/files/2013/apr/06.png)</span>
 
 我以前折腾过Twitter 与 Facebook的第三方登录，每次用户登录时都要会弹出授权页面，用户需要一次次的点击 allow authorization 才能登录。Sam前几天给内部的Redmine系统增加了google OAuth 登录，一切运行良好。
 

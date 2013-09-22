@@ -12,14 +12,14 @@ tags:
 
 AMR（Article Match Retrieval）是无法实现大规模的检索的，只能根据文献记录的id，获取对应的信息，包括各种记录标识号（例如DOI/PMID/UT）和连接到Web of Science 的数据库链接。或许我们可以亲切的称它为“逐篇获取”
 
-<span class="image-1200">![](/media/files/2012/sep/5-1.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2012/sep/5-1.png)</span>
 
 ## Web Service lite
 
 给定检索条件，实现大规模的搜索，获取一批符合条件的ids  
 然后对这些id进行后续的操作，比如获取书目信息（文章的标题、作者、杂志名等等）
 
-<span class="image-1200">![](/media/files/2012/sep/5-2.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2012/sep/5-2.png)</span>
 
 附件为xmind思维导图
 

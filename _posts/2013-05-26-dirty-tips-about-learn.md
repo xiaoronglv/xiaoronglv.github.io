@@ -23,14 +23,14 @@ tags:
 
 在认知科学中有个很有名的研究叫[艾宾浩斯曲线](https://zh.wikipedia.org/zh/遗忘曲线)，又名遗忘曲线。这条曲线告诉我们遗忘总是先快后慢。
 
-<span class="image-700">![](/media/files/2013/may/26-1.png)</span>
+<span class="image-700">![]({{ site.url }}/media/files/2013/may/26-1.png)</span>
 
 这条曲线说明，我们学完新知识如果不抓紧复习，第二天仅仅能记住40%的知识，一周后仅能记住20%以下。
 
 但是如果我们能每天抽出10分钟来巩固学过的知识，就可以对抗遗忘。坚持一周转化为长时记忆后，就可以高枕无忧了。
 
 
-<span class="image-700">![](/media/files/2013/may/26-2.png)</span>
+<span class="image-700">![]({{ site.url }}/media/files/2013/may/26-2.png)</span>
 
 
 ## 使用形象记忆

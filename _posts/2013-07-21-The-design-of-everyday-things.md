@@ -13,7 +13,7 @@ tags:
 经典之作，周末重读，又收获了很多。
 
 
-<span class="image-600">![](/media/files/2013/jul/21.png)</span>
+<span class="image-600">![设计心理学]({{ site.url }}/media/files/2013/jul/21.png)</span>
 
 如果将整本书归纳为一幅图，这幅最合适不过。
 

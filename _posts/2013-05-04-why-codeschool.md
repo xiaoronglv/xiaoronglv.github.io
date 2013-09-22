@@ -45,7 +45,7 @@ tags:
 视频对知识点的讲解非常形象化，便于理解。一图胜千言，给大家看个截图：
 
 
-<span class="image-1200">![](/media/files/2013/may/04.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2013/may/04.png)</span>
 
 ## 其他相关资料
 

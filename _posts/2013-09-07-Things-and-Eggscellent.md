@@ -38,7 +38,7 @@ GTD不是花哨的工具，不是教条，而是一套任务管理流程，它�
 
 最终达到一种「凡事掌控，心如止水」的状态，这是GTD的工作流程图：
 
-<span class="image-600">![](/media/files/2013/sep/07-2.jpg)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2013/sep/07-2.jpg)</span>
 
 如果你想了解更多，建议深入阅读[《Getting Things Done》](http://book.douban.com/subject/4849382/)，并实践之。
 
@@ -92,7 +92,7 @@ GTD不是花哨的工具，不是教条，而是一套任务管理流程，它�
 
 	刚开始实践番茄工作法时，我选择了最简约的方式——苏泊尔定时器。它价格便宜，操作方便，结实耐用。但缺点也很明显。噪音太大，会影响到他人，无法在办公区使用。
 
-	<span class="image-600">![](/media/files/2013/sep/07-1.jpg)</span>
+	<span class="image-600">![]({{ site.url }}/media/files/2013/sep/07-1.jpg)</span>
 
 2. Mac widgets：Minutes
 
@@ -117,5 +117,5 @@ GTD不是花哨的工具，不是教条，而是一套任务管理流程，它�
 
 3. 开启番茄钟，逐个歼灭任务，尽情享用你的番茄吧。
 
-<span class="image-1000">![](/media/files/2013/sep/07-3.png)</span>
+<span class="image-1000">![]({{ site.url }}/media/files/2013/sep/07-3.png)</span>
 

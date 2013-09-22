@@ -10,7 +10,7 @@ tags:
 
 以下截图是在google中检索Nature的一篇科技文献”Empowering Young Scientists“的搜索结果.有兴趣的读者可以拿四大临床杂志JAMA,NEMJ,Lancet,BMJ的其他文献做一下实验,他们的科技文献都会呈现出这种效果.如果在搜索引擎的列表页面都能呈现出这种效果,无疑会极大的提升用户的点击率.
 
-<span class="image-600">![](/media/files/2012/mar/4-1.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/4-1.png)</span>
 
 
 
@@ -72,7 +72,7 @@ tags:
 
 历史背景: 1995 年3 月，由OCLC 与国家超级计算应用中心（NCSA）联合发起，52 位来自图书馆界、电脑网络界专家共同研究产生。目的是希望建立一套描述网络电子文献的方法，以便网上信息检索。后来形成DC元数据标准，其基本方案是包括15 个“核心元素”的集合，由DCMI 负责维护。
 
-<span class="image-600">![](/media/files/2012/mar/4-2.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/4-2.png)</span>
 
 命名: 由于会议的召开地点在美国的俄亥俄州都柏林市,因此这个元数据标准因此得名.
 
@@ -102,7 +102,7 @@ DC核心元数据基本原则:
 
 结构如图所示
 
-<span class="image-600">![](/media/files/2012/mar/4-3.png)</span>
+<span class="image-600">![]({{ site.url }}/media/files/2012/mar/4-3.png)</span>
 
 * PRISM Specification定义了整个框架.
 * PRISM Aggregator Message(PAM) Schema/DTD定义了出版商将内容发布到网页,聚合内容时的标准.PAM可以是XML DTD文件也可是XML Schema(XSD),可以十分方便的将内容转化为metadata.

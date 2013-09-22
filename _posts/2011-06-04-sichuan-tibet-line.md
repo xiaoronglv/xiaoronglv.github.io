@@ -4,7 +4,7 @@ layout: post
 guid: MTMhPyDfdj9v2
 ---
 
-<span class="image-1200">![](/media/files/2011/jun/04.jpg)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2011/jun/04.jpg)</span>
 
 曾经听闻西藏民风淳朴，去了西藏才知所言不虚。满山遍野的牛羊就在山上散养着，没有人管理，牛羊吃饱了就回家，挺开车的师傅说有的牛出去半年了才回来。这在我们这边是不可想象的。和藏民交易也非常的爽快，基本上不用怎么砍价，都很便宜实惠。
 

@@ -14,7 +14,7 @@ PubMed是医学最常用的论文数据库, 没有之一. 他给出版商提供�
 
 这是一个PloS的范例:
 
-<span class="image-1200">![](/media/files/2012/dec/11.png)</span>
+<span class="image-1200">![]({{ site.url }}/media/files/2012/dec/11.png)</span>
 
 ## 临床数据管理
 
