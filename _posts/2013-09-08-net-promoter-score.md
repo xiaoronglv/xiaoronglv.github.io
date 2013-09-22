@@ -5,7 +5,7 @@ guid: fsqUhLn2IbQ6
 tags:
   - 
 ---
-<span class="image-800">![英语流利说截图](www.mednoter.com/media/files/2013/sep/08-01.png)</span>
+<span class="image-800">![英语流利说截图](/media/files/2013/sep/08-01.png)</span>
 
 今天使用iOS版本的英语流利说时，在它的setting页面发现了一个十分有趣的「真爱大调查」。设计者将Icon设置为鲜红色，有意引导户去提交调查。
 
@@ -14,7 +14,7 @@ tags:
 1. 如果用户觉得软件不错，就立刻就分享到社交媒体，吸引它的朋友安装。
 2. 如果用户觉得软件很烂，提交反馈后，开发者可以根据反馈快速迭代。
 
-<span class="image-800">![英语流利说截图](www.mednoter.com/media/files/2013/sep/08-02.png)</span>
+<span class="image-800">![英语流利说截图](/media/files/2013/sep/08-02.png)</span>
 
 这个设计让我想到了《启示录》中考核产品经理的一个KPI——用户净推荐值。
 
@@ -52,7 +52,7 @@ tags:
 
 ## NPS与病毒式传播
 
-<span class="image-800">![病毒式传播](www.mednoter.com/media/files/2013/sep/08-03.png)</span>
+<span class="image-800">![病毒式传播](/media/files/2013/sep/08-03.png)</span>
 
 病毒传播系数（Virality Coefficient， VC），单个用户会将病毒（产品）传播给几个人，是采用技术手段量化的客观指标。
 
