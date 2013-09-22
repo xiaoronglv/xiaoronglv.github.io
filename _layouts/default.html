@@ -11,7 +11,9 @@
     <meta property="og:author" content= "https://www.facebook.com/xiaoronglv" />
     <meta property="og:url" content= "http://mednoter.com{{ page.url }}" />
     <meta property="og:site_name" content= "Ryan's Blog" />
-    <meta property="og:article:published_time" content= "{{ page.date | date:"%Y-%m-%d" }}" />
+    {% if page.date %}
+      <meta property="og:article:published_time" content= "{{ page.date | date:"%Y-%m-%d" }}" />
+    {% endif %}
     <meta property="og:image" content="http://www.gravatar.com/avatar/28936031e91c554c5255d939bd80350a"/>
     {% else %}
     <title>{{ site.name }}</title>

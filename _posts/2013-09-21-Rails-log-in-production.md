@@ -12,4 +12,4 @@ tags:
 
 假如你是用Capistrano部署Rails应用，log应该在这个位置：
 
-```.../appname/shared/log```
+<pre><code>.../appname/shared/log</code></pre>
