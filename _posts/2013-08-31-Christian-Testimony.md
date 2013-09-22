@@ -6,6 +6,8 @@ tags:
   - 
 ---
 
+<span class="image-800">![jesus]({{ site.url }}/media/files/2013/aug/31.jpg)</span>
+
 我即将受洗，将生命归入主耶稣基督，与大家分享我的信主经历。
 
 ## Period1 敬畏
