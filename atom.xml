@@ -4,21 +4,21 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>{{ site.name}}</title>
-		<description>{{ site.description}}</description>
+		<title>{{ site.name }}</title>
+		<description>{{ site.description }}</description>
 		<link>http://mednoter.com</link>
 		<language>zh-cn</language>
-		<copyright>Copyright 2012-2013, mednoter.com</copyright>
+		<copyright>{{ site.copyright }}</copyright>
 		<atom:link href="http://mednoter.com/atom.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 		<item> 
 			<title>{{ post.title }}</title> 
 			<link>http://mednoter.com{{ post.url }}</link>
-			<guid>{{ post.guid }}</guid>
+			<guid isPermaLink="false">{{ post.guid }}</guid>
 			<description>{{ post.content | xml_escape }}</description> 
 			<category></category> 
 			<author>xiaoronglv@hotmail.com (Ryan Lü)</author> 
-			<copyright></copyright> 
+			<copyright>{{ site.copyright }}</copyright> 
 			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate> 
 		</item> 
 		{% endfor %}

@@ -14,11 +14,11 @@ layout: nil
 		<item> 
 			<title>{{ post.title }}</title> 
 			<link>http://mednoter.com{{ post.url }}</link>
-			<guid>{{ post.guid }}</guid>
+			<guid isPermaLink="false">{{ post.guid }}</guid>
 			<description>{{ post.content | xml_escape }}</description> 
 			<category></category> 
 			<author>xiaoronglv@hotmail.com (Ryan Lü)</author> 
-			<copyright></copyright> 
+			<copyright>{{ site.copyright }}</copyright> 
 			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate> 
 		</item> 
 		{% endfor %}
