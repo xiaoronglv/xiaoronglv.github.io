@@ -3,7 +3,7 @@ title: 用户净推荐值
 layout: post
 guid: fsqUhLn2IbQ6
 tags:
-  - 
+  - 产品
 ---
 <span class="image-800">![英语流利说截图]({{ site.url }}/media/files/2013/sep/08-01.png)</span>
 

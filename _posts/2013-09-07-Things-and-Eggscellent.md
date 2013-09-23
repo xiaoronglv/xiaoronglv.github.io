@@ -3,7 +3,7 @@ title: GTD和番茄工作法的完美结合
 layout: post
 guid: 0elcJUi7dhb970
 tags:
-  - 
+  - 时间管理
 ---
 
 本文写给那些熟悉 GTD思想 与 番茄工作法，并为寻找一款顺手的工具而折腾不休的人。

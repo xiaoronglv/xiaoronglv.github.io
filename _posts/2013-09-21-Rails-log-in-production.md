@@ -3,7 +3,7 @@ title: 查询 Rails 生产环境下日志
 layout: post
 guid: wSBONVRQe6Al1
 tags:
-  - 
+  - Ruby
 ---
 
 前两天做了个小应用，部署到Linode上后一直提示500错误。

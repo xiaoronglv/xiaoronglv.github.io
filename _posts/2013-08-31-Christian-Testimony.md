@@ -3,7 +3,7 @@ title: 受洗见证
 layout: post
 guid: DFHQe4U5RivF1
 tags:
-  - 
+  - 基督徒
 ---
 
 <span class="image-800">![jesus]({{ site.url }}/media/files/2013/aug/31.jpg)</span>
