@@ -12,7 +12,7 @@ deployer@server:~$ /etc/init.d/unicorn_myapp start
 
 前段时间使用capistrano部署Rails时，经常无法重启unicorn。排查原因时发现是unicorn_init.sh的权限错误，导致unicorn无法执行。
 
-感谢(Stack Overflow)[http://serverfault.com/questions/415818/permission-denied-when-starting-unicorn-on-ubuntu]，我找到了一个折中的办法：
+感谢[Stack Overflow](http://serverfault.com/questions/415818/permission-denied-when-starting-unicorn-on-ubuntu)，我找到了一个折中的办法：
 
 1. 每次部署后修改这个文件的权限；
 2. 然后手工重启unicorn。
@@ -33,6 +33,6 @@ sudo /etc/init.d/unicorn_myapp restart
 <pre>
 <code>
 > Users/ryan/repository/myapp/config/
-chmod a+x /etc/init.d/unicorn_myapp
+chmod a+x unicorn_init.sh
 </code>
 </pre>
