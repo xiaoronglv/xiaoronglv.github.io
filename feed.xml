@@ -9,7 +9,7 @@ layout: nil
 		<link>http://mednoter.com</link>
 		<language>zh-cn</language>
 		<copyright>Copyright 2012-2013, mednoter.com</copyright>
-		<atom:link href="http://mednoter.com/feed.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="http://mednoter.com/feed" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 		<item> 
 			<title>{{ post.title }}</title> 
