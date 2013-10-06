@@ -17,12 +17,10 @@ deployer@server:~$ /etc/init.d/unicorn_myapp start
 1. 每次部署后修改这个文件的权限；
 2. 然后手工重启unicorn。
 
-<pre>
-<code>
+<pre><code>
 chmod a+x /etc/init.d/unicorn_myapp
 sudo /etc/init.d/unicorn_myapp restart
-</code>
-</pre>
+</code></pre>
 
 但每次部署都这么痛苦，不是长久之计。后来Sam说：你好傻，为什么不在本地的代码仓库中修改unicorn_init.sh的权限，然后再发布。
 
@@ -30,9 +28,6 @@ sudo /etc/init.d/unicorn_myapp restart
 
 如果你的server因为权限问题无法重启unicorn，你可以尝试在本地修改unicorn_inti.sh权限，然后再发布。
 
-<pre>
-<code>
-> Users/ryan/repository/myapp/config/
+<pre><code>
 chmod a+x unicorn_init.sh
-</code>
-</pre>
+</code></pre>

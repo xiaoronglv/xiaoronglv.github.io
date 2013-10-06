@@ -4,6 +4,7 @@ layout: post
 guid: LmU2sFvPjXAk212
 tags:
   - 产品
+  - 读书笔记
 ---
 
 读过好多web设计的书籍，对我影响最大的却是一本与web无关的书籍 —— *设计心理学* 
