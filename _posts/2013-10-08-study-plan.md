@@ -12,11 +12,9 @@ Due date: 2014.10.10
 
 2. English
 
-     1. ITELS 7.0
-     2. Fluent oral English (pass Intermedia Interpretation  exam)
-
+     * ITELS 7.0
+     * Fluent oral English (pass Intermedia Interpretation Exam)
 
 3. Write good copy
 
 	Both Chinese and English.
-
