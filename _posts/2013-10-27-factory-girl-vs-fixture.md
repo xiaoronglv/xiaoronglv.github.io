@@ -6,6 +6,8 @@ tags:
   - Ruby
 ---
 
+<span class="image-800">![spinner girl]({{ site.url }}/media/files/2013/oct/26-spinner-girl.png)</span>
+
 在测试 Rails 时，我们需要准备测试数据，在这方面比较主流的工具有两种：
 
 1. Fixture
@@ -68,3 +70,4 @@ Factory Girl 的准备方式与真实世界更相似。
 ## 相关阅读
 
 1. [Juanito: FactoryGirl 粗浅介绍](http://ruby-china.org/topics/3777)
+2. [Factory Girl wiki](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
