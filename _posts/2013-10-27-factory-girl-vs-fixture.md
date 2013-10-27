@@ -24,8 +24,8 @@ tags:
 
 Fixture 是如何准备测试数据的呢？
 
-1. 霸王硬上弓，将数据塞到数据库 （Database） 
-2. 根据数据库中的数据创建对象（Object）
+1. 第①步霸王硬上弓，将数据塞到数据库 （Database） 
+2. 第②步根据数据库中的数据创建对象（Object）
 
 可真实世界中，Rails 的流程更多是这个样子：
 
@@ -36,7 +36,7 @@ Fixture 是如何准备测试数据的呢？
 
 两者大相径庭，**Fixture 无法很好的测试 ActiveRecord 中的回调**（callback）。
 
-如果要实现回调函数，需要在Fixutre中插入一堆代码。这太没有美感了，任何有洁癖的程序员都不会干这种事情。
+如果要实现回调函数，需要在Fixutre中插入一堆代码。这太没有美感了，有洁癖的程序员都不会干这种事情。
 
 此外，在 Fixture 中**维护两个对象之间的关系也是一件很费劲的事情。**我们要在YAML文件中根据id创建关系，一不小心就会把自己绕进去。假如存在 User、Topic 两个类，他们之间的关系如此：
 
@@ -50,8 +50,8 @@ Fixture 是如何准备测试数据的呢？
 
 Factory Girl 的准备方式与真实世界更相似。
 
-1. 第一步生成的对象可以是saved instances, unsaved instances；
-2. 可以在第二步执行ActiveRecord的各种回调
+1. 第①步生成的对象可以是saved instances, unsaved instances；
+2. 可以在第②步执行ActiveRecord的各种回调
 3. 打理对象之间的关系十分方便
 
 	<pre><code>
