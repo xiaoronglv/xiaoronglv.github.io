@@ -6,15 +6,19 @@ tags:
   - 
 ---
 
-2012年底的时候，我们决定做一款医学词典。
+2012年底的时候，决定做一款医学词典。
 
-原因很简单，医脉通的iOS版「全医学英汉大词典」实在是是太烂了。这么烂的软件卖这么贵，居然还有人买。
+原因很简单，医脉通的iOS版「全医学英汉大词典」实在是是太烂了。这么烂的软件卖这么贵，居然还有人买，说明是刚需啊！
 
-按计划先出web版，再出iOS版。大概用了1周时间，设计稿就出来了，数据也准备妥当。心想春节之前折腾出来，过个好年。
+说干就干，先出web版，iOS走「质」，Android铺「量」。
 
-词典的后端Sean，是个百里挑一的Java程序员，十分优秀。他花了一周的时间写框架，两周的时间写逻辑套页面。加上七七八八的测试，年前发布无望。
+我和 Sean 的口号就是：干翻全医学英汉大词典！
 
-相对于Java的慢，Sam用 [Ruby on Rails](http://rubyonrails.org) + [ElasticSearch](http://railscasts.com/episodes?utf8=✓&search=ElasticSearch) + [Twitter Bootstrap](http://getbootstrap.com) + [Devise](http://railscasts.com/episodes/209-devise-revised) ，3个小时就把词典的web版本搞定了。
+大概用了1周时间，设计稿就出来了，数据也准备妥当。心想春节之前折腾出来，过个好年。
+
+词典的后端Sean，是个百里挑一的Java程序员，十分优秀。他花了一周的时间写框架，两周的时间写逻辑套页面。加上七七八八的测试，年前发布无望了。
+
+相对于Java的慢，我的基友 Sam 用 [Ruby on Rails](http://rubyonrails.org) + [ElasticSearch](http://railscasts.com/episodes?utf8=✓&search=ElasticSearch) + [Twitter Bootstrap](http://getbootstrap.com) + [Devise](http://railscasts.com/episodes/209-devise-revised) ，3个小时就把词典的web版本搞定了。
 
 Java Vs Ruby，悬殊的开发速度，第一次让我有了感性上的认识。
 

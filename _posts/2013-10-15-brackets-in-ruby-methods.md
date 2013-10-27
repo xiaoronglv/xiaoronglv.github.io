@@ -3,7 +3,7 @@ title: Ruby方法的括号
 layout: post
 guid: mFCz5ywW9xBl1
 tags:
-  - 
+  - Ruby
 ---
 
 <pre>

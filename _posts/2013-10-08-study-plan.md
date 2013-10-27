@@ -3,7 +3,7 @@ title: 2013 - 2014 Study Plan
 layout: post
 guid: lTkNQiPZkZsa10081
 tags:
-  - 
+  - 学习
 ---
 
 Due date: 2014.10.10

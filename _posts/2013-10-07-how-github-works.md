@@ -3,7 +3,7 @@ title: How github works
 layout: post
 guid: lbmD3RMEOr4H1
 tags:
-  - 
+  - 沟通
 ---
 
 I have always been curious about remote team. 

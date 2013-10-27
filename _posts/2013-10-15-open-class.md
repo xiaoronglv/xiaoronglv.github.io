@@ -3,7 +3,7 @@ title: Ruby的开放类
 layout: post
 guid: e3LN6KaOOmnY1
 tags:
-  - 
+  - Ruby
 ---
 
 Ruby的开放类（open class）是一个非常有用的动态特性，允许向已加载的类增加方法。

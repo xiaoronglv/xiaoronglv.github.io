@@ -3,7 +3,7 @@ title: 顺服的媳妇
 layout: post
 guid: EP5pq6SG4P4a1
 tags:
-  - 
+  - 基督徒
 ---
 
 周五与两个姐妹小组内交流时，他们的代祷事项是：
