@@ -6,7 +6,7 @@ tags:
   - 
 ---
 
-<span class="image-800">![Nested Model Form]({{ site.url }}/media/files/2013/nov/14-1.jpg.jpg)</span>
+<span class="image-800">![Nested Model Form]({{ site.url }}/media/files/2013/nov/14-1.jpg)</span>
 
 
 ## 1 场景
