@@ -33,8 +33,8 @@ Rails form 中的 select，怎么写才够优雅？
 把性别写到 model 的常量中，在表单中调用。如果要增加一种性别，直接修改类常量。
 <pre><code>
 class student
-     SEX = ['Male', 'Female']
-     attr_accessor :sex, :name, :age
+  SEX = ['Male', 'Female']
+  attr_accessor :sex, :name, :age
 end
 </code></pre>
 <pre><code>
