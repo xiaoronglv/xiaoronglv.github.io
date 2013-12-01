@@ -10,16 +10,16 @@ tags:
 
 这周在学习苹果的消息推送（Apple Push Notification），官方画的流程图很清晰，但是对里面的一个概念 device token 却语焉不详。
 
-官方文档十分冗长，唯一有用的却是一个注意事项：
+读完冗长的文档，唯一有用的却是一个注意事项：
 
 > An application should register [with APN servers] every time it launches and give its provider the current token.  
 > 每次应用被打开时，开发者都要重新收集当前设备的 device token，因为它可能变了哦。
 
-stackoverflow 针对[「Device token 什么时候会发生变化」](http://stackoverflow.com/a/7999690/1153223)有个很棒的解答。
+stackoverflow 针对[Device token 什么时候会发生变化](http://stackoverflow.com/a/7999690/1153223)有个很棒的解答。
 
 1. 在一台设备中， device token 是系统级别的，不同 App 获得的 device token 是相同的。
 
-    假如我的手机安装了「愤怒的小鸟」和「evernote」，这两个应用获得 device token 一模一样。
+    假如我的手机安装了 Angry Bird 和 Evernote ，这两个应用获得 device token 一模一样。
 
 2. device token 并不会因为单个 app 的更新而发生改变。
 
