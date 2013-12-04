@@ -3,7 +3,7 @@ title: 信心上的软弱
 layout: post
 guid: asJLe9yR2aqx
 tags:
-  - 
+  - 基督徒
 ---
 
 搬回上海后，信心上很软弱。虽然也去教会，但唱诗歌和祷告时，明显提不起精神。

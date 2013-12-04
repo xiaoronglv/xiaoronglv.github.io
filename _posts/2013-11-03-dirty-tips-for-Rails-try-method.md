@@ -4,6 +4,7 @@ layout: post
 guid: GKjWXpcZgxVX1
 tags:
   - Ruby
+  - Rails
 ---
 
 Parameter is a hash, frequently used to transfer data. Sometimes it nests as the following structure:

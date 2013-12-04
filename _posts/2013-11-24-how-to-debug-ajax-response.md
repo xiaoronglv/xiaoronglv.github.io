@@ -3,7 +3,7 @@ title: 调试 Ajax 的思路
 layout: post
 guid: ZWKRWYcd3poU
 tags:
-  - 
+  - Rails
 ---
 
 这周要用Ajax实现级联菜单的效果，在实现的过程中遇到一个个的问题。由于对前端工具不太熟悉，所以在填坑时，基本靠猜。

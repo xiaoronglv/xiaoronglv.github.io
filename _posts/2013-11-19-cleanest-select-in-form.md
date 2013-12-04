@@ -3,7 +3,7 @@ title: 最干净的 select
 layout: post
 guid: NnLpCiVXg9kf
 tags:
-  - 
+  - Rails
 ---
 
 Rails form 中的 select，怎么写才够优雅？

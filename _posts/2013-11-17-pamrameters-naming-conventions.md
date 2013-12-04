@@ -3,7 +3,7 @@ title: Rails parameter 命名习惯
 layout: post
 guid: vaoz0fezuTcC1
 tags:
-  - 
+  - Rails
 ---
 
 <span class="image-800">![Nested Model Form]({{ site.url }}/media/files/2013/nov/14-1.jpg)</span>

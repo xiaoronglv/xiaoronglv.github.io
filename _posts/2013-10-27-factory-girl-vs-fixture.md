@@ -4,6 +4,7 @@ layout: post
 guid: dkpgtCUYgMbw1
 tags:
   - Ruby
+  - Rails
 ---
 
 <span class="image-800">![spinner girl]({{ site.url }}/media/files/2013/oct/26-spinner-girl.png)</span>
