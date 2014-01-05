@@ -48,7 +48,7 @@ decimal 是用字符串存的, 或者说是10进制, 占用空间大, 运算速�
 
 <pre><code>
 1.9.3-p448 :082 > BigDecimal.new('0.1') + BigDecimal.new('0.2')
- => #<BigDecimal:7fa1bca4c468,'0.3E0',9(27)>
+ => # BigDecimal:7fa1bca4c468,'0.3E0',9(27)
 </code></pre>
 
 ## 总结

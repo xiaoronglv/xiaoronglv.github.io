@@ -26,9 +26,9 @@ validates_presence_of 广泛的应用于 Rails model 的验证，但它不能应
 
     <pre><code>
       [1] pry(main)> a = Evaluation.new(:confirmed => false)
-      => #<Evaluation id: nil, 
-                      sex: "female",  
-                      confirmed: false>
+      => Evaluation id: nil, 
+                    sex: "female",  
+                    confirmed: false
     </code></pre>
 
 
