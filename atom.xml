@@ -18,8 +18,7 @@ layout: nil
 			<description>{{ post.content | xml_escape }}</description> 
 			<category></category> 
 			<author>xiaoronglv@hotmail.com (Ryan Lü)</author> 
-			<copyright>{{ site.copyright }}</copyright> 
-			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate> 
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate> 
 		</item> 
 		{% endfor %}
 	</channel>
