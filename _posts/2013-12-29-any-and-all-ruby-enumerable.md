@@ -1,7 +1,7 @@
 ---
 title: Ruby 迭代器
 layout: post
-guid: EicQG3UZD3mU
+guid: Ub2OBE5ByJGd
 tags:
   - Ruby
 ---
