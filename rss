@@ -8,7 +8,6 @@ layout: nil
 		<description>医学互联网产品的点点滴滴</description>
 		<link>http://mednoter.com</link>
 		<language>zh-cn</language>
-		<copyright>Copyright 2012-2013, mednoter.com</copyright>
 		<atom:link href="http://mednoter.com.com/rss" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 		<item> 
@@ -19,7 +18,7 @@ layout: nil
 			<category></category> 
 			<author>xiaoronglv@hotmail.com (Ryan Lee)</author> 
 			<copyright></copyright> 
-			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate> 
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate> 
 		</item> 
 		{% endfor %}
 	</channel>
