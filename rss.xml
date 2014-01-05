@@ -8,14 +8,14 @@ layout: nil
 		<description>医学互联网产品的点点滴滴</description>
 		<link>http://mednoter.com</link>
 		<language>zh-cn</language>
-		<atom:link href="http://mednoter.com.com/rss" rel="self" type="application/rss" />
+		<atom:link href="http://mednoter.com.com/rss.xml" rel="self" type="text/xml" />
 		{% for post in site.posts limit:10 %}
 		<item> 
 			<title>{{ post.title }}</title> 
 			<link>http://mednoter.com{{ post.url }}</link>
 			<guid isPermaLink="false">{{ post.guid }}</guid>
 			<description>{{ post.content | xml_escape }}</description> 
-			<author>xiaoronglv@hotmail.com (Ryan Lee)</author> 
+			<author>xiaoronglv@hotmail.com (Ryan Lv)</author> 
 			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate> 
 		</item> 
 		{% endfor %}
