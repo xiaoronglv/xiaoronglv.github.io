@@ -1,23 +1,23 @@
 ---
 layout: nil
 ---
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>{{ site.name}}</title>
+		<title>{{ site.name }}</title>
 		<description>医学互联网产品的点点滴滴</description>
 		<link>http://mednoter.com</link>
 		<language>zh-cn</language>
-		<atom:link href="http://mednoter.com/rss.xml" rel="self" type="text/xml" />
+		<atom:link href="http://mednoter.com/rss.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
-		<item> 
-			<title>{{ post.title }}</title> 
-			<link>http://mednoter.com{{ post.url }}</link>
-			<guid isPermaLink="false">{{ post.guid }}</guid>
-			<description>{{ post.content | xml_escape }}</description> 
-			<author>xiaoronglv@hotmail.com (Ryan Lv)</author> 
-			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate> 
-		</item> 
+			<item> 
+				<title>{{ post.title }}</title> 
+				<link>http://mednoter.com{{ post.url }}</link>
+				<guid isPermaLink="false">{{ post.guid }}</guid>
+				<description>{{ post.content | xml_escape }}</description> 
+				<author>xiaoronglv@hotmail.com (Ryan Lv)</author> 
+				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate> 
+			</item> 
 		{% endfor %}
 	</channel>
 </rss>
