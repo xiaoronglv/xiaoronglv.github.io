@@ -7,22 +7,23 @@ tags:
   - Rails
 ---
 
-<span class="image-800">![network]({{ site.url }}/media/files/2014/jan/1-sidekiq.jpeg)</span>
+<span class="image-800">![network]({{ site.url }}/media/files/2014/jan/1-sidekiq.png)</span>
 
 ## Consumer：sidekiq 进程
 
-1. 会加载 rails 的代码，所以可以使用 Rails app 的各种类、等等
-2. 更新 rails 代码后，需要sidekiq 进程需要重新启动
-3. sidekiq 是多线程，默认25个
+1. Sidekiq会加载Rails的代码，所以可以使用 Rails app 的各种类、各种方法等等
+2. 更新Rails代码后，Sidekiq 进程需要重新启动，以便reload代码。
+3. Sidekiq 是多线程，默认25个
 
 
 ## Publisher：Rails
 
-1. sidekiq通过redis gem（一个redis client）和redis通讯。
+1. Sidekiq通过Redis Gem（一个Redis client）和Redis通讯。
 
-2. Rails通过sidekiq，向redis存储数据
+2. Rails通过Sidekiq，向Redis存储数据
 
 
 ## Redis
 
-redis 用来保存数据
+Redis是内存数据库
+Redis默认有16个库
