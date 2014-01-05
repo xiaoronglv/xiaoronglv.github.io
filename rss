@@ -8,7 +8,7 @@ layout: nil
 		<description>医学互联网产品的点点滴滴</description>
 		<link>http://mednoter.com</link>
 		<language>zh-cn</language>
-		<atom:link href="http://mednoter.com.com/rss" rel="self" type="application/rss+xml" />
+		<atom:link href="http://mednoter.com.com/rss" rel="self" type="application/rss" />
 		{% for post in site.posts limit:10 %}
 		<item> 
 			<title>{{ post.title }}</title> 
