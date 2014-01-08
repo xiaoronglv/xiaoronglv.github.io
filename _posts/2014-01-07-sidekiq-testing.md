@@ -1,5 +1,10 @@
-Sidekiq的测试怎么写
-
+---
+title: Sidekiq 测试怎么写
+layout: post
+guid: 4zzxKikanvST
+tags:
+  - Rails
+---
 
 ## 官方文档提供了三种测试模式
 
