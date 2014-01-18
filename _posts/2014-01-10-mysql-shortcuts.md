@@ -1,5 +1,5 @@
 ---
-title: 终端中快捷登录MySQL
+title: 终端中快捷登录 MySQL
 layout: post
 guid: 07hO5huvDsoZ
 tags:
