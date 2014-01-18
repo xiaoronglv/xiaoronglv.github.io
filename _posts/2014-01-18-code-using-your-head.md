@@ -16,6 +16,4 @@ tags:
 
 非常感谢Vincent，在他的一再叮嘱下，我总算养成了这个好习惯。
 
-<span class="image-800">![how to draw a horse]({{ site.url }}/media/files/2014/jan/17.jpg)</span>
-
-
+<span class="image-800">![how to draw a horse]({{ site.url }}/media/files/2014/jan/17-horse.jpg)</span>
