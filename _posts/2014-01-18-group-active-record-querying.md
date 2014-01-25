@@ -1,5 +1,5 @@
 ---
-title: 如何捏对象
+title: 把一组对象捏成一个对象
 layout: post
 guid: kBsF9EjhHaE4
 tags:
