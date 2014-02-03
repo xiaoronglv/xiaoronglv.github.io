@@ -4,15 +4,9 @@
 
 ## 作者简介
 
-吕小荣
-
-前医生  
-主修老年医学  
-目前在薄荷工作  
+前医生 
 Product Manager   
-略懂Ruby      
-略懂Ruby on Rails框架  
-略懂iOS  
+Ruby Programmer  
 
 ## Follow me
 
@@ -20,4 +14,4 @@ Product Manager
 * [Weibo](http://weibo.com/xiaoronglv/)
 * [Twitter](http://twitter.com/xiaoronglv/)
 
-Mail: xiaoronglv#hotmail.com
+Mail: xiaoronglv(at)gmail(dot)com
