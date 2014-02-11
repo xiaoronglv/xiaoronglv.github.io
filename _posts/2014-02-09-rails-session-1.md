@@ -1,5 +1,5 @@
 ---
-title: 对 Rails Session 的理解
+title: Rails Session I
 layout: post
 guid: PNtFo1NMAoCl
 tags:

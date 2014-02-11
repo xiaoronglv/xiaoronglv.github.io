@@ -1,5 +1,5 @@
 ---
-title: Rails Session
+title: Rails Session II
 layout: post
 guid: 0NIDabTNPcg4
 tags:
@@ -69,3 +69,8 @@ session字符串可以拆分为两部分：
     digest生成规则：content + secret token => digest
     
     这个secret token是机密文件，一旦被坏人获取，就可以轻松的伪造cookie（很多菜鸟开源代码时往往犯这个低级错误）。
+
+
+## Reference
+
+1. [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
