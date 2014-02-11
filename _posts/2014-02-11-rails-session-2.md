@@ -20,17 +20,17 @@ tags:
 
 ## Session 寄人篱下
 
-<span class="image-800">![cookie]({{ site.url }}/media/files/2014/feb/11-cookie-2.jpg)</span>
-
 session信息以键值对的形式保存在cookie中。Rails session 命名习惯是_app_session.
 
 假如我的项目名为food，则session key的名字就是_food_session
 
+<span class="image-800">![cookie]({{ site.url }}/media/files/2014/feb/11-cookie-2.jpg)</span>
+
 ## Session 中的内容
 
-<span class="image-800">![cookie]({{ site.url }}/media/files/2014/feb/11-session-2.jpg)</span>
-
 session字符串可以拆分为两部分：
+
+<span class="image-800">![cookie]({{ site.url }}/media/files/2014/feb/11-session-2.jpg)</span>
 
 1. 正文
 
@@ -52,7 +52,7 @@ session字符串可以拆分为两部分：
         => {"session_id"=>"00d9ecaeaffda232324affae8c063370abb08", "user_id" => "13134", "_csrf_token"=>"ceo4j2oIrOS3gLDPsgu3cEHHeuZyHs166Si"} 
 
 
-2. 摘要（digest）
+2. digest
 
     正文只是简单的编码，并未加密的。如果用户(user_id = 13134)篡改了正文(user_id = 2)，就有访问其他用户信息的风险。
 
@@ -70,7 +70,14 @@ session字符串可以拆分为两部分：
     
     这个secret token是机密文件，一旦被坏人获取，就可以轻松的伪造cookie（很多菜鸟开源代码时往往犯这个低级错误）。
 
-
-## Reference
+## 参考资料
 
 1. [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
+
+2. [Marshal](http://www.ruby-doc.org/core-2.1.0/Marshal.html)
+
+    The marshaling library converts collections of Ruby objects into a byte stream, allowing them to be stored outside the currently active script. This data may subsequently be read and the original objects reconstituted.
+
+3. [Base64](http://ruby-doc.org/stdlib-2.1.0/libdoc/base64/rdoc/Base64.html)
+
+    Base64是一种基于64（A-Z、a-z、数字0-9 ，‘+’,‘/’）个可打印字符,来表示二进制数据的表示方法，基本思想是把所有字符都转化到这64个打印字符，方便流通。
