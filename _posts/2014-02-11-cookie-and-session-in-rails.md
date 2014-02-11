@@ -28,8 +28,6 @@ session信息以键值对的形式保存在cookie中。Rails session 命名习�
 
 ## Session 中的内容
 
-<span class="image-800">![cookie]({{ site.url }}/media/files/2014/feb/11-session-3.png)</span>
-
 <span class="image-800">![cookie]({{ site.url }}/media/files/2014/feb/11-session-2.jpg)</span>
 
 session字符串可以拆分为两部分：
