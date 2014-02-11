@@ -34,15 +34,3 @@ session 是一串 Hash，保存在浏览器的Cookie文件中。
 
     1. 用户关闭浏览器或清空cookie后，这些重要的数据会丢失。
     2. session在客户端保存，用户可以读取这些信息。
-
-
-## Session 的加密
-
-config/initializers/secret_token.rb
-
-<pre><code>
-YourApp::Application.config.secret_key_base = '49d3f3de9ed86c74b94ad6bd0...'
-</code></pre>
-
-cookie中的session信息已经被这个secret_token加密过了。所以在客户端拿不到比较机密的信息。
-
