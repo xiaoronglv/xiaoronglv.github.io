@@ -16,7 +16,7 @@ tags:
 ## Cookie文件是动态的
 
 1. 客户端发起每次请求时，会捎带着cookie。（Request）
-2. 服务器响应请求时，重新返回新的Cookie数值。（Response）
+2. 若Cookie有变，服务器通过set-cookie命令重新设置客户端的Cookie。（Response）
 
 ## Session 寄人篱下
 
