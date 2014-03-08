@@ -3,7 +3,7 @@ title: 爸爸，我爱你
 layout: post
 guid: kv9Bcq3aU7Jd
 tags:
-   - Rails
+   - 
 ---
 
 爸爸，我爱你。
