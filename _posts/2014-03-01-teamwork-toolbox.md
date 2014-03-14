@@ -78,6 +78,6 @@ Tower 的交互很赞，很方便，并且抛弃了一堆华而不实的功能�
 
 先写到这，我接个电话。
 
-Sam: 听说 Github 出了一个新的编辑器，比 Sublime Text 都牛逼...
+Adam: 听说 Github 出了一个新的编辑器，比 Sublime Text 都牛逼...
 
 吕小荣: 你有没有邀请码？

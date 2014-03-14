@@ -32,7 +32,7 @@ tags:
     class Product < ActiveRecord::Base
       has_one :product_detail, dependent: :destroy
       attr_accessible :title, :price, product_detail_attributes
-      accepts_nested_attributes_for :goods_detail
+      accepts_nested_attributes_for :product_detail
     end
     
     class ProductDetail < ActiveRecord::Base
