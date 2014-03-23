@@ -1,5 +1,5 @@
 ---
-title:  Rails Cache 思维导图
+title:  Rails Cache Mindmap
 layout: post
 guid: 0aUdid2tCoku
 tags:
@@ -8,7 +8,7 @@ tags:
    
 ---
 
-<span class="image-800">![Dropbox]({{ site.url }}/media/files/2014/mar/22-rails-cache.png)</span>
+<span class="image-800">![Rails Cache]({{ site.url }}/media/files/2014/mar/22-rails-cache.png)</span>
 
 ## Cache 大致分为两层
 
