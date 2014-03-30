@@ -56,13 +56,11 @@ tags:
         end
 
 
-## 幽灵方法
+## 幽灵方法（Ghost Method）
 
-一个对象「向右走一步，向上走」遍历所有依然找不到方法时，会调用 Kernal#method_missing。
+一个对象「向右走一步，向上走」遍历所有依然找不到方法时，会调用 Kernal#method_missing。我们可以在这个方法里做一些手脚，作为补救方案。
 
-可以在这个方法里做一些手脚，作为补救方案。
-
-藏在 method_missing 中的方法即为幽灵方法（Ghost Method）
+藏在 method_missing 中的方法即为幽灵方法。
 
 ## Dynamic Method Vs Ghost Method
 
