@@ -1,10 +1,9 @@
 ---
-title:  EDM: Sender Policy Framework
+title: EDM: Sender Policy Framework
 layout: post
-guid: sOS9htjvY3Oi
+guid: GMqsunpMZ8I8
 tags:
    - EDM
-   
 ---
 
 SMTP 是一个比较古老的协议，在创造之初并没有考虑安全性与防伪造。Sender Policy Framework（SPF）是一个基于 IP 地址的防伪造方法。
