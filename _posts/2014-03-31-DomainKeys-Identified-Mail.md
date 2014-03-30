@@ -14,8 +14,8 @@ DomainKeys Identified Mail 也是利用 DNS 来反垃圾邮件。
 
 ## 前提
 
-域名的持有者将公钥放到 DNS 上
-发送者发送的邮件都用私钥生成 digest
+* 域名的持有者将公钥放到 DNS 上
+* 发送者发送的邮件都用私钥生成 digest
 
 ## 流程
 

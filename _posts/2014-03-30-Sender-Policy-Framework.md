@@ -1,7 +1,7 @@
 ---
-title: EDM: Sender Policy Framework
+title: Sender Policy Framework
 layout: post
-guid: GMqsunpMZ8I8
+guid: 2c7MO9TO8xSa
 tags:
    - EDM
 ---
@@ -10,7 +10,7 @@ SMTP 是一个比较古老的协议，在创造之初并没有考虑安全性与
 
 ## SPF 的机制
 
-![Dropbox]({{ site.url }}/media/files/2014/mar/30_spf_flow.png)
+![Dropbox]({{ site.url }}/media/files/2014/mar/30-spf-flow.png)
 
 1. Mednoter Server（发件服务器）发送邮件 
     
@@ -29,7 +29,7 @@ SMTP 是一个比较古老的协议，在创造之初并没有考虑安全性与
     
 ## SFP 记录的语法
 
-![Dropbox]({{ site.url }}/media/files/2014/mar/30_spf_syntax.png)
+![Dropbox]({{ site.url }}/media/files/2014/mar/30-spf-syntax.png)
 
     v=spf1 mx a:mailer.example.net ip4:192.168.0.1/16 ip6:1080::8:800:200C:417A/96 include:spf.mednoter.com -all
     
