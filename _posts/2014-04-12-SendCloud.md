@@ -30,13 +30,13 @@ service@boohee.com
 
 Mailgun 和 SendCloud 在 Ruby-China 圈子里口碑都不错。知乎也在同时使用这两家的服务， @Rio 在 [知乎是怎样发邮件的？](http://zhuanlan.zhihu.com/riobard/19582345) 这篇文章中详细的介绍了知乎邮件系统的架构。
 
-Mailgun 是很棒很棒的一家邮件服务商，但它是国外的公司，我们担心它被无耻的GFW 屏蔽，以及网速方面的考虑，最终放弃了它。
+Mailgun 是很棒的一家邮件发送服务商，但它是国外的公司，考虑到无耻的GFW，以及网速等方面的因素，最终放弃了它。
 
-SendCloud 是搜狐公司的产品，产品风格几乎照抄 Mailgun。开发文档相当齐全，它应该是国内数一数二的邮件服务商了。
+SendCloud 是搜狐公司的产品，产品风格几乎和 Mailgun 一模一样，开发文档相当齐全，它应该是国内数一数二的邮件服务商了。
 
 如果你的客户主要分布在国外，建议使用 Mailgun。如果在国内，建议使用 SendCloud。
 
-薄荷试用 SendCloud 一周后，我爽歪了....
+试用 SendCloud 一周后，爽歪了....
 
 ## 邮件分类
 
@@ -58,16 +58,16 @@ SendCloud 非常强硬的要求用户设置两个域名，一个发送触发类�
 
 1. transactional email
 
-    * postmaster@boohee-register.sendcloud.org（注册激活）
-    * postmaster@boohee-notification.sendcloud.org（提醒）
-    * postmaster@boohee-recommand.sendcloud.org（个性化推荐）
-    * postmaster@boohee-recall.sendcloud.org（唤醒老用户）
+    postmaster@boohee-register.sendcloud.org（注册激活）  
+    postmaster@boohee-notification.sendcloud.org（提醒）  
+    postmaster@boohee-recommand.sendcloud.org（个性化推荐）  
+    postmaster@boohee-recall.sendcloud.org（唤醒老用户）  
 
 2. bulk email
     
-    * postmaster@boohee-weeklydigest.sendcloud.org（每周精选）
+    postmaster@boohee-weeklydigest.sendcloud.org（每周精选）
   
-![子帐号]({{ site.url }}/media/files/2014/apr/12-sub-account.png)
+<span class="image-1200">![子帐号]({{ site.url }}/media/files/2014/apr/12-sub-account.png)</span>
 
 ## 指标
 
@@ -98,7 +98,7 @@ SendCloud 提供了详尽的指标
 4. 被 ESP 判断为垃圾邮件？
 5. 取消订阅？
 
-![投递回应]({{ site.url }}/media/files/2014/apr/12-response.png)
+<span class="image-1200">![投递回应]({{ site.url }}/media/files/2014/apr/12-response.png)</span>
 
 ## 退订、垃圾邮件管理
 
@@ -112,7 +112,7 @@ SendCloud 提供了详尽的指标
 
 为了避免这种悲剧，SendCloud 自动的将退订者、举报者、虚假地址加入到退订列表。不会继续给这些地址发送邮件，保护发送者的信誉度。
 
-![退订列表]({{ site.url }}/media/files/2014/apr/12-blacklist.png)
+<span class="image-1200">![退订列表]({{ site.url }}/media/files/2014/apr/12-blacklist.png)</span>
 
 ## 高阶功能
 
@@ -132,8 +132,9 @@ SendCloud 提供了详尽的指标
 
 SMTP 协议虽然简单，但 Email 是门大学问。自己搭建服务器折腾 Email 既浪费时间，又不专业。不如每个月花点小钱，交给专业的团队。
 
-* 项目管理：[Tower](https://tower.im), [风车](https://fengcheco.com)
-* 企业办公邮箱：Google App
-* 邮件营销：SendCloud, Mailgun
-* 服务器：Linode, 阿里云
-* CDN：七牛, 又拍云
+> 
+> * 项目管理：[Tower](https://tower.im), [风车](https://fengcheco.com)
+> * 企业办公邮箱：Google App
+> * 邮件营销：SendCloud, Mailgun
+> * 服务器：Linode, 阿里云
+> * CDN：七牛, 又拍云
