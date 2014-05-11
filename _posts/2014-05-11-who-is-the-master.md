@@ -6,6 +6,8 @@ tags:
    - Product
 ---
 
+<span class="image-800">![Feet Washing]({{ site.url }}/media/files/2014/May/11-Feet-Washing.jpg)</span>
+
 > 不少程序员点击标题进来，主要目的是为了批斗我。
 
 > 可惜我的博客不支持评论功能，你就忍着吧，嘎嘎。
