@@ -1,8 +1,24 @@
-markdown: rdiscount
-pygments: true
-permalink: /:title.html
-name: "吕小荣的笔记"
-url: "http://mednoter.com"
-description: "医学互联网产品的点点滴滴"
-copyright: "Copyright 2012-2013, mednoter.com"
-markdown: rdiscount
+title:            "吕小荣的笔记"
+description:      "Journey of Life"
+url:              "http://mednoter.com"
+signoff:          "吕小荣"
+disqus_shortname: "mednoter"
+facebook_appid:   "407484809306168"
+google_analytics: "UA-20190141-1"
+
+links:
+  - name:         Blog
+    url:          /
+    external:     true
+  - name:         Friends
+    url:          /links.html
+  - name:         RSS
+    url:          /feed.xml
+  - name:         About
+    url:          /about.html
+pygments:         true
+permalink:        /:title.html
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart

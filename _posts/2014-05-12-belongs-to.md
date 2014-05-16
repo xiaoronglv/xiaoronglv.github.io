@@ -1,6 +1,7 @@
 ---
 title: 如何记忆 belongs_to
 layout: post
+disqus: y
 guid: Q5Vzelr5G6gO
 tags:
    - Rails
