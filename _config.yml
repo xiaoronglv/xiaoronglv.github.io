@@ -9,7 +9,6 @@ google_analytics: "UA-20190141-1"
 links:
   - name:         Blog
     url:          /
-    external:     true
   - name:         Friends
     url:          /links.html
   - name:         RSS
