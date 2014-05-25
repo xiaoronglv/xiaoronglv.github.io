@@ -10,9 +10,10 @@ tags:
 ![Good Habit]({{ site.url }}/media/files/2014/May/25-good-habits.jpg)
 
 > [What everyday habit do you wish you had developed earlier in life?](http://www.quora.com/What-everyday-habit-do-you-wish-you-had-developed-earlier-in-life)
+> 
+> 哪些习惯让你受益无穷，如果早点养成就好了？
 
 
-哪些习惯让你受益无穷，如果早点养成就好了？
 
 [Quora](http://www.quora.com) 上回答这个问题的人形形色色，
 
