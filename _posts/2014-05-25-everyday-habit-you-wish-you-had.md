@@ -14,8 +14,7 @@ tags:
 > 哪些习惯让你受益无穷，如果早点养成就好了？
 
 
-
-[Quora](http://www.quora.com) 上回答这个问题的人形形色色，
+[Quora](http://www.quora.com/What-everyday-habit-do-you-wish-you-had-developed-earlier-in-life) 上回答这个问题的人形形色色，
 
 可能曾经是一个胖子；
 
