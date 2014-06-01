@@ -4,7 +4,7 @@ url:              "http://mednoter.com"
 signoff:          "吕小荣"
 disqus_shortname: "mednoter"
 facebook_appid:   "407484809306168"
-google_analytics: "UA-20190141-1"
+google_analytics: ""
 
 links:
   - name:         Blog
