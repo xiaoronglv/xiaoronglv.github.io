@@ -21,7 +21,7 @@ tags:
 
 ![Formula]({{ site.url }}/media/files/2014/Jun/2-catalyst.jpg)
 
-![Deliberate Practice]({{ site.url }}/media/files/2014/Jun/2-deliberate-practice)
+![Deliberate Practice]({{ site.url }}/media/files/2014/Jun/2-deliberate-practice.png)
 
 ## 精深练习 （Deliberate Practice）
 
