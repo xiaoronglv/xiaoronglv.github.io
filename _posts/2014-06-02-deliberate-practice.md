@@ -17,13 +17,15 @@ tags:
 
 ## 化学方程式
 
-我喜欢把学习的过程类比为一个化学方程式。
+这是高中时学的一个化学方程式。
 
 ![Formula]({{ site.url }}/media/files/2014/Jun/2-catalyst.jpg)
 
+我喜欢把学习的过程类比为一个化学方程式，它是对学习方法的记忆映射，记起来十分方便，也不容易忘。
+
 ![Deliberate Practice]({{ site.url }}/media/files/2014/Jun/2-deliberate-practice.png)
 
-## 精深练习 （Deliberate Practice）
+## 精深练习 Deliberate Practice
 
 1. 记忆
 
@@ -38,11 +40,11 @@ tags:
     2. 打散新知识，与老知识的融汇贯通
     3. 用通俗的语言讲解给菜鸟
 
-## 时间 （Time）
+## 时间 Time
 
-成百上千小时的时间投入
+成百上千小时的时间投入，这么没啥好赘述的。
 
-## 催化剂 （Catalyst）
+## 催化剂 Catalyst
 
 1. 激情 Passion
 
@@ -56,6 +58,3 @@ tags:
 
 
 归根结底，这些催化剂还是通过作用于「精深练习」 和 「时间」 来发挥作用。
-
-
-该方程式是我对学习方法的记忆映射，记起来十分方便，也不容易忘。
