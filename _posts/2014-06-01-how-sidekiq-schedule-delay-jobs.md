@@ -1,5 +1,5 @@
 ---
-title: How Sidekiq schedule delay jobs?
+title: How Sidekiq schedule delay jobs
 layout: post
 guid: 4Rp33A71Jjyv
 date: 2014-06-01 09:00:00
@@ -19,6 +19,7 @@ If we want all dog to eat, there are many ways...
 
 1. create a worker, then processed asyn
 
+        # create workder
         class DogEatWorker
           include Sidekiq::Worker
           def perform(food)
@@ -27,35 +28,32 @@ If we want all dog to eat, there are many ways...
           end
         end
 
+        # perform
+        DogEatWorker.perform_async("meat")
 
-    DogEatWorker.perform_async("meat")
-
-2. use `delay` method to push job to redis
+2. use delay method to push job to Redis
 
         Dog.delay.eat("meat")
 
-3. use `delay_for` method, and process it at specific time.
+3. use delay_for method, and process it at specific time.
 
         # 2014-05-30 17:15:08 +0800
         # All dog will eat meat after 1 hour.
         Dog.delay_for(1.hours).eat("meat")
 
 
-when we use `delay_for`, how sidekiq schedule this delay job and perform it at specific time?
+when we use delay_for, how sidekiq schedule this delay job and perform it at specific time?
 
 
 ## Roles
 
 ![Sidekiq & Redis]({{ site.url }}/media/files/2014/Jun/1-sidekiq-schedule-jobs.png)
 
-We should stand high to view three roles.
-
-1. Rails is the client, who push jobs to redis.
+1. Rails is the client, who push jobs to Redis.
 
 2. Redis is the data center, who store the jobs.
 
 3. Sidekiq is the server, who consume schedule jobs per 15min.
-
 
 ## Schedule jobs in Redis
 
@@ -73,7 +71,7 @@ see 'one:schedule'? All schedule jobs are store in this queue.
     > type “one:schedule"
     zset
 
-zset is a collection that contains no duplicate elements **with score**. we can get all memebers of this queue using `ZREVRANGE`
+zset is a collection that contains no duplicate elements **with score**. we can get all memebers of this queue using ZREVRANGE.
 
     > ZREVRANGE one:schedule 0 -1
 
@@ -86,7 +84,7 @@ zset is a collection that contains no duplicate elements **with score**. we can 
         "enqueued_at":1401441308.209111
         }”
 
-Ops, only one task we got. The following arguments is not hard to understand:
+Ops, only one task we got. The following arguments easy to understand:
 
 * retry: do you want retry this task if it fail?
 * queue: queue name you specify
@@ -103,7 +101,7 @@ Transform...
 
 Wait!
 
-What’s the fucking information of `1 hour`?
+What’s the fucking information of 1 hour?
 
 The delay time has been discarded?
 
@@ -130,7 +128,7 @@ step1: Transform delay/delay_for/delay_until to same data structure
       alias_method :delay_until, :sidekiq_delay_until
     end
 
-step2: Push to redis
+step2: Push to Redis
 
     def schedule(timestamp, message)
       Sidekiq.redis do |conn|
@@ -138,5 +136,8 @@ step2: Push to redis
       end
     end
 
+# Conclusion
 
-Timestamp is the perform time, which will be stored as the score of zset! So Sidekiq can get all memebers at a set interval.
+Timestamp is the perform time, be stored as the score of zset! 
+
+So Sidekiq can get all memebers at a set interval.
