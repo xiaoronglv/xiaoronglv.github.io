@@ -8,14 +8,14 @@ tags:
 
 相信有不少人也和我一样，这样写 destroy action.
 
-<pre><code>
-# app/controllers/goods_controller.rb
-def destroy
-  @goods = Goods.find(params[:id])
-  @goods.destroy
-  redirect_to admin_goods_index_url
-end
-</code></pre>
+
+    # app/controllers/goods_controller.rb
+    def destroy
+      @goods = Goods.find(params[:id])
+      @goods.destroy
+      redirect_to admin_goods_index_url
+    end
+
 
 这个对象删除后直接调转到新页面了。view 根本用不到 @goods ，用一个局部变量足矣。
 
