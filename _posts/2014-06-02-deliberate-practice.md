@@ -1,6 +1,7 @@
 ---
 title: 天才一万小时的方程式
 layout: post
+disqus: y
 guid: J7UgeiBeFlya
 date: 2014-06-02 19:00:00
 tags:
