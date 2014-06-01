@@ -7,6 +7,8 @@ tags:
    - Learning
 ---
 
+![Formula]({{ site.url }}/media/files/2014/Jun/2-catalyst.jpg)
+
 这周读了阳志平老师对「天才一万小时」理论的点评：[心智工具箱（12）：刻意练习](http://www.douban.com/note/260623954)。
 
 1. 人的智商是有差距的，不同人的训练效率不同，所需的时间也不同。
@@ -16,8 +18,6 @@ tags:
 读完后，我也想结合自己的经验唠叨几句了。 以下纯粹是我的主观经验，没有任何心理学理论。
 
 ## 方程式
-
-![Formula]({{ site.url }}/media/files/2014/Jun/2-catalyst.jpg)
 
 我喜欢把学习的过程类比为一个化学方程式，他们有很多相似的特点：
 
