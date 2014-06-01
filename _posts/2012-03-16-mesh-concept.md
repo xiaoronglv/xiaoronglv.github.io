@@ -1,13 +1,13 @@
 ---
-title: MeSH词之二: 概念
+title: MeSH词之 概念
 layout: post
 guid: cuBaiwBiiMKp216
+date: 2012-03-16 13:00:00
 tags:
-  - 
+   -
 ---
 
-
-<span class="image-1200">![]({{ site.url }}/media/files/2012/mar/16.png)</span>
+![]({{ site.url }}/media/files/2012/mar/16.png)
 
 XML格式的MeSH中,语义相近的词(Term)被归为一个概念(Concept),概念与补充概念词(Supplementary Concept Records)不同,请勿混淆.每个主题词有多个概念构成,每个概念又由多个同义词构成,例如:
 
@@ -24,7 +24,7 @@ Cardiomegaly [Descriptor]
 同一概念内的同义词可能差别不大,但是隶属于不同概念之间的同义词的意义可能相去甚远.
 
 ## AIDS Dementia
- 
+
 拿这个复杂的主题词举例,它有3个概念,12个同义词.
 
 AIDS Dementia Complex [Descriptor]
@@ -36,14 +36,14 @@ AIDS Dementia Complex [Descriptor]
 	* HIV Dementia                                          [Term]
 	* Dementia Complex, Acquired Immune Deficiency Syndrome [Term]
 	* Dementia Complex, AIDS-Related                        [Term]
-          
-          
+
+
 2. HIV Encephalopathy                                       [Concept, Narrower]
 	* HIV Encephalopathy                                    [Term, Preferred]
 	* AIDS Encephalopathy                                   [Term]
 	* Encephalopathy, HIV                                   [Term, Preferred]
 	* Encephalopathy, AIDS                                  [Term]
-          
+
 3. HIV-1-Associated Cognitive Motor Complex                [Concept, Narrower]
 	* HIV-1-Associated Cognitive Motor Complex              [Term, Preferred]
 	* HIV-1 Cognitive and Motor Complex                     [Term]
