@@ -38,3 +38,8 @@ Requests changing the passphrase of a private key file instead of creating a new
 如果你是用的是 Mac 系统，可以通过以下命令把私钥和它的密码保存至 keychain，每次使用私钥时不用再输入这恼人的密码弹窗。
 
     ssh-add -K keyfile
+    
+    
+## Reference 
+
+1. [Github: Working with SSH key passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases)
