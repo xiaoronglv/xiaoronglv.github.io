@@ -32,8 +32,9 @@ Requests changing the passphrase of a private key file instead of creating a new
     
 ## OS X Keychain
 
-    ssh-add -K keyfile
+
+![Private Key]({{ site.url }}/media/files/2014/Jun/2-ssh-prompt.jpg)
 
 如果你是用的是 Mac 系统，可以通过以下命令把私钥和它的密码保存至 keychain，每次使用私钥时不用再输入这恼人的密码弹窗。
 
-![Private Key]({{ site.url }}/media/files/2014/Jun/2-ssh-prompt.jpg)
+    ssh-add -K keyfile
