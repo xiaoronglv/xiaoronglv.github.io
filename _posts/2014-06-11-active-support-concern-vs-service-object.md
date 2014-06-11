@@ -32,7 +32,7 @@ tags:
 
 ## 哪些方法应该放到 ActiveSupport::Concern？
 
-某方法被多个 Model 复用时，应该玻璃刀 Concern 中，比如：Trashable, Searchable, Visible, Movable, Taggable 等等。
+某方法被多个 Model 复用时，应该剥离到 Concern 中，比如：Trashable, Searchable, Visible, Movable, Taggable 等等。
 
 其他的场景暂未想到...
 
