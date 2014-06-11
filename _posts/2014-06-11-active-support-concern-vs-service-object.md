@@ -9,30 +9,32 @@ tags:
 
 ![Fat man]({{ site.url }}/media/files/2014/Jun/11-fatman.jpg)
 
-虽然大家都说一个健康的 Rails 项目应该「胖 Model，瘦 Controller」。但 Model 胖到几百行，惨无人睹。我最近正在尝试用 ActiveSupport::Concern 或 Service Object 将 Model 中的逻辑剥离处来，以下是我的使用心得。
+虽然大家都说一个健康的 Rails 项目应该「胖 Model，瘦 Controller」。但 Model 胖到几百行，也会惨无人睹。我最近正在尝试用 ActiveSupport::Concern 或 Service Object 将 Model 中的逻辑剥离处来，以下是我的使用心得。
+
+## 哪些方法应该放到 Service Object？
 
 
-## 什么情况下用 Service Object？
-
-
-1. 某个方法内部需要多个 Model 通力合作，则这个方法需要放到 Service 中
+1. 方法内部需要多个 Model 通力合作
   
-    比如当订单发货后，发送邮件（OrderMailer.alert）、发送短信(SMS#send)、抓取快递信息(Shipment#fetch)
+    比如当订单发货后，
     
-2. 某个方法依赖第三方服务
+    step1 发送邮件(OrderMailer.alert)
+        
+    step2 发送短信(SMS#send)
+    
+    step3 抓取快递信息(Shipment#fetch)
+    
+2. 依赖第三方服务的方法
 
     比如通过接口抓取物流信息
     
 
 
-## 什么情况下用 ActiveSupport::Concern
+## 哪些方法应该放到 ActiveSupport::Concern？
 
+某方法被多个 Model 复用时，应该玻璃刀 Concern 中，比如：Trashable, Searchable, Visible, Movable, Taggable 等等。
 
-1. 多个 Model 具有相同的方法，则此方法应该剥离到 concern 中
-
-    比如：Trashable, Searchable, Visible, Movable, Taggable
-
-
+其他的场景暂未想到...
 
 ## 参考阅读
 
