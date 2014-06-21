@@ -85,7 +85,7 @@ Search me, O God, and know my heart; try me and know my anxious thoughts; and se
 Test yourselves to see if you are in the faith; examine yourselves!
 
 雅各书 1:2-4  
-我的弟兄們，你們落在百般試煉中，都要以為大喜樂；因為知道你們的信心經過試驗，就生忍耐。但忍耐也當成功，使你們成全、完備，毫無缺欠。
+我的弟兄們，你們落在百般試煉中，都要以為大喜樂；因為知道你們的信心經過試驗，就生忍耐。但忍耐也當成功，使你們成全、完備，毫無缺欠。  
 Consider it joy, my brothers, when you encounter various trials, knowing that the testing of your faith produces endurance. And let endurance have its perfect result, that you may be perfect, or mature, lacking in nothing.
 
 
