@@ -10,6 +10,10 @@ tags:
 ![Git Object]({{ site.url }}/media/files/2014/jul/29-git.png)
 
 
+去年我读 Git Pro 这本书时，很那理解 Git 存储涉及到的四种对象模型 Blob、Tree、Commit、Tag，于是就直接跳过了。
+
+今年用的 Git 逐渐多了起来，且有了一丁点 Linux 基础，回头再看豁然开朗。Git 的存储方式真是既精妙、又简单。
+
 ## Blob 对象
 
 新文件纳入到 Git 后会被五马分尸，它的内容被扔到在一个 blob 对象中，它的对象名是基于内容运算生成的一个 40个字符的 SHA1值。
