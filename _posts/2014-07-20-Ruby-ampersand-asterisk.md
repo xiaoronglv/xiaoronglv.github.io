@@ -2,7 +2,7 @@
 title: Ruby Asterisk 和 Ampersand
 layout: post
 guid: EPuOcDwq0Kp
-date: 2014-07-16 15:00:00
+date: 2014-07-20 15:00:00
 tags:
    - 
 ---
