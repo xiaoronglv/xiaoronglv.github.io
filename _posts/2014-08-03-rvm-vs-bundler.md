@@ -18,16 +18,16 @@ tags:
 
 Rvm 用于管理 Ruby 的版本和该版本的 Gem。
 
-![Rvm]({{ site.url }}/media/files/2014/Aug/3-rvm)
+![Rvm]({{ site.url }}/media/files/2014/Aug/3-rvm.png)
 
 一开始我很疑惑，为什么同一个 Gem，同一个版本号，要保存四份？
 
-据大牛回答，有些 Gem 需要编译， 所以依赖 Ruby 版本。比如在 Ruby 1.9.3 的环境下编译的 `libv8 (3.11.8.17）`不一定能在 Ruby 2.0.0 中使用。
+据大牛回答，有些 Gem 需要编译， 所以依赖 Ruby 版本。比如在 Ruby 1.9.3 的环境下编译的 libv8 (3.11.8.17）不一定能在 Ruby 2.0.0 中使用。
 
 所以即使相同版本号的 Gem，也要在各个 Ruby 各自编译，各自保存。[1]
 
 
-## Rvm Gemsets
+## Rvm Gemset
 
 事实上 Rvm 在管理 Gem 的方式上要比图一还要复杂 一些，它的内部还有一套 Gemsets 的机制。
 
@@ -46,24 +46,23 @@ Gemset 大体可分为三类：
     
     比如：ruby-1.9.3-p448@global
 
-    安装在 @global 中的 Gem 会被其他 Gemset 继承。 假如我在 `ruby-1.9.3-p448@global` 中安装了 `bundler-1.1.5`，那么 `ruby-1.9.3-p448@codecampo` 也可以使用 `bundler-1.1.5`。
+    安装在 @global 中的 Gem 会被其他 Gemset 继承。 假如我在 ruby-1.9.3-p448@global 中安装了 bundler-1.1.5，那么 ruby-1.9.3-p448@codecampo 也可以使用 bundler-1.1.5。
 
 2. @default
 
-    比如：`ruby-1.9.3-p448`
+    比如：ruby-1.9.3-p448
     
     若不指定 Gemset，Gem 默认都安装在默认环境下。
     
 3. @custom
 
     自定义的 Gemset，比如 
-        
     * ruby-1.9.3-p448@ruby_china
     * ruby-1.9.3-p448@codecampo
     * ruby-1.9.3-p448@19wu
 
 
-你可以创建一个 `ruby-1.9.3-p448@ruby_china` 的环境用来跑 Ruby China，你也可以创建 `ruby-1.9.3-p448@codecampo` 跑 codecampo。
+你可以创建一个 ruby-1.9.3-p448@ruby_china 的环境用来跑 Ruby China，你也可以创建 ruby-1.9.3-p448@codecampo 跑 codecampo。
 
 
 ## What's the fucking difference between Rvm Gemset and Bundler Gemfile?
@@ -79,7 +78,7 @@ Rvm 诞生于 Bundler 之前，并通过 Gemset 这种的式来管理 Gem。
 随后 Bundler  才兴起，大家几乎都一窝蜂似的用它管理项目中涉及 Gem 的版本号、依赖关系。从而导致了 Rvm 的 Gemset 处于十分尴尬的地位。
 
 
-
+## Reference
 
 [1] 貌似有特例：若同一个 Gem 在多个 Ruby 版本中都能使用的话，Rvm 会直接软链过去。
 
