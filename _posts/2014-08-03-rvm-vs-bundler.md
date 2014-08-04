@@ -65,7 +65,7 @@ Gemset 大体可分为三类：
 你可以创建一个 ruby-1.9.3-p448@ruby_china 的环境用来跑 Ruby China，你也可以创建 ruby-1.9.3-p448@codecampo 跑 codecampo。
 
 
-## What's the fucking difference between Rvm Gemset and Bundler Gemfile?
+## Rvm Gemset Vs Bundler Gemfile 的区别是什么?
 
 很早之前我有类似的疑问：我的每个项目都使用 Bundler 生成 Gemfile、Gemfile.lock 管理版本号和依赖关系。为毛还需要 Rvm Gemset？
 
