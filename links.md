@@ -9,6 +9,7 @@ layout: page
 [二爷](http://qiuyuexp.com)     
 [Samqiu](https://samqiu.com)     
 [钟超](http://yes2.me)     
+[李作刚](http://zuogang.li)
 
 ---
 
@@ -17,3 +18,4 @@ layout: page
 [Ruby China](http://ruby-china.org)    
 [叶玎玎](http://yedingding.com)    
 [xdite](http://blog.xdite.net)    
+[Rei](http://chloerei.com)
