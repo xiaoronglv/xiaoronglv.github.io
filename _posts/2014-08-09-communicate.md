@@ -1,7 +1,7 @@
 ---
 title: 如何量化沟通能力
 layout: post
-guid: KI6wDQEyleSt
+guid: UYx0ncK7RuaJ
 date: 2014-08-09 23:00:00
 tags:
    - 
@@ -146,3 +146,11 @@ tags:
 所以，每天喊一句口号「我要提高沟通能力」是没用的。不如把这个巨大的目标分拆量化，等你写好每封邮件，主持好每次会议，打好每个电话，听好每个演讲，写好一篇篇文档，捏沟通能力自然就提高了。
 
 工作了三年，发现自己对沟通的理解不过了了，只懂这么些，只写这么些，希望对你有所帮助。
+
+
+## 参考资料
+
+1. [把时间当做朋友](http://book.douban.com/subject/3609132/)
+2. [金字塔原理](http://book.douban.com/subject/1020644/)
+3. [SMART 原则](http://wiki.mbalib.com/wiki/SMART原则)
+4. [The Talent Code](http://book.douban.com/subject/3647676/)

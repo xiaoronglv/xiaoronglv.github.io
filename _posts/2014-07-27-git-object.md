@@ -1,5 +1,5 @@
 ---
-title: Git 的存储
+title: Git 的存储对象
 layout: post
 guid: gkZqC3I84lCK
 date: 2014-07-27 15:00:00
