@@ -180,16 +180,21 @@ standard analyzer 将「耶稣登山宝训」处理为5个独立的字，这不�
 
 ### 3.3 Searching Tokens Exactly 精准搜索
 
-当我们搜索用户名(username)，商品分类（category），标签（tag）时，希望精准搜索。建索引时最好不要再分词、也不要提取词干。
+当我们搜索用户名(username)，商品分类（category），标签（tag）时，希望精准搜索。建索引时最好不要再分词、也不要提取词干，完全可以跳过 analyzer 这一步。
 
-跳过 analyzer，创建建索引时，可以在某个字段的 mapping 中指定 "index": "not_analyzed"，从而直接把原始文本转为 term。
+可以在某个字段的 mapping 中指定 "index": "not_analyzed"，从而直接把原始文本转为 term。
 
-| 文本（username） |  standard analyzer(不推荐)  |  not_analyzed  (推荐)|
-| ------------    | -------------               | -------------         |
-| xiaoronglv      | xiaoronglv                  | xiaoronglv            |
-| angela_liu      | ["angela", "liu"]           | angela_liu            |
-| Vincent_xie     | ["vincent", "xie"]          | Vincent_xie           |
+**Bad**
 
+xiaorong_lv -> ['xiaorong', "lv"]
+
+angelxiaokun_liu -> ['angelxiaokun', 'liu']
+
+**Good**
+
+xiaorong_lv -> 'xiaorong_lv
+
+angelxiaokun_liu -> 'angelxiaokun_liu'
 
 
 然后，使用 Term query 精确搜索
