@@ -83,7 +83,9 @@ Elasticsearch 已经默认构造了  [8个 Analyzer](http://www.elasticsearch.or
     stemmed  -> stem
 
 
-"The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>"一图胜前言，这段文本交给 customHTMLSnowball ，它是这样处理的。
+`The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>`
+
+一图胜前言，这段文本交给 customHTMLSnowball ，它是这样处理的。
 
 ![流程图]({{ site.url }}/media/files/2014/Sep/2014-09-07-custom_analyzers_diag.png)
 
