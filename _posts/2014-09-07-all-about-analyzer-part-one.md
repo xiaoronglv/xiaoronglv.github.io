@@ -37,9 +37,6 @@ Elasticsearch 有10种分词器（Tokenizer）、31种 token filter，3种 chara
 * Step 2 分词 （Tokenization）
 * Step 3 Token 过滤（Token filtering）
 
-原始文本经过处理后变为一堆 Token，比如 「I love Angela」经过 standard analzyer 处理后会转为三个token ["i", "love", "angela"]。
-
-
 ![流水线]({{ site.url }}/media/files/2014/Sep/2014-09-07-flow.png)
 
 
@@ -95,9 +92,7 @@ Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch
 
 ## 3 如何选择合适的 Analyzer？
 
-### 3.1 Searching Natural Language 自然语言的全文搜索
-
-#### 3.1 大篇幅的英文改选用哪种 analyzer？
+### 3.1 大篇幅的英文改选用哪种 analyzer？
 
 常见的 stemming token filter 有这几种： stemmer, snowball, porter_stem。
 
