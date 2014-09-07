@@ -39,7 +39,7 @@ Elasticsearch 有10种分词器（Tokenizer）、31种 token filter，3种 chara
 ![流水线]({{ site.url }}/media/files/2014/Sep/2014-09-07-flow.png)
 
 
-Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)。若无法满足我们的需求，可以通过「Setting API」构造 Analyzer。
+Elasticsearch 已经默认构造了  [8个 Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)。若无法满足我们的需求，可以通过「Setting API」构造 Analyzer。
 
     PUT /my-index/_settings
     {
@@ -60,31 +60,30 @@ Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch
             }}}}}
 
 
-以上自定义的 analyzer名为 customHTMLSnowball， 代表的含义：
+以上自定义的 Analyzer名为 customHTMLSnowball， 代表的含义：
 
-1. 移除 html 标签 （html_strip character filter）
+1. 移除 html 标签 （html_strip character filter），比如 \<p> \<a> \<div> 。
 
-    比如 \<p> \<a> \<div> 。
-
-2. 根据空格分词，去除标点符号（standard tokenizer）
+2. 分词，去除标点符号（standard tokenizer）
 
 3. 把大写的单词转为小写（lowercase token filter）
 
-4. 过滤停用词（stop token filter）
+4. 过滤停用词（stop token filter），比如 「the」 「they」 「i」 「a」 「an」 「and」。
 
-    比如 「the」 「they」 「I」 「a」 「an」 「and」。
-
-5. 提取词干（snowball token filter，[snowball (雪球算法) ](http://zh.wikipedia.org/wiki/词干提取)是提取英文词干最常用的一种算法。）
+5. 提取词干（snowball token filter，[snowball 雪球算法 ](http://zh.wikipedia.org/wiki/词干提取)是提取英文词干最常用的一种算法。）
 
     cats  -> cat
+
     catty -> cat
 
     stemmer  -> stem
+
     stemming -> stem
+
     stemmed  -> stem
 
 
-`The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>` 一图胜前言，这段文本交给 customHTMLSnowball ，它是这样处理的。
+"The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>"一图胜前言，这段文本交给 customHTMLSnowball ，它是这样处理的。
 
 ![流程图]({{ site.url }}/media/files/2014/Sep/2014-09-07-custom_analyzers_diag.png)
 
@@ -93,11 +92,11 @@ Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch
 
 ### 3.1 大篇幅的英文改选用哪种 analyzer？
 
-当我们的搜索场景为：英文博文、英文新闻、英文论坛帖等大段的文本时，最好使用包含stemming token filter 的 analyzer。
+当我们的搜索场景为：英文博文、英文新闻、英文论坛帖等大段的文本时，最好使用包含 stemming token filter 的 analyzer。
 
 常见的 stemming token filter 有这几种： stemmer, snowball, porter_stem。
 
-拿 snowball token filter 举例，它把 sing/ sings / singing 都转化词干 sing。并且丢弃了「they」 「are」两个停用词。不管用户搜 sing、sings、singing， 其搜索结果都是基于「sing」这个term，所得的结果集都一样。
+拿 snowball token filter 举例，它把 sing/ sings / singing 都转化词干 sing。并且丢弃了「they」 「are」两个停用词。不管用户搜 sing、sings、singing， 他的搜索结果都是基于「sing」这个term，所得的结果集都一样。
 
 
     GET http://localhost:9200/_analyze?text=I%20sing%20he%20sings%20they%20are%20singing&analyzer=snowball
