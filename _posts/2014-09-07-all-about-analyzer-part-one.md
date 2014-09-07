@@ -24,16 +24,14 @@ tags:
 
 ## 1 前言
 
-Analyzer 一般由三部分构成，character filters、tokenizers、token filters。
+Analyzer 一般由三部分构成，character filters、tokenizers、token filters。掌握了 Analyzer 的原理，就可以根据我们的应用场景配置 Analyzer。
 
-Elasticsearch 有10种分词器（Tokenizer）、31种 token filter，3种 character filter，一大堆配置项。此外，还有还可以安装 plugin 扩展功能。
-
-一旦熟悉了 Analyzer 的原理，我们可以根据需要组装，配置适合我们场景的 Analyzer。
+Elasticsearch 有10种分词器（Tokenizer）、31种 token filter，3种 character filter，一大堆配置项。此外，还有还可以安装 plugin 扩展功能。这些都是搭建 analyzer 的原材料。
 
 
 ## 2 Analyzer 的组成要素
 
- Analyzer 就像一条流水线
+ Analyzer 的内部就是一条流水线
 
 * Step 1 字符过滤（Character filter）
 * Step 2 分词 （Tokenization）
@@ -44,9 +42,8 @@ Elasticsearch 有10种分词器（Tokenizer）、31种 token filter，3种 chara
 
 ![流水线]({{ site.url }}/media/files/2014/Sep/2014-09-07-flow.png)
 
-这个图，请务必牢记。
 
-Elasticsearch 有 [8个默认的 Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)。若无法满足我们的需求，我们可以通过「Setting API」构造自己的 Analyzer，举一个简单的例子：
+Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)。若无法满足我们的需求，我们可以通过「Setting API」构造自己的 Analyzer：customHTMLSnowball
 
     PUT /my-index/_settings
     {
@@ -67,7 +64,7 @@ Elasticsearch 有 [8个默认的 Analyzer](http://www.elasticsearch.org/guide/en
             }}}}}
 
 
-这个自定义的 analyzer 会按照以下流程处理文本
+这个自定义的 analyzer 代表的含义如下
 
 * 移除 html 标签 （html_strip character filter）
 
@@ -91,24 +88,22 @@ Elasticsearch 有 [8个默认的 Analyzer](http://www.elasticsearch.org/guide/en
     stemmed  -> stem  
     
 
-以上，我们成功的创建了一个 analyzer：customHTMLSnowball
-
-把文本 `The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>` 交给 customHTMLSnowball 时，它是如何处理的呢？
-
+一图胜前言，把文本 `The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>` 交给 customHTMLSnowball 时，它是这样处理的。
 
 ![流程图]({{ site.url }}/media/files/2014/Sep/2014-09-07-custom_analyzers_diag.png)
 
 
-## 3 如何选择一个合适的 Analyzer？
+## 3 如何选择合适的 Analyzer？
 
 ### 3.1 Searching Natural Language 自然语言的全文搜索
 
-#### 3.1.1 词干提取 stemming
+#### 3.1 大篇幅的英文改选用哪种 analyzer？
 
-当我们的搜索场景为：英文博文、英文新闻、英文论坛帖等大段的文本时，最好使用 stemming token filter，比如 stemmer, snowball, porter_stem 等 token filters.
+常见的 stemming token filter 有这几种： stemmer, snowball, porter_stem。
 
+当我们的搜索场景为：英文博文、英文新闻、英文论坛帖等大段的文本时，最好使用包含stemming token filter 的 analyzer。
 
-假如你的系统已经安装了 Elasticsearch，可以试一下 snowball token filter。
+拿 snowball token filter 举例：
 
     GET http://localhost:9200/_analyze?text=I%20sing%20he%20sings%20they%20are%20singing&analyzer=snowball
     // Output (abbreviated)
@@ -125,20 +120,25 @@ Elasticsearch 有 [8个默认的 Analyzer](http://www.elasticsearch.org/guide/en
 
 snowball 把 sing/ sings / singing 都转化词干 sing。并且自动抛弃了「they」 「are」两个停用词。
 
-词干提取在英文搜索种应用广泛，但是也有很多局限：
+不管用户搜 sing / sings /singing， 这条记录都会出现在搜索结果中。
+
+
+词干提取在英文搜索种应用广泛，但是也有局限：
 
 1. 词干提取对中文意义不大（毫无意义？）。
 
-2. 有时候词干提取反而让搜索结果变差，比如专业术语，人名。
+2. 搜索专业术语，人名时，词干提取反而让搜索结果变差。
 
-    eg： flying fish 与 fly fishing 是毫不相关的词，但他们经过 snowball 处理后的词根相同 fli fish，会导致搜索结果不理想。
+    eg： flying fish 与 fly fishing 意思差之千里，但经过 snowball 处理后的他们的词根（Term）相同 fli fish。
     
-    当需要搜索准确词语时，采用简单的分词策略（不提取词干，只 lowercase）+ Fuzzy query 可能是更好的选择。
+    当用户搜索「假蝇钓鱼」信息时，出来的却是「飞鱼」 的结果，搜索结果十分不理想。
+    
+    此类场景，建议使用精准搜索，采用简单的分词策略（不提取词干，只 lowercase）+ Fuzzy query 可能是更好的选择。
  
  
-#### 3.1.2 没有空格时，如何分词？  
+#### 3.2 该选用哪种 analyzer 处理中文？  
 
-英文的分词比较简单，根据空格，表单符号就可以分的八九不离十。但是在处理中文、德文时，词与词之间没有空格，使用默认的 analyzer 就不灵光了。
+英文的分词比较简单，根据空格，标点符号就可以分的八九不离十。但是中文词与词之间没有空格，德文偶尔两个词会连在一起，使用默认的 standard analyzer 就不灵光了。
 
     > curl -XGET 'localhost:9200/_analyze?analyzer=standard&pretty=true' -d '耶稣登山宝训' 
     {
@@ -182,11 +182,11 @@ snowball 把 sing/ sings / singing 都转化词干 sing。并且自动抛弃了�
     }
 
 
-比较理想的处理结果应该为 「耶稣登山宝训」 -> ["耶稣", "登山宝训"]。此时我们需要借助一些插件（plugin）来处理中文的分词。
+standard analyzer 将「耶稣登山宝训」处理为5个独立的字，这不太靠谱的。 比较理想的分词结果应该为["耶稣", "登山宝训"]。
 
-[mmseg](https://github.com/medcl/elasticsearch-analysis-mmseg) 是处理中文一个比较靠谱的插件。
+此时我们需要借助一些插件（plugin）来处理中文的分词。[mmseg](https://github.com/medcl/elasticsearch-analysis-mmseg) 是处理中文一个比较靠谱的插件。
 
-### 3.2 Searching Tokens Exactly 精准搜索
+### 3.3 Searching Tokens Exactly 精准搜索
 
 当我们搜索用户名(username)，商品分类（category），标签（tag）时，希望精准搜索。此时最好不要再分词、也不要提取词干。
 
@@ -206,7 +206,7 @@ snowball 把 sing/ sings / singing 都转化词干 sing。并且自动抛弃了�
 
 
 
-### 3.3 基于发音的搜索
+### 3.4 基于发音的搜索
 
 这一段几乎用不着，就不翻译了。
 
