@@ -1,26 +1,25 @@
 ---
-title: Elasticsearch Analyzer 的内部原理
+title: Elasticsearch Analyzer 的内部机制
 layout: post
-guid: 4DUaWeql8Vp6
+guid: pA7N6x7YmiLu
 date: 2014-09-06 23:00:00
 tags:
-   - 
+   -
 ---
-
 
 本文将介绍各种 Analyzer，以及他们各种的应用场景。
 
 涉及到的概念
 
-* character filter
+* [Character filter](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-charfilters.html)
 
-* tokenizer
+* [Tokenizer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-tokenizers.html)
 
-* token filter
+* [Token filter](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-tokenfilters.html)
 
-* Analyzer
+* [Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)
 
-* Term query
+* [Term query](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-term-query.html)
 
 ## 1 前言
 
@@ -40,7 +39,7 @@ Elasticsearch 有10种分词器（Tokenizer）、31种 token filter，3种 chara
 ![流水线]({{ site.url }}/media/files/2014/Sep/2014-09-07-flow.png)
 
 
-Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)。若无法满足我们的需求，我们可以通过「Setting API」构造自己的 Analyzer：customHTMLSnowball
+Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/analysis-analyzers.html)。若无法满足我们的需求，可以通过「Setting API」构造 Analyzer。
 
     PUT /my-index/_settings
     {
@@ -48,44 +47,44 @@ Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch
         "analysis": {
           "analyzer": {
             "customHTMLSnowball": {
-             "type": "custom", 
+             "type": "custom",
               "char_filter": [
                 "html_strip"
-              ], 
+              ],
               "tokenizer": "standard",
               "filter": [
-                "lowercase", 
-                "stop", 
+                "lowercase",
+                "stop",
                 "snowball"
-              ]  
+              ]
             }}}}}
 
 
-这个自定义的 analyzer 代表的含义如下
+以上自定义的 analyzer名为 customHTMLSnowball， 代表的含义：
 
-* 移除 html 标签 （html_strip character filter）
+1. 移除 html 标签 （html_strip character filter）
 
     比如 \<p> \<a> \<div> 。
 
-* 根据空格分词，去除标点符号（standard tokenizer）
+2. 根据空格分词，去除标点符号（standard tokenizer）
 
-* 把大写的单词转为小写（lowercase token filter）
+3. 把大写的单词转为小写（lowercase token filter）
 
-* 过滤停用词（stop token filter）
+4. 过滤停用词（stop token filter）
 
     比如 「the」 「they」 「I」 「a」 「an」 「and」。
 
-* 提取词干（snowball token filter，[snowball (雪球算法) ](http://zh.wikipedia.org/wiki/词干提取)是提取英文词干最常用的一种算法。）
+5. 提取词干（snowball token filter，[snowball (雪球算法) ](http://zh.wikipedia.org/wiki/词干提取)是提取英文词干最常用的一种算法。）
 
-    cats  -> cat  
+    cats  -> cat
     catty -> cat
-    
-    stemmer  -> stem  
-    stemming -> stem  
-    stemmed  -> stem  
-    
 
-一图胜前言，把文本 `The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>` 交给 customHTMLSnowball 时，它是这样处理的。
+    stemmer  -> stem
+    stemming -> stem
+    stemmed  -> stem
+
+
+`The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>` 一图胜前言，这段文本交给 customHTMLSnowball ，它是这样处理的。
 
 ![流程图]({{ site.url }}/media/files/2014/Sep/2014-09-07-custom_analyzers_diag.png)
 
@@ -94,11 +93,12 @@ Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch
 
 ### 3.1 大篇幅的英文改选用哪种 analyzer？
 
-常见的 stemming token filter 有这几种： stemmer, snowball, porter_stem。
-
 当我们的搜索场景为：英文博文、英文新闻、英文论坛帖等大段的文本时，最好使用包含stemming token filter 的 analyzer。
 
-拿 snowball token filter 举例：
+常见的 stemming token filter 有这几种： stemmer, snowball, porter_stem。
+
+拿 snowball token filter 举例，它把 sing/ sings / singing 都转化词干 sing。并且丢弃了「they」 「are」两个停用词。不管用户搜 sing、sings、singing， 其搜索结果都是基于「sing」这个term，所得的结果集都一样。
+
 
     GET http://localhost:9200/_analyze?text=I%20sing%20he%20sings%20they%20are%20singing&analyzer=snowball
     // Output (abbreviated)
@@ -113,10 +113,6 @@ Elasticsearch 默认已经搭建好了  [8个 Analyzer](http://www.elasticsearch
     }
 
 
-snowball 把 sing/ sings / singing 都转化词干 sing。并且自动抛弃了「they」 「are」两个停用词。
-
-不管用户搜 sing / sings /singing， 这条记录都会出现在搜索结果中。
-
 
 词干提取在英文搜索种应用广泛，但是也有局限：
 
@@ -125,17 +121,17 @@ snowball 把 sing/ sings / singing 都转化词干 sing。并且自动抛弃了�
 2. 搜索专业术语，人名时，词干提取反而让搜索结果变差。
 
     eg： flying fish 与 fly fishing 意思差之千里，但经过 snowball 处理后的他们的词根（Term）相同 fli fish。
-    
+
     当用户搜索「假蝇钓鱼」信息时，出来的却是「飞鱼」 的结果，搜索结果十分不理想。
-    
+
     此类场景，建议使用精准搜索，采用简单的分词策略（不提取词干，只 lowercase）+ Fuzzy query 可能是更好的选择。
- 
- 
-#### 3.2 该选用哪种 analyzer 处理中文？  
+
+
+#### 3.2 该选用哪种 analyzer 处理中文？
 
 英文的分词比较简单，根据空格，标点符号就可以分的八九不离十。但是中文词与词之间没有空格，德文偶尔两个词会连在一起，使用默认的 standard analyzer 就不灵光了。
 
-    > curl -XGET 'localhost:9200/_analyze?analyzer=standard&pretty=true' -d '耶稣登山宝训' 
+    > curl -XGET 'localhost:9200/_analyze?analyzer=standard&pretty=true' -d '耶稣登山宝训'
     {
       "tokens" : [ {
         "token" : "耶",
@@ -177,21 +173,21 @@ snowball 把 sing/ sings / singing 都转化词干 sing。并且自动抛弃了�
     }
 
 
-standard analyzer 将「耶稣登山宝训」处理为5个独立的字，这不太靠谱的。 比较理想的分词结果应该为["耶稣", "登山宝训"]。
+standard analyzer 将「耶稣登山宝训」处理为5个独立的字，这不太靠谱。比较理想的结果应该为["耶稣", "登山宝训"]。
 
-此时我们需要借助一些插件（plugin）来处理中文的分词。[mmseg](https://github.com/medcl/elasticsearch-analysis-mmseg) 是处理中文一个比较靠谱的插件。
+此时我们需要借助一些插件（plugin）来处理中文的分词。[mmseg](https://github.com/medcl/elasticsearch-analysis-mmseg) 是处理中文一个比较靠谱的插件。安装后可以引入 mmseg-analyzer，处理中文还不错。
 
 ### 3.3 Searching Tokens Exactly 精准搜索
 
 当我们搜索用户名(username)，商品分类（category），标签（tag）时，希望精准搜索。此时最好不要再分词、也不要提取词干。
 
-创建建索引时，在某个字段的 mapping 中指定 "index": "not_analyzed"，从而跳过 analyzer，直接把原始文本转为 term。
+为了跳过 analyzer，创建建索引时，可以在某个字段的 mapping 中指定 "index": "not_analyzed"，从而直接把原始文本转为 term。
 
-| 文本（username）         |  standard analyzer（不推荐）  |  not_analyzed  （推荐）|
-| ------------ | -------------       | -------------  | 
-| xiaoronglv   | xiaoronglv          | xiaoronglv     |
-| angela_liu   | ["angela", "liu"]   | angela_liu     |
-| Vincent_xie  | ["vincent", "xie"]  | Vincent_xie    |
+| 文本（username） |  standard analyzer（不推荐）  |  not_analyzed  （推荐）|
+| ------------    | -------------               | -------------         |
+| xiaoronglv      | xiaoronglv                  | xiaoronglv            |
+| angela_liu      | ["angela", "liu"]           | angela_liu            |
+| Vincent_xie     | ["vincent", "xie"]          | Vincent_xie           |
 
 
 
@@ -210,5 +206,5 @@ Phonetic analyzers are a powerful tool for dealing with things like real names a
 An example of a search with a metaphone component can be seen in this example on Play. Notice that the search for ‘schmit’ matches both the names ‘schmidt’ and ‘schmitt’. The use of an exact matching ‘not_analyzed’ field is critical for ensuring that exact matches always come first. In the second query in the example, where there is an exact match for ‘schmidt’, the exact match winds up being scored much higher to ensure its primacy in the results. For a more complete treatment of this sort of search see this forum thread on name searches by Elasticsearch developer Clinton Gormley.
 
 
-> 
-> 原文: [《All About Analyzer, Part One》](https://www.found.no/foundation/text-analysis-part-1/) 
+>
+> 原文: [《All About Analyzer, Part One》](https://www.found.no/foundation/text-analysis-part-1/)
