@@ -85,7 +85,7 @@ Elasticsearch 已经默认构造了  [8个 Analyzer](http://www.elasticsearch.or
 
 `The two <em>lazy</em> dogs, were slower than the less lazy <em>dog</em>`
 
-一图胜前言，这段文本交给 customHTMLSnowball ，它是这样处理的。
+一图胜千言，这段文本交给 customHTMLSnowball ，它是这样处理的。
 
 ![流程图]({{ site.url }}/media/files/2014/Sep/2014-09-07-custom_analyzers_diag.png)
 
@@ -186,13 +186,13 @@ standard analyzer 将「耶稣登山宝训」处理为5个独立的字，这不�
 
 **Bad**
 
-xiaorong_lv -> ['xiaorong', "lv"]
+xiaorong_lv -> ['xiaorong', 'lv']
 
 angelxiaokun_liu -> ['angelxiaokun', 'liu']
 
 **Good**
 
-xiaorong_lv -> 'xiaorong_lv
+xiaorong_lv -> 'xiaorong_lv'
 
 angelxiaokun_liu -> 'angelxiaokun_liu'
 
