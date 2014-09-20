@@ -8,6 +8,8 @@ tags:
 ---
 
 
+![Parry]({{ site.url }}/media/files/2014/Sep/2014-09-20-cover.jpg)
+
 从高中开始，我在英语的学习上投入了大量的时间，但是效果很差。
 
 看英文电影，不管用；  
@@ -45,7 +47,7 @@ parry 这个单词在击剑中的意思为：回避，挡开
 
 但是如果配上这副生动的图片，想忘都困难。
 
-![Parry]({{ site.url }}/media/files/2014/Sep/2014-09-20-flow.gif)
+![Parry]({{ site.url }}/media/files/2014/Sep/2014-09-20-perry.gif)
 
 ## Maximize laziness
 
