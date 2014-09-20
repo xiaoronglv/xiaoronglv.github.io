@@ -47,7 +47,7 @@ parry 这个单词在击剑中的意思为：回避，挡开
 
 但是如果配上这副生动的图片，想忘都困难。
 
-![Parry]({{ site.url }}/media/files/2014/Sep/2014-09-20-perry.gif)
+![Parry](http:/mednoter.com/media/files/2014/Sep/2014-09-20-perry.gif)
 
 ## Maximize laziness
 
