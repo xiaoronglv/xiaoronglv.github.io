@@ -7,9 +7,9 @@ tags:
    - Ruby
 ---
 
-我刚刚发现了 FactoryGirl 的两个技巧: trait 和 assocation，算是后知后觉。
+我刚刚发现了 FactoryGirl 的两个技巧: trait 和 association。真好用呀，让我的测试代码量少了 1/5。
 
-让我的测试代码量少了 1/5，挺好用的。通过两个 case 来说明一下心得体会。
+通过两个 case 来说明一下心得体会。
 
 
 ## 案例 1 创建不同状态的帖子
@@ -76,15 +76,12 @@ tags:
 1. factory (比如：published_post) 的名字越来越长，直逼 Object C 变量的长度。
 
 2. 条件很多时，使用继承压根不省事儿。
-
-    draft_post  
-    draft_post_with_star  
-    draft_post_without_star 
-    publish_post   
-    publish_post_with_star      
-    publish_post_without_star 
-
-
+    * draft_post
+    * draft_post_with_star
+    * draft_post_without_star
+    * publish_post
+    * publish_post_with_star
+    * publish_post_without_star
 
 ** Refactor (Better) **
 
