@@ -47,7 +47,7 @@ tags:
 3. 太丑了！
 
 
-** Refactor (Good) **
+**Refactor** (Good) 
 
 我们可以使用继承 [inheritance](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md#inheritance) 来减少重复代码。
 
@@ -83,7 +83,7 @@ tags:
     * publish_post_with_star
     * publish_post_without_star
 
-** Refactor (Better) **
+**Refactor**(Better) 
 
 我们可以使用 Trait 做进一步的优化。[Trait](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md#traits) 像 Ruby 中可以复用的 module。
 
@@ -145,7 +145,7 @@ tags:
     
 遇到这种情况，可以使用 [ignored attributes 和 callback](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md#associations) 把构造关系的逻辑放到 factory 中。
 
-** refactor **
+**Refactor**
 
 
     FactoryGirl.define do
@@ -168,7 +168,7 @@ tags:
     end
 
 
-重构完后，我在 test case 可以使用各种姿势构造数据
+重构完后，我在 test case 可以使用各种姿势构造数据了。
 
     # test/model/post_test.rb
     # 创建带评论的帖子
