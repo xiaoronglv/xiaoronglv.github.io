@@ -85,7 +85,7 @@ tags:
 
 **Refactor**(Better) 
 
-我们可以使用 Trait 做进一步的优化。[Trait](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md#traits) 像 Ruby 中可以复用的 module。
+我们可以使用 Trait 做进一步的优化。[Trait](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md#traits) 像 Ruby 中可以复用的 Module。
 
     FactoryGirl.define do
       # 帖子
@@ -109,7 +109,7 @@ tags:
           star_count 50
         end
 
-        # 未被标记为精华帖子
+        # 未被标记为精华
         trait :without_star do
           star       false
           star_count 2
@@ -168,9 +168,10 @@ tags:
     end
 
 
-重构完后，我在 test case 可以使用各种姿势构造数据了。
+重构完后，所有的关系都被封装在 factory 中，我在 test case 可以肆意使用各种姿势构造数据了。
 
     # test/model/post_test.rb
+    
     # 创建带评论的帖子
     FactoryGirl.create :post, :with_comments
     
