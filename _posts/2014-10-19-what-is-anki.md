@@ -17,8 +17,7 @@ tags:
 
 3. 假如单条笔记中涵盖4个知识点，3个记住，1个遗忘。为了找出那1个漏网之鱼，我要通读整条笔记。
 
-     Git 的存储对象有哪几种类型？各自的用途是什么？
-    
+    Git 的存储对象有哪几种类型？各自的用途是什么？
     * Commit (已经记牢)
     * Tree (已经记牢)
     * Blog (已经记牢)
@@ -33,22 +32,21 @@ tags:
 
 3. 帮我标记已遗忘的知识点，复习时更有针对性。
 
-直到有一天，我遇到了 Anki。
+直到有一天，遇到了 Anki。
 
 ## Flashcard
 
 ![Apple]({{ site.url }}/media/files/2014/Oct/2014-10-19-apple-flashcard.jpg)
 
-Flashcard 就是抽卡，正面是一个问题（或图片），反面是答案。很多小孩的早教材料都会用到。
+Flashcard 就是抽卡，正面是一个问题（或图片），反面是答案。每个 flashcard 就是一个简单的自我测试。
 
 Anki 就是一个 flashcard 管理工具。你把各种知识点整理成一个个 Question-Answer 的形式，保存在 Anki 中。
-
 
 ## 如何使用 Anki 复习？
 
 ![Review]({{ site.url }}/media/files/2014/Oct/2014-10-19-review.png)
 
-Anki 的复习过程，就是拿一堆 flashcard 来问自己。自问自答后翻开反面，比对答案。
+Anki 的复习过程，就是拿一堆 flashcard 测试自己，自己回答后翻开背面，比对答案。
 
 1. 答对了，证明你记住了。Anki 会让该知识点在一个相当长的时间后再出现。
 
