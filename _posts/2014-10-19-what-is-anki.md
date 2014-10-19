@@ -34,7 +34,7 @@ tags:
 
 直到有一天，遇到了 Anki。
 
-## Flashcard
+## 1. Flashcard
 
 ![Apple]({{ site.url }}/media/files/2014/Oct/2014-10-19-apple-flashcard.jpg)
 
@@ -42,7 +42,7 @@ Flashcard 就是抽卡，正面是一个问题（或图片），反面是答案�
 
 Anki 就是一个 flashcard 管理工具。你把各种知识点整理成一个个 Question-Answer 的形式，保存在 Anki 中。
 
-## 如何使用 Anki 复习？
+## 2. 如何使用 Anki 复习？
 
 ![Review]({{ site.url }}/media/files/2014/Oct/2014-10-19-review.png)
 
@@ -53,7 +53,7 @@ Anki 的复习过程，就是拿一堆 flashcard 测试自己，自己回答后�
 2. 答错了，证明你没记住。Anki 会把该知识点的复习频率调的更高。
 
 
-## 间隔记忆（Spaced Repetition System）
+## 3. 间隔记忆（Spaced Repetition System）
 
 ![Leitner]({{ site.url }}/media/files/2014/Oct/2014-10-19-leitner.gif)
 
@@ -62,7 +62,7 @@ Anki 的设计是基于间隔记忆理论。
 In this method flashcards are sorted into groups according to how well you know each one in the Leitner's learning box. This is how it works: you try to recall the solution written on a flashcard. If you succeed, you send the card to the next group. But if you fail, you send it back to the first group. Each succeeding group has a longer period of time before you are required to revisit the cards.
 
 
-## Anki 为什么高效？
+## 4. Anki 为什么高效？
 
 1. Anki 采用了 test 的形式，每一个 flashcard 都是对自己的测试，需要强迫自己开动大脑 recall。比单纯的「看笔记」效率高。
 
@@ -70,8 +70,17 @@ In this method flashcards are sorted into groups according to how well you know 
 
 3. 遗忘的知识多复习，熟记的知识少复习。
 
-## 总结
+## 5. 总结
 
 Anki 的配置文件相当复杂，复习频率，延长周期，每天复习的数量等等都是可以设置。零零散散花了一个月设置好好适合我的 config 文件，但这时间花的绝对值。
 
 它就像一个记忆管理系统，井井有条的管理你的记忆。在你似忘非忘时，恰到好处的问一句：「Git 的存储对象有哪四种类型？」
+
+
+## 6. 参考资料
+
+1. [Anki User Mannual](http://ankisrs.net/docs/manual.html)
+
+2. [Download Anki Android for free](https://play.google.com/store/apps/details?id=com.ichi2.anki)
+
+3. [Anki for iPhone/iPad/iPod Touch](https://itunes.apple.com/us/app/ankimobile-flashcards/id373493387?mt=8&uo=4&at=11lJ6Y)
