@@ -7,23 +7,23 @@ tags:
    - Ruby
 ---
 
-每天都有成千上万的新用户注册，有的来自中国大陆，有的是国际友人。他们注册网站时，可能会使用奇奇怪怪的用户名，含有空格？含有火星文？含有敏感词？等等...， 导致注册失败。
+每天都有成千上万的新用户注册，有的来自中国大陆，有的是国际友人。他们注册网站时，可能会使用奇奇怪怪的用户名，含有空格、含有火星文、含有敏感词等等，导致注册失败。
 
-用户在使用我们的程序出错时，用通俗易懂的语言提醒Ta，是用户体验很重要的一环。
+用通俗易懂的语言给予反馈，是用户体验很重要的一环。
 
-对于英文用户，我们当然希望提示英语提示「Name can't be blank」。
+若是英文用户，我们希望提示英语「Name can't be blank」。
 
 ![英文提示]({{ site.url }}/media/files/2014/Nov/2014-11-01-en.png)
 
 
-对于中文用户，我们希望提示中文「请填写您的姓名」。
+若是中文用户，我们希望提示中文「用户名不能为空」。
 
-![英文提示]({{ site.url }}/media/files/2014/Nov/2014-11-01-zh-CN.jpg)
+![中文提示]({{ site.url }}/media/files/2014/Nov/2014-11-01-zh-CN.jpg)
 
 ## 在 Rails 中如何实现呢？
 
 
-假如用户注册时，有以下四个验证
+假如在 Rails 中的用户模型有以下四个验证
 
 ``` ruby
 class User < ActiveRecord::Base
@@ -53,13 +53,13 @@ activerecord.errors.models.user.attributes.username.blank
 activerecord.errors.models.user.attributes.email.taken
 ```
 
-其实所谓国际化，就是 Rails 在查找错误信息时，若用户是英文用户，就给一把英文 key 的 message，若是中文用户，就给一把中文 key 的 message。
+其实所谓国际化，就是 Rails 在查找错误信息时，若是英文用户，就给一把英文 key 的 message，若是中文用户，就给一把中文 key 的 message。
 
-为了完成国际化，需要在 appname/config/locales 中添加两个 I18 文件就成了。
+实现错误信息的国际化其实相当简单，只要在 appname/config/locales 中添加两个 I18 文件就成了。
 
-![英文提示]({{ site.url }}/media/files/2014/Nov/2014-11-01-zh-CN-file.png)
+![中文国际化文件]({{ site.url }}/media/files/2014/Nov/2014-11-01-zh-CN-file.png)
 
-![英文提示]({{ site.url }}/media/files/2014/Nov/2014-11-01-en-file.png)
+![英文国际化文件]({{ site.url }}/media/files/2014/Nov/2014-11-01-en-file.png)
 
 ``` ruby
 u = User.new
@@ -68,5 +68,4 @@ u.errors.full_messages
 => ["用户名不能为空", "Email 不能为空"]
 ```
 
-你看，若用户是中文用户，错误信息就自动提示中文。
-
+你看，这事就成了。中文用户注册出错时，错误信息就是中文的。
