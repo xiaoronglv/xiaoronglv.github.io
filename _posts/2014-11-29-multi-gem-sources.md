@@ -12,7 +12,9 @@ tags:
 
 # Gem
 
-因为 https://rubygems.org 访问速度不佳，所以国内的同学都默认使用淘宝的镜像做备用的 Gem 源，加快安装 Gem 的速度。为了图省事，我直接把淘宝放到电脑的 Gem source 中。事实上这种 multi-sources 的方式一点都不快，每次安装一个 Gem 都要等很久。
+因为 https://rubygems.org 访问速度不佳，所以国内的同学都默认使用淘宝的镜像做备用的 Gem 源，以便加快安装 Gem 的速度。
+
+为了一劳永逸，我直接把淘宝放到电脑的 Gem source 中，希望以后安装 Gem 时，默认走淘宝，速度更快。
 
 ```
 > gem sources 
@@ -23,7 +25,7 @@ https://rubygems.org
 
 ```
 
-我把整个安装过程打印了出来发现：如果你有多个 Gem 源，它会挨个访问一遍，安装 Gem 的最新版本。 
+事实上这种 multi-sources 的方式一点都不快，反而变慢了！我把整个安装过程打印了出来发现：如果你有多个 Gem 源，它会挨个访问一遍，安装 Gem 的最新版本。 
 
 ```
 /Users/xiaoronglv [8:39]
