@@ -1,7 +1,7 @@
 ---
-title: Ruby tips: 不要使用多个 Gem 源
+title: Ruby tips 不要使用多个 Gem 源
 layout: post
-guid: xvkj172krczp
+guid: j5t8j8kwpncs
 date: 2014-11-29 09:31:31
 tags:
    - 
