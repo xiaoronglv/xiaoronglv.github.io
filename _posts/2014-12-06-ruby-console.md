@@ -149,17 +149,15 @@ bundle exec rails console 做的工作更多
 
 为了便于比较，我做了一个不太严谨的表格。
 
-|  命令  |  gems 添加到 $LOAD_PATH?(Bundler.setup) |  gems required? (Bundler.require)  |   Rails required?  |
-| ------------  | ------------- | ------------ | ------------ |
-| irb | 否  | 否 | 否 |
-| bundle exec irb | 是  | 否 | 否 |
-| bundle console | 是  | 是 | 否 |
-| bundle exec rails console | 是  | 是 | 是 |
+命令  |  gems 添加到 $LOAD_PATH?(Bundler.setup) |  gems required? (Bundler.require)  |   Rails required?
+------------    |   -------------   |   ------------   | ------------
+irb | 否  | 否 | 否 |
+bundle exec irb | 是  | 否 | 否 |
+bundle console | 是  | 是 | 否 |
+bundle exec rails console | 是  | 是 | 是 |
 
 
-> 备注：  
->
-> gems： Gemfile 和 Gemfile.lock 指定版本号的所有 gems。
+> 备注： 此处的 gems 代指 Gemfile 和 Gemfile.lock 指定版本号的所有 gems。
 
 
 本文大部分内容翻译自这篇文章，我根据自己的理解做了一些调整。
