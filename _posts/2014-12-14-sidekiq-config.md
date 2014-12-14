@@ -1,5 +1,5 @@
 ---
-title: Sidekiq 和 Unicorn 搭配时的一些
+title: Sidekiq 和 Unicorn 搭配时的一些奇妙事
 layout: post
 guid: fidu8t2bs9ck
 date: 2014-12-14 22:47:28
