@@ -46,12 +46,11 @@ Slack 提供了 webhooks，可以 post 数据至 webhooks，整个channel 的人
 
 ## 1. 创建一个 Sidekiq 的 Channel
 
-![创建一个频道](2014-12-28-step1.jpg)
-
+![创建一个频道]({{ site.url }}/media/files/2014/Dec/2014-12-28-step1.jpg)
 
 ## 2. 查看这个 channel 的 webhooks
 
-[点此查看你的 webhooks](https://boohee.slack.com/services/new/incoming-webhook)，其实就是一个 URL。
+点此查看你的 [webhooks](https://my.slack.com/services/new/incoming-webhook)，其实就是一个 URL。
 
 ![查看 webhooks]({{ site.url }}/media/files/2014/Dec/2014-12-28-step2.jpg)
 
