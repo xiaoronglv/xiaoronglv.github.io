@@ -1,5 +1,5 @@
 ---
-title: 使用 Slack 监控 Rails 异常
+title: 使用 Slack 和 exception_notification 监控 Rails 异常
 layout: post
 guid: 7d7v15sl4rdp
 date: 2014-12-28 18:38:33
