@@ -2,6 +2,7 @@
 title: 医生为什么不愿意花时间在医患平台上？
 layout: post
 guid: 31hza5fqtbmz
+disqus: y
 date: 2014-12-28 19:50:45
 tags:
    - Product
