@@ -7,7 +7,7 @@ tags:
    -
 ---
 
-![邮件提醒]({{ site.url }}/media/files/2014/Dec/2015-01-11-gfw.jpg)
+![邮件提醒]({{ site.url }}/media/files/2015/Jan/2015-01-11-gfw.jpg)
 
 
 GFW 真是无耻到家，丧心病狂，连 Gmail 都不放过。导致我们教会的好多兄弟姐妹无法正常沟通。
@@ -32,7 +32,7 @@ GFW 真是无耻到家，丧心病狂，连 Gmail 都不放过。导致我们教
 
 比较悲催的是 Linode 东京机房的 ip 好多已被墙，我重复购买了5次，才找到一个没有被 GFW 屏蔽的 ip。
 
-![邮件提醒]({{ site.url }}/media/files/2014/Dec/2015-01-11-linode.jpg)
+![邮件提醒]({{ site.url }}/media/files/2015/Jan/2015-01-11-linode.jpg)
 
 
 ## 2. 一键部署 PPTP server
