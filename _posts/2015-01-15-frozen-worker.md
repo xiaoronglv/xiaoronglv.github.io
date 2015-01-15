@@ -14,44 +14,37 @@ tags:
 
 ```
 [boohee@tiger ~]$ ps aux|grep plan
-boohee   sidekiq 3.2.6 plan [16 of 16 busy]                                                                                                                                                                        
-
+boohee   sidekiq 3.2.6 plan [16 of 16 busy]
 ```
 所有的异步任务都卡住了，sidekiq.log 中也没有任何动静。
 
 到底出了什么问题呢？我开始猜。
 
-## 假设1：Sidekiq 进程死掉了？
+## 猜测1：Sidekiq 进程假死了？
 
+这个项目部署在两台服务器上，老虎和狮子。
 
-tiger中的 sidekiq 线程全忙。
+老虎的 sidekiq 线程全忙。
 
 ```
 [boohee@tiger ~]$ ps aux|grep plan
-boohee   sidekiq 3.2.6 plan [16 of 16 busy]                                                                                                                                                                        
-
+boohee   sidekiq 3.2.6 plan [16 of 16 busy]
 ```
 
-lion 中的 sidekiq 线程全忙
+狮子的 sidekiq 线程全忙
 
 ```
 [boohee@lion ~]$ ps aux|grep plan
-boohee   sidekiq 3.2.6 plan [16 of 16 busy]                                                                                                                                                                        
-
+boohee   sidekiq 3.2.6 plan [16 of 16 busy]
 ```
 
-两台 server 的 sidekiq 同时假死，不可能这么巧吧。
+两台服务器的 sidekiq 同时假死，不可能这么巧吧。
 
-我用 Capistrano 重启 Sidekiq，重启成功。（Sidekiq 对信号还是有反应的）
+用 Capistrano 重启 Sidekiq，重启成功，堆积的异步任务开始执行。（Sidekiq 进程对信号还是有反应的）
 
-但5分钟之后 sidekiq 的线程又全部处于 busy 状态。
+5分钟之后 sidekiq 的线程又全部处于 busy 状态，又卡住了！
 
-
-于是我又猜想，是不是某个很耗时的任务把所有的线程都阻塞了？
-
-
-## 假设2：某个很耗时的任务把所有的线程都阻塞了？
-
+## 猜测1：某个很耗时的任务把所有的线程都阻塞了？
 
 Google 后找到了 [Sidekiq Problems and Troubleshooting](https://github.com/mperham/sidekiq/wiki/Problems-and-Troubleshooting) 这篇文档，里面写了两种常见的 Frozen worker 的情况：
 
