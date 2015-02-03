@@ -7,8 +7,6 @@ tags:
    -
 ---
 
-![](http://www.atmjournal.org/images/atm/ATM-PubMed-Icon-120X30.png )
-
 前段时间在使用 puma 时遇到一个大坑，相信很多人以后也会碰到。
 
 我的某个项目的生产环境这个配置的：
