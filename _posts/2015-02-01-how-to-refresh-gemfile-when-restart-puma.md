@@ -4,8 +4,10 @@ layout: post
 guid: tf9kfb1lydn6
 date: 2015-02-01 19:19:42
 tags:
-   - 
+   -
 ---
+
+![](http://www.atmjournal.org/images/atm/ATM-PubMed-Icon-120X30.png )
 
 前段时间在使用 puma 时遇到一个大坑，相信很多人以后也会碰到。
 
