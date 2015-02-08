@@ -1,7 +1,7 @@
 ---
-title: Rails STI 的两种使用场景
+title: Rails 多态的两种使用场景
 layout: post
-guid: 52x19pwskhjb
+guid: hetep55ajpgi
 date: 2015-02-08 16:24:34
 tags:
    -
