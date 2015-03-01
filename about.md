@@ -3,20 +3,29 @@ title: 吕小荣是何许人也？
 layout: page
 ---
 
-吕小荣
+吕小荣 Ryan
 
-目前在薄荷网，做一名 Ruby 程序员。
+I am a Ruby Programmer.
 
-本来是个医生，不堪忍受国家对医生的压迫，叛逃至互联网行业，在丁香园做了两年产品经理。无意接触到 Ruby，爱的一塌糊涂，遂决定改行去做 Ruby 程序员。
+I used to be a doctor, product manager. I believe in God.
 
-Anyway，do what I love.
-
-
-Follow me
+## Contact
 
 * [github](https://github.com/xiaoronglv)
-* [Weibo 已注销](http://weibo.com/xiaoronglv/)
-* [Twitter 已注销](http://twitter.com/xiaoronglv/)
-* [知乎 已注销](http://www.zhihu.com/people/xiaoronglv)
+* [Weibo](http://weibo.com/xiaoronglv/)
+* [Twitter](http://twitter.com/xiaoronglv/)
+* [Zhihu](http://www.zhihu.com/people/xiaoronglv)
 
-Mail: xiaoronglv(at)hotmail(dot)com
+Mail: xiaorong.ruby(at)gmail(dot)com
+
+
+## I believe...
+
+1. God
+
+* [Do what you love.](http://www.paulgraham.com/love.html) (Paul Graham)
+
+* [Don't make me think.](http://book.douban.com/subject/1440223/)(Steve Krug)
+
+* Do one thing and do it right. (37signals)
+
