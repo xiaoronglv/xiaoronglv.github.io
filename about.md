@@ -9,7 +9,7 @@ I am a Ruby Programmer.
 
 I used to be a doctor, product manager. I believe in God.
 
-## Contact
+* Contact *
 
 * [github](https://github.com/xiaoronglv)
 * [Weibo](http://weibo.com/xiaoronglv/)
@@ -19,13 +19,13 @@ I used to be a doctor, product manager. I believe in God.
 Mail: xiaorong.ruby(at)gmail(dot)com
 
 
-## I believe...
+* I believe *
 
 1. God
 
-* [Do what you love.](http://www.paulgraham.com/love.html) (Paul Graham)
+1. Do what you love. (Paul Graham)
 
-* [Don't make me think.](http://book.douban.com/subject/1440223/)(Steve Krug)
+1. Don't make me think. (Steve Krug)
 
-* Do one thing and do it right. (37signals)
+1. Do one thing and do it right. (37signals)
 
