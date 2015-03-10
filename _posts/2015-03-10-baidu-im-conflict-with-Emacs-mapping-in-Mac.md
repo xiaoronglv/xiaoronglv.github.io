@@ -10,11 +10,17 @@ tags:
 
 在使用 Sublime、TextEdit、iTerm 时，我习惯使用 Emacs 的组合键来移动光标，手指不用离开基本键位，效率很高（懒）。
 
+
 `Ctrl` + `a` - move to start of current paragraph
+
 `Ctrl` + `e` - move to end of current paragraph
+
 `Ctrl` + `f` - move right one character ``→`
+
 `Ctrl` + `b` - move left one character `←`
+
 `Ctrl` + `n` - move down one line `↓`
+
 `Ctrl` + `p` - move up one line `↑`
 
 
