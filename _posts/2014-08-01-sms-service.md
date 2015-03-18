@@ -1,5 +1,5 @@
 ---
-title: [创业工具箱] 短信通道的选择
+title: \[创业工具箱\] 短信通道的选择
 layout: post
 guid: nSRZxkrgD0ct
 date: 2014-08-01 15:00:00
