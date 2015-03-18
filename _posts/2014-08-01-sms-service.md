@@ -15,7 +15,7 @@ tags:
 >
 > [http://www.yuntongxun.com/](http://www.yuntongxun.com/)
 >
-> 我为它写了一个 Ruby 版本的 Gem [Cloopen](https://github.com/xiewenwei/cloopen), 可以直接拿来用.
+> 我为它写了一个 Ruby Gem  [Cloopen](https://github.com/xiewenwei/cloopen), 可以直接拿来用.
 
 薄荷一直在使用易美的短信服务，最近到达率低至令人操蛋的地步。
 
