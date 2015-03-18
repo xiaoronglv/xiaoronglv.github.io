@@ -15,7 +15,7 @@ tags:
 >
 > [http://www.yuntongxun.com/](http://www.yuntongxun.com/)
 >
-> 我为它写了一个 Ruby Gem  [Cloopen](https://github.com/xiewenwei/cloopen), 可以直接拿来用.
+> 我为它写了一个 Ruby Gem [Cloopen](https://github.com/xiewenwei/cloopen), 可以直接拿来用.
 
 薄荷一直在使用易美的短信服务，最近到达率低至令人操蛋的地步。
 
@@ -99,8 +99,4 @@ tags:
 
 ## 总结
 
-短信到达率才是王道，所以我推荐「推立方」和「短信宝」。
-
-> 这些短信运营商都是关系户吧，通过关系拿到了渠道，然后转手卖给我们。
->
-> 赚垄断的钱也就罢了，还做的这么烂。如果公开竞争，早被我们搞死了。
+这些短信运营商都是关系户吧，通过关系拿到了渠道，然后转手卖给我们。赚垄断的钱也就罢了，还做的这么烂。如果公开竞争，早被我们搞死了。
