@@ -1,5 +1,5 @@
 ---
-title: Ruby Test: How to test module?
+title: How to test module?
 layout: post
 guid: 94407771056c4323bafcc7023cac4a5f
 date: 2015-03-30 08:15:57
@@ -19,7 +19,7 @@ module Printable
   end
 end
 
-# Word need to convert to pdf, so let mixin the module
+# Class
 class Word
   include Printable
 end
@@ -27,7 +27,7 @@ end
 
 Printable 被 Class Word 引入，如何为这个 Module 写测试呢？
 
-## 测试思路1：为 Word 的实例方法写测试
+## 测试思路1：为 Word 的实例方法写测试，从而间接的测试 Printable
 
 既然 Word 已经 mixin Printable, Word 必然存在 `print_pdf` 这个实例方法，只需要在 Word 的 test case 中再添加一个 test 既可。
 
@@ -90,4 +90,4 @@ end
 
 这样写测试的好处: Module 的测试非常纯粹，不依赖其他类，像一个真正的 unit。review 代码时看起来比较清爽，不用被绕晕。
 
-我很喜欢写测试，如果能把测试代码组织好，力争间接、DRY、更语义化，写测试也是一件十分有趣的事情。
+如果能把测试代码组织好，力争间接、DRY、更语义化，写测试也是一件十分有趣的事情。
