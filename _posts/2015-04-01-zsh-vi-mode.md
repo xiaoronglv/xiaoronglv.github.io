@@ -9,7 +9,7 @@ tags:
 
 为了装逼，我把编辑器从 Sublime 切换到了 Vim。现在不得不面临一个让人十分精神分裂的状况：Terminal 的快捷键是 Emacs 模式，编辑器是 Vim 模式。导航风格的迥异严重的影响了工作效率。
 
-后来在装逼之王 [@zgm](https://ruby-china.org/zgm) 的指点下，给 zsh 开启了 vim 模式，既满足了装逼的乐趣，又提高了工作效率。
+后来在 [@zgm](https://ruby-china.org/zgm) 的指点下，给 zsh 开启了 vim 模式，既满足了装逼的乐趣，又提高了工作效率。
 
 开启方式:
 
