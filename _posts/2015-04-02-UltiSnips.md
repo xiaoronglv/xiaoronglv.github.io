@@ -7,7 +7,7 @@ tags:
   - Vim
 ---
 
-![Sublime Text Snippets](http://mednoter.com/media/files/2015-04-06-sublime.gif)
+![datetime](http://mednoter.com/media/files/2015-04-06-datetime.gif)
 
 Sublime Text 中的代码块 (Snippets) 缩减了码字的过程，极大的提高编程效率，是非常方便的工具。当我把编辑器迁移到 Vim 后就开始寻觅一款适合自己的 Snippet 插件，以下是我折腾 Vim 代码块的经验总结。
 
