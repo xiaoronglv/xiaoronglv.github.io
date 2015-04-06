@@ -92,11 +92,13 @@ Plugin 'honza/vim-snippets'
 ##  Step 3 创建自定义代码块
 
 
-我们需要定制代码块来满足特殊需求，我如我希望在 rb 文件中输入  `atc + tab` (trigger: atc) 时可以快速的生成一个 ActiveSupport::Testcase，可以按照以下步骤创建。
+我们需要定制代码块来满足特殊需求，比如我希望在 rb 文件中输入  `atc + tab` 时可以快速的生成一个 ActiveSupport::Testcase，可以按照以下步骤实现这个功能。
 
 ### 3.1 在 ~/.vim 下创建文件夹，命名为 UltiSnips，用来存放自定义的代码块。
 
-建议不要去修改 `~/.vim/bundle/vim-snippets` 中的 snippets，因为这个目录是 Git 仓库，每次重装插件会丢失未提交的文件。
+> 有的同学会直接修改 `~/.vim/bundle/vim-snippets` 中的 snippets，建议不要这个干！因为这个目录是 Git 仓库，每次重装插件会丢失未提交的文件。
+>
+> 还是单独创建一个 UltiSnips 文件夹来保存自定义代码片段比较稳妥。
 
 ```bash
 # UltiSnips 插件会自动加载这个文件夹下的文件
