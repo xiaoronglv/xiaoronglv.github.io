@@ -5,6 +5,8 @@ signoff:          "吕小荣"
 disqus_shortname: "mednoter"
 facebook_appid:   "407484809306168"
 google_analytics: ""
+timezone:         Asia/Beijing
+highlighter:      pygments
 
 links:
   - name:         Blog
@@ -15,7 +17,7 @@ links:
     url:          /feed.xml
   - name:         About
     url:          /about.html
-pygments:         true
+
 permalink:        /:title.html
 markdown:         redcarpet
 redcarpet:
