@@ -73,7 +73,7 @@ tags:
 
 把 Apple Push Notification Service 委托给 Rpush，通过 MySQL 中转数据间接通讯。
 
-把计数器委托给 Redis，通过 Unix Socket 通讯。
+把计数器委托给 Redis，通过 Socket 通讯。
 
 把缓存委托给 Memcached，通过 Socket 通讯。
 
