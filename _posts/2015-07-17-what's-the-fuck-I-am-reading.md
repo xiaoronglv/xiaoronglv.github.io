@@ -2,7 +2,7 @@
 title: 如何提高对烂代码的理解速度？
 layout: post
 guid: keb6fxqcc1nc
-date: 2015-07-17 11:07:30
+date: 2015-07-17 11:07:31
 tags:
   - 
 ---
