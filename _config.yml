@@ -25,4 +25,7 @@ redcarpet:
     - smart
     - tables
     - strikethrough
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - space_after_headers
 
