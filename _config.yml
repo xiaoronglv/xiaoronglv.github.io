@@ -24,4 +24,5 @@ redcarpet:
   extensions:
     - smart
     - tables
+    - strikethrough
 
