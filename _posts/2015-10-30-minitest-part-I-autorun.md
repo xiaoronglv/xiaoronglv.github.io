@@ -50,13 +50,11 @@ Some Special Question
 
 4. Run every test, output results.
 
-思考完框架后，开始丰满细节，但其中三个细节，想破脑袋也不知道如何实现。
+思考完大方向后，开始丰满细节，但其中三个细节，想破脑袋也不知道如何（漂亮的）实现。
 
-![](/media/files/2015-10-31-how-to-draw-a-horse.jpg)
+## 三个细节
 
-## 细节
-
-这段代码定义了一个测试类，终端执行 ruby test_first.rb 不会出现任何 output，进程的 lifecycle 转瞬即逝。
+这段代码定义了一个测试类，终端执行 ruby test_first.rb 后进程转瞬即逝。
 
 ```
 # test_first.rb
@@ -81,7 +79,7 @@ class TestStruct < Minitest::Test
 end
 ```
 
-麻雀虽小，五脏俱全，在终端里执行 ruby test_second.rb 可以输出测试结果。
+在终端里执行 ruby test_second.rb 可以输出测试结果。
 
 ```
 $ ruby test.rb
@@ -99,19 +97,19 @@ Finished in 0.001035s, 966.3890 runs/s, 966.3890 assertions/s.
 ![](/media/files/2015-10-30-magic.gif)
 
 
-好奇的程序员立马就被钓起了胃口，Minitest 偷偷摸摸的在这段代码背后做了什么。
+相信你也和我一样，立马被吊足了胃口，Minitest 偷偷摸摸的在这段代码背后做了什么。
 
 1. 它是如何收集所有的测试类？
-2. 它是如何把 TestStruct 的实例方法如何转化为一个个 test job？
+2. 它是如何把 TestStruct 的实例方法如何转化为一个个 test job？（#TODO）
 3. 什么时候 test job 被执行了？
 
 ## 问题1：Minitest::Test 是如何收集所有的测试类？
 
-自己实现代码丑陋无比，承认无能后，我开始翻阅源码。作者使用了一个元编程的钩子(Meta Programming Hook) `self.inherited` 来解决问题。
+Minitest 使用了一个元编程的钩子(Meta Programming Hook) `self.inherited` 来收集 TestCase。
 
 ![](/media/files/2015-11-01-minitest-self-inherited.jpg)
 
-所有的 Test case class 都继承自 Minitest::Runnable。 当你定义一个个测试类时，就会触发 self.inherited 钩子，从而把 Test case class 都塞到了 Minitest::Runnable 的类变量 [@@runnables](https://github.com/seattlerb/minitest/blob/f771b23367dc698586f1e794eae83bcb905fa0d8/lib/minitest.rb#L233-L236) 中，我们写的所有测试类最后都会汇总到这里。
+所有的 Test case 都继承自 Minitest::Runnable。 当你定义一个个测试类时，就会触发 self.inherited 钩子，从而把 Test case class 都塞到了 Minitest::Runnable 的类变量 [@@runnables](https://github.com/seattlerb/minitest/blob/f771b23367dc698586f1e794eae83bcb905fa0d8/lib/minitest.rb#L233-L236) 中，我们写的所有测试类最后都会汇总到这里。
 
 ```ruby
 module Minitest
@@ -151,7 +149,7 @@ end
 
 谜底是：在进程退出的时候。
 
-[Kernal#at_exit](http://ruby-doc.org/core-2.0.0/Kernel.html#method-i-at_exit) 方法可以提前声明进程退出时要做的事情，在进程退出时触发，很多 Gem 都在使用，Capybara 使用它来关闭浏览器， Sinatra 使用它在最后跑 Application。
+[Kernal#at_exit](http://ruby-doc.org/core-2.0.0/Kernel.html#method-i-at_exit) 方法声明进程退出时要做的事情，进程退出时触发。很多 Gem 都有用到，Capybara 用它来关闭浏览器， Sinatra 用它在最后跑 Application。
 
 Document: Converts block to a Proc object (and therefore binds it at the point of call) and registers it for execution when the program exits. If multiple handlers are registered, they are executed in reverse order of registration.
 
@@ -176,7 +174,7 @@ step2
 
 可以看到 step2 最后才被执行。
 
-[Minitest.autorun](https://github.com/seattlerb/minitest/blob/master/lib/minitest.rb#L45-L59)，详细罗列了进程退出时的 TODO 清单。
+[Minitest.autorun](https://github.com/seattlerb/minitest/blob/master/lib/minitest.rb#L45-L59)，详细罗列了进程退出时的 TODO 清单——跑测试。
 
 ```ruby
 # Registers Minitest to run at process exit
