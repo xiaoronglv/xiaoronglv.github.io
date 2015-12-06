@@ -7,7 +7,7 @@ tags:
   - 
 ---
 
-这是本周做过的任务，以及自己对 performance 的评估，以后会每周坚持写。（其实这个报告是用脚本自动生成的）
+这是本周做过的任务，以及自己对 performance 的评估，以后会每周坚持写。
 
 1. 有氧运动次数只有2次，低于预期的3次。
 
@@ -266,3 +266,6 @@ Tag: Others
 | 办理吕小荣的港澳通行证                              |  2015-12-02  |  2015-12-03  |  Yes        |  Others |
 | 整理居住证的材料 / 复印资料 / 办理居住证            |  2015-11-30  |  2015-11-30  |  Yes        |  Others |
 | 查询如何办理港澳通行证                              |  2015-11-30  |  2015-11-30  |  Yes        |  Others |
+
+
+其实这个报告是用脚本自动生成的，详情请参考[《自动生成每周 Performance 报表》](http://mednoter.com/how-to-dump-things-db-and-generate-weekly-report.html)
