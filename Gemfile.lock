@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://ruby.taobao.org/
   specs:
     RedCloth (4.2.9)
     activesupport (4.1.8)
@@ -124,3 +124,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+
+BUNDLED WITH
+   1.10.6
