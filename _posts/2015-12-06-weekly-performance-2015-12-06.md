@@ -268,4 +268,4 @@ Tag: Others
 | 查询如何办理港澳通行证                              |  2015-11-30  |  2015-11-30  |  Yes        |  Others |
 
 
-其实这个报告是用脚本自动生成的，详情请参考[《自动生成每周 Performance 报表》](http://mednoter.com/how-to-dump-things-db-and-generate-weekly-report.html)
+这个报告是用脚本自动生成的，详情请参考 [如何自动生成每周 Performance 报表?](http://mednoter.com/how-to-dump-things-db-and-generate-weekly-report.html)

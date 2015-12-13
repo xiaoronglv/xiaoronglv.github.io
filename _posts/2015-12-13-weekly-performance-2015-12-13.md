@@ -71,10 +71,10 @@ Comments:
 
 
 
-# Part 3 每个 Tag 的流水
+## Part 3 每个 Tag 的流水
 
 
-Tag: God
+### 3.1 God Tag
 
 | Title                                     |  Start       |  End         |  Completed  |  Tag |
 |------------------------------------------ | ------------ | ------------ | ----------- | -----|
@@ -98,7 +98,7 @@ Tag: God
 
 
 
-Tag: Myself
+### 3.2 Myself Tag
 
 | Title                                     |  Start       |  End         |  Completed  |  Tag    |
 |------------------------------------------ | ------------ | ------------ | ----------- | --------|
@@ -167,10 +167,7 @@ Tag: Myself
 | Quick exercise at afternoon 10 min        |  2015-12-07  |  2015-12-07  |  Yes        |  Myself |
 
 
-
-
-
-Tag: Family
+### 3.3 Family Tag
 
 | Title                                                                  |  Start       |  End         |  Completed  |  Tag    |
 |----------------------------------------------------------------------- | ------------ | ------------ | ----------- | --------|
@@ -207,8 +204,7 @@ Comments:
 这周没怎么夸媳妇，下周要继续鼓励她去健身，把肚子减下去。
 
 
-
-Tag: Learning
+### 3.4 Learning Tag
 
 | Title                                                                |  Start       |  End         |  Completed  |  Tag      |
 |--------------------------------------------------------------------- | ------------ | ------------ | ----------- | ----------|
@@ -255,11 +251,12 @@ Comments:
 
 
 
-Tag: Work（保密，所以跳过）
+### 3.5 Work Tag
+
+内容保密，所以跳过
 
 
-
-Tag: Church
+### 3.6 Church Tag
 
 | Title                                                                  |  Start       |  End         |  Completed  |  Tag    |
 |----------------------------------------------------------------------- | ------------ | ------------ | ----------- | --------|
@@ -276,7 +273,7 @@ Comments:
 
 
 
-Tag: Others
+### 3.7 Others Tag
 
 
 | Title                                                                |  Start       |  End         |  Completed  |  Tag    |
@@ -289,4 +286,4 @@ Tag: Others
 
 
 
-这个报告是用脚本自动生成的，详情请参考[《自动生成每周 Performance 报表》](http://mednoter.com/how-to-dump-things-db-and-generate-weekly-report.html)
+> 这个报告是用脚本自动生成的，详情请参考 [如何自动生成每周 Performance 报表](http://mednoter.com/how-to-dump-things-db-and-generate-weekly-report.html)

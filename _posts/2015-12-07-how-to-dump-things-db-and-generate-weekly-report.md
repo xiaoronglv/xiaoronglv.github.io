@@ -230,3 +230,12 @@ Things 的数据库设计的真是烂啊，tag、area、project 全部放到一�
 0. 拷贝数据库文件在 /tmp，用备份数据库加工数据
 1. 单独创建了 tags 表 
 2. 单独创建了 task_tags 表，一个关系表
+
+
+## Reference
+
+1. 本文的代码片段下载 [gist](https://gist.github.com/xiaoronglv/eb9356e40f0a28ca6d53)
+
+2. 范例1：[2015-12-13 Weekly Performance](http://mednoter.com/weekly-performance-2015-12-13.html)
+
+3. 范例2：[2015-12-06 Weekly Performance](http://mednoter.com/weekly-performance-2015-12-06.html)
