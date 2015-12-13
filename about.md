@@ -3,7 +3,7 @@ title: 吕小荣是何许人也？
 layout: page
 ---
 
-吕小荣 Ryan Lv
+吕小荣 Ryan Lv, a Ruby developer.
 
 I believe in God.
 
@@ -17,10 +17,17 @@ I used to be a doctor, product manager.
 * [~~Weibo~~](http://weibo.com/xiaoronglv/)
 * [~~Twitter~~](http://twitter.com/xiaoronglv/)
 * [~~Zhihu~~](http://www.zhihu.com/people/xiaoronglv)
-* Mail: xiaorong.ruby(at)gmail(dot)com
+* Mail: ![](/media/files/misc/contact_me.png)
 
-**I believe**
+## Somethings I believe
 
 1. Do what you love. (Paul Graham)
-1. Don’t make me think. (Steve Krug)
-1. Do one thing and do it right. (37signals)
+2. Don’t make me think. (Steve Krug)
+3. Do one thing and do it right. (37signals)
+
+## 请我喝杯咖啡
+
+<!-- 写一个 js 做判断 -->
+<!-- ![支付宝红包](/media/files/2015-12-13-buy-me-coffee-alipay.png) -->
+
+![微信](/media/files/2015-12-13-buy-me-coffee-wechat.jpg)
