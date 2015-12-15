@@ -56,11 +56,11 @@ Some Special Question
 
 这段代码定义了一个测试类，终端执行 ruby test_first.rb 后进程转瞬即逝。
 
-```
-# test_first.rb
-class TestStruct < Minitest::Test
+```ruby
+# before.rb
+class CompanyTest < Minitest::Test
   def test_struct
-    assert_equal "chillout", Struct.new(:name).new("chillout").name
+    assert_equal "SAP", Struct.new(:name).new("SAP").name
   end
 end
 ```
@@ -68,21 +68,21 @@ end
 然而在头部加上 require "minitest/autorun"，它却摇身一变成为测试文件。
 
 ```ruby
-# test_second.rb
+# after.rb
 gem "minitest"
 require "minitest/autorun"
 
-class TestStruct < Minitest::Test
+class CompanyTest < Minitest::Test
   def test_struct
-    assert_equal "chillout", Struct.new(:name).new("chillout").name
+    assert_equal "SAP", Struct.new(:name).new("SAP").name
   end
 end
 ```
 
-在终端里执行 ruby test_second.rb 可以输出测试结果。
+在终端里执行 ruby after.rb 可以输出测试结果。
 
 ```
-$ ruby test.rb
+$ ruby after.rb
 Run options: --seed 3152
 
 # Running:
@@ -100,7 +100,7 @@ Finished in 0.001035s, 966.3890 runs/s, 966.3890 assertions/s.
 相信你也和我一样，立马被吊足了胃口，Minitest 偷偷摸摸的在这段代码背后做了什么。
 
 1. 它是如何收集所有的测试类？
-2. 它是如何把 TestStruct 的实例方法如何转化为一个个 test job？（#TODO）
+2. 它是如何把 CompanyTest 的实例方法如何转化为一个个 test job？（#TODO）
 3. 什么时候 test job 被执行了？
 
 ## 问题1：Minitest::Test 是如何收集所有的测试类？
@@ -134,13 +134,13 @@ end
 ## 什么时候 run test job?
 
 ```ruby
-# test_second.rb
+# after.rb
 gem "minitest"
 require "minitest/autorun"
 
-class TestStruct < Minitest::Test
+class CompanyTest < Minitest::Test
   def test_struct
-    assert_equal "chillout", Struct.new(:name).new("chillout").name
+    assert_equal "SAP", Struct.new(:name).new("SAP").name
   end
 end
 ```
@@ -157,22 +157,25 @@ Document: Converts block to a Proc object (and therefore binds it at the point o
 
 ```ruby
 # exit.rb
-puts "step1"
+
+puts "step 1"
+
 at_exit do
-  puts "step2"
+  puts "step 2"
 end
-puts "step3"
+
+puts "step 3"
 ```
 
 这段代码 ruby exit.rb 的输出为
 
 ```
-step1
-step3
-step2
+step 1
+step 3
+step 2
 ```
 
-可以看到 step2 最后才被执行。
+可以看到 step 2 最后才被执行。
 
 [Minitest.autorun](https://github.com/seattlerb/minitest/blob/master/lib/minitest.rb#L45-L59)，详细罗列了进程退出时的 TODO 清单——跑测试。
 
