@@ -94,7 +94,8 @@ Finished in 0.001035s, 966.3890 runs/s, 966.3890 assertions/s.
 1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
 ```
 
-![](/media/files/2015-10-30-magic.gif)
+![](/media/files/2015-10-30-magic.gif)  
+*Figure 1*
 
 
 相信你也和我一样，立马被吊足了胃口，Minitest 偷偷摸摸的在这段代码背后做了什么。
@@ -107,7 +108,8 @@ Finished in 0.001035s, 966.3890 runs/s, 966.3890 assertions/s.
 
 Minitest 使用了一个元编程的钩子(Meta Programming Hook) `self.inherited` 来收集 TestCase。
 
-![](/media/files/2015-11-01-minitest-self-inherited.jpg)
+![](/media/files/2015-11-01-minitest-self-inherited.jpg)  
+*Figure 2*
 
 所有的 Test case 都继承自 Minitest::Runnable。 当你定义一个个测试类时，就会触发 self.inherited 钩子，从而把 Test case class 都塞到了 Minitest::Runnable 的类变量 [@@runnables](https://github.com/seattlerb/minitest/blob/f771b23367dc698586f1e794eae83bcb905fa0d8/lib/minitest.rb#L233-L236) 中，我们写的所有测试类最后都会汇总到这里。
 
@@ -206,3 +208,5 @@ end
 1. [Are we abusing at_exit?](http://blog.arkency.com/2013/06/are-we-abusing-at-exit/)
 
 2. [Hitchhiker’s Guide to Metaprogramming: Class/Module Hooks](http://www.sitepoint.com/hitchhikers-guide-to-metaprogramming-classmodule-hooks/)
+
+3. Figure 2 is draw using OmniGraffle, you can [download](/media/files/2015-10-31-minitest.graffle) it. 
