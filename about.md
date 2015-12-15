@@ -1,5 +1,5 @@
 ---
-title: Me
+title: About Me
 layout: page
 ---
 
@@ -7,7 +7,7 @@ layout: page
 
 Ruby developer
 
-Manager of Ruby-China.org
+Admin of Ruby-China.org
 
 Used to be a doctor
 
