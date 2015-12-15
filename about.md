@@ -25,9 +25,9 @@ I used to be a doctor, product manager.
 2. Don’t make me think. (Steve Krug)
 3. Do one thing and do it right. (37signals)
 
-## 请我喝杯咖啡
+## 微信扫一扫，请我喝咖啡
 
 <!-- 写一个 js 做判断 -->
 <!-- ![支付宝红包](/media/files/2015-12-13-buy-me-coffee-alipay.png) -->
 
-![微信](/media/files/2015-12-13-buy-me-coffee-wechat.jpg)
+![微信红包](/media/files/2015-12-13-buy-me-coffee-wechat.jpg)
