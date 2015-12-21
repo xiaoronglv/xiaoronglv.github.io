@@ -1,5 +1,5 @@
 ---
-title: 2015-12-06 Weekly Performance
+title: 2015-12-06 Weekly Review
 layout: post
 guid: t25peigpp27d
 date: 2015-12-06 23:35:36
