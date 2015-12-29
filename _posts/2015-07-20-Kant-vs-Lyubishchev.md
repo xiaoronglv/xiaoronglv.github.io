@@ -34,7 +34,7 @@ tags:
 
 突然有一天，当你拿着时间统计报表分析自己的每天、每周、每月、每年时，才发现游戏机、肥皂剧、过量的社交生活、垃圾电影等等在业余生活中比例如此之高，不仅憎恨自己。
 
-![A time logger](http://mednoter.com/media/files/2015-07-20-aTimeLogger.png)
+![A time logger](/media/files/2015-07-20-aTimeLogger.png)
 
 ## 遇到的问题
 
@@ -156,8 +156,8 @@ tags:
 此外，这种形式上的呆板让人清醒的认识到生活的优先级[1]。此图是康德的作息，堪称呆板中的极致。
 
 
-![Kant](http://mednoter.com/media/files/2015-07-20-Kant.jpg)
+![Kant](/media/files/2015-07-20-Kant.jpg)
 
-> 1. Schedule your Priority, and don’t Prioritize Schedule. 我在[《The top of my todo list》](http://mednoter.com/todo-list.html)中讨论过怎么排优先级的问题。很多人每天接受一堆的任务，根据优先级处理任务，这是短视的表现。你其是应该想好人生的优先级，然后再根据优先级去安排今天的任务。
+> 1. Schedule your Priority, and don’t Prioritize Schedule. 我在[《The top of my todo list》](/todo-list.html)中讨论过怎么排优先级的问题。很多人每天接受一堆的任务，根据优先级处理任务，这是短视的表现。你其是应该想好人生的优先级，然后再根据优先级去安排今天的任务。
 
 

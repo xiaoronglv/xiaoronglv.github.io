@@ -56,7 +56,7 @@ Mac 中每个目录都会有个文件叫`.DS_Store`, 用于存储当前文件夹
 
 搞定了！在所有的文件夹下 .DS_Store .swp .zip 等文件类型会被 Git 自动忽略。
 
- ![demo](http://mednoter.com/media/files/2015-03-22-demo.png)
+ ![demo](/media/files/2015-03-22-demo.png)
 
 ## 参考资料
 

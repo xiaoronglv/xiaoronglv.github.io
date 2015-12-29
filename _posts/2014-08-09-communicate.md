@@ -101,7 +101,7 @@ tags:
 
 很多人工作好几年，连封邮件也写不好，这是真事。
 
-[如何写一封漂亮的邮件](http://mednoter.com/How-to-write-email.html)
+[如何写一封漂亮的邮件](/How-to-write-email.html)
 
 
 ### 3.2 设定团队目标

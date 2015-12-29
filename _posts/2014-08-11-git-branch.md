@@ -7,7 +7,7 @@ tags:
    - Git
 ---
 
-> 阅读本文之前，请先掌握三个概念：Commit、Tree、Blob，详见[《Git 的存储对象》](http://mednoter.com/git-object.html)。
+> 阅读本文之前，请先掌握三个概念：Commit、Tree、Blob，详见[《Git 的存储对象》](/git-object.html)。
 
     git checkout -b feature/drag
 

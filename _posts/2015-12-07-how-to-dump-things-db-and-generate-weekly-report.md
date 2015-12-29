@@ -236,6 +236,6 @@ Things 的数据库设计的真是烂啊，tag、area、project 全部放到一�
 
 1. 本文的代码片段下载 [gist](https://gist.github.com/xiaoronglv/eb9356e40f0a28ca6d53)
 
-2. 范例1：[2015-12-13 Weekly Performance](http://mednoter.com/weekly-performance-2015-12-13.html)
+2. 范例1：[2015-12-13 Weekly Performance](/weekly-performance-2015-12-13.html)
 
-3. 范例2：[2015-12-06 Weekly Performance](http://mednoter.com/weekly-performance-2015-12-06.html)
+3. 范例2：[2015-12-06 Weekly Performance](/weekly-performance-2015-12-06.html)

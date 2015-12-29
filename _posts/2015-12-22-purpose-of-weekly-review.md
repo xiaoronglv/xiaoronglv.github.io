@@ -7,9 +7,9 @@ tags:
   - 
 ---
 
-* [2015-12-20 WEEKLY REVIEW](http://mednoter.com/weekly-review-2015-12-20.html)
-* [2015-12-06 WEEKLY REVIEW](http://mednoter.com/weekly-performance-2015-12-06.html)
-* [2015-12-13 WEEKLY REVIEW](http://mednoter.com/weekly-performance-2015-12-13.html)
+* [2015-12-20 WEEKLY REVIEW](/weekly-review-2015-12-20.html)
+* [2015-12-06 WEEKLY REVIEW](/weekly-performance-2015-12-06.html)
+* [2015-12-13 WEEKLY REVIEW](/weekly-performance-2015-12-13.html)
 
 
 如果你订阅了我的博客，以后每周都会看一篇「每周总结」，记录了我一周任务流水和完成的情况。很多极客 都有这种记录的习惯，比如[阳志平](http://www.yangzhiping.com)搭建了一个私人的 Twitter，用来记录每日做过哪些事情。柳比歇夫坚持纸质记录每日在每件事情上的时间开销。

@@ -7,7 +7,7 @@ tags:
   -
 ---
 
-![Time](http://mednoter.com/media/files/2015-05-01-time.jpg)
+![Time](/media/files/2015-05-01-time.jpg)
 
 李笑来老师曾多次提到过这种现象，英语培训班的第一节课大家信心满满，半年后坚持到底的学生不到 1/3 [1]。 他还调侃 YC 的创业课程 [How to Start a Startup](http://startupclass.samaltman.com) 的浏览量，第一节课的播放量是 350,421，最后一节课的播放量是 21,458，只有 1/16 坚持了下来。[2]
 
@@ -72,7 +72,7 @@ Brad Feld 是 Boulder Startup Community 的管理层，总会遇到各种希望�
 
 3. 这里的浪费是指「花费的时间没有结果」，而不是期望他对我有所回报。如果我的建议对他有所帮助，并且看到了结果，这就是安慰。
 
-4. 详情见博文 [我有一个伟大的 idea](http://mednoter.com/I-have-a-great-idea.html)。大伟、阳志平老师，你们都是有超强执行力的人，此处不是指你们。
+4. 详情见博文 [我有一个伟大的 idea](/I-have-a-great-idea.html)。大伟、阳志平老师，你们都是有超强执行力的人，此处不是指你们。
 
 5. 因为我的内存小，所以我严格的按照 GTD 和 日历来管理任务，把可怜的内存全部分配给执行任务的 context。
 

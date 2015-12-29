@@ -49,6 +49,6 @@ tags:
 踏实的工作，玩命的学习，才有出路。
 
 
-> [如何提高自己的核心竞争力？](http://mednoter.com/personal-growth.html)
+> [如何提高自己的核心竞争力？](/personal-growth.html)
 
 

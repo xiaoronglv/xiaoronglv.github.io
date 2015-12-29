@@ -111,7 +111,7 @@ tags:
 	
 	用数据说话，是我从二爷身上学到的一个大招。
 	
-	详情可参考这篇老文：[KPI是个好东西](http://mednoter.com/kpi.html)
+	详情可参考这篇老文：[KPI是个好东西](/kpi.html)
 	
 
 [1]: http://www.ncbi.nlm.nih.gov/pubmed/20157491/  "Understanding PubMed user search behavior through log analysis"

@@ -98,11 +98,11 @@ User Center (或称之为 passport) 单独做成一个项目。
 
 ## 管理上的架构
 
-![Dream](http://mednoter.com/media/files/2015-05-30-ideal.jpg)
+![Dream](/media/files/2015-05-30-ideal.jpg)
 
 每个项目经理都在追求人月神话，投入更多的人，产生更高的生产力[5]。
 
-![Reality](http://mednoter.com/media/files/2015-05-30-reality.jpg)
+![Reality](/media/files/2015-05-30-reality.jpg)
 
 
 然而现实世界却是这样，项目代码越来庞大，超出正常人的脑容量，添加人手也无法获得生产力的线性增长。
@@ -116,7 +116,7 @@ User Center (或称之为 passport) 单独做成一个项目。
 4. 大脑容量不够，无法加载整个代码的 context。每次方法之间跳跃都依赖 IO，严重降低开发效率。
 
 
-![Small is better](http://mednoter.com/media/files/2015-05-30-small-is-better.jpg)
+![Small is better](/media/files/2015-05-30-small-is-better.jpg)
 
 分拆增加了整体的复杂度，却让项目足够小，永远可理解。
 
