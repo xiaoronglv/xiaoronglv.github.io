@@ -3,19 +3,8 @@ title: Friends
 layout: page
 ---
 
-[小道消息](http://tutu.me)  
-[阳志平](http://www.yangzhiping.com)    
-[Fenng](http://dbanotes.net)       
-[二爷](http://qiuyuexp.com)     
-[Samqiu](https://samqiu.com)     
-[钟超](http://yes2.me)     
-[李作刚](http://zuogang.li)
+[Samqiu](https://samqiu.com)  
+[阳志平](http://www.yangzhiping.com)     
+[Rei](http://chloerei.com)  
 
 ---
-
-**Ruby**  
-  
-[Ruby China](http://ruby-china.org)    
-[叶玎玎](http://yedingding.com)    
-[xdite](http://blog.xdite.net)    
-[Rei](http://chloerei.com)
