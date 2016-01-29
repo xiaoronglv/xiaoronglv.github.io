@@ -362,6 +362,8 @@ img {
 
 table {
   /* Remove spacing between table cells (from Normalize.css) */
+  font-size: 13px;
+  margin: 0 60px;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
