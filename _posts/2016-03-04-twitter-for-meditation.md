@@ -51,7 +51,7 @@ tags:
 我的大脑依赖的外围工具有：
 
 * Evernote 用来知识加工（收集信息，消化知识，归档有用/删除无用）、记日记、保存重要文档；
-* 消化后的知识会按照20条军规拆分成知识点，纳入到间隔记忆系统（SRS）；
+* 消化后的知识会按照[20条军规](https://www.supermemo.com/en/articles/20rules)拆分成知识点，纳入到间隔记忆系统（SRS）；
 * 对某个小领域有系统的见解时，会独立成文。
 
 现在我需要一个新的记录工具，满足以下条件：
@@ -94,3 +94,5 @@ tags:
 4. 诗篇139:23-24   
    神啊！求你鉴察我，知道我的心思；试验我，知道我的意念。   
    看在我里面有甚么恶行没有，引导我走永生的路。  
+
+5. [Effective learning: Twenty rules of formulating knowledge](https://www.supermemo.com/en/articles/20rules)
