@@ -17,7 +17,7 @@ tags:
 
 本周在配置新项目的时候，发现了一个很奇葩的 bug。我已经在 test group 中添加了 factory\_girl\_rails，但是用脚手架创建新的 model 时 `rails g scaffold article title:string content:text`，rails 依然生成了 fixture，Why？
 
-```Ruby
+```ruby
 # Gemfile
 group :development do
   gem 'mongoid_colored_logger'
@@ -43,7 +43,7 @@ end
 如果要使用 factory_girl 替代 fixture， development 环境也必须加载它。调整一下 gem 的分组就把这个问题解决了。
 
 
-```Ruby
+```ruby
 # Gemfile
 group :development do
   gem 'mongoid_colored_logger'

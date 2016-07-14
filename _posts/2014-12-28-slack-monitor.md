@@ -57,7 +57,7 @@ Slack 提供了 webhooks，可以 post 数据至 webhooks，整个channel 的人
 
 ## 3. 引入 exception_notification 和 slack-notifier
 
-```
+```ruby
 # Gemfile
 # Slack api 封装
 gem 'slack-notifier'
@@ -68,7 +68,7 @@ gem 'exception_notification'
 
 ## 4. 在 rails 中生成默认的配置文件 
 
-```
+```ruby
 rails g exception_notification:install
 ```
 
@@ -76,7 +76,7 @@ This command generates an initialize file (config/initializers/exception_notific
 
 ## 5. 在默认的配置文件中添加 slack notifier
 
-```
+```ruby
 # config/initializers/exception_notification.rb
 require 'exception_notification/sidekiq'
 

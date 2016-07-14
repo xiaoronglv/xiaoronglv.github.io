@@ -16,7 +16,7 @@ tags:
 
 为了一劳永逸，我直接把淘宝放到电脑的 Gem source 中，希望以后安装 Gem 时，默认走淘宝，速度更快。
 
-```
+```text
 > gem sources 
 *** CURRENT SOURCES ***
 
@@ -27,7 +27,7 @@ https://rubygems.org
 
 事实上这种 multi-sources 的方式一点都不快，反而变慢了！我把整个安装过程打印了出来发现：如果你有多个 Gem 源，它会挨个访问一遍，安装 Gem 的最新版本。 
 
-```
+```text
 /Users/xiaoronglv [8:39]
 > gem install sidekiq --verbose
 GET http://ruby.taobao.org/latest_specs.4.8.gz
@@ -95,13 +95,12 @@ Fetching: sidekiq-3.3.0.gem (100%)
 
 同样，有些同学会在 Gemfile 中指定多个 Gem 源。
 
-```
+```ruby
 source 'https://rubygems.org'
 source 'http://ruby.taobao.org'
 
 gem 'sidekiq'  
 gem 'redis-object'
-
 ```
 
 [Bundler 文档](http://bundler.io/v1.3/man/gemfile.5.html#SOURCE-PRIORITY) 也有详细的说明。

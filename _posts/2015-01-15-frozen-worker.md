@@ -26,14 +26,14 @@ boohee   sidekiq 3.2.6 plan [16 of 16 busy]
 
 老虎的 sidekiq 线程全忙。
 
-```
+```text
 [boohee@tiger ~]$ ps aux|grep plan
 boohee   sidekiq 3.2.6 plan [16 of 16 busy]
 ```
 
 狮子的 sidekiq 线程全忙
 
-```
+```text
 [boohee@lion ~]$ ps aux|grep plan
 boohee   sidekiq 3.2.6 plan [16 of 16 busy]
 ```
@@ -59,7 +59,7 @@ If all your workers are "frozen" or no jobs seem to be finishing, it's possible 
 看完了文档，我立马就想到了代码中的问题。
 
 
-```
+```ruby
 class XiaomiUserProjectNotifier
   include Sidekiq::Worker
   sidekiq_options retry: 3
@@ -91,7 +91,7 @@ end
 把 Restclient 超时时间设定为 10秒，发布上线，这个问题就解决了。
 
 
-```
+```ruby
 class XiaomiUserProjectNotifier
   include Sidekiq::Worker
   sidekiq_options retry: 3

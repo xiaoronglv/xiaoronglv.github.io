@@ -34,7 +34,7 @@ Rails App 缓存策略粗分为五层[1]，效率从高到低依次为：
 * 阅读 Rails [fresh_when/stale?](https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/conditional_get.rb) 的源码
 
 
-晚上我梦到 Response time 从 300ms 降至 40ms；性能监控平台的曲线像瀑布一样美；数据库请求数减至一半；剩下的 SQL 查询变为 index-covered query；没有读取 Memcached 的时间；日志华丽的显示 Views: 2ms | ActiveRecord: 2.8ms。
+晚上我梦到 Response time 从 300ms 降至 40ms；性能监控平台的曲线像瀑布一样美；数据库请求数减至一半；剩下的 SQL 查询变为 index-covered query；没有读取 Memcached 的时间；日志华丽的显示 `Views: 2ms | ActiveRecord: 2.8ms`。
 
 快乐、满足、持久的幸福感等一切美好的情感涌向心头。喝杯咖啡，然后继续调优下一个 most visited page。
 
@@ -74,7 +74,7 @@ how to measure and profile？
 
 曾经改几行代码，就可以在 New Relic 上愉快的看数据。而如今却牵扯到如此多(且不擅长)的因素，不再是几行代码就可以搞定。
 
-```
+```ruby
 def index
   @wikis = Wiki.where(deleted: false)
   fresh_when last_modified: @wikis.maximum(:updated_at)
@@ -82,7 +82,7 @@ end
 
 def show
   @wiki = Wiki.find params[:id]
-	fresh_when @wiki
+  fresh_when @wiki
 end
 ```
 

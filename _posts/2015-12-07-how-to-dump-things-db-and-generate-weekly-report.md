@@ -206,7 +206,7 @@ end
 
 这个脚本的使用方法：
 
-```
+```ruby
 # 安装依赖
 gem install 'fileutils'
 gem install 'date'

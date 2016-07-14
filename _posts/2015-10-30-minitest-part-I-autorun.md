@@ -81,7 +81,7 @@ end
 
 在终端里执行 ruby after.rb 可以输出测试结果。
 
-```
+```ruby
 $ ruby after.rb
 Run options: --seed 3152
 
@@ -171,7 +171,7 @@ puts "step 3"
 
 这段代码 ruby exit.rb 的输出为
 
-```
+```text
 step 1
 step 3
 step 2

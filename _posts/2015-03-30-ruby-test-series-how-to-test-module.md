@@ -11,7 +11,7 @@ Rails 很早就引入了 Concern 层，存放一些跨类的 Module，如何为�
 
 ## 一个场景
 
-```
+```ruby
 # Module
 module Printable
   def print_pdf
@@ -31,7 +31,7 @@ Printable 被 Class Word 引入，如何为这个 Module 写测试呢？
 
 既然 Word 已经 mixin Printable, Word 必然存在 `print_pdf` 这个实例方法，只需要在 Word 的 test case 中再添加一个 test 既可。
 
-```
+```ruby
 require 'test_helper'
 
 class WordTest < ActiveSupport::TestCase
@@ -66,7 +66,7 @@ end
 
 ## 测试思路2: just write test for module
 
-```
+```ruby
 require 'test_helper'
 
 class PrintableTest < ActiveSupport::TestCase

@@ -14,7 +14,7 @@ Sidekiq 是多线程的异步处理程序，应用广泛。Unicorn 是多进程�
 
 一般每个 Unicorn worker 的数据库连接池 pool = 5。
 
-```
+```yaml
 default: &default
   adapter: mysql2
   encoding: utf8
@@ -30,7 +30,7 @@ Sidekiq 进程默认会启动 25个线程。假如 Sidekiq 使用 database.yml �
 
 在 sidekiq.yml 中配置，降低线程数
 
-```
+```yaml
 ---
 :concurrency: 5
 :pidfile: tmp/pids/sidekiq.pid
@@ -49,7 +49,7 @@ production:
 As of Rails 3.2, ActiveRecord's initialization code will prefer a DATABASE_URL over the database.yml file. (See Issue #503 for a more complete explanation.) You can set a custom connection pool size for the Sidekiq server process via:
 
 
-```
+```ruby
 Sidekiq.configure_server do |config|
   config.redis = { url: 'redis://redis.example.com:7372/12', namespace: 'mynamespace' }
 

@@ -43,7 +43,7 @@ GFW 真是无耻到家，丧心病狂，连 Gmail 都不放过。导致我们教
 
 如果对脚本安全性有疑问，你可以先看一下源码，再执行这个脚本。
 
-```
+```bash
 wget https://raw.github.com/viljoviitanen/setup-simple-pptp-vpn/master/setup.sh
 sudo sh setup.sh
 ```
@@ -63,7 +63,7 @@ yangyihappy * 16ksqv4i2uk85m4a *
 
 配置完账户，重启 pptp。
 
-```
+```bash
 service pptpd restart
 ```
 
