@@ -227,6 +227,7 @@ section.post, section > p {
   li .highlight { padding: 0 10px; }
   li p { margin-bottom: 5px; }
 }
+
 .highlight { margin: 0; padding: 0; }
 pre {
   overflow-x: auto;
@@ -236,7 +237,27 @@ pre {
   @include box-sizing(border-box);
 
 }
-code { font-size: 13px; color: #eee; background: #39382e; padding: 2px 4px 3px; border-radius: 2px; line-height: 1.3em; @include inline-block; }
+
+code { 
+  font-size: 13px; 
+  color: #eee; 
+  padding: 2px 4px 3px; 
+  border-radius: 2px; 
+  line-height: 1.3em; 
+  @include inline-block; 
+}
+
+:not(pre) > code{
+  font-family: monospace;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  color: rgb(0, 54, 89);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background: rgb(214, 234, 244);
+  border-radius: 3px;
+}
+
 img {
   max-width: 100%;
   &.half { width: 50%; }

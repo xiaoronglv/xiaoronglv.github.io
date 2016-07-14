@@ -325,7 +325,6 @@ pre {
 code {
   font-size: 13px;
   color: #eee;
-  background: #39382e;
   padding: 2px 4px 3px;
   border-radius: 2px;
   line-height: 1.3em;
@@ -334,6 +333,16 @@ code {
   zoom: 1;
   *display: inline;
   *vertical-align: auto; }
+
+:not(pre) > code {
+  font-family: monospace;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  color: #003659;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background: #d6eaf4;
+  border-radius: 3px; }
 
 img {
   max-width: 100%; }
@@ -362,8 +371,6 @@ img {
 
 table {
   /* Remove spacing between table cells (from Normalize.css) */
-  font-size: 13px;
-  margin: 0 60px;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
