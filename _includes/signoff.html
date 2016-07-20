@@ -2,6 +2,5 @@
 <div>
   {{ site.signoff }}
   <span class="muted">{{ page.date | date: "at %H:%M" }}</span><br/>
-  若您对本文有勘误、建议或补充，可以发邮件给我。<br/>
-  <img src="/media/files/misc/contact_me.png" alt="not found" width="160" />
+  <a href="{{site.repository_url}}/blob/master/{{page.path}}">Edit this page</a>
 </div>

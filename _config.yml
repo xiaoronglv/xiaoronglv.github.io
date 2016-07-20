@@ -8,6 +8,7 @@ google_analytics: ""
 timezone:         Asia/Beijing
 highlighter:      pygments
 future:           true
+repository_url:   https://github.com/xiaoronglv/xiaoronglv.github.io
 
 links:
   - name:         Blog
