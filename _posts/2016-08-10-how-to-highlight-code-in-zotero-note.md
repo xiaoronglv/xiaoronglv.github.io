@@ -44,7 +44,7 @@ tags:
 
 那么，是否可以通过自定义 Note 的 CSS 来实现代码高亮呢？
 
-在 Zotero 的论坛找到一点线索，我决定试试。
+在 Zotero 的论坛找到一点线索[5]，我决定试试。
 
 1. Preferences > Advanced > General > Open about:config
     ![](/media/files/2016-08-10-step1.jpeg)
@@ -218,4 +218,6 @@ It works.
 3. [Scrivener](https://www.literatureandlatte.com/scrivener.php)
 
 4. [阳志平：Zotero（5）：电子文献管理攻略 ](http://www.yangzhiping.com/tech/zotero1.html)
+
+5. [Zotero forum: How to change formats in the notes windows?](https://forums.zotero.org/discussion/48647/how-to-change-formats-in-the-notes-windows-/)
 
