@@ -7,6 +7,8 @@ tags:
   - 
 ---
 
+> This article is deprecated. There is a better way to highlight code, see the [revised article](/how-to-highlight-code-in-zotero-note-revised.html)
+
 我的学习模式逐渐过渡为以主题为中心。每个月确定好几个感兴趣的主题，在不同的主题之间穿梭。
 
 当我在学习 Elixir Programming 时，我希望进入 Elixir 的世界，一个贴满了便签纸软木板。各种概念、疑问、类比高高的挂在穹苍上。这些学习组块我可以在工作台，随手拿起放下任何组块，专注的加工[1]。
