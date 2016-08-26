@@ -54,7 +54,21 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 购买途径：[美国亚马逊 My Brest Friend Original Nursing Pillow, Fireworks](http://www.amazon.com/gp/product/B003TSDMH8) 
 
 
-### 3. Halo 睡袋
+### 3. 德国 Braun 红外线耳温枪
+
+![thermometer](/media/files/2016-08-26-thermometer.jpg)
+
+在医学教科书上，测量体温以腋下、直肠、口腔温度为准。实际操作很困难，要求一个小孩安静五分钟比登天还难，更不可能爆肛测直肠温度，所以红外测体温计是首选。
+
+但普通的红外体温计温只能测体表温度，精度很低(± 1℃)，很容易错过小孩的低烧，所以入耳的温度计是首选。
+
+后来我购买了 Braun 儿童耳温枪，测量精度高，仅需1秒，好动的小孩也可轻松搞定，。
+
+
+购买途径: [考拉海购 BRAUN 儿童耳温枪](http://www.kaola.com/product/4758.html)
+
+
+### 4. Halo 睡袋
 
 我儿子刚出生时，睡觉不踏实，总是一惊一乍的，小手一抖就把自己吓醒了，头几天我不太放心，半夜里经常起来看看我儿子是否还活着。现在都三个月了，偶尔还是半夜抽一下，不过我已经想到让他睡的更好的方法 —— 裹襁褓
 
@@ -67,6 +81,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 ![How to wrap your newborn baby with halo]({{ site.url }}/media/files/2015-12-13-halo.jpg)
 
 购买途径：[美国亚马逊 HALO SleepSack 睡袋](http://www.amazon.com/s/field-keywords=HALO+SleepSack) 
+
 
 
 ## Part 2 国内可以买得到的东西
