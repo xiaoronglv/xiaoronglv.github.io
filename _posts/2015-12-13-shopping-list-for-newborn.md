@@ -38,8 +38,9 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 东西虽好，中国却买不到，你可以通过以下两个途径海购：
 
+* [网易的考拉海购](http://www.kaola.com/product/25294.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx)
 * [美国亚马逊 Ddrops Baby 400 IU](http://www.amazon.com/dp/B003CT36NE)
-* [网易的考拉海购](http://www.kaola.com/product/4729.html)
+
 
 > 重要提醒：配方奶粉中含有维生素D，喂食配方奶粉后就不要继续补充维生素D了，否则会过量。
 
@@ -65,7 +66,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 后来我购买了 Braun 儿童耳温枪，测量精度高，仅需1秒，好动的小孩也可轻松搞定，。
 
 
-购买途径: [考拉海购 BRAUN 儿童耳温枪](http://www.kaola.com/product/4758.html)
+购买途径: [考拉海购 BRAUN 儿童耳温枪](http://www.kaola.com/product/4758.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx)
 
 
 ### 4. Halo 睡袋
@@ -80,7 +81,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 ![How to wrap your newborn baby with halo]({{ site.url }}/media/files/2015-12-13-halo.jpg)
 
-购买途径：[美国亚马逊 HALO SleepSack 睡袋](http://www.amazon.com/s/field-keywords=HALO+SleepSack) 
+购买途径：[考拉海购 HALO SleepSack 睡袋](http://www.kaola.com/product/1226592.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx) 
 
 
 
