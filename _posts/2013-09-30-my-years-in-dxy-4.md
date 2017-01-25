@@ -23,6 +23,30 @@ tags:
 2. 撰写论文的用户是专家级任务，是医学的意见领袖，通过 PubMed.cn 可以牢牢的掌控住这部分用户；
 3. 拜伟大的功夫墙所赐，PubMed 官方网站十分不稳定，大陆工作者在检索文献时多有不便，急切需要稳定的服务。
 
+## 如何克隆一份中文版？
+
+**获取期刊的影响因子**
+
+影响因子是汤森路透的 [JCR (JOURNAL CITATION REPORTS)](https://jcr.incites.thomsonreuters.com) 数据库的一项数据，是人家的独家产品。在自己的网站上私自公布影响因子是违反版权的行为，会被对方诉讼。
+
+**拉取 PubMed 的数据**
+
+PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence](https://www.nlm.nih.gov/databases/download/pubmed_medline.html) 后，可以通过 FTP 下载过去几十年 95 % 的医学生物学文献摘要数据。
+
+为什么只能下载 95% 的数据？因为通过 FTP 下载的是 PubMed 的子集 Medline，已经整理归档的文献。最新的文献可能处于  in-process 状态，只能通过 API 来获取。日后 Medline 入库后，再覆盖掉老的记录。
+
+**如何获得文献全文**
+
+对于 Open Access 的文献，NIH 单独为他们建立了 [PMC 数据库](https://www.ncbi.nlm.nih.gov/pmc/)，任何人都可以免费下载文献全文。对于非 Open Access 的文献，是受版权保护的。开发者可以抓取网页右侧的全文链接，但不能获得全文。期刊编辑都是靠版权费养家糊口，私自提供文献全文也会被各大出版社诉讼的。
+
+
+**对 PubMed 进行数据挖掘，有几个问题一定要先搞懂**
+
+- 文献 XML 的结构
+- [XML 中一些重要属性代表什么意思](https://www.nlm.nih.gov/bsd/mms/medlineelements.html)
+- 认认真真读开发者文档 [Entrez](http://www.ncbi.nlm.nih.gov/books/NBK3837/)，不要使用愚蠢的方式调用 API，增加双方的机器开销。 API 访问过频，会被封 IP。
+
+
 ## 今生前世
 
 据公司的老人讲，大家曾对 PubMed.cn 寄予厚望，它曾一度是公司的明星产品。可倾注了无数个日日夜夜，它依然是个半成品：数据更新基本靠抓，搜索结果基本靠猜。
@@ -114,5 +138,11 @@ tags:
 	详情可参考这篇老文：[KPI是个好东西](/kpi.html)
 	
 
-[1]: http://www.ncbi.nlm.nih.gov/pubmed/20157491/  "Understanding PubMed user search behavior through log analysis"
+## Reference
+
+1. [http://www.ncbi.nlm.nih.gov/pubmed/20157491/](Understanding PubMed user search behavior through log analysis)
+
+2. [Open Access](https://en.wikipedia.org/wiki/Open_access)
+
+3. [PMC](https://www.ncbi.nlm.nih.gov/pmc/), PubMed Central® (PMC) is a free full-text archive of biomedical and life sciences journal literature at the U.S. National Institutes of Health's National Library of Medicine (NIH/NLM).
 	
