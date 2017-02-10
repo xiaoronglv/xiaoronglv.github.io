@@ -1,5 +1,5 @@
 ---
-title: "胰岛素注射部位有哪些？"
+title: "糖尿病系列: 胰岛素注射部位有哪些？"
 layout: post
 guid: JKhybIp7hTKJ8WUHTD01
 date: 2017-02-10 15:14:05

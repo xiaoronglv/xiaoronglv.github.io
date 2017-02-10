@@ -1,5 +1,5 @@
 ---
-title: 为什么胰岛素要皮下注射？
+title: "糖尿病系列: 为什么胰岛素要皮下注射？"
 layout: post
 guid: kM9DCeYTBiA0RHxQdMMl
 date: 2017-02-10 15:14:05

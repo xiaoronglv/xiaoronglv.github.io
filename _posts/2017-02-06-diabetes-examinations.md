@@ -1,5 +1,5 @@
 ---
-title: "糖尿病人需定期做哪些检查？"
+title: "糖尿病系列: 糖尿病人需定期做哪些检查？"
 layout: post
 guid: 8NUtgpgMHLH9F6SZyI
 date: 2017-02-10 15:14:05

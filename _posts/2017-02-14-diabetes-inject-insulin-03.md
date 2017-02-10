@@ -1,5 +1,5 @@
 ---
-title: "让胰岛休息一下"
+title: "糖尿病系列: 让胰岛休息一下"
 layout: post
 guid: qgqVHuQohcUdasfsafsa
 date: 2017-02-10 15:14:05

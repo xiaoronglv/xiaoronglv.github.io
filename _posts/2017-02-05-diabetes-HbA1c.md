@@ -1,5 +1,5 @@
 ---
-title: "糖尿病人的季度指标: HbA1c"
+title: "糖尿病系列: HbA1c"
 layout: post
 guid: A57hzrVD3yOlHwAEXmjR
 date: 2017-02-10 15:14:05

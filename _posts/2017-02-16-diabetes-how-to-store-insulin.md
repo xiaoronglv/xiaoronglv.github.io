@@ -1,5 +1,5 @@
 ---
-title: "胰岛素如何保存？"
+title: "糖尿病系列: 胰岛素如何保存？"
 layout: post
 guid: yoirWQqFv1XL5cxCubOB
 date: 2017-02-10 15:14:05
