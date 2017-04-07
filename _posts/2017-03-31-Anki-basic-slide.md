@@ -18,7 +18,7 @@ tags:
 
 ## 1. [Wikipedia: Forgetting Curve](https://en.wikipedia.org/wiki/Forgetting_curve)
 
-## 2. Why are quiz nessessary?
+## 2. Why is quiz nessessary?
 
 For most of people, they just scaning, which is passive study.
 
