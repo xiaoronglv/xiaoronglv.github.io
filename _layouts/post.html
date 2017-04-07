@@ -15,6 +15,9 @@
           {% include avatar.html %}
           <div class='date'>Published on {{ page.date | date: "%Y-%m-%d" }}</div>
           {{ content }}
+          {% if page.coffee == 'y' %}
+            {% include buy-me-coffee.html %}
+          {% endif %}
           {% include signoff.html %}
         </section>
       </div>
