@@ -3,6 +3,7 @@ title: "可习得理性: 统计思维"
 layout: post
 guid: qgqVHuQohcUqcC239s1
 date: 2017-02-10 15:14:05
+coffee: y
 tags:
   - 
 ---

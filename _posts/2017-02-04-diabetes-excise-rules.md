@@ -3,6 +3,7 @@ title: "糖尿病系列: 2型糖尿病人运动指导原则"
 layout: post
 guid: tlSq8DYQ5VGexDFXFuG8
 date: 2017-02-10 15:14:05
+coffee: y
 tags:
   - 
 ---
