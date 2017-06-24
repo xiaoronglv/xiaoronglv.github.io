@@ -279,10 +279,13 @@ img {
 ////////////////////////////// table css ////////////////////////////
 table {
     /* Remove spacing between table cells (from Normalize.css) */
+    margin-right: 60px;
+    margin-left: 60px;
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing: 60;
     empty-cells: show;
     border: 1px solid #cbcbcb;
+    font-size: 14px; line-height: 1.6em;
 }
 
 table caption {
