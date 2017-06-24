@@ -13,6 +13,8 @@ tags:
 
 ## PPT
 
+[下载](https://speakerdeck.com/xiaoronglv/understanding-mysql-explain)
+
 <script async class="speakerdeck-embed" data-id="c12fac76b5304395a6c7c87f8e9b618a" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
 
 
