@@ -4,7 +4,7 @@ url:              "http://mednoter.com"
 signoff:          "吕小荣"
 disqus_shortname: "mednoter"
 facebook_appid:   "407484809306168"
-google_analytics: ""
+google_analytics: "UA-103214300-1"
 timezone:         Asia/Beijing
 highlighter:      pygments
 future:           true
