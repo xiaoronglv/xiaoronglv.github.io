@@ -69,7 +69,6 @@ tags:
 
 ![Code and Decode]({{ site.url }}/media/files/2014/Aug/9-code-and-decode.png)
 
-该图为李笑来《把时间当做朋友》中的插图
 
 ###  2.3 写
 

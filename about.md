@@ -53,8 +53,6 @@ Richard Dawkins: [The Selfish Gene](https://www.goodreads.com/book/show/61535.Th
 
 Keith E. Stanovich: [What Intelligence Tests Miss](https://www.goodreads.com/book/show/6251150-what-intelligence-tests-miss)
 
-李笑来: [把时间当做朋友](https://book.douban.com/subject/3609132/)
-
 ## Apps that make me productive
 
 - Zotero
