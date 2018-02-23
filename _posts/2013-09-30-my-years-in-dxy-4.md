@@ -9,13 +9,18 @@ tags:
 
 在丁香园我有一半的时间是在做一个阳春白雪的产品 —— PubMed.cn。
 
+## 前世今生
+
+据公司的老员工讲，PubMed.cn 曾是公司的明星产品，大家寄予厚望。可倾注了无数个日日夜夜，它依然是个半成品：数据更新基本靠抓，搜索结果不理想。公司不是政府机构，当以商业利益为重，2年的持续的投入没有任何产出，就不再投入任何资源，于是 PubMed.cn 处于半死不活的状态。
+
+我跌跌撞撞的成为了 PubMed.cn 的负责人后反而没有太多顾虑。
+
 ## PubMed 是什么？
 
 美国国立生物技术信息中心旗下的 PubMed 是科研工作者获取第一手研究资料的重要生物医学数据库，。
 它也是全世界最大最开放的生物医学数据库，每个月有2300万的UV，5800万查询请求[1]。
 
-
-## 为什么要克隆一份中文版？
+## 为什么要克隆一份中文版 PubMed？
 
 在我来之前，这个产品已经开发了2年，当时为什么做已无从考究，我猜大概有这么几点：
 
@@ -34,9 +39,9 @@ tags:
 
 **2. 获取期刊的影响因子**
 
-影响因子是汤森路透的 [JCR (JOURNAL CITATION REPORTS)](https://jcr.incites.thomsonreuters.com) 数据库的一项数据，JCR 是商业产品。在自己的网站上私自公布影响因子是违反版权的行为，会被对方诉讼。
+影响因子是汤森路透的 [JCR (JOURNAL CITATION REPORTS)](https://jcr.incites.thomsonreuters.com) 数据库的一项数据，JCR 是商业产品。
 
-此外爬别人数据是不道德的，通过合作共赢才是长久之计。
+在自己的网站上私自公布影响因子是违反版权的行为，会被对方诉讼。此外爬别人数据是不道德的，通过合作共赢才是长久之计。
 
 **3. 获取 PubMed 的文献摘要数据**
 
@@ -44,28 +49,26 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 
 为什么只能下载 95% 的数据？因为通过 FTP 下载的是 PubMed 的子集 Medline，即已经整理归档的文献。最新的文献可能处于  in-process 状态，只能通过 API 来获取。日后 Medline 入库后，再覆盖掉老的记录。
 
+![](/media/files/advanced-medline-for-health-researchers-4-638.jpg)
+
 **4. 获取文献全文**
 
 对于 Open Access 的文献，NIH 单独为他们建立了 [PMC 数据库](https://www.ncbi.nlm.nih.gov/pmc/)，任何人都可以免费下载文献全文。对于非 Open Access 的文献，是受版权保护的。开发者可以抓取网页右侧的全文链接，但不能获得全文。期刊编辑都是靠版权费养家糊口，私自提供文献全文也会被各大出版社诉讼的。
 
 ## 做二次开发的几个难点
 
-对 PubMed 进行二次开发，首先要硬着头皮学习文献检索的基础知识，搞明白这几个基本问题。
+对 PubMed 进行二次开发，首先要学习文献检索的基础知识，搞明白这几个基本问题。
 
-- PubMed, Medline, PMC 之间的关系。i
+![Pubmed，Medline，PMC关系图](/media/files/2018-02-23-pubmed-vs-medline-vs-pmc.png)
+
+- PubMed, Medline, PMC 之间的关系。
 - JCR 是什么?
 - 什么是 SCI?
-- 什么是影响因子，影响因子如何计算
-- PubMed 文献 XML 的结构，以及 [XML 数据中每种属性代表什么意思？](https://www.nlm.nih.gov/bsd/mms/medlineelements.html)
+- 什么是影响因子？影响因子如何计算？影响因子的意义？
+- 了结 PubMed 文献 XML 的结构，以及 [XML 各种属性](https://www.nlm.nih.gov/bsd/mms/medlineelements.html) 代表什么意思？
 - 认认真真读 PubMed 开发者文档 [Entrez](http://www.ncbi.nlm.nih.gov/books/NBK3837/)，不要使用愚蠢的方式调用 API，增加双方的机器开销。 API 访问过频，会被封 IP。
 
 具备基础的行业经验 (domain experience) 是开发的必要条件。
-
-## 前世今生
-
-据公司的老人讲，大家曾对 PubMed.cn 寄予厚望，它曾是公司的明星产品。可倾注了无数个日日夜夜，它依然是个半成品：数据更新基本靠抓，搜索结果基本靠猜。公司以「结果」为导向，2年的持续的投入没有任何产出，PubMed.cn 处于一个不上不下的尴尬地步。
-
-由于产品已经半死不活，我跌跌撞撞的成为了 PubMed.cn 的负责人后反而没有太多顾虑，只求把它做好。没有资源就抢，甚至厚颜无耻的霸占程序员的私人时间。
 
 ## 最感谢的人
 
@@ -95,7 +98,7 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 	
 4. 其他商业机密，不便引述
 
-## 几个激动人心的想法，但是还未有机会付诸实践
+## 几个激动人心，但是还未付诸实践的想法
 
 - 使用 Graph Database 对作者的人脉进行分析。
 - 使用 ElasticSearch 的强大聚合功能，对搜索结果进行多个维度的聚合/过滤。
