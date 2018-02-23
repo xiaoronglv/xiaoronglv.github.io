@@ -2,6 +2,7 @@
 title: Dxy 4 - PubMed
 layout: post
 guid: M0PB4HNecWu31
+coffee: y
 tags:
   - 
 ---
@@ -51,7 +52,7 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 
 对 PubMed 进行二次开发，首先要硬着头皮学习文献检索的基础知识，搞明白这几个基本问题。
 
-- Pubmed, Medline, PMC 之间的关系。
+- Pubmed, Medline, PMC 之间的关系。i
 - JCR 是什么?
 - 什么是 SCI?
 - 什么是影响因子，影响因子如何计算
