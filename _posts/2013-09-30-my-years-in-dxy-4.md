@@ -7,13 +7,13 @@ tags:
   - 
 ---
 
-在丁香园我有一半的时间是在做一个阳春白雪的产品 [PubMed.cn](http://pubmed.cn/)。
+在丁香园我把一半心血花费在一个阳春白雪的学术产品 [PubMed.cn](http://pubmed.cn/) 上。
 
 ## 前世今生
 
-据公司的老员工讲，PubMed.cn 曾是公司的明星产品，大家寄予厚望。可倾注了无数个日日夜夜，它依然算不上一个可用的产品：数据比官方网站陈旧，更新靠抓取；用户搜索结果不满意，可用性差。
+据公司的老员工讲，PubMed.cn 曾是公司的明星产品，大家寄予厚望。可倾注了无数个日日夜夜，它依然算不上合格产品：数据比官方网站陈旧，更新靠抓取；用户搜索结果不满意，可用性差。
 
-公司不是科研机构，以商业利益为先，两年的持续投入达不到预期，就逐渐缩减投入，于是 PubMed.cn 处于长期搁置状态。我跌跌撞撞的成为了 PubMed.cn 的产品经理后，没有太多顾虑。做好了，加薪升职；做不好，情有可原。
+公司不是科研机构，以商业利益为先，两年的持续投入达不到预期，就逐渐缩减投入，于是 PubMed.cn 陷入长期搁置。我跌跌撞撞的成为了 PubMed.cn 的产品经理后，没有太多顾虑。做好了，加薪升职；做不好，情有可原。
 
 ## PubMed 是什么？
 
@@ -139,11 +139,15 @@ PubMed 的搜索业务没有做好，但在印华稳的努力下，衍生的业�
 	
 	详情可参考这篇老文：[KPI是个好东西](/kpi.html)
 	
-5. 应该努力思考远大的产品愿景和正当的商业模式，不要在一些奇技淫巧上花费太多精力。不道德的商业模式做不大，也走不远。
+5. 应该努力思考远大的产品愿景和正当的商业模式，不要在一些奇技淫巧上花费太多精力。不道德(甚至违法)的商业模式做不大，也走不远。
 
-	影响因子功能是刚需，用户也很喜欢，但是盗用了别人的商业产品。爬数据/非法使用别人的数据短期内可以让产品"成功"，小赚一笔钱/[UV/PV](https://www.zhihu.com/question/20448467)。长久来看，是浪费人生的时间。比如迅雷早期对盗版下载，多看早期打造的盗版电子书共享网站。
+	影响因子功能是刚需，用户也很喜欢，但是盗用了别人的商业产品。爬数据/非法使用别人的劳动成果短期内可以让自己的产品"成功"，小赚一笔钱/[UV/PV](https://www.zhihu.com/question/20448467)。长久来看，是浪费时间，也牺牲了信誉。
 
-## Reference
+	这种例子不胜枚举，比如早期迅雷上盗版猖獗，VeryCD 电驴下载，盗版 Kindle 电子书分享网站，快播通过成人视频导流。
+
+	人生有限，不如专注在有价值的事情上，做正确的事。在影响因子这件事上，我完全可以用论文作者的 H 指数，以及论文引用次数来甄选论文，不必非要用汤森路透的影响因子。
+
+## Notes
 
 1. [http://www.ncbi.nlm.nih.gov/PubMed/20157491/](Understanding PubMed user search behavior through log analysis)
 
@@ -151,3 +155,4 @@ PubMed 的搜索业务没有做好，但在印华稳的努力下，衍生的业�
 
 3. [PMC](https://www.ncbi.nlm.nih.gov/pmc/), PubMed Central® (PMC) is a free full-text archive of biomedical and life sciences journal literature at the U.S. National Institutes of Health's National Library of Medicine (NIH/NLM).
 	
+4.  [快播涉黄案](https://zh.wikipedia.org/wiki/%E5%BF%AB%E6%92%AD%E6%B6%89%E9%BB%84%E6%A1%88)
