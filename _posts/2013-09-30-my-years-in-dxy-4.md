@@ -1,5 +1,5 @@
 ---
-title: Dxy 4 - PubMed
+title: Dxy 4 - 如何搭建中文版 PubMed 数据库？
 layout: post
 guid: M0PB4HNecWu31
 coffee: y
