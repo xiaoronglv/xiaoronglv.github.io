@@ -23,7 +23,7 @@ tags:
 2. 撰写论文的用户是专家级任务，是医学的意见领袖，通过 PubMed.cn 可以牢牢的掌控住这部分用户；
 3. 拜伟大的功夫墙所赐，PubMed 官方网站十分不稳定，大陆工作者在检索文献时多有不便，急切需要稳定的服务。
 
-## 如何克隆一份 Pubmed 中文镜像网站？
+## 如何克隆一份 PubMed 中文镜像网站？
 
 **1. 获取期刊数据**
 
@@ -40,7 +40,7 @@ tags:
 
 **3. 获取 PubMed 的文献摘要数据**
 
-PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence](https://www.nlm.nih.gov/databases/download/pubmed_medline.html) 后，可以通过 FTP 下载过去几十年 95 % 的医学生物学文献摘要数据。
+PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence](https://www.nlm.nih.gov/databases/download/PubMed_medline.html) 后，可以通过 FTP 下载过去几十年 95 % 的医学生物学文献摘要数据。
 
 为什么只能下载 95% 的数据？因为通过 FTP 下载的是 PubMed 的子集 Medline，即已经整理归档的文献。最新的文献可能处于  in-process 状态，只能通过 API 来获取。日后 Medline 入库后，再覆盖掉老的记录。
 
@@ -52,12 +52,12 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 
 对 PubMed 进行二次开发，首先要硬着头皮学习文献检索的基础知识，搞明白这几个基本问题。
 
-- Pubmed, Medline, PMC 之间的关系。i
+- PubMed, Medline, PMC 之间的关系。i
 - JCR 是什么?
 - 什么是 SCI?
 - 什么是影响因子，影响因子如何计算
-- Pubmed 文献 XML 的结构，以及 [XML 数据中每种属性代表什么意思？](https://www.nlm.nih.gov/bsd/mms/medlineelements.html)
-- 认认真真读 Pubmed 开发者文档 [Entrez](http://www.ncbi.nlm.nih.gov/books/NBK3837/)，不要使用愚蠢的方式调用 API，增加双方的机器开销。 API 访问过频，会被封 IP。
+- PubMed 文献 XML 的结构，以及 [XML 数据中每种属性代表什么意思？](https://www.nlm.nih.gov/bsd/mms/medlineelements.html)
+- 认认真真读 PubMed 开发者文档 [Entrez](http://www.ncbi.nlm.nih.gov/books/NBK3837/)，不要使用愚蠢的方式调用 API，增加双方的机器开销。 API 访问过频，会被封 IP。
 
 具备基础的行业经验 (domain experience) 是开发的必要条件。
 
@@ -77,17 +77,17 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 
 在我和小印的努力下，PubMed的搜索业务虽然没有做好，但是很多衍生的产品却有了很大的起色。
 
-1. [国家自然科学基金（NSFC）](http://nsfc.pubmed.cn)
+1. [国家自然科学基金（NSFC）](http://nsfc.PubMed.cn)
 
 	我们将国家自然科学基金从"丁香园文献求助平台"剥离出来，打造为独立产品。提供查询服务，以及数据可视化服务。目前它已经成为了查询 NSFC 最方便的平台。
 	
-2. [文献求助（Paper）](http://paper.pubmed.cn)
+2. [文献求助（Paper）](http://paper.PubMed.cn)
 
 	文献求助平台终究是个工具。目标就是让用户更快，更方便的获得文献。所以我们做了各种浏览器插件，用户一个点击就可获得全文。
 	
 	通过不断的迭代和优化，求助量节节攀升，当我离开丁香园时已经达到了1万篇/周。
 
-3. [SCI期刊数据库](http://journal.pubmed.cn)
+3. [SCI期刊数据库](http://journal.PubMed.cn)
 
 	很多新手第一次写SCI论文时，有种种顾虑。影响因子会不会跌？ 审稿快不快？对中国人有没有偏见？
 	
@@ -100,7 +100,7 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 - 使用 Graph Database 对作者的人脉进行分析。
 - 使用 ElasticSearch 的强大聚合功能，对搜索结果进行多个维度的聚合/过滤。
 - 基于论文的社交网络。
-- 由于 Pubmed 数据量很大，可以玩一玩数据挖掘和大数据分析。
+- 由于 PubMed 数据量很大，可以玩一玩数据挖掘和大数据分析。
 
 ## 收获了哪些教训
 
@@ -147,7 +147,7 @@ PubMed 隶属于 NIH (National Institutes of Health)，开发者申请 [licence]
 
 ## Reference
 
-1. [http://www.ncbi.nlm.nih.gov/pubmed/20157491/](Understanding PubMed user search behavior through log analysis)
+1. [http://www.ncbi.nlm.nih.gov/PubMed/20157491/](Understanding PubMed user search behavior through log analysis)
 
 2. [Open Access](https://en.wikipedia.org/wiki/Open_access)
 
