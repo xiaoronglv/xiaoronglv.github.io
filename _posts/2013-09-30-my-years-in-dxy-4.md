@@ -50,7 +50,7 @@ PubMed 隶属于 NIH (National Institutes of Health)，所有的开发者都可�
 
 不过通过FTP下载的数据并不全面，是已经归档的 Medline 数据库，PubMed 的子集。最新的文献可能处于  in-process 状态，只能通过 API 来获取。日后会更新到 Medline。
 
-![](/media/files/advanced-medline-for-health-researchers-4-638.jpg)
+![](/media/files/2018/2018-04-17-advanced-medline-for-health-researchers-4-638.jpg)
 
 **4. 获取文献全文**
 
@@ -62,7 +62,7 @@ PubMed 是摘要数据库，为什么会有全文呢？
 
 对 PubMed 进行二次开发，首先要学习文献检索的基础知识，搞明白几个基本问题:
 
-![Pubmed，Medline，PMC关系图](/media/files/2018-02-23-pubmed-vs-medline-vs-pmc.png)
+![Pubmed，Medline，PMC关系图](/media/files/2018/2018-02-23-pubmed-vs-medline-vs-pmc.png)
 
 - PubMed, Medline, PMC 之间的关系。
 - JCR 是什么?
