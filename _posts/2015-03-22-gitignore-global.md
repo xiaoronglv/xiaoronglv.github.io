@@ -46,12 +46,12 @@ Mac 中每个目录都会有个文件叫`.DS_Store`, 用于存储当前文件夹
 
 ```
 [user]
-	name = xiaoronglv
-	email = xxxxx@gmail.com
+	name = ryan.lv
+	email = 1982YMOlible@gmail.com
 [push]
 	default = matching
 [core]
-	excludesfile = /Users/xiaoronglv/.gitignore_global
+	excludesfile = ~/.gitignore_global
 ```
 
 搞定了！在所有的文件夹下 .DS_Store .swp .zip 等文件类型会被 Git 自动忽略。
