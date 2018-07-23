@@ -8,7 +8,7 @@ tags:
 
 今天第一次给 Rails 的私有方法写测试，查阅了些资料，目前比较流行的写法有两种。
 
-<pre><code>
+```
 class MyClass
   private
 
@@ -20,13 +20,13 @@ class MyClass
     true
    end
 end
-</code></pre>
+```
 
 ## 方法1：修改私有方法为 public
 
 重新打开这个类，修改私有方法为 public。
 
-<pre><code>
+```
 class MyClass
   public :foo
 end
@@ -35,15 +35,19 @@ class GoodsOrderTest < ActiveSupport::TestCase
  ...
  ...
 end
-</code></pre>
+```
 
 ## 方法2：使用 send
-<pre><code>
+
+```
 test "should foo" do
   instance = MyClass.new
   instance.send(:foo)
 end
-</code></pre>
+```
+
+推荐第二种方法。
+
 
 ## 参考资料
 
