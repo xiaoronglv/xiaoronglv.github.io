@@ -40,7 +40,7 @@ SendCloud 是搜狐公司的产品，产品风格几乎和 Mailgun 一模一样�
 
 ## 邮件分类
 
-SendCloud 非常强硬的要求用户设置两个域名，一个发送触发类邮件（transactional email），一个发送营销类邮件（bulk email）。
+SendCloud 强制要求用户设置两个域名，一个发送触发类邮件（transactional email），一个发送营销类邮件（bulk email）。
 
 * mailer.boohee.com（触发类邮件）
 * newsletter.boohee.com（营销类邮件）
@@ -90,7 +90,7 @@ SendCloud 提供了详尽的指标
 
 ## 溯源
 
-当发送出现问题时，查看「投递回应」 可以非常方便的排查投递方面的原因：
+当发送出现问题时，查看「投递回应」 可以排查发送失败的原因：
 
 1. 被 ESP 卡死了？（QQ邮箱经常限制新域名，每天500封）
 2. 邮箱地址无效？

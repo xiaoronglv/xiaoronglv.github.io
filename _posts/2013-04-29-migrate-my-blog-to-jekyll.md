@@ -41,7 +41,7 @@ Markdown语法就是为写作而生。
 	
 4. 方便转化为其他格式
 
-	使用Pandoc可以非常方便的将Markdown文章转化为PDF, html, 图片，word等等格式。
+	使用Pandoc可以方便的将Markdown文章转化为PDF, html, 图片，word等等格式。
 
 	
 ## 我的写作套装

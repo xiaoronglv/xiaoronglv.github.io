@@ -6,7 +6,7 @@ tags:
   - Ruby
 ---
 
-Ruby的开放类（open class）是一个非常有用的动态特性，允许向已加载的类增加方法。
+Ruby的开放类（open class），允许向已加载的类增加方法。
 
 	class String
  	  def foo
