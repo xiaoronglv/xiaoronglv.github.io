@@ -1,5 +1,5 @@
 ---
-title: Ruby Test: How to test module?
+title: "Ruby Test: How to test module?"
 layout: post
 guid: 94407771056c4323bafcc7023cac4a5f
 date: 2015-03-30 08:15:57
