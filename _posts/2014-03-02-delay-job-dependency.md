@@ -7,7 +7,7 @@ tags:
 ---
 <span class="image-800">![Dropbox]({{ site.url }}/media/files/2014/mar/02-dog-fast-car-goggles.jpg)</span>
 
-这周遇到了一个非常复杂的bug，花了我两个下午的时间。
+这周遇到了一个复杂的bug，花了我两个下午的时间。
 
 薄荷商店是我们 App 的一个模块，用户可以在薄荷商店购买健康食品。我们的各个产品经理会为用户精挑细选一些进口商品。
 

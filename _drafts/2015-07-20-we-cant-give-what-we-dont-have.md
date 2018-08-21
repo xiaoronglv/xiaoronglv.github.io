@@ -1,3 +1,12 @@
+---
+title: "You can't give what you don't have"
+layout: post
+guid: RDlaGuV1xqh6lcyzrlda
+date: 2015-07-20 09:20:00
+tags:
+  -
+---
+
 昨晚我们小组查考路加福音17章
 
 > 1. 耶穌又對門徒說：絆倒人的事是免不了的；但那絆倒人的有禍了。
