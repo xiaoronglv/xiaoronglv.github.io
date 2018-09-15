@@ -1,6 +1,6 @@
 <br />
 <div>
   {{ site.signoff }}
-  <span class="muted">{{ page.date | date: "at %H:%M" }}</span><br/>
+  <div class="muted date">{{ page.date | date_to_long_string }}</div>
 <!--   <a href="{{site.repository_url}}/blob/master/{{page.path}}">Edit this page</a> -->
 </div>
