@@ -65,11 +65,13 @@ Feed 中每个事件是对某个资源的状态变化(transition of state)，包
 - operation: 什么操作？ e.g. update/insert/delete 
 - old_value: 老的状态是什么
 - new_value: 新的状态是什么
+- user_id: 是谁执行了这个操作
+- type: 它属于哪个子类? e.g. CreateVideoFeedEvent, DeleteVideoFeedEvent, UpdateWikiFeedEvent
 
 ## 范式中的各个组件如何协作？
 
 1. 资源的当前状态保存在各自的表中。e.g. videos, images, links, wikis, comments.
-2. 当资源的状态变化时，把这一事件也保存下来，称之为 FeedEvent，它构成了 Feed。
+2. 当资源的状态变化时，把这一事件也保存下来，称之为 FeedEvent。
 		- CreateVideoFeedEvent 创建视频
 		- DeleteVideoFeedEvent 删除视频
 		- CreateWikiFeedEvent  创建文档
