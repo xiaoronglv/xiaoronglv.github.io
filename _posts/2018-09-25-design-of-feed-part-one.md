@@ -11,11 +11,13 @@ tags:
 ![](/media/files/2018/2018-09-25_15-13-00-screenshot.gif)
 
 
-Facebook 是社交领域的标杆产品，也是一个不存在的网站。登录 Facebook，用户可以看到「好友分享了哪些内容」，「对哪些事情点了赞」，「分享了哪些书」等等。用户可以不断的往下滑动，只要用户想看，就没有底，没有尽头，这种产品交互的方式叫 「Feed 流设计」。
+Facebook 是社交领域的标杆产品，也是一个不存在的网站。在它的首页，你可以看到好友分享的视频/图片/新鲜事，对哪些事情点了赞，分享了哪些书，参加了哪些聚会等等。只要用户想继续看，可以不断的往下滑动页面，没有尽头，这种产品交互的方式叫 「Feed 流设计」。
 
-Feed 的意思是「喂养」，把信息比作饲料，把用户比作动物。如果它想吃，就可以源源不断的刷下去，把时间耗费在里面。微信朋友圈，微博，Facebook，Linked，花瓣都是「Feed流」设计。
+Feed 的意思是「喂养」，把信息比作饲料，把用户比作动物。如果它想吃，就可以源源不断的刷下去，把时间耗费在里面。微信朋友圈，微博，Facebook，Linkedin，花瓣都是「Feed流」设计。
 
-Feed流中常见的内容有哪些呢？
+Facebook 的Feed流中有哪些常见内容呢？
+
+以吕小荣的个人页面举例：
 
 1. Ryan 分享一本书《21世界的管理挑战》
 2. Ryan 上传了一个视频「带儿子去吃烤鸭」
@@ -27,10 +29,14 @@ Feed流中常见的内容有哪些呢？
 
 SAP 企业级应用 Jam 的首页也是采用 Feed 流设计，它包含了一些针对企业市场更复杂的事件。
 
-- 公司发布了公司公告。
-- 小组管理员发表了群公告。
-- 同事 Tony 创建/更新/删除/评论了文档。
-- 同事 Sam 创建了一个公开活动的日历
+- 后勤部门管理员发布了公司公告 "十一假期期间公司供电/供水/餐饮安排"。
+- 小组管理员发表了群公告 "请大家不要使用公司VPN浏览敏感信息"
+- Tony 创建/更新/删除/评论了开发文档。
+- Shaun 创建了公开活动日历 "Engineering Q1 Global All-Hands meeting"
+- Joel 发起了投票 "十一去哪玩？"
+- Shuan 创建了 Pros and Cons 表格 "Github workflow 的利弊"
+
+![](/media/files/2018/2018-09-26_08-05-28-jam.jpg)
 
 
 ## 针对 Feed 流设计，在产品开发时该如何建模？
@@ -42,9 +48,9 @@ SAP 企业级应用 Jam 的首页也是采用 Feed 流设计，它包含了一�
 
 Martin Fowler 在 [Audit Log](https://martinfowler.com/eaaDev/AuditLog.html) 一文举例，当用户更新手机号时，他不仅关心「用户的新手机号是什么」(current state)，还关心「用户的手机号从A更新为B」，他对后者做了抽象，称之为审计日志(Audit Log)。
 
-他的[Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) 模式也是基于事件的另一种设计范式。
+他的 [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) 模式也是基于事件的另一种设计范式。
 
-## 一种基于事件的设计模式
+## 一种基于事件的 Feed 设计模式
 
 Feed 不就是对事件的描述吗？我们可以换个角度，从事件的角度来看待 Feed 流。
 
@@ -63,23 +69,28 @@ Feed 中每个事件是对某个资源的状态变化(transition of state)，包
 - table_id: 哪条记录。
 - column: 哪个属性
 - operation: 什么操作？ e.g. update/insert/delete 
-- old_value: 老的状态是什么
-- new_value: 新的状态是什么
+- old_state: 老的状态是什么
+- new_state: 新的状态是什么
 - user_id: 是谁执行了这个操作
-- type: 它属于哪个子类? e.g. CreateVideoFeedEvent, DeleteVideoFeedEvent, UpdateWikiFeedEvent
+- type: 它属于哪个子类?  
+    e.g. CreateVideoFeedEvent, DeleteVideoFeedEvent, UpdateWikiFeedEvent
 
 ## 范式中的各个组件如何协作？
 
 1. 资源的当前状态保存在各自的表中。e.g. videos, images, links, wikis, comments.
-2. 当资源的状态变化时，把这一事件也保存下来，称之为 FeedEvent。
-		- CreateVideoFeedEvent 创建视频
-		- DeleteVideoFeedEvent 删除视频
-		- CreateWikiFeedEvent  创建文档
-		- UpdateWikiFeedEvent  更新文档
-		- DeleteWikiFeedEvent  删除文档
-		- CreateCompanyAnnouncementFeedEvent 创建公司公告
-3. 每个 FeedEvent 该如何渲染，放到 Concrete class 中去实现。
-4. 每个 FeedEvent 会通过 `table_name`, `table_id` 引用到相关的资源。
+
+2. 当资源的状态变化时，把这一事件也保存下来，称之为 Event。
+    - CreateVideoEvent 创建视频
+    - DeleteVideoEvent 删除视频
+    - CreateWikiEvent  创建文档
+    - UpdateWikiEvent  更新文档
+    - DeleteWikiEvent  删除文档
+    - CreateCompanyAnnouncementEvent 创建公司公告
+
+3. Event 该如何渲染，委托给 Concrete class 去实现。
+
+4. Event 通过 `table_name`, `table_id` 引用相关的资源，比如视频，图片，评论，投票等等。
+
 
 ![](/media/files/2018/2018-09-25-feed.png)
 
