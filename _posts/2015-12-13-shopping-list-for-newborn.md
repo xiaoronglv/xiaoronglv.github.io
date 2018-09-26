@@ -57,7 +57,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 ### 3. 德国 Braun 红外线耳温枪
 
-![thermometer](/media/files/2016-08-26-thermometer.jpg)
+![thermometer](/media/files/2016/2016-08-26-thermometer.jpg)
 
 在医学教科书上，测量体温以腋下、直肠、口腔温度为准。实际操作很困难，要求一个小孩安静五分钟比登天还难，更不可能爆肛测直肠温度，所以红外测体温计是首选。
 

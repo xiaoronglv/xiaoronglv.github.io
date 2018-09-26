@@ -13,12 +13,12 @@ tags:
 
 当我在学习 Elixir Programming 时，我希望进入 Elixir 的世界，一个贴满了便签纸软木板。各种概念、疑问、类比高高的挂在穹苍上。这些学习组块我可以在工作台，随手拿起放下任何组块，专注的加工[1]。
 
-![](/media/files/2016-08-10-elixir.jpeg)
+![](/media/files/2016/2016-08-10-elixir.jpeg)
 
 
 学累了 Elixir，当我切换到写作主题时，则又来到一个独立的软木板，贴满了和设计范式相关的组块。
 
-![](/media/files/2016-08-10-writing.jpeg)
+![](/media/files/2016/2016-08-10-writing.jpeg)
 
 所以相应的，工具已经逐渐过渡到 Zotero\[2\](或Scrivener[3]) 。我的知识大多和编程相关，Zotero 的默认编辑器不支持语法高亮，十分影响我的学习效率。
 
@@ -35,13 +35,13 @@ tags:
 
 从网页复制一段代码
 
-![](/media/files/2016-08-10-copy-to-zotero.jpeg)
+![](/media/files/2016/2016-08-10-copy-to-zotero.jpeg)
 
 拷贝到 Note，并查看 HTML 源码
 
-![](/media/files/2016-08-10-check.jpg)
+![](/media/files/2016/2016-08-10-check.jpg)
 
-![](/media/files/2016-08-10-html-code.jpeg)
+![](/media/files/2016/2016-08-10-html-code.jpeg)
 
 
 那么，是否可以通过自定义 Note 的 CSS 来实现代码高亮呢？
@@ -49,15 +49,15 @@ tags:
 在 Zotero 的论坛找到一点线索[5]，我决定试试。
 
 1. Preferences > Advanced > General > Open about:config
-    ![](/media/files/2016-08-10-step1.jpeg)
+    ![](/media/files/2016/2016-08-10-step1.jpeg)
 
 2. 点击 I'll be careful, I promise!
 
-    ![](/media/files/2016-08-10-step2.jpeg)
+    ![](/media/files/2016/2016-08-10-step2.jpeg)
 
 3. 搜索 `extensions.zotero.note.css`
 
-    ![](/media/files/2016-08-10-step3.jpeg)
+    ![](/media/files/2016/2016-08-10-step3.jpeg)
 
 4. 把以下自定义的 CSS 塞到 extensions.zotero.note.css 的 value 中。
 
@@ -208,7 +208,7 @@ code {
 
 It works.
 
-![](/media/files/2016-08-10-it-works.jpeg)
+![](/media/files/2016/2016-08-10-it-works.jpeg)
 
 
 # Reference

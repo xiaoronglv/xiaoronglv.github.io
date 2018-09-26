@@ -8,7 +8,7 @@ tags:
   -
 ---
 
-![](/media/files/2017-07-08-wooden.jpg)
+![](/media/files/2017/2017-07-08-wooden.jpg)
 
 在我的世界观里，大部分做事情半途而废的人太相信蛮力。只需要稍微掌握一点技巧，就能提高完成度，也没有那么难。
 
@@ -22,15 +22,15 @@ tags:
 
 小蓝提醒我，有些人憧憬的画面可能是掌声。
 
-![](/media/files/2017-07-08-applause.jpg)
+![](/media/files/2017/2017-07-08-applause.jpg)
 
 有些人憧憬的画面是被人仰视。
 
-![](/media/files/2017-07-08-rah_23690835114.jpg)
+![](/media/files/2017/2017-07-08-rah_23690835114.jpg)
 
 有些人憧憬的画面感是奖杯。
 
-![](/media/files/2017-07-08-DSCN0742.png)
+![](/media/files/2017/2017-07-08-DSCN0742.png)
 
 我和小蓝开始为人们的动机分类，是什么让人斗志昂扬的去执行目标？
 
@@ -127,7 +127,7 @@ You will become as small as your controlling desire; as great as you dominant as
 
 ## 埃里克·坎德尔[2]
 
-![](/media/files/2017-07-08-eric.jpeg)
+![](/media/files/2017/2017-07-08-eric.jpeg)
 
 ## 张益唐[3]
 

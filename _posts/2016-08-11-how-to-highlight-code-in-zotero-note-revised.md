@@ -9,7 +9,7 @@ tags:
 
 > This is a revised blog, see the [original blog](/how-to-highlight-code-in-zotero-note.html).
 
-![](/media/files/2016-08-11-demo.jpeg)
+![](/media/files/2016/2016-08-11-demo.jpeg)
 
 **1. install highlight**
 
@@ -70,17 +70,17 @@ export PATH=$PATH:/usr/local/bin
 pbpaste | highlight --fragment --enclose-pre --inline-css  --syntax ruby --font Monaco --out-format html --style solarized-dark | pbcopy
 ```
 
-![](/media/files/2016-08-11-terminal.jpeg)
+![](/media/files/2016/2016-08-11-terminal.jpeg)
 
 **4. insert html code into your Zotero note.**
 
 click `html` button
 
-![](/media/files/2016-08-11-html-button-in-editor.jpeg)
+![](/media/files/2016/2016-08-11-html-button-in-editor.jpeg)
 
 insert html code from your clipboard (ctrl+v), save it!
 
-![](/media/files/2016-08-11-insert-code.gif)
+![](/media/files/2016/2016-08-11-insert-code.gif)
 
 
 **5. it works.**

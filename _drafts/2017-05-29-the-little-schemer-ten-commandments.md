@@ -8,7 +8,7 @@ tags:
   - 
 ---
 
-![](/media/files/2017-05-29-murderer.jpg)
+![](/media/files/2017/2017-05-29-murderer.jpg)
 
 # The Ten Commandments
 
@@ -58,7 +58,7 @@ a variable
 | head | tail |
 | first | rest |
 
-![](/media/files/2017-05-29-listmonster.png)
+![](/media/files/2017/2017-05-29-listmonster.png)
 
 
 ### 1.8 what does S-expressions (symbolic expression) mean?
@@ -107,9 +107,9 @@ A list consists of space-seperated objects between parenthes.
 
 the structure of list
 
-![](/media/files/2017-05-29-structure-of-list.jpg)
+![](/media/files/2017/2017-05-29-structure-of-list.jpg)
 
-![](/media/files/2017-05-29-listmonster.png)
+![](/media/files/2017/2017-05-29-listmonster.png)
 
 
 

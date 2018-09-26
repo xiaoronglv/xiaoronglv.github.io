@@ -70,7 +70,7 @@ tags:
 
 这种命名习惯一点都不好。搞金融的产品经理真邪恶。
 
-![](/media/files/2017-06-28-confusing.jpeg)
+![](/media/files/2017/2017-06-28-confusing.jpeg)
 
 
 ## 4. 信用卡的提醒机制频繁的打断我的生活。
@@ -85,7 +85,7 @@ tags:
 
 测试题：你能猜出第二笔消费是干嘛吗？（反正我是猜不出来)
 
-![](/media/files/2017-06-28-billing.jpeg)
+![](/media/files/2017/2017-06-28-billing.jpeg)
 
 ## 5. 信用卡浪费我时间，打断我工作
 
