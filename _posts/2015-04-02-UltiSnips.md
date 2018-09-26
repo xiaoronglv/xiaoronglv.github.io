@@ -7,7 +7,7 @@ tags:
   - Vim
 ---
 
-![datetime](/media/files/2015-04-06-datetime.gif)
+![datetime](/media/files/2015/2015-04-06-datetime.gif)
 
 Sublime Text 中的代码块 (Snippets) 缩减了码字的过程，极大的提高编程效率，是非常方便的工具。当我把编辑器迁移到 Vim 后就开始寻觅一款适合自己的 Snippet 插件，以下是我折腾 Vim 代码块的经验总结。
 
@@ -74,19 +74,19 @@ Plugin 'honza/vim-snippets'
 
 1. 插入当前日期 (trigger: date)
 
-    ![date](/media/files/2015-04-06-date.gif)
+    ![date](/media/files/2015/2015-04-06-date.gif)
 
 2. 插入当前时间(trigger: datetime)
 
-    ![datetime](/media/files/2015-04-06-datetime.gif)
+    ![datetime](/media/files/2015/2015-04-06-datetime.gif)
 
 3. 插入一个大的注释框 (trigger: bbox)
 
-    ![bbox](/media/files/2015-04-06-bbox.gif)
+    ![bbox](/media/files/2015/2015-04-06-bbox.gif)
 
 4. 在 erb 中插入 if 语句
 
-    ![ife](/media/files/2015-04-06-ife.gif)
+    ![ife](/media/files/2015/2015-04-06-ife.gif)
 
 
 ##  Step 3 创建自定义代码块
@@ -130,7 +130,7 @@ endsnippet
 
 ```
 
-![atc](/media/files/2015-04-06-atc.gif)
+![atc](/media/files/2015/2015-04-06-atc.gif)
 
 
 ### 3.3 再举个 markdown 的例子
@@ -177,7 +177,7 @@ endsnippet
 
 这段代码中 guid 是用一段 Python 脚本生成的， date 是用 Vim 脚本生成的，`${0}` 代表 tab 最终停留的位置， `b` 代表 begin (snippet should be expanded only at the beginning of a line)。
 
-![head](/media/files/2015-04-06-head.gif)
+![head](/media/files/2015/2015-04-06-head.gif)
 
 It's cool!
 

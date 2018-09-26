@@ -7,7 +7,7 @@ tags:
   -
 ---
 
-![Time](/media/files/2015-05-01-time.jpg)
+![Time](/media/files/2015/2015-05-01-time.jpg)
 
 生活中一再重复出现的场景，培训班的第一节课大家信心满满，半年后坚持到底的学生不到 1/5。YC 的创业课程 [How to Start a Startup](http://startupclass.samaltman.com) 的浏览量，第一节课的播放量是 350,421，最后一节课的播放量是 21,458，只有 1/16 坚持了下来[1]。大部分人都是满腔热情且缺乏执行力的人，在他们身上付出的时间终究化为泡影。
 

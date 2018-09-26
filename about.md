@@ -88,6 +88,6 @@ I was inspired by this project [Best-App](https://github.com/hzlzh/Best-App)
 
 微信扫一扫，请我喝咖啡。
 
-![微信红包](/media/files/2015-12-13-buy-me-coffee-wechat.jpg)
+![微信红包](/media/files/2015/2015-12-13-buy-me-coffee-wechat.jpg)
 
 
