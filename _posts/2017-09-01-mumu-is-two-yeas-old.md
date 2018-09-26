@@ -11,56 +11,56 @@ tags:
 
 ### -1d: 妈妈说不用担心。
 
-![](/media/files/2017-09-04-mumu/IMG_1210.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1210.JPG)
 
 ### 2d: 结果生出了好大一只！ 
 
-![](/media/files/2017-09-04-mumu/IMG_1226.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1226.JPG)
 
 ### 2d: 小超人在接受蓝光治疗。
 
-![](/media/files/2017-09-04-mumu/IMG_1239.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1239.JPG)
 
 ### 25d: 开始学习面向对象编程。
 
-![](/media/files/2017-09-04-mumu/IMG_1363.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1363.JPG)
 
 ### 80d: 妈妈会永远的保护你。
 
-![](/media/files/2017-09-04-mumu/IMG_1749.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1749.JPG)
 
 ### 90d: 圣灵啊，快点光照我。
 
-![](/media/files/2017-09-04-mumu/IMG_1786.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1786.JPG)
 
-![](/media/files/2017-09-04-mumu/IMG_1785.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1785.JPG)
 
 
 ### 90d: 欺负沐沐不会翻身。
 
-![](/media/files/2017-09-04-mumu/IMG_2686.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_2686.jpg)
 
 
-![](/media/files/2017-09-04-mumu/IMG_2688.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_2688.jpg)
 
 ### 130d: 直立洗澡。
 
-![](/media/files/2017-09-04-mumu/IMG_1947.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_1947.JPG)
 
 ### 150d: 小县官
 
-![](/media/files/2017-09-04-mumu/IMG_2812.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_2812.jpg)
 
 
 ### 210d: 丘吉尔
 
-![](/media/files/2017-09-04-mumu/IMG_0115.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_0115.JPG)
 
 
 
 ### 240d: 船长与桅杆
 
-![](/media/files/2017-09-04-mumu/IMG_2378.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_2378.JPG)
 
 ### 2016.3.28
 
@@ -109,19 +109,19 @@ tags:
 
 ### 2017.1.7 
 
-![](/media/files/2017-09-04-mumu/IMG_0826.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_0826.jpg)
 
 ### 2017.4.27
 
 回济南看望爷爷奶奶，第一次坐飞机。
 
-![](/media/files/2017-09-04-mumu/IMG_4426.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_4426.jpg)
 
-![](/media/files/2017-09-04-mumu/IMG_4418.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_4418.jpg)
 
-![](/media/files/2017-09-04-mumu/IMG_4616.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_4616.jpg)
 
-![](/media/files/2017-09-04-mumu/IMG_4710.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_4710.jpg)
 
 
 
@@ -129,18 +129,18 @@ tags:
 
 和爷爷/奶奶一起玩
 
-![](/media/files/2017-09-04-mumu/IMG_4625.jpg)
+![](/media/files/2017/2017-09-04-mumu/IMG_4625.jpg)
 
 ### 2017.5.14
 
 沐沐过敏了。
-![](/media/files/2017-09-04-mumu/cd22a1329ab3c0c12dc52aacf14a1db9.jpeg)
+![](/media/files/2017/2017-09-04-mumu/cd22a1329ab3c0c12dc52aacf14a1db9.jpeg)
 
 ### 2017.5.19
 
 都摔过一次了，不长记性吗？
 
-![](/media/files/2017-09-04-mumu/a0a8f656c9b8b05e41a7f57882585d48.jpeg)
+![](/media/files/2017/2017-09-04-mumu/a0a8f656c9b8b05e41a7f57882585d48.jpeg)
 
 ### 2017.7.2 购买管教杖
 
@@ -150,11 +150,11 @@ tags:
 
 
 
-![](/media/files/2017-09-04-mumu/cea379bd942c4ccea36e45a48f653046.jpeg)
+![](/media/files/2017/2017-09-04-mumu/cea379bd942c4ccea36e45a48f653046.jpeg)
 
 ### 2017.7.16 从烟台回上海，2个月后的重逢。
 
-![](/media/files/2017-09-04-mumu/IMG_5065.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_5065.JPG)
 
 
 ### 2017.7.20
@@ -171,15 +171,15 @@ tags:
 
 ### 2017.8.6 沐沐的智商又进化了——工具的使用者。
 
-![](/media/files/2017-09-04-mumu/63df9be10119028729539a57e62de293.jpeg)
+![](/media/files/2017/2017-09-04-mumu/63df9be10119028729539a57e62de293.jpeg)
 
-![](/media/files/2017-09-04-mumu/b34c6ab96b38ef7f13756b273e0c9640.jpeg)
+![](/media/files/2017/2017-09-04-mumu/b34c6ab96b38ef7f13756b273e0c9640.jpeg)
 
 ### 2017.8.13
 
 在豆妈家聚餐。核桃/沐沐/豆豆玩的很开心。以后要常聚一聚。
 
-![](/media/files/2017-09-04-mumu/c637214c628d491f9c457e035e0b8e67.jpeg)
+![](/media/files/2017/2017-09-04-mumu/c637214c628d491f9c457e035e0b8e67.jpeg)
 
 ### 2017.8.17
 
@@ -190,19 +190,13 @@ tags:
 
 ### 2017.8.20 沐沐会摆ok的姿势了。
 
-![](/media/files/2017-09-04-mumu/IMG_5696.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_5696.JPG)
 
 ### 2017.8.23 偷偷往脸盆里撒尿
 
-![](/media/files/2017-09-04-mumu/IMG_5718.JPG)
+![](/media/files/2017/2017-09-04-mumu/IMG_5718.JPG)
 
 
 ### 2017.8.27 学会打伞
 
-![](/media/files/2017-09-04-mumu/IMG_5746.JPG)
-
-
-### 2017.9.1 笑弯了眉毛。
-
-![](/media/files/2017-09-04-mumu/3111.jpg)
-
+![](/media/files/2017/2017-09-04-mumu/IMG_5746.JPG)
