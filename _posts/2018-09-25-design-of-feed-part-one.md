@@ -74,7 +74,6 @@ Feed 中每个事件是对某个资源的状态变化(transition of state)，包
 
 - table_name: 哪张表。(换句话说，哪种类型的资源)
 - table_id: 哪条记录。
-- column: 哪个属性
 - operation: 什么操作？ e.g. update/insert/delete 
 - old_state: 老的状态是什么
 - new_state: 新的状态是什么
