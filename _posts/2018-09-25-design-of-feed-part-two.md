@@ -13,6 +13,7 @@ Feed 后台设计文章索引
 - [Feed 流设计(一)：如何对多态内容进行抽象？](http://mednoter.com/design-of-feed-part-one.html)
 - [Feed 流设计(二)：拉模式 Vs 推模式](http://mednoter.com/design-of-feed-part-two.html)
 - [Feed 流设计(三)：分发逻辑](http://mednoter.com/design-of-feed-part-three.html)
+- [Feed 流设计(四)：存储](http://mednoter.com/design-of-feed-part-four.html)
  
 在上一篇文章中，我们谈到「如何用事件抽象Feed中多态的内容」，这篇文章会进一步讨论事件的分发问题。
 
