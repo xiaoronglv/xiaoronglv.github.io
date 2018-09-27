@@ -1,5 +1,5 @@
 ---
-title: "Feed 流设计(三)：隐私控制"
+title: "Feed 流设计(三)：分发逻辑"
 layout: post
 guid: r9x0ityxXBonrkQ19DW
 date: 2018-09-26 08:34:16
@@ -7,6 +7,13 @@ coffee: y
 tags:
   - Programming
 ---
+
+Feed 后台设计文章索引
+
+- [Feed 流设计(一)：如何对多态内容进行抽象？](http://mednoter.com/design-of-feed-part-one.html)
+- [Feed 流设计(二)：拉模式 Vs 推模式](http://mednoter.com/design-of-feed-part-two.html)
+- [Feed 流设计(三)：分发逻辑](http://mednoter.com/design-of-feed-part-three.html)
+
 
 在上一篇文章中，我们谈到推模式的种种好处，尤其是大大提升了读的性能。在推送新的动态至各个队列时，有大量的逻辑判断。以 facebook 举例，用户发布动态时，可以选择6个隐私级别。
 
@@ -137,9 +144,4 @@ end
 
 ![](/media/files/2018/2018-09-26-route-service.png)
 
-
-
-
-Note
-
-1. [腾讯的隐私政策](http://privacy.qq.com/yszc-en.htm)
+下一篇文章，我们聊 feed 的存储：Redis，MySQL，Hybrid?

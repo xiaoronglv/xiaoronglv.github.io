@@ -8,8 +8,14 @@ tags:
   - Programming
 ---
 
-![](/media/files/2018/2018-09-25_15-13-00-screenshot.gif)
+Feed 后台设计文章索引
 
+- [Feed 流设计(一)：如何对多态内容进行抽象？](http://mednoter.com/design-of-feed-part-one.html)
+- [Feed 流设计(二)：拉模式 Vs 推模式](http://mednoter.com/design-of-feed-part-two.html)
+- [Feed 流设计(三)：分发逻辑](http://mednoter.com/design-of-feed-part-three.html)
+
+
+![](/media/files/2018/2018-09-25_15-13-00-screenshot.gif)
 
 Facebook 是社交领域的标杆产品，也是一个不存在的网站。在它的首页，你可以看到好友分享的视频/图片/新鲜事，对哪些事情点了赞，分享了哪些书，参加了哪些聚会等等。只要用户想继续看，可以不断的往下滑动页面，没有尽头，这种产品交互的方式叫 「Feed 流设计」。
 
@@ -95,5 +101,4 @@ Feed 中每个事件是对某个资源的状态变化(transition of state)，包
 ![](/media/files/2018/2018-09-25-feed.png)
 
 以上是对 Feed 内容的抽象，在后面的系列中，我会进一步阐述 Feed 分发，隐私策略等相关话题。
-
 
