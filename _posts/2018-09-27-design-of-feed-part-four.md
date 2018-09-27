@@ -289,7 +289,7 @@ order by event_id desc
 	order by event_id desc
 	```
 
-3. 相对 Redis，MySQL 对冷数据和热数据的处理游刃有余。
+3. 相对 Redis，MySQL 对冷数据和热数据的处理游刃有余，且存储更加便宜。
 
 4. 很多人担心容量问题，我觉得是多虑。主键为 big integer 单张表的最大容量是 10 billion billion。大部分人的业务并没有到新浪微博/facebook的体量，使用 MySQL 绰绰有余。如果确实体量很大，可以做单张表的partition，使用 hash partition 预先分几十 partition 即可。
 
