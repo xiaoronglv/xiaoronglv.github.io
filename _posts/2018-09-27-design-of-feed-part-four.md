@@ -41,9 +41,7 @@ LRANGE: 获取 list 一个范围内的元素, e.g. 'LRANGE key 0 99' 命令可�
 
 ### 1.1 如何使用 Redis 保存 feed 中的内容呢？
 
-当 Ryan 发布内容时，我可以非常方便的把内容(event_id)推送到他的三个follower 的队列中。
-
-step1: Ryan 发布内容 「我今天感觉好极了」，插入到表 `statuses` 中，主键为10001
+step1: Ryan 发布内容 「我今天感觉好极了」，插入到 MySQL 表 `statuses` 中，主键为10001。
 
 ```
 // Ryan 的 id 为 1
@@ -51,11 +49,12 @@ step1: Ryan 发布内容 「我今天感觉好极了」，插入到表 `statuses
 insert into statuses (body, user_id) values ("我今天感觉好极了", 1);
 ```
 
-step2: 把这个「创建操作」抽象为事件，查入道 event 表中，主键为 333333。
+step2: 把这个「创建操作」抽象为事件，插入到 MySQL table `events` 表中。
 
 events 表的结构如下：
 
 ```
+// events 表的结构如下
 CREATE TABLE `events` (
   `id`          bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id`   int(11) DEFAULT NULL,
@@ -79,21 +78,29 @@ events(user_id, operation, table_name, table_id, column_name, old_state, new_sta
 values (1, 'insert', 'statuses', 10001, '', '', 'CreateStatus')
 ```
 
-step3：把 event_id 分发到 Teddy(user_id: 113)，Sam(user_id: 114)，Tim(user_id: 115) 的队列中。
+插入 event，该记录的主键为 333333。
+
+step3：把 event_id 分发到 Teddy/Sam/Tim 的 Redis 队列中。
 
 ```
-lpush 'user_id_113_follow_feed' 333333
-lpush 'user_id_114_follow_feed' 333333
-lpush 'user_id_115_follow_feed' 333333
+lpush 'user_id_113_follow_feed' 333333  # Teddy' user_id: 113
+lpush 'user_id_114_follow_feed' 333333  # Sam's user_id: 114
+lpush 'user_id_115_follow_feed' 333333  # Time's user_id: 115
 ```
 
-step4: 当 Teddy 下次登录时，使用以下命令获取 Teddy feed 中要展示的 events，然后渲染出来即可。
+step4: Teddy 队列的 key 为 `user_id_113_follow_feed`，当 Teddy 登录时，然后使用 LRANGE 命令在 Redis 中获取 Teddy 的动态流内容。
 
-`LRANGE user_id_113_follow_feed 0 99`
+```
+LRANGE user_id_113_follow_feed 0 99
+=> [333333, 333321, 333320, ... 333210] 
+```
 
 当 Teddy 翻页时，使用 LRANGE 选取下一个 range 即可。
 
-`LRANGE user_id_113_follow_feed 100 199`
+```
+LRANGE user_id_113_follow_feed 100 199
+=> [333209, 333208, 333207, ... 332207]
+```
 
 ### 1.2 Redis 缺点
 
@@ -235,8 +242,8 @@ order by event_id desc
 **如何把内容储存到队列中？**
 
 1. 吕小荣创建了一个新内容，产生新的 event。
-2. RouteService.route! 根据 Policy 决定是否在 profile_feeds 创建一条记录。
-3. 如果满足条件，则关联 event 与 作者。
+2. RouteService.route! 根据 Policy 决定是否在 profile_feeds 创建一条记录，并关联 event 与 作者。
+3. 如果满足条件，则创建记录。
 
 **如何从队列中读取数据？**
 
@@ -263,7 +270,7 @@ order by event_id desc
 1. 阳治平创建了一个新内容，并且 @吕小荣，产生新的 event。
 2. RouteService.route! 在分发的时候发现里面 @吕小荣
 3. RouteService.route! 检查吕小荣没有屏蔽阳治平，吕小荣的设置也接受此类提醒。
-4. 在 `mention_feeds` 中创建一条记录，关联 event 与 吕小荣。
+4. 在 `mention_feeds` 中创建一条记录，关联该 event 与 吕小荣。
 
 **如何从队列中读取数据？**
 
