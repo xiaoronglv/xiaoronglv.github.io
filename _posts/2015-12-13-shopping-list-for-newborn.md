@@ -26,7 +26,7 @@ tags:
 
 ### 1. Ddrops 维生素D滴剂
 
-![Ddrops]({{ site.url }}/media/files/2015-12-13-ddrops.jpg)
+![Ddrops]({{ site.url }}/media/files/2015/2015-12-13-ddrops.jpg)
 
 母乳是神奇的东西，各种营养元素都是足量。0-6个月是母乳喂养，新生儿除了喝母乳不需要喝任何东西。不需要喝水、不需要喝牛奶、不需要任何稀奇古怪的营养元素。母乳中甚至有免疫球蛋白，可以让新生儿不容易生病。
 
@@ -46,7 +46,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 ### 2. 哺乳枕
 
-![Pillow]({{ site.url }}/media/files/2015-12-13-breast-pillow.jpg)
+![Pillow]({{ site.url }}/media/files/2015/2015-12-13-breast-pillow.jpg)
 
 小孩的吃奶方式有好几种，有的小孩饿虎扑食，进食时间特别短，我的儿子是那种慢条斯理型，吃一会睡一会，磨磨唧唧40分钟。他出生时7斤，媳妇抱他游刃有余。随着他体重的飙升，每次喂完奶我媳妇总是喊腰痛。
 
@@ -57,7 +57,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 ### 3. 德国 Braun 红外线耳温枪
 
-![thermometer](/media/files/2016-08-26-thermometer.jpg)
+![thermometer](/media/files/2016/2016-08-26-thermometer.jpg)
 
 在医学教科书上，测量体温以腋下、直肠、口腔温度为准。实际操作很困难，要求一个小孩安静五分钟比登天还难，更不可能爆肛测直肠温度，所以红外测体温计是首选。
 
@@ -75,11 +75,11 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 比较低成本的方法是用一个方巾，按照以下方式裹。裹的原则是上紧下松，限制手的活动，但是不要限制脚的自由活动。
 
-![How to wrap your newborn baby]({{ site.url }}/media/files/2015-12-13-swaddling.jpg)
+![How to wrap your newborn baby]({{ site.url }}/media/files/2015/2015-12-13-swaddling.jpg)
 
 比较懒且省事的方法，用 Halo 睡袋。
 
-![How to wrap your newborn baby with halo]({{ site.url }}/media/files/2015-12-13-halo.jpg)
+![How to wrap your newborn baby with halo]({{ site.url }}/media/files/2015/2015-12-13-halo.jpg)
 
 购买途径：[考拉海购 HALO SleepSack 睡袋](http://www.kaola.com/product/1226592.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx) 
 
@@ -105,7 +105,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 8. 手提袋。有钱人可以买 [Kipling Luggage New Baby L Nursery Bag](http://www.amazon.com/Kipling-Luggage-Baby-Nursery-Bright/dp/B010MKJRE2), 我比较穷，在京东买的 [HardieBear 大容量妈妈手提包](http://item.jd.com/1719650469.html)，里面的隔层很多，尿布、奶瓶等等都有专门的隔层，比较方便。
 
-    ![Bag]({{ site.url }}/media/files/2015-12-13-nusery-bag.jpg)
+    ![Bag]({{ site.url }}/media/files/2015/2015-12-13-nusery-bag.jpg)
 
 9. 奶瓶。一般用不着，囤着备用。
 

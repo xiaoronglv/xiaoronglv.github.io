@@ -46,7 +46,7 @@ tags:
 
 ## 一个人的 Twitter
 
-![Tools](/media/files/2016-03-04-tools.png)
+![Tools](/media/files/2016/2016-03-04-tools.png)
 
 我的大脑依赖的外围工具有：
 
@@ -66,9 +66,9 @@ tags:
 
 更简单的方法是使用现有的工具：注册一个独立 Twitter 帐号，隐私设为仅自己可见。不用费劲心思造轮子，花点钱就可以享受到优质的 App，搞定！这是我的私人 Twitter。
 
-![Twitter2](/media/files/2016-03-04-twitter2.jpg)
+![Twitter2](/media/files/2016/2016-03-04-twitter2.jpg)
 
-![Twitter1](/media/files/2016-03-04-twitter.jpg)
+![Twitter1](/media/files/2016/2016-03-04-twitter.jpg)
 
 
 ## 为什么不用微博？

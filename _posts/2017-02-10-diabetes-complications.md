@@ -10,13 +10,13 @@ tags:
 
 > 本文是2013年间开微信公众号"糖尿病饮食"时所写的文章，不忍丢弃，所以归档到博客之中。
 
-![](/media/files/2017-02-10-diabetes-complications-1.png)
+![](/media/files/2017/2017-02-10-diabetes-complications-1.png)
 
 高血糖诱发血管病变的机制十分复杂，一两句话是说不清楚的。
 
 你可以简单把高血糖想象为水管中的水垢。日积月累，水垢让管壁越来越厚，最终堵了。
 
-![](/media/files/2017-02-10-diabetes-complications-2.jpg)
+![](/media/files/2017/2017-02-10-diabetes-complications-2.jpg)
 
 
 心脏血管堵了，就发生急性心肌梗死；

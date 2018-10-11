@@ -104,11 +104,11 @@ Nothing happens. 没有瀑布的一泻千里，没有快如闪电的服务器响
 
 y=Asin(ωx+φ)+k
 
-![Easy](/media/files/2016-01-01-sine-simple.gif)
+![Easy](/media/files/2016/2016-01-01-sine-simple.gif)
 
 当把各个参数补齐以后，曲线飘离原点，不对称。虽然难看，但是恢复了它的真实。
 
-![Complicated](/media/files/2016-01-01-sine-with-arguments.png)
+![Complicated](/media/files/2016/2016-01-01-sine-with-arguments.png)
 
 1. 并不是所有的公司都热衷开源。在闭源工具上浅薄的使用经验对未来的成长没有任何价值，除非造轮子的工匠。
 

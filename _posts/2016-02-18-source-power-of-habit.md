@@ -7,7 +7,7 @@ tags:
   - 
 ---
 
-![Source](/media/files/2016-02-19-UniverseSnake.jpg)
+![Source](/media/files/2016/2016-02-19-UniverseSnake.jpg)
 
 > 宜山小组好习惯培养计划之对赌规则
 > 

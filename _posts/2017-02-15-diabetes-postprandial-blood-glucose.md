@@ -10,7 +10,7 @@ tags:
 
 > 本文是2013年间开微信公众号"糖尿病饮食"时所写的文章，不忍丢弃，所以归档到博客之中。
 
-![](/media/files/2017-02-10-diabetes-postprandial-blood-glucose-banner.jpg)
+![](/media/files/2017/2017-02-10-diabetes-postprandial-blood-glucose-banner.jpg)
 
 作为一个糖尿病人，你每餐吃多少绿叶蔬菜，你餐后散步吗？
 

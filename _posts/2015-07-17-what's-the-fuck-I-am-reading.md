@@ -35,7 +35,7 @@ tags:
 
 假如工作中需要我写一个 Redis List 的封装类，在定义方法时肯定会使用 shift/unshift/pop/push 等数组常用的方法。当我看到别人已经写好的源码时，作者和我设计意图的重合让我先天的具备了在源码不同文件的 context 中跳转的能力。
 
-![List#instane_methods](/media/files/2015-07-17-list-instance-methods.png)
+![List#instane_methods](/media/files/2015/2015-07-17-list-instance-methods.png)
 
 不断的学习和训练各种优秀设计（优秀的经验），会显著的加快对优质代码的理解速度，这一点我没有疑问。
 

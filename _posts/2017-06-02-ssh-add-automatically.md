@@ -24,7 +24,7 @@ From Linode: [Securing your server](https://www.linode.com/docs/security/securin
 
 **这种方式不管用了。**
 
-![](/media/files/2017-06-02-ssh-add.jpeg)
+![](/media/files/2017/2017-06-02-ssh-add.jpeg)
 
 
 ## 新的解决方法
@@ -32,14 +32,14 @@ From Linode: [Securing your server](https://www.linode.com/docs/security/securin
 **创建 Automator 任务加载私钥，然后放到开机启动中。**
 
 1. 创建一个 Automator task.
-		![](/media/files/2017-06-02-step1.jpeg)
+		![](/media/files/2017/2017-06-02-step1.jpeg)
 
 2. 在 task 中写一串 shell script
-		![](/media/files/2017-06-02-step2.jpeg)
+		![](/media/files/2017/2017-06-02-step2.jpeg)
 
 3. 把 task 添加到 login items 中，每次系统重启后会执行这个 Automator task，自动 ssh-add 所有的私钥。
-		![](/media/files/2017-06-02-step3.jpeg)
-		![](/media/files/2017-06-02-step4.jpeg)
+		![](/media/files/2017/2017-06-02-step3.jpeg)
+		![](/media/files/2017/2017-06-02-step4.jpeg)
 
 
 搞定！
