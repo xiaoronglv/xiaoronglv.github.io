@@ -115,7 +115,7 @@ Redis 是内存数据库，用来储存热数据非常棒，性能很高。但�
 Redis，RabbitMQ 天然的有队列(queue)数据结构，然而 MySQL 并没有，我们只能模拟队列，其本质是一张关系表，建好索引，做好 partition，尽可能的提高读的速度。
 
 
-### 2.1 用数据库中的表 `follow_feed` 来储存「follower 订阅的 events」。
+### 2.1 用数据库中的表 `follow_feeds` 来储存「follower 订阅的 events」。
 
 ```
 CREATE TABLE `follow_feeds` (
@@ -131,10 +131,11 @@ CREATE TABLE `follow_feeds` (
 
 1. Ryan 发布了新的内容，产生新的 Event (event_id: 333333)。
 2. RouteService.route! 会检查隐私级别，屏蔽，关注，权限等各种复杂的规则。
-		- Teddy 满足条件
-		- Tim 满足条件
-		- Sam 权限不足，没有阅读该 event 的权限。
-3. 虽然有3个 follower，但 RouteService.route! 只会在 `follow_feed` 插入2条记录，关联 event 与 follower。
+
+		- Teddy 满足条件✅
+		- Tim 满足条件✅
+		- Sam 权限不足，没有阅读该 event 的权限。❌
+3. 虽然有3个 follower，但 RouteService.route! 只会在 `follow_feeds` 插入2条记录，关联 event 与 follower。
 
 ```
 // 分发给 Teddy (user_id: 113)
@@ -188,7 +189,7 @@ CREATE TABLE `tag_feeds` (
 
 **如何在队列中读取数据？**
 
-当用户要查看 [#RocksDB](https://www.facebook.com/search/str/%23rocksdb/keywords_search) 的feed，只需要2条sql简单查询既可以获取所有的feed内容。
+当用户要查看 [#RocksDB](https://www.facebook.com/search/str/%23rocksdb/keywords_search) 的feed，只需要一条sql简单查询既可以获取所有的feed内容。
 
 ```
 select * from tag_feeds where tag_id = 标签的主键
