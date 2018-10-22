@@ -2,7 +2,7 @@
 title: "如何定投香港和美国的指数基金？"
 layout: post
 guid: tQWJ92XDIPkEZzaEy7R
-date: 2018-10-21 00:00:00
+date: 2018-10-20 00:00:00
 coffee: y
 tags:
   -
