@@ -52,22 +52,24 @@ tags:
 
 ## 哪些美国和香港的指数基金比较好？
 
-可以从流通性，资金量，管理费等角度来评估基金的好坏。巴菲特推荐跟踪标普指数的基金，市面上跟踪标普指数的几个大公司为先锋，贝莱德。
+可以从流通性，资金量，管理费等角度来评估基金的好坏。
 
-香港指数基金
+**香港指数基金**
 
 | 基金名称 | 跟踪指数 | 公司 | 管理费 | 
 |:--|:--|:--| :--|:--|
 | [盈富基金](https://www.trahk.com.hk/chi/) | 恒生指数 |  | 0.1% |
 
-美国指数基金
+**美国指数基金**
+
+巴菲特推荐跟踪标普500指数基金。先锋，贝莱德两家公司的产品资金量大，管理费低，最受欢迎。
 
 | 基金名称 | 缩写 | 跟踪指数 | 公司 | 管理费 |
 |:-- |:--|:--|:--| :--|:--|
 | SPDR S&P 500 |[SPY](https://finance.yahoo.com/quote/SPY?p=SPY) | 标普500 | 道富 | 0.09% |
-||Vanguard S&P 500 [VOO](https://finance.yahoo.com/quote/VOO?p=VOO&.tsrc=fin-srch) | 标普500 | 先锋(Vanguard) | 0.04% |
-| iShares S&P 500 |[IVV](https://finance.yahoo.com/quote/IVV?p=IVV&.tsrc=fin-srch) | 标普500 | 贝莱德 | 0.04%|
-| PowerShares QQQ Trust | [QQQ](https://finance.yahoo.com/quote/QQQ?ltr=1) | NASDAQ 100 指数 | Invesco | | 0.20% |
+|Vanguard S&P 500 | [VOO](https://finance.yahoo.com/quote/VOO?p=VOO&.tsrc=fin-srch) | 标普500 | 先锋| 0.04% |
+|iShares S&P 500 |[IVV](https://finance.yahoo.com/quote/IVV?p=IVV&.tsrc=fin-srch) | 标普500 | 贝莱德 | 0.04%|
+|PowerShares QQQ Trust | [QQQ](https://finance.yahoo.com/quote/QQQ?ltr=1) | NASDAQ 100 指数 | Invesco | 0.20% |
 
 
 ## 怎么购买以上指数基金？
