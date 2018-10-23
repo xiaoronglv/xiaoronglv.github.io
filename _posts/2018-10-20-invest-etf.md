@@ -62,12 +62,12 @@ tags:
 
 美国指数基金
 
-| 基金名称 | 跟踪指数 | 公司 | 管理费 | 
-|:--|:--|:--| :--|:--|
-|[SPY](https://finance.yahoo.com/quote/SPY?p=SPY) | 标普500 | 道富 | 0.09% |
-| [VOO](https://finance.yahoo.com/quote/VOO?p=VOO&.tsrc=fin-srch) | 标普500 | 先锋(Vanguard) | 0.04% |
-|[IVV](https://finance.yahoo.com/quote/IVV?p=IVV&.tsrc=fin-srch) | 标普500 | 贝莱德 | 0.04%|
-| [QQQ](https://finance.yahoo.com/quote/QQQ?ltr=1) | NASDAQ 100 指数 | Invesco | | 0.20% |
+| 基金名称 | 缩写 | 跟踪指数 | 公司 | 管理费 |
+|:-- |:--|:--|:--| :--|:--|
+| SPDR S&P 500 |[SPY](https://finance.yahoo.com/quote/SPY?p=SPY) | 标普500 | 道富 | 0.09% |
+||Vanguard S&P 500 [VOO](https://finance.yahoo.com/quote/VOO?p=VOO&.tsrc=fin-srch) | 标普500 | 先锋(Vanguard) | 0.04% |
+| iShares S&P 500 |[IVV](https://finance.yahoo.com/quote/IVV?p=IVV&.tsrc=fin-srch) | 标普500 | 贝莱德 | 0.04%|
+| PowerShares QQQ Trust | [QQQ](https://finance.yahoo.com/quote/QQQ?ltr=1) | NASDAQ 100 指数 | Invesco | | 0.20% |
 
 
 ## 怎么购买以上指数基金？
