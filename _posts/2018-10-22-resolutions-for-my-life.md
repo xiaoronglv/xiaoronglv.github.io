@@ -1,5 +1,5 @@
 ---
-title: "累计的决心"
+title: "每周反思清单"
 layout: post
 guid: kHOdzMG3C9oX1C8X38p
 date: 2018-10-22 12:19:20
@@ -8,7 +8,9 @@ tags:
   -
 ---
 
-这是一个每周反思的清单。
+![](/media/files/2019/2019-01-10-benjamin_franklinvirtues.png)
+
+富兰克林[1]自制了一个清单，每天去训练自己的美德。受它启发，我也制定了属于自己的每周反思清单。
 
 
 **1.1 Faith (信仰)**
@@ -66,19 +68,11 @@ tags:
 - [ ] 设定预算，减少花费，定期储蓄。
 - [ ] 再不看动漫，电影，以及任何娱乐性的视频节目。此项乃与神立约，向神保证，绝不破例。 一为健康。每次沉迷动画片时，神总是通过颈椎病的复发来教训我。二是沐沐的健康，儿子的眼睛眨眼很厉害，医生建议不要他接触任何五彩斑斓的电子设备，比如iPad和电脑。三，这事关整个家庭的culture。如果我都不能管住自己，如何带领家人过有节制的生命呢。我要做一个好丈夫，好爸爸，带领家里人过符合神心意的生活。而不是垃圾生活。
 
-**1.4 Career (职业转型)**
+**1.4 Career (职业规划)**
 
-- [ ] TCP/IP congestion flow
-- [ ] Raft algorithm: what's does x←3 mean?
-- [ ] read the paper of Raft algorithm?
-- [ ] learn Golang? (最好做点东西)
-- [ ] what's logical clock?
-- [ ] what's vector clock?
-- [ ] Review Anki
-- [ ] 读《Thinking, Fast and Slow by Daniel Kahneman》
+- [ ] try something new
 
 **1.5 Work (工作)**
-
 
 
 **1.6 Church (教会)**
@@ -129,3 +123,9 @@ tags:
 - 给沐沐设立家规，使用图片版，不要用文字。
 - 如何调理慢性咽炎？
 
+
+---
+
+参考资料
+
+1. 《富兰克林自传》
