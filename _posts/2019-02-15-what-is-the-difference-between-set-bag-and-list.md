@@ -1,8 +1,5 @@
-2019-02-15-what-is-the-difference-between-set-bag-and-list
-
-
 ---
-title: "What's the difference between set, bag, and list?"
+title: "Database: What's the difference between set, bag, and list?"
 layout: post
 guid: 9eUvGejnDjAzCLAAio
 date: 2019-02-15 09:16:44
@@ -11,7 +8,7 @@ tags:
   -
 ---
 
-In database course of Carnegie Melon University, Professor Andy mention several import concept of database, `set`, `list` and `bag`.
+In database course of Carnegie Melon University, Professor Andy mention several import concepts of database, `set`, `list` and `bag`.
 
 What's the difference? Here is the answer.
 
