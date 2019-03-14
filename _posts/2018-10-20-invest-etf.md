@@ -194,7 +194,7 @@ tags:
 
 ## 参考链接
 
-- [中国银行：电子银行转账汇款优惠](http://www.bankofchina.com/ebanking/bi3/bi31/201712/t20171231_11032440.html)
+- [中国银行：电子银行转账汇款优惠](http://www.bankofchina.com/ebanking/bi3/bi31/201812/t20181229_14489171.html)
 - [雪盈：港币入金指南](https://www.snowballsecurities.com/help/detail/inout/hk-in)
 - [富途牛牛：佣金费率](https://help.futu5.com/about/commissionnew)
 - [雪盈证券：佣金费率](https://www.snowballsecurities.com/help/detail/commission/us)
