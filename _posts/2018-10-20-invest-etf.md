@@ -274,3 +274,11 @@ tags:
 - [汇丰银行(香港)：可供定投的股票列表](https://www.personal.hsbc.com.hk/1/2/simplified/hk/investments/stocks/smip/detail)
 - [中国银行(香港): 股票月供计划](https://www.bochk.com/tc/investment/securities/monthly.html)
 - [雪盈证券安全吗？有黑幕吗？](https://www.zhihu.com/question/65646071)
+
+## 参考书籍
+
+- [《约翰博格传》 ](https://book.douban.com/subject/10540014/)
+- [《滚雪球》](https://book.douban.com/subject/3605924/)
+- [《指数基金投资指南》](https://book.douban.com/subject/27204860/)
+- [《穷查理宝典》](https://book.douban.com/subject/4208757/)
+
