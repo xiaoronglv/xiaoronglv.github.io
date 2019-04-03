@@ -1,5 +1,5 @@
 ---
-title: How Minitest works
+title: "How does minitest work?"
 layout: post
 guid: zktmnl942fbc6d2huxpb
 date: 2015-10-31 19:59:20
