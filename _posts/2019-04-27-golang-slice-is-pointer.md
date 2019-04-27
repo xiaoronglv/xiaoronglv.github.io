@@ -11,7 +11,7 @@ tags:
 When go through [Go by Example](https://gobyexample.com/sorting), I found a very strange case relating to function invocation.
 
 
-Every time a variable is passed as parameter, a new copy of the variable is created and passed to called function or method. The copy is allocated at a different memory address.This strategy is called **Pass by Value**, which has few side effects.
+For golang, every time a variable is passed as parameter, a new copy of the variable is created and passed to called function or method. The copy is allocated at a different memory address.This strategy is called **Pass by Value**, which has few side effects.
 
 Therefore, when change struct self, we have to pass the pointer to function. For example, change the age of student:
 
