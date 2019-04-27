@@ -1,5 +1,6 @@
 ---
-title: "Golang: why does sort take value as parameter?"
+title: "Golang: why does sort take value as parameter, rather than pointer?"
+
 layout: post
 guid: DiehfXaCBmxjDVT9S1lhLKBi
 date: 2019-04-27 08:28:39
@@ -8,12 +9,9 @@ tags:
   -
 ---
 
-When go through [Go by Example](https://gobyexample.com/sorting), I found a very strange case relating to function invocation.
-
-
 For golang, every time a variable is passed as parameter, a new copy of the variable is created and passed to called function or method. The copy is allocated at a different memory address.This strategy is called **Pass by Value**, which has few side effects.
 
-Therefore, when change struct self, we have to pass the pointer to function. For example, change the age of student:
+**Therefore, when change struct self, we have to pass the pointer to function.** For example, I would like to change the age of student:
 
 ```go
 type student struct {
@@ -31,11 +29,9 @@ s := student{name: "Ryan Lv", age:  14}
 changeAge(&s) 
 ```
 
-
+When go through [Go by Example](https://gobyexample.com/sorting), I found a very strange case relating to function invocation.
 
 ## Counterintuitive example
-
-But this example provided [Go by Example](https://gobyexample.com/sorting) is counterintuitive. `sort.Strings()` takes a value as parameter, and change this value self! How does it happen?
 
 ```go
 package main
@@ -44,7 +40,7 @@ import "sort"
 func main() {
 
     strs := []string{"c", "a", "b"}
-    sort.Strings(strs)
+    sort.Strings(strs) // attention!
     fmt.Println("Strings:", strs)
 
     ints := []int{7, 2, 4}
@@ -66,12 +62,10 @@ Ints:    [2 4 7]
 Sorted:  true
 ```
 
-From my understanding, the right way to sort this slice should be
 
-```
-sort.Strings(&strs)
-```
+In this example, the counterintuitive fact is `sort.Strings(strs)` took a slice as parameter, which is a value[1], sorted it, and changed it! 
 
+How does it happen?
 
 ## Answer
 
@@ -92,6 +86,10 @@ When sort.Strings(sliceA), a brand new slice sliceB will be created, which also 
 After the array under the hood has been sorted, I could print the sorted array through SliceA.
 
 That's the magic! Slice has a pointer to the real array!
+
+## Note
+
+1. At the beginning, I though of slice as "value". Actually it's not.
 
 ## Reference
 
