@@ -8,6 +8,7 @@ tags:
   -
 ---
 
+{{TOC}}
 
 ## 背景介绍
 
@@ -20,12 +21,12 @@ TiDB 方向第一周作业要求：
 
 为了完成作业，我一共写了三个版本的 Merge Sort，第一个版本非常慢，花的时间是单线程 QuickSort 3.5 倍。在第二个版本中，我降低了 goroutine 的数量，快了一些。第三个版本中又降低了空间复杂度，更快了一些。
 
-本文描述了使用 pprof 一步步的改进代码，从 v1 改到 v3 的整个过程。
+本文描述了使用 pprof 一步步的改进代码，从 V1 改到 V3 的整个过程。
 
 
 ## Profiling Tools
 
-性能分析工具用的是 pprof，分析的指标主要是 cpu 和内存。
+性能分析工具用的是 pprof，分析的指标主要是 CPU 和内存。
 
 我看到有人使用 go-torch 制作了非常漂亮的火焰图。考虑到
  uber 已经将这个项目标记为 archive 状态，不再继续维护，所以我没有投入时间制作火焰图。如果这是加分项，我可以补上。
@@ -35,7 +36,7 @@ TiDB 方向第一周作业要求：
 
 在第一个版本中（[点击查看详细代码](https://github.com/xiaoronglv/talent-plan-draft/blob/master/mergesort/mergesort-v1/mergesort.go)），我按照经典的递归思路实现 Merge Sort。Benchmark test 结果惨不忍睹。耗时是 NormalSort 的 3.5 倍；内存开销是 NormalSort 的 5700 万倍。
 
-![](/media/files/2019/2019-07-06-v1-benchmark.jpg)
+![](https://mednoter.com/media/files/2019/2019-07-06-v1-benchmark.jpg)
 
 
 我把这个有趣的结果在 PingCAP talent plan 微信群里分享，大家讨论下来的结果是：Goroutine 太多了。Goroutine 虽然不是物理线程，但是毕竟有开销。设想一下，如果对 16M 的数字排序，在递归的最后一层就有八百万个 Goroutine，再算上上面的23层， Goroutine 实在是太多了。创建和调度应该会吃掉很多资源。
@@ -62,12 +63,12 @@ go test -run=xxxx -bench=MergeSort -cpuprofile cpu.out -memprofile memory
 
 里面确实有很多和 Goroutine 调度相关的函数，占用了很多资源。
 
-![image](https://raw.githubusercontent.com/xiaoronglv/xiaoronglv.github.io/1f7ac9ef0f73a2ca2afb07df49141363567a2b19/media/files/2019/2019-07-06_08-35-23-v1-benchmark.jpg)
+![](https://mednoter.com/media/files/2019/2019-07-05_10-58-09-merge-sort-v1.jpg)
 
 
-## 第二个版本: 修改递归的终止条件，降低 Goroutine 数量。
+## 第二个版本: 修改递归的终止条件，降低 Goroutine 数量
 
-根据 V1 的 profiling 数据，我修改了递归的终止条件(stopping condition)。在递归过程中，如果切分的 sub-list 小于 100,000 个元素时，直接使用sort.Slice(即 quick sort) 排序，不再继续递归。从而避免创建一堆 Goroutine。
+根据 V1 的 profiling 数据，我修改了递归的终止条件(stopping condition)。在递归过程中，如果切分的 sub-list 小于 100,000 个元素时，不再继续递归，而是直接使用sort.Slice排序，从而避免创建一堆 Goroutine。
 
 这就产生了第二个版本的 MergeSort（[点击链接查看完整代码](https://github.com/xiaoronglv/talent-plan-draft/blob/master/mergesort/mergesort-v2/mergesort.go#L15)）。
 
@@ -127,8 +128,8 @@ V1 版本中那一堆创建和调度 Goroutine 函数已经消失了，CPU 耗�
 
 mergesort.merge 的 cum% 为 23.81%，flat% 为 20.80%，说明:
 
-- merge 内的 direct operation 占了 20.80%。
-- 内部函数调用占了 3.01%
+- merge 内的排序的逻辑最耗时，占了 20.80%。
+- 其他函数调用占了 3.01%
 
 merge 这个函数似乎也没有太多优化空间了。
 
@@ -137,10 +138,10 @@ merge 这个函数似乎也没有太多优化空间了。
 
 ![](https://mednoter.com/media/files/2019/2019-07-05_22-03-12-v2-memory.jpg)
 
-merge 函数的内存开销为 1 个 G。递归时每一层都会创建很多临时的变量，用来储存排序过的数字，这些变量很有可能就是元凶。([点击查看代码](https://github.com/xiaoronglv/talent-plan-draft/blob/master/mergesort/mergesort-v2/mergesort.go#L44)）
+merge 函数的内存开销为 1 G。递归时每一层都会创建很多临时的变量，用来储存排序过的数字，这些变量很有可能就是元凶。([点击查看代码](https://github.com/xiaoronglv/talent-plan-draft/blob/master/mergesort/mergesort-v2/mergesort.go#L44)）
 
 
-### 第三个版本：降低空间复杂度。
+## 第三个版本：降低空间复杂度
 
 于是我开始看网上 C++ 版本的 Merge Sort 是怎么优化空间复杂度的。C++ 版本中，有人一开始会创建一个和 src 相同大小的变量做存储空间，并通过指针的操作在递归的各层复用这临时存储空间。
 
@@ -177,30 +178,31 @@ BenchmarkNormalSort-4     3032019853 ns/op  (30 s)
 但是 memory 降了很多。mergeSort 压根没有出现在排行榜里。（mergeSort 是小写字母开头，而不是以大写字母开头的 MergeSort）
 
 ![](https://mednoter.com/media/files/2019/2019-07-06_07-15-31-disappear.jpg)
-耗内存的大户 mergeSort 直接在svg 的图上消失了。
+耗内存大户 mergeSort 本来应该挂在 MergeSort① 下面，但它直接在svg 的图上消失了。
 
 
 ## 结果对比
 
-三分代码，执行相同的 benchmark test 的 CPU 和内存开销。
+三份代码，执行相同的 benchmark test 的 CPU 和内存开销。
 
 go test -run=xxxx -bench=MergeSort  -benchmem
 
 | 代码版本 | ns/op | b/op | allocs/op |
 |:--|:--|:--| :--| 
-| v1 | 9971333427 (9.9 s) | 3645160336 (3.6 G) | 34112645 |
+| V1 | 9971333427 (9.9 s) | 3645160336 (3.6 G) | 34112645 |
 | V2 | 1343951054 (1.3 s) |  1073859808 (1 G) | 1484 |
 | V3 | 1187167764ns (1.1 s)|  134236464 (134 M) | 175 |
 
 
 ## 还未解决的问题
 
-第一，在跑 MergeSort 时，不同的计算机有不同的硬件。cpu 的核数和 Goroutine 的最佳比例是多少，我还不清楚。在 V2 中，递归终止条件为 100,000 ，是我随便取的。
+第一，在跑 MergeSort 时，不同的计算机有不同的硬件。cpu 的核数和 Goroutine 的最佳比例是多少，我还不清楚。在 V2 中，递归终止条件为 100,000 ，是我随便试了几个数字，取得成绩最好的，但其实未必合理。
 
-我觉得应该有一个更理想的策略来决定递归的终止条件，而不是随意取一个数字做终止条件。
+应该有一个更理想的策略来决定递归的终止条件，而不是随意取一个数字做终止条件。
 
 第二，MergeSort 除了递归的实现方法，还有迭代。我还没有尝试迭代，或许也可以试试，对比一下。
 
 
 
 最后，谢谢你花时间阅读这个文档，不足之处，还请指正。
+
