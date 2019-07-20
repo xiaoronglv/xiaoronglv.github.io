@@ -1,5 +1,5 @@
 ---
-title: "Golang: why does sort take value as parameter, rather than pointer?"
+title: "Golang: why sort takes value rather than pointer"
 
 layout: post
 guid: DiehfXaCBmxjDVT9S1lhLKBi
