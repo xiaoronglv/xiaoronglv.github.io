@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-294 158 1095 653" width="1095" height="653">
+  <defs>
+    <font-face font-family="Avenir Next" font-size="12" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Apple Symbols" font-size="12" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="392.57812" cap-height="546.3867" ascent="666.5039" descent="-250" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleSymbols"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="12" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="400">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="400">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2019-08-21 03:08:21 +0000</dc:date>
+  </metadata>
+  <g id="Execuation_Tree_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Execuation Tree 1</title>
+    <rect fill="white" x="-294" y="158" width="1095" height="653"/>
+    <g id="Execuation_Tree_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_7">
+        <title>Heading : Body text</title>
+        <text transform="translate(-108 268.5)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Stream Agg</tspan>
+        </text>
+      </g>
+      <g id="Group_40">
+        <g id="Graphic_3">
+          <title>Heading : Body text</title>
+          <text transform="translate(-81.03806 355.5505)" fill="#008f00">
+            <tspan font-family="Apple Symbols" font-size="12" font-weight="400" fill="#008f00" x="0" y="8">⟕</tspan>
+          </text>
+        </g>
+        <g id="Graphic_8">
+          <title>Heading : Body text</title>
+          <text transform="translate(-99.912 370.3)" fill="#008f00">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">t1.a=t2.a</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_9">
+        <title>Heading : Body text</title>
+        <text transform="translate(158 163)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">t1.aGcount(*), avg(t1.b)(t1)</tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <line x1="-38.248" y1="264.034" x2="201.71292" y2="184" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27">
+        <title>Heading : Body text</title>
+        <text transform="translate(-288.5 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <title>Heading : Body text</title>
+        <text transform="translate(485.438 268.5)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Hash Agg</tspan>
+        </text>
+      </g>
+      <g id="Line_31">
+        <line x1="480.438" y1="264.12813" x2="274.15705" y2="184" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_41">
+        <g id="Graphic_34">
+          <title>Heading : Body text</title>
+          <text transform="translate(506.87394 355.5505)" fill="#008f00">
+            <tspan font-family="Apple Symbols" font-size="12" font-weight="400" fill="#008f00" x="0" y="8">⟕</tspan>
+          </text>
+        </g>
+        <g id="Graphic_33">
+          <title>Heading : Body text</title>
+          <text transform="translate(488 370.3)" fill="#008f00">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">t1.a=t2.a</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_35">
+        <line x1="-75.624" y1="350.5505" x2="-75.624" y2="289.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_36">
+        <line x1="512.288" y1="350.5505" x2="512.288" y2="289.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_37">
+        <title>Heading : Body text</title>
+        <text transform="translate(-226.264 444)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Sort Merge Join</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <title>Heading : Body text</title>
+        <text transform="translate(15.346 444)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Hash Join</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="-163.78643" y1="439" x2="-94.50557" y2="391.3" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_46">
+        <line x1="21.29504" y1="439" x2="-54.86704" y2="391.3" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_51">
+        <title>Heading : Body text</title>
+        <text transform="translate(-171.5 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t2)</tspan>
+        </text>
+      </g>
+      <g id="Line_52">
+        <line x1="-8.546995" y1="533.5" x2="33.980995" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_63">
+        <line x1="-238.75897" y1="533.5" x2="-191.61503" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_64">
+        <line x1="-137.85421" y1="533.5" x2="-175.51979" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_65">
+        <line x1="-247.706" y1="635" x2="-247.706" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_68">
+        <title>Heading : Body text</title>
+        <text transform="translate(-284.798 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="13">Index Scan</tspan>
+          <tspan font-family="PingFang SC" font-size="12" font-weight="400" fill="#b34400" y="13">(a)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <title>Heading : Body text</title>
+        <text transform="translate(-167.798 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="13">Index Scan</tspan>
+          <tspan font-family="PingFang SC" font-size="12" font-weight="400" fill="#b34400" y="13">(a)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(-233.888 587.776)" fill="#666">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="#666" x="0" y="15">t1.a</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(-120.59 587.776)" fill="#666">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="#666" x="0" y="15">t2.a</tspan>
+        </text>
+      </g>
+      <g id="Line_76">
+        <line x1="-130.706" y1="635" x2="-130.706" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_85">
+        <title>Heading : Body text</title>
+        <text transform="translate(-57.412 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_86">
+        <title>Heading : Body text</title>
+        <text transform="translate(82.5 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t2)</tspan>
+        </text>
+      </g>
+      <g id="Line_87">
+        <line x1="109.73236" y1="533.5" x2="52.84764" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_88">
+        <line x1="123.294" y1="635" x2="123.294" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_89">
+        <title>Heading : Body text</title>
+        <text transform="translate(85.266 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Hash table(t2)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <title>Heading : Body text</title>
+        <text transform="translate(-53.164 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Index Scan(a)</tspan>
+        </text>
+      </g>
+      <g id="Line_92">
+        <line x1="-16.618" y1="635" x2="-16.618" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_102">
+        <title>Heading : Body text</title>
+        <text transform="translate(335 444)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Indexed lookup Join</tspan>
+        </text>
+      </g>
+      <g id="Line_101">
+        <line x1="325.2837" y1="533.5" x2="380.5563" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_100">
+        <title>Heading : Body text</title>
+        <text transform="translate(274 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_99">
+        <title>Heading : Body text</title>
+        <text transform="translate(414.4745 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t2)</tspan>
+        </text>
+      </g>
+      <g id="Line_98">
+        <line x1="446.43366" y1="533.5" x2="399.88084" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_97">
+        <line x1="455.2685" y1="635" x2="455.2685" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_96">
+        <title>Heading : Body text</title>
+        <text transform="translate(396.9965 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Index Lookup Reader</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <title>Heading : Body text</title>
+        <text transform="translate(285.406 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Table Scan</tspan>
+        </text>
+      </g>
+      <g id="Line_93">
+        <line x1="314.794" y1="635" x2="314.794" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_103">
+        <line x1="412.43197" y1="439" x2="490.90203" y2="391.3" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_113">
+        <title>Heading : Body text</title>
+        <text transform="translate(614 444)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Hash Join</tspan>
+        </text>
+      </g>
+      <g id="Line_121">
+        <line x1="588.1734" y1="533.5" x2="632.3266" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_120">
+        <title>Heading : Body text</title>
+        <text transform="translate(539 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t1)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_119">
+        <title>Heading : Body text</title>
+        <text transform="translate(679.4745 538.5)" fill="#008f00">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">DataSource(t2)</tspan>
+        </text>
+      </g>
+      <g id="Line_118">
+        <line x1="709.3234" y1="533.5" x2="651.6511" y2="465" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_117">
+        <line x1="720.2685" y1="636" x2="720.2685" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_116">
+        <title>Heading : Body text</title>
+        <text transform="translate(681.4425 641)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Hash Table(t2)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_115">
+        <title>Heading : Body text</title>
+        <text transform="translate(550.406 640)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Table Scan</tspan>
+        </text>
+      </g>
+      <g id="Line_114">
+        <line x1="579.794" y1="635" x2="579.794" y2="559.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_122">
+        <line x1="618.05425" y1="439" x2="534.93975" y2="391.3" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_123">
+        <title>Tag : Orange</title>
+        <path d="M -276.57874 442.07874 L -237.84526 442.07874 C -232.3659 442.07874 -227.924 446.52064 -227.924 452 L -227.924 452 C -227.924 457.47936 -232.3659 461.92126 -237.84526 461.92126 L -276.57874 461.92126 C -282.0581 461.92126 -286.5 457.47936 -286.5 452 L -286.5 452 C -286.5 446.52064 -282.0581 442.07874 -276.57874 442.07874 Z" fill="#cb4b16"/>
+        <text transform="translate(-276.5 444)" fill="#efe8d5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#efe8d5" x="2.296" y="12">Case1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_124">
+        <title>Tag : Orange</title>
+        <path d="M -37.51509 442.07874 L 1.2183907 442.07874 C 6.697751 442.07874 11.139651 446.52064 11.139651 452 L 11.139651 452 C 11.139651 457.47936 6.697751 461.92126 1.2183907 461.92126 L -37.51509 461.92126 C -42.99445 461.92126 -47.43635 457.47936 -47.43635 452 L -47.43635 452 C -47.43635 446.52064 -42.99445 442.07874 -37.51509 442.07874 Z" fill="#cb4b16"/>
+        <text transform="translate(-37.43635 444)" fill="#efe8d5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#efe8d5" x="2.296" y="12">Case2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_125">
+        <title>Tag : Orange</title>
+        <path d="M 281.5403 442.07874 L 320.2738 442.07874 C 325.75315 442.07874 330.19505 446.52064 330.19505 452 L 330.19505 452 C 330.19505 457.47936 325.75315 461.92126 320.2738 461.92126 L 281.5403 461.92126 C 276.06095 461.92126 271.61905 457.47936 271.61905 452 L 271.61905 452 C 271.61905 446.52064 276.06095 442.07874 281.5403 442.07874 Z" fill="#cb4b16"/>
+        <text transform="translate(281.61905 444)" fill="#efe8d5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#efe8d5" x="2.296" y="12">Case3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_126">
+        <title>Tag : Orange</title>
+        <path d="M 561.1389 442.07874 L 599.8724 442.07874 C 605.35175 442.07874 609.79365 446.52064 609.79365 452 L 609.79365 452 C 609.79365 457.47936 605.35175 461.92126 599.8724 461.92126 L 561.1389 461.92126 C 555.65955 461.92126 551.21765 457.47936 551.21765 452 L 551.21765 452 C 551.21765 446.52064 555.65955 442.07874 561.1389 442.07874 Z" fill="#cb4b16"/>
+        <text transform="translate(561.21765 444)" fill="#efe8d5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#efe8d5" x="2.296" y="12">Case4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_127">
+        <title>Heading : Body text</title>
+        <text transform="translate(93.906 716)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Table Scan</tspan>
+        </text>
+      </g>
+      <g id="Line_128">
+        <line x1="123.294" y1="711" x2="123.294" y2="661" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_129">
+        <title>Heading : Body text</title>
+        <text transform="translate(681.4425 716)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Table Scan(t2)</tspan>
+        </text>
+      </g>
+      <g id="Line_130">
+        <line x1="719.8915" y1="711" x2="720.1895" y2="662" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_131">
+        <text transform="translate(85.266 784)" fill="#666">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="400" fill="#666" x="0" y="17">备注</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="#666" y="17">: </tspan>
+          <tspan font-family="PingFang SC" font-size="16" font-weight="400" fill="#666" y="17"> 绿色部分为逻辑算子，红色部分为物理算子</tspan>
+        </text>
+      </g>
+      <g id="Graphic_132">
+        <title>Heading : Body text</title>
+        <text transform="translate(135 678)" fill="#a5a5a5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#a5a5a5" x="0" y="12">Build phase</tspan>
+        </text>
+      </g>
+      <g id="Graphic_133">
+        <title>Heading : Body text</title>
+        <text transform="translate(89.022 489)" fill="#a5a5a5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#a5a5a5" x="0" y="12">Probe phase</tspan>
+        </text>
+      </g>
+      <g id="Graphic_134">
+        <title>Heading : Body text</title>
+        <text transform="translate(685.5405 484)" fill="#a5a5a5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#a5a5a5" x="0" y="12">Probe phase</tspan>
+        </text>
+      </g>
+      <g id="Graphic_135">
+        <title>Heading : Body text</title>
+        <text transform="translate(731 678.5)" fill="#a5a5a5">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#a5a5a5" x="0" y="12">Build phase</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

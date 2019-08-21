@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="127 156 326 269" width="326" height="269">
+  <defs>
+    <font-face font-family="Avenir Next" font-size="12" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Apple Symbols" font-size="12" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="392.57812" cap-height="546.3867" ascent="666.5039" descent="-250" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleSymbols"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2019-08-21 03:08:21 +0000</dc:date>
+  </metadata>
+  <g id="Plan2" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Plan2</title>
+    <rect fill="white" x="127" y="156" width="326" height="269"/>
+    <g id="Plan2: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_7">
+        <title>Heading : Body text</title>
+        <text transform="translate(247.667 404)" fill="#666">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#666" x="0" y="12">t1</tspan>
+        </text>
+      </g>
+      <g id="Group_36">
+        <g id="Graphic_3">
+          <title>Heading : Body text</title>
+          <text transform="translate(346.87394 240)" fill="#666">
+            <tspan font-family="Apple Symbols" font-size="12" font-weight="400" fill="#666" x="0" y="8">⟕</tspan>
+          </text>
+        </g>
+        <g id="Graphic_8">
+          <title>Heading : Body text</title>
+          <text transform="translate(328 252)" fill="#666">
+            <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#666" x="0" y="12">t1.a=t2.a</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_9">
+        <title>Heading : Body text</title>
+        <text transform="translate(280.848 161)" fill="#666">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#666" x="0" y="12">t1.aGsum(count),  avg</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <title>Heading : Body text</title>
+        <text transform="translate(437 336.5)" fill="#666">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#666" x="0" y="12">t2</tspan>
+        </text>
+      </g>
+      <g id="Line_25">
+        <line x1="432" y1="334.76263" x2="366.1486" y2="273" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27">
+        <title>Heading : Body text</title>
+        <text transform="translate(132.049 336.5)" fill="#666">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#666" x="5.026" y="12">t1.aGcount(*) as count, avg(t1.b) as avg(t1)</tspan>
+        </text>
+      </g>
+      <g id="Line_29">
+        <line x1="253.049" y1="399" x2="253.049" y2="357.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_34">
+        <line x1="352.288" y1="235" x2="352.288" y2="182" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_35">
+        <line x1="268.31654" y1="331.5" x2="337.02046" y2="273" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

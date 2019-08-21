@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="138 29 397 622" width="397" height="622">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Apple Symbols" font-size="18" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="392.57812" cap-height="546.3867" ascent="666.5039" descent="-250" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleSymbols"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Avenir Next" font-size="10" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Avenir Next" font-size="12" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Avenir Next" font-size="18" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="400">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.1 
+    <dc:date>2019-08-21 03:08:21 +0000</dc:date>
+  </metadata>
+  <g id="Execuation_Tree_2_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Execuation Tree 2.1</title>
+    <rect fill="white" x="138" y="29" width="397" height="622"/>
+    <g id="Execuation_Tree_2_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_7">
+        <title>Heading : Body text</title>
+        <text transform="translate(213.38844 510)" fill="#009051">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="#009051" x="0" y="11">Data Source(t1)</tspan>
+        </text>
+      </g>
+      <g id="Group_32">
+        <g id="Graphic_3">
+          <title>Heading : Body text</title>
+          <text transform="translate(341.3189 182.5)" fill="#009051">
+            <tspan font-family="Apple Symbols" font-size="18" font-weight="400" fill="#009051" x="0" y="12">⟕</tspan>
+          </text>
+        </g>
+        <g id="Graphic_8">
+          <title>Heading : Body text</title>
+          <text transform="translate(329.2 199)" fill="#009051">
+            <tspan font-family="Avenir Next" font-size="10" font-weight="400" fill="#009051" x="0" y="10">t1.a=t2.a</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_9">
+        <title>Heading : Body text</title>
+        <text transform="translate(278 34)" fill="#009051">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#009051" x="0" y="18">t1.a</tspan>
+          <tspan font-family="Avenir Next" font-size="18" font-weight="400" fill="#009051" y="18">G</tspan>
+          <tspan font-family="Avenir Next" font-size="10" font-weight="400" fill="#009051" y="18">sum(count),  avg</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <title>Heading : Body text</title>
+        <text transform="translate(143 332)" fill="#009051">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#009051" x="5.299998" y="18">t1.a</tspan>
+          <tspan font-family="Avenir Next" font-size="18" font-weight="400" fill="#009051" y="18">G</tspan>
+          <tspan font-family="Avenir Next" font-size="10" font-weight="400" fill="#009051" y="18">count(*) as count, avg(t1.b) as avg</tspan>
+          <tspan font-family="Avenir Next" font-size="18" font-weight="400" fill="#009051" y="18">(t1)</tspan>
+        </text>
+      </g>
+      <g id="Line_29">
+        <line x1="255.74" y1="417.5" x2="255.74" y2="362" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_37">
+        <title>Heading : Body text</title>
+        <text transform="translate(223.364 422.5)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Stream Agg</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(179 623.5)" fill="#666">
+          <tspan font-family="PingFang SC" font-size="16" font-weight="400" fill="#666" x="0" y="17">备注</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="#666" y="17">: </tspan>
+          <tspan font-family="PingFang SC" font-size="16" font-weight="400" fill="#666" y="17"> 绿色部分为逻辑算子，红色部分为物理算子</tspan>
+        </text>
+      </g>
+      <g id="Line_41">
+        <line x1="255.74" y1="505" x2="255.74" y2="443.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_43">
+        <title>Heading : Body text</title>
+        <text transform="translate(217.694 581)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Index Scan (a)</tspan>
+        </text>
+      </g>
+      <g id="Line_46">
+        <line x1="255.74" y1="576" x2="255.74" y2="529" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_69">
+        <title>Heading : Body text</title>
+        <text transform="translate(425.5 337.5)" fill="#009051">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="#009051" x="0" y="11">DataSource (t2)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <title>Heading : Body text</title>
+        <text transform="translate(429.80556 422.5)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Index Scan (a)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <title>Heading : Body text</title>
+        <text transform="translate(305.844 266.75)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Sort Merge Join</tspan>
+        </text>
+      </g>
+      <g id="Line_71">
+        <line x1="349.44" y1="261.75" x2="349.44" y2="218" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_72">
+        <line x1="279.24896" y1="327" x2="331.9762" y2="287.75" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_75">
+        <line x1="467.85156" y1="417.5" x2="467.85156" y2="356.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_76">
+        <title>Heading : Body text</title>
+        <text transform="translate(317.064 112.75)" fill="#b34400">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#b34400" x="0" y="12">Stream Agg</tspan>
+        </text>
+      </g>
+      <g id="Line_77">
+        <line x1="349.44" y1="177.5" x2="349.44" y2="133.75" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_78">
+        <line x1="349.44" y1="107.75" x2="349.44" y2="64" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_79">
+        <line x1="447.4797" y1="332.5" x2="371.50954" y2="287.75" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
