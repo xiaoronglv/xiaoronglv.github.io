@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-294 158 1095 653" width="1095" height="653">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-294 156 1095 655" width="1095" height="655">
   <defs>
     <font-face font-family="Avenir Next" font-size="12" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
       <font-face-src>
@@ -10,6 +10,11 @@
     <font-face font-family="Apple Symbols" font-size="12" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="392.57812" cap-height="546.3867" ascent="666.5039" descent="-250" font-weight="400">
       <font-face-src>
         <font-face-name name="AppleSymbols"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Avenir Next" font-size="15" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Regular"/>
       </font-face-src>
     </font-face>
     <font-face font-family="PingFang SC" font-size="12" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="400">
@@ -29,12 +34,12 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-08-21 03:17:33 +0000</dc:date>
+    <dc:date>2019-08-21 08:59:44 +0000</dc:date>
   </metadata>
-  <g id="Execuation_Tree_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Plan1-with-physical-operation" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
     <title>Plan1-with-physical-operation</title>
-    <rect fill="white" x="-294" y="158" width="1095" height="653"/>
-    <g id="Execuation_Tree_1: Layer 1">
+    <rect fill="white" x="-294" y="156" width="1095" height="655"/>
+    <g id="Plan1-with-physical-operation: Layer 1">
       <title>Layer 1</title>
       <g id="Graphic_7">
         <title>Heading : Body text</title>
@@ -58,12 +63,12 @@
       </g>
       <g id="Graphic_9">
         <title>Heading : Body text</title>
-        <text transform="translate(158 163)" fill="#008f00">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#008f00" x="0" y="12">t1.aGcount(*), avg(t1.b)(t1)</tspan>
+        <text transform="translate(64.208 161)" fill="#666">
+          <tspan font-family="Avenir Next" font-size="15" font-weight="400" fill="#666" x="13.892502" y="15">Agg (count(*), avg(t1.b), group by t1.a)</tspan>
         </text>
       </g>
       <g id="Line_26">
-        <line x1="-38.248" y1="264.034" x2="201.71292" y2="184" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-40.441194" y1="263.5" x2="169.30245" y2="186" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_27">
         <title>Heading : Body text</title>
@@ -78,7 +83,7 @@
         </text>
       </g>
       <g id="Line_31">
-        <line x1="480.438" y1="264.12813" x2="274.15705" y2="184" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="480.438" y1="265.38794" x2="252.89184" y2="186" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Group_41">
         <g id="Graphic_34">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-133 272 213 219" width="213" height="219">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-181 271 310 220" width="310" height="220">
   <defs>
     <font-face font-family="Apple Symbols" font-size="15" panose-1="2 0 0 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-73.24219" underline-thickness="48.828125" slope="0" x-height="392.57812" cap-height="546.3867" ascent="666.5039" descent="-250" font-weight="400">
       <font-face-src>
@@ -14,12 +14,12 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-08-21 03:17:33 +0000</dc:date>
+    <dc:date>2019-08-21 08:59:44 +0000</dc:date>
   </metadata>
-  <g id="Plan1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Logical-Plan1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
     <title>Logical-Plan1</title>
-    <rect fill="white" x="-133" y="272" width="213" height="219"/>
-    <g id="Plan1: Layer 1">
+    <rect fill="white" x="-181" y="271" width="310" height="220"/>
+    <g id="Logical-Plan1: Layer 1">
       <title>Layer 1</title>
       <g id="Graphic_3">
         <title>Heading : Body text</title>
@@ -53,12 +53,12 @@
       </g>
       <g id="Graphic_91">
         <title>Heading : Body text</title>
-        <text transform="translate(-127.6575 277)" fill="#666">
-          <tspan font-family="Avenir Next" font-size="15" font-weight="400" fill="#666" x="10.339003" y="15">t1.aGcount(*), avg(t1.b)(t1)</tspan>
+        <text transform="translate(-175.92975 276)" fill="#666">
+          <tspan font-family="Avenir Next" font-size="15" font-weight="400" fill="#666" x="17.78125" y="15">Agg (count(*), avg(t1.b), group by t1.a)</tspan>
         </text>
       </g>
       <g id="Line_92">
-        <line x1="-26.351" y1="350" x2="-26.351" y2="302" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="-26.351" y1="350" x2="-26.351" y2="301" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

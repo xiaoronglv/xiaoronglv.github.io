@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="138 29 411 621" width="411" height="621">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="129 38 420 612" width="420" height="612">
   <defs>
     <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
       <font-face-src>
@@ -22,11 +22,6 @@
         <font-face-name name="AvenirNext-Regular"/>
       </font-face-src>
     </font-face>
-    <font-face font-family="Avenir Next" font-size="18" panose-1="2 11 5 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="468" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="400">
-      <font-face-src>
-        <font-face-name name="AvenirNext-Regular"/>
-      </font-face-src>
-    </font-face>
     <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="400">
       <font-face-src>
         <font-face-name name="PingFangSC-Regular"/>
@@ -39,12 +34,12 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.1 
-    <dc:date>2019-08-21 03:17:33 +0000</dc:date>
+    <dc:date>2019-08-21 08:59:44 +0000</dc:date>
   </metadata>
-  <g id="Execuation_Tree_2_2" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Plan2-with-physical-operation-2_2" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
     <title>Plan2-with-physical-operation-2.2</title>
-    <rect fill="white" x="138" y="29" width="411" height="621"/>
-    <g id="Execuation_Tree_2_2: Layer 1">
+    <rect fill="white" x="129" y="38" width="420" height="612"/>
+    <g id="Plan2-with-physical-operation-2_2: Layer 1">
       <title>Layer 1</title>
       <g id="Graphic_7">
         <title>Heading : Body text</title>
@@ -68,23 +63,18 @@
       </g>
       <g id="Graphic_9">
         <title>Heading : Body text</title>
-        <text transform="translate(278 34)" fill="#009051">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#009051" x="0" y="18">t1.a</tspan>
-          <tspan font-family="Avenir Next" font-size="18" font-weight="400" fill="#009051" y="18">G</tspan>
-          <tspan font-family="Avenir Next" font-size="10" font-weight="400" fill="#009051" y="18">sum(count),  avg</tspan>
+        <text transform="translate(259.44 43)" fill="#009051">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#009051" x="2.682" y="12">Agg (sum(c), avg, group by t1.a)</tspan>
         </text>
       </g>
       <g id="Graphic_27">
         <title>Heading : Body text</title>
-        <text transform="translate(143 332)" fill="#009051">
-          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#009051" x="5.299998" y="18">t1.a</tspan>
-          <tspan font-family="Avenir Next" font-size="18" font-weight="400" fill="#009051" y="18">G</tspan>
-          <tspan font-family="Avenir Next" font-size="10" font-weight="400" fill="#009051" y="18">count(*) as count, avg(t1.b) as avg</tspan>
-          <tspan font-family="Avenir Next" font-size="18" font-weight="400" fill="#009051" y="18">(t1)</tspan>
+        <text transform="translate(134.667 336.5)" fill="#009051">
+          <tspan font-family="Avenir Next" font-size="12" font-weight="400" fill="#009051" x="5.266998" y="12">Agg(count(*) as c, avg(t1.b), group by t1.a)</tspan>
         </text>
       </g>
       <g id="Line_29">
-        <line x1="255.74" y1="415.5" x2="255.74" y2="362" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="255.74" y1="415.5" x2="255.74" y2="357.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_37">
         <title>Heading : Body text</title>
@@ -133,7 +123,7 @@
         <line x1="349.44" y1="261.75" x2="349.44" y2="218" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_72">
-        <line x1="279.24896" y1="327" x2="331.9762" y2="287.75" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line x1="273.2038" y1="331.5" x2="331.9762" y2="287.75" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_75">
         <line x1="467.85156" y1="415.5" x2="467.85156" y2="356.5" stroke="#586e75" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
