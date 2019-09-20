@@ -65,8 +65,6 @@ SAP 内的很多闭源的工具和技术非常优秀，我讨厌他们，有很�
 
 认识到自己是个三流 / 半瓶子醋 / 恃才傲物 / 骄傲 / 人云亦云的程序员后，我开始谦虚下来，认真读代码，补习计算机基础知识，好好学习。
 
-2019-09-20-ego.jpeg
-
 ![](/media/files/2019/2019-09-20-ego.jpeg)
 
 此外 SAP 有很多技术专家，我在 Kyle Richter, Joseph Wong, Tao Zhang，Vincent Huang, Felix Chen 身上学到好多知识。
