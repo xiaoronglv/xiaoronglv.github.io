@@ -7,11 +7,16 @@ toc: true
 coffee: y
 tags:
   -
+
+
 ---
 
-## 我的兴趣有哪些？
+First Version: 2018-07-30 14:05:09
+Second Version: 2019-10-07 22:14:23
 
-我的兴趣
+
+
+## 我的兴趣有哪些？
 
 Anki - Learning Tools
 
@@ -24,6 +29,7 @@ Diabetes
 数据库 /Hadoop/spark/storm/kafka/Hbase/ElasticSearch (这个我也很有兴趣)数据量到这种规模，估计只有一些巨头才有这数据量吧
 
 
+---
 
 ## 时代的浪潮(未来)在哪里？
 
@@ -34,20 +40,27 @@ Diabetes
 3. 刷 TechCrunch，留意最前沿的 AI 公司，生物公司，医学公司都在做什么。
 
 
+
+
+## 与前沿领域的研究者聊天，提出好问题，回答好问题
+
+什么是生物计算？
+
+有没有比较好的存储 DNA 的数据库？
+
+有没有比较好的存储 Protein 的数据库？
+
+
 ## 哪些公司在做我感兴趣的事情？
 
 了结他们的业务，文化，工作内容
 
+基因测序公司
 
-## 基因测序公司
-
-**23andMe**
-
-**IIIlumina**
-
-**Oxford Nanopore**
-
-**Veritas Genetics**
+- 23andMe
+- IIIlumina
+- Oxford Nanopore
+- Veritas Genetics
 
 
 ## 人工智能💙医学
@@ -61,13 +74,7 @@ Diabetes
 
 ## 数据库公司
 
-
-
-## MariaDB
-
-
-
-### PingCAP
+**PingCAP**
 
 https://pingcap.com/recruit-cn/
 
@@ -83,7 +90,7 @@ License: [Open Source](https://github.com/tikv/tikv)
 Language: Rust
 
 
-### Cockroach DB
+**Cockroach DB**
 
 License: Open Source, APL 2.0
 Github: https://github.com/cockroachdb/cockroach
@@ -91,15 +98,14 @@ Language: [C++](https://github.com/cockroachdb/rocksdb/tree/b5ed67fb73b68ec1cc02
 Location: [New York, NY](https://www.glassdoor.com/Overview/Working-at-Cockroach-Labs-EI_IE1168502.11,25.htm)
 
 
-
-### RocksDB by Facebook
+**RocksDB by Facebook**
 
 License: Open Source
 Github: https://github.com/facebook/rocksdb/
 Language: C++
 
 
-### MySQL
+**MySQL**
 
 | Pros | Cons |
 | :--- | :--- |
@@ -107,15 +113,18 @@ Language: C++
 
 
 
-### PostgreSQL
+**PostgreSQL**
 
 | Pros | Cons |
 | :--- | :--- |
 | Open Source  | |
 
 
+**MariaDB**
 
-### Cassandra
+
+
+**Cassandra**
 
 Type：NoSQL
 
@@ -128,9 +137,7 @@ License: Open Source
 |  | Facebook has abandoned Cassandra. [Link](https://news.ycombinator.com/item?id=16523438) |
 
 
-
-
-### MemSQL
+**MemSQL**
 
 Type: NewSQL
 
@@ -141,9 +148,7 @@ Location: San Francisco, Seattle, Portland.
 License: Closed Source
 
 
-
-
-### H-Store
+**H-Store**
 
 Type: NewSQL
 
@@ -152,9 +157,7 @@ Language: C++, Java
 Purpose: experimental project written by professors in universities.
 
 
-
-
-### SAP HANA
+**SAP HANA**
 
 Type：Hybrid System(OLAP + OLTP), In-Memory database.
 
@@ -173,14 +176,12 @@ License: Closed Source.
 | 会大量涉及到算法，数据结构，操作系统，这些都是我的最爱 |  |
 
 
-
-### Google Spanner
+**Google Spanner**
 
 也就想想吧，反正去不了。
 
 
-
-### Clustrix
+**Clustrix**
 
 Type：Hybrid System(OLAP + OLTP)
 
@@ -191,22 +192,10 @@ Location: San Francisco (US)
 License: ?
 
 
+**Scylla**
 
 
-## Scylla
-
-
-
-## 与前沿领域的研究者聊天，提出好问题，回答好问题
-
-什么是生物计算？
-
-有没有比较好的存储 DNA 的数据库？
-
-有没有比较好的存储 Protein 的数据库？
-
-
-## 尝试小项目
+## 可以尝试的小项目
 
 
 ### 糖尿病的食谱网站
@@ -227,12 +216,16 @@ Requirements
 2. [My Prototype](https://gmd19w.axshare.com/#p=%E9%A6%96%E9%A1%B5)
 
 
-
 ## 疫苗助手
 
 孩子出生之后，需要定期打疫苗。疫苗助手可以通过邮件/短信提醒爸妈。
 
 难度：简单。
+
+requirement
+
+1. 微信小程序的开发
+2. 微信服务号的开发
 
 
 ### 基于卡片的个人知识管理工具
@@ -249,8 +242,15 @@ Requirements
 - 可以把大学考试题/医师考试题加进去，作为病毒传播的一个爆发点
 
 
-### PubMed
+### 专注于医学领域的闪卡系统
 
+难度：困难
+
+或者继续做闪卡，但是拿医学做突破口。
+
+
+
+### PubMed
 
 Requirement
 
@@ -260,6 +260,9 @@ Requirement
     - 媒体引用
 
 2. 数据分析
+
+3. sci-hub
+4. 影响因子
 
 
 ### 医生 CRM
@@ -277,12 +280,29 @@ Requirement
 这个产品的工作量将会十分庞大，一个人估计搞不定。
 
 
+### 期刊领域的投稿系统 / CMS
+
+难度：十分困难
+
+锦森以前搞过投稿系统，并且创业过，可以和锦森一起弄。
+
+
+### 克隆丁香园的一些业务模式
+
+- 频道 CMS，相似产品医学界
+- 用药助手
+- 医学指南
+- 调查派
+
+
 ### 帮助医生建立小程序
 
 帮助每个医生建立自己的小程序，管理自己的病人资源，病人可以问诊，每次收费30元。
 
-![](/media/files/2019/2019-08-18-mini-program.jpg)
+![](https://mednoter.com/media/files/2019/2019-08-18-mini-program.jpg)
 
+
+---
 
 ## 加入前瞻性的公司做技术顾问
 
@@ -294,6 +314,7 @@ Requirement
     - Reactive Native
     - Node.js
 
+---
 
 ## 在计算机领域的尝试
 
@@ -302,7 +323,8 @@ Requirement
 - 图数据库
 - 补前端知识
 
-## 出国工作2年?
+
+## 出国工作2年 (canceled)
 
 需要筹备以下事宜
 
