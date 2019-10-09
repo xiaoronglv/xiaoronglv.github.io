@@ -34,16 +34,18 @@ LinkOut文件其实就是一个链条，一边是PubMed的id，一边是出版�
 里面包括出版商的各种信息，名称，缩写，id，简介等等。JTD杂志的identity file:
 
   
-    <?xml version="1.0"?>
-    <!DOCTYPE Provider PUBLIC "-//NLM//DTD LinkOut 1.0//EN"
-    "http://www.ncbi.nlm.nih.gov/projects/linkout/doc/LinkOut.dtd">
-    <Provider>
-        <ProviderId>8410</ProviderId>
-        <Name>Pioneer Bioscience Publishing Company</Name>
-        <NameAbbr>pioneerpub</NameAbbr>
-        <SubjectType>publishers/providers</SubjectType>
-        <Url>http://www.thepbpc.org</Url>
-    </Provider>
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE Provider PUBLIC "-//NLM//DTD LinkOut 1.0//EN"
+"http://www.ncbi.nlm.nih.gov/projects/linkout/doc/LinkOut.dtd">
+<Provider>
+    <ProviderId>8410</ProviderId>
+    <Name>Pioneer Bioscience Publishing Company</Name>
+    <NameAbbr>pioneerpub</NameAbbr>
+    <SubjectType>publishers/providers</SubjectType>
+    <Url>http://www.thepbpc.org</Url>
+</Provider>
+```
 
 
 
@@ -52,76 +54,77 @@ LinkOut文件其实就是一个链条，一边是PubMed的id，一边是出版�
 
 里面包括PubMed的每篇文章如何与出版商的网址建立关系。JTD杂志通过doi做了跳转，不用一次次的提交resource文件。
 
-    <?xml version="1.0" ?>
-    <!DOCTYPE LinkSet PUBLIC "-//NLM//DTD LinkOut 1.0//EN"
-      "http://www.ncbi.nlm.nih.gov/projects/linkout/doc/LinkOut.dtd">
-    <LinkSet>
-      <Link>
-       <LinkId>jtd</LinkId>
-       <ProviderId>8410</ProviderId>
-       <IconUrl>http://www.jthoracdis.com/public/system/jtd/icon-for-pubmed.jpg</IconUrl>
-       <ObjectSelector>
-        <Database>PubMed</Database>
-        <ObjectList>
-          <Query>"2072-1439"[ta] AND 2009:2030[dp]</Query>
-        </ObjectList>
-      </ObjectSelector>
-      <ObjectUrl>
-        <Base>http://dx.doi.org/</Base>
-        <Rule>&lo.doi;</Rule>
-        <Attribute>full-text online</Attribute>
-      </ObjectUrl>
-    </Link>
-    <Link>
-      <LinkId>jgo</LinkId>
-      <ProviderId>8410</ProviderId>
-      <IconUrl>http://www.thejgo.org/public/system/jgo/icon-for-pubmed.jpg</IconUrl>
-      <ObjectSelector>
-        <Database>PubMed</Database>
-        <ObjectList>
-          <Query>"2219-679X"[ta] AND 2009:2030[dp]</Query>
-        </ObjectList>
-      </ObjectSelector>
-      <ObjectUrl>
-        <Base>http://dx.doi.org/</Base>
-        <Rule>&lo.doi;</Rule>
-        <Attribute>full-text online</Attribute>
-      </ObjectUrl>
-    </Link>
-    <Link>
-     <LinkId>cjcr</LinkId>
-     <ProviderId>8410</ProviderId>
-     <IconUrl>http://www.thecjcr.org/public/system/cjcr/cjcr-icon-pubmed.jpg</IconUrl>
-     <ObjectSelector>
-      <Database>PubMed</Database>
-      <ObjectList>
-        <Query>"1000-9604"[ta] AND 2009:2030[dp]</Query>
-      </ObjectList>
-    </ObjectSelector>
-    <ObjectUrl>
-      <Base>http://dx.doi.org/</Base>
-      <Rule>&lo.doi;</Rule>
-      <Attribute>full-text online</Attribute>
-    </ObjectUrl>
-    </Link>
-    <Link>
-     <LinkId>qims</LinkId>
-     <ProviderId>8410</ProviderId>
-     <IconUrl>http://www.amepc.org/public/system/qims/qims-icon-pubmed.jpg</IconUrl> 
-     <ObjectSelector>
-      <Database>PubMed</Database>
-      <ObjectList>
-        <Query>"2223-4306"[ta] AND 2009:2030[dp]</Query>
-      </ObjectList>
-    </ObjectSelector>
-    <ObjectUrl>
-      <Base>http://dx.doi.org/</Base>
-      <Rule>&lo.doi;</Rule>
-      <Attribute>full-text online</Attribute>
-    </ObjectUrl>
-    </Link>
-    </LinkSet>
-
+```xml
+<?xml version="1.0" ?>
+<!DOCTYPE LinkSet PUBLIC "-//NLM//DTD LinkOut 1.0//EN"
+  "http://www.ncbi.nlm.nih.gov/projects/linkout/doc/LinkOut.dtd">
+<LinkSet>
+  <Link>
+   <LinkId>jtd</LinkId>
+   <ProviderId>8410</ProviderId>
+   <IconUrl>http://www.jthoracdis.com/public/system/jtd/icon-for-pubmed.jpg</IconUrl>
+   <ObjectSelector>
+    <Database>PubMed</Database>
+    <ObjectList>
+      <Query>"2072-1439"[ta] AND 2009:2030[dp]</Query>
+    </ObjectList>
+  </ObjectSelector>
+  <ObjectUrl>
+    <Base>http://dx.doi.org/</Base>
+    <Rule>&lo.doi;</Rule>
+    <Attribute>full-text online</Attribute>
+  </ObjectUrl>
+</Link>
+<Link>
+  <LinkId>jgo</LinkId>
+  <ProviderId>8410</ProviderId>
+  <IconUrl>http://www.thejgo.org/public/system/jgo/icon-for-pubmed.jpg</IconUrl>
+  <ObjectSelector>
+    <Database>PubMed</Database>
+    <ObjectList>
+      <Query>"2219-679X"[ta] AND 2009:2030[dp]</Query>
+    </ObjectList>
+  </ObjectSelector>
+  <ObjectUrl>
+    <Base>http://dx.doi.org/</Base>
+    <Rule>&lo.doi;</Rule>
+    <Attribute>full-text online</Attribute>
+  </ObjectUrl>
+</Link>
+<Link>
+ <LinkId>cjcr</LinkId>
+ <ProviderId>8410</ProviderId>
+ <IconUrl>http://www.thecjcr.org/public/system/cjcr/cjcr-icon-pubmed.jpg</IconUrl>
+ <ObjectSelector>
+  <Database>PubMed</Database>
+  <ObjectList>
+    <Query>"1000-9604"[ta] AND 2009:2030[dp]</Query>
+  </ObjectList>
+</ObjectSelector>
+<ObjectUrl>
+  <Base>http://dx.doi.org/</Base>
+  <Rule>&lo.doi;</Rule>
+  <Attribute>full-text online</Attribute>
+</ObjectUrl>
+</Link>
+<Link>
+ <LinkId>qims</LinkId>
+ <ProviderId>8410</ProviderId>
+ <IconUrl>http://www.amepc.org/public/system/qims/qims-icon-pubmed.jpg</IconUrl> 
+ <ObjectSelector>
+  <Database>PubMed</Database>
+  <ObjectList>
+    <Query>"2223-4306"[ta] AND 2009:2030[dp]</Query>
+  </ObjectList>
+</ObjectSelector>
+<ObjectUrl>
+  <Base>http://dx.doi.org/</Base>
+  <Rule>&lo.doi;</Rule>
+  <Attribute>full-text online</Attribute>
+</ObjectUrl>
+</Link>
+</LinkSet>
+```
 
 
 ## 相关资料
