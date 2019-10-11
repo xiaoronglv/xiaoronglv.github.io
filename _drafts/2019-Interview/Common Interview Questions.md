@@ -66,6 +66,11 @@ When I know PingCAP, I realize that it's the company that I want to work for.
 
 ## 5. Why Should we hire you?
 
+- experience 
+
+
+
+
 1. I have been a web developer for more than 5 years, have some experience with different database systems, or cache system.
    
 the web developer is a typical customer of the database.
@@ -84,34 +89,21 @@ compare
 
 ## 6. What are your greatest professional strengths?
 
+pick the top three things 
 
+- database expert
+- influencer
+- diligent worker
 
 
 ## 7. What do you consider to be your weaknesses?
 
-India English.
-
-I have try my best to collaborate with India colleague, but it's still very hard to to me communicate with them.
-
-India English is very hard to understand.
 
 
 ## 8. What is your greatest professional achievement?
 
 
 ## 13. Why are you leaving your current job?
-
-SAP is a great place to work.  You can balance your work, family, and health.
-
-They really care about their employees.  They provide training, insurance. They care about your growth.
-
-Also, my colleagues are very nice, we have a good relationship with each other.
-
-But for me, I often ask one question. If there are only 2 years left in my life, which kind of life should I live?
-
-This question helps me to reflect on what is important in my life. my faith to god, my family, health. but when it comes to career, I need to do some changes. To build something that I have great passion, rather than wasting my life day by day.
-
-## 14. Why were you fired?
 
 
 ## 15. What are you looking for in a new position?
@@ -142,7 +134,8 @@ But life is hard, my parents are farmer, all my parent's saving has been spent o
 
 Finally, I made a compromise with life. I choose medicine major.
 
-You have known the following story. After graduated from SJTU, I became a product manager, learn to program by myself. 
+
+you know the rest of the story. After graduated from SJTU, I became a product manager, learn to program by myself. 
 
 
 ## 23. How do you deal with pressure or stressful situations?
@@ -154,17 +147,21 @@ You have known the following story. After graduated from SJTU, I became a produc
  
 ## 25. What are your salary requirements?
  
- 29000
- 
- I am flexible. we can negotiate on it.
+
  
  
-## 30. What do you think we could do better or differently?
+## 30. What do you think we could do better or differently? (prepare this question)
  
  
-## 31. Do you have any questions for us?
+## 31. Do you have any questions for us? (prepare for it)
  
- 
- ## 技术挑战是什么，怎么解决的？
+
+1. I know you have 300+ customers, I am  curious how many total workers in this HR system?
+
+2. which kind of frontend framework are you using?
+
+
+
+
  
  

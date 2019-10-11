@@ -14,10 +14,9 @@ I was in that position for two years, and during those two years, I learned prog
 
 Then, I moved to shanghai for personal reasons and started my new career in programming. I worked for a startup company as a ruby developer. 
 
-I implemented lots of features for the company's E-commerce system. For example, the delivery sub-system and the SMS notification.
+I implemented lots of features for the company's E-commerce system. For example, the delivery system and the SMS notification.
 
-That company had twenty million customers at that time, so I also do some performance tuning work
-
+That company had twenty million customers at that time, I also did some performance tuning work
 
 I worked there for a year and a half. During part of that time, my wife was pregnant. It was a greater challenge to balance my work and family.
 
@@ -34,3 +33,28 @@ After my fellowship ended, there was a re-organization within our team. The Shan
 I worked at SAP Jam team for more than four years. 
 
 That's been my career so far.
+
+---
+
+Irene 帮我纠正的句子
+
+1. Before: I worked there for **one and half year**.
+
+	After: I worked there for **one year and a half**.
+
+2. Before: I moved to shanghai **due to family**
+
+	After: I moved to shanghai **for personal reasons**
+
+3. Before: I worked in infrastructure as a ~~fellowship~~.
+
+	After: I worked as a **fellow** in infrastructure for 8 months
+	
+4. Before: I learn to program
+
+	After: I learn programming.
+	
+
+时髦的用法
+	
+1. Those included A, B and C.

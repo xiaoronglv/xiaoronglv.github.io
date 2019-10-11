@@ -23,8 +23,6 @@ R = Result. What was the result? What did you learn from the experience? Why is 
 
 My greatest achievement was reducing the response time of SAP Jam's web application server from 300ms to 100ms.
 
-
-
 ======The situation===== 
 
 our codebase was a huge Ruby on Rails project, which had more than 200,000 lines. Customers always complained it was too slow.
@@ -35,7 +33,7 @@ This unwillingness was understandable, because there were several difficulties w
 
 1. Ruby is very flexible, our codebase was too huge, we had lots of monkey patches. It was very hard to track.
 
-2. Each request triggered more than 200 queries, sometimes one thousand. We did find some small bottlenecks, but it was hard to identify the root cause.
+2. Each request triggered more than 200 queries, sometimes one thousand. We did find some small bottlenecks, but it didn't have too much value.
 
 3. Even though I finally identified the bottleneck, I could not figure out the code and make sure my change would not break the old behavior. it wasn't easy to contact the authors. 
 
@@ -49,9 +47,7 @@ So my solution was to:
 1. arrange lots of meetings to discuss the code with its authors.
 
 
-2. 
-
-There are some common strategies to improve the performance.
+2. There are some common strategies to improve the performance.
 
 E.g. 
 - HTTP Cache, I mean etag
@@ -67,3 +63,11 @@ I needed to develop the optimal plan for our business from several common strate
 
 The results were good. we successfully reduced the response time from 300ms to 100 ms.
 	
+---
+
+Irene 帮忙纠正的句子
+
+
+时髦句子
+
+The unwillingness was understandable, because
