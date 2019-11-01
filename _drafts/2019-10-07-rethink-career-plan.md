@@ -252,6 +252,13 @@ requirement
 
 ### PubMed
 
+名字
+
+- Pubmed.me
+- Ypubmed.com (yet another pubmed)
+- Yscholar.com (yet another scholar search engine)
+
+
 功能
 
 1. 可以查看自己写的论文引用情况
@@ -273,6 +280,10 @@ requirement
 6. 可以增加文献书单的功能，类似于‘豆瓣书单’，罗列一些比较经典的论文，供新手导读。
 
 7. 可以组织一些直播，大家一起读论文的活动。
+
+8. 或许，这个数据库并不一定非要只包含PubMed的信息，可以像Sci数据库一样，包含各个学科，各个领域。产品定位为学术搜索。名字叫 Yscholar.com
+
+
 
 
 ### 医生 CRM
