@@ -231,11 +231,11 @@ tags:
 |  | 盈透 | 富途  | 老虎 | 雪盈 | 盈透绑定雪盈 | 香港银行 | 
 |--|--|--|--|--|--|
 | 创建时间 | 1977 | 2012 | 2014 | 2017 | 盈透(1977), 雪盈(2017) | 历史悠久 |
-| 支持市场 | 全球股市 | 港股，美股，A 股  | 港股，美股，A 股 | 港股，美股，A 股 | 全球市场 | 港股，美股，A 股 |
+| 支持市场 | 全球股市 | 港/美/A 股  | 港/美/A 股 | 港/美/A 股 | 全球市场 | 港/美A 股 |
 | 佣金 | 便宜 | 便宜 | 便宜 | 便宜 | 便宜 | 100港币左右 |
 | 入金门槛 | 1万美元 | 0 | 0 | 3000美元 | 1万美元 | 0 |
-| 存仓费 | 大于 10 万美元时免除 | 无 | 25-50元不等 |环球帐户资产大于1000美金时免收管理费；老虎标准账户无管理费。 | 无 | 无 | 25-50 港币/月|
-| 派发股息收费 | 无 | 股息总额0.2%，最低30港币 |  |  | 无 | 30港币左右 |
+| 存仓费 | 大于 10 万美元时免除 | 无 | 环球帐户资产大于1000美金时免收管理费；<br>老虎标准账户无管理费。 | 无 | 无 | 25-50 港币/月|
+| 派发股息收费 | 无 | 股息总额0.2%，最低30港币 | 没说 | 没说 | 无 | 30港币左右 |
 | 资金风险 | 几乎为0 | 有风险 | 有风险 | 有风险 | 有风险 | 几乎为0 |
 
 
@@ -328,7 +328,7 @@ tags:
 - [雪盈证券：佣金费率](https://www.snowballsecurities.com/help/detail/commission/us)
 - [老虎证券：佣金费率](https://www.tigersecurities.com/help/charge/531)
 - [汇丰银行(香港): 股票月供计划收费表](https://www.personal.hsbc.com.hk/1/2/chinese/hk/investments/stocks/smip/detail)
-- [汇丰银行(香港)：可供定投的股票列表](https://www.personal.hsbc.com.hk/1/2/simplified/hk/investments/stocks/smip/detail)
+- [汇丰银行(香港)：可供定投的股票列表](https://www.hsbc.com.hk/zh-hk/investments/products/stocks/hk-trading/monthly/#pp_main_title_5)
 - [中国银行(香港): 股票月供计划](https://www.bochk.com/tc/investment/securities/monthly.html)
 - [雪盈证券安全吗？有黑幕吗？](https://www.zhihu.com/question/65646071)
 - [已有盈透证券账户，为何绑定到雪盈证券交易？](https://www.snowballsecurities.com/help/detail/open/bind)
