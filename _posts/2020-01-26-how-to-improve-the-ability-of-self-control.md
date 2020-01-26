@@ -136,9 +136,11 @@ tags:
 3. 找一个帮助者做你理性决策者持剑人，用来掌管那个密码，防止猴子篡位。
 
 
+## References
 
-
-
+1. [Ted: Why our screens make us less happy](https://www.ted.com/talks/adam_alter_why_our_screens_make_us_less_happy?language=en)
+2.  [《欲罢不能》](https://book.douban.com/subject/30163521/)
+3.  [Ted talks: Inside the mind of a master procrastinator](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator)
 
 
 
