@@ -8,12 +8,12 @@ tags:
   -
 ---
 
-在很多人的印象里，远程办公是一件很爽的事情。
+在很多人的印象里，远程办公是一件很惬意的事情。
 
 - 不需要打卡
-- 不需要赶公交，节省了大量的时间
-- 不用拍马屁，靠手艺吃饭，完全以结果为导向
-- 自主安排时间。
+- 不需要赶公交，节省了通勤时间
+- 完全以结果为导向
+- 自主安排时间
 
 远程办公听上去很舒服，其实很挑着自己的自制力。没有老板盯着，员工可以刷微博一天，无所事事；也可以打开京东淘宝等购物网站瞎逛；然后撒谎说自己研究了一天新技术。
 
@@ -169,9 +169,9 @@ Tim Urban 在 Ted 演讲[《拖延症人群的内心世界》](https://www.ted.c
 
 ## Notes
 
-1.  [Ted talks: Inside the mind of a master procrastinator](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator)
-2. [TED talks: Why our screens make us less happy](https://www.ted.com/talks/adam_alter_why_our_screens_make_us_less_happy?language=en)
-3.  [《欲罢不能》](https://book.douban.com/subject/30163521/)
-4.  [给 iPhone 开启“屏幕使用时间”的方法](https://support.apple.com/zh-cn/HT208982)
+1. [TED talk: Inside the mind of a master procrastinator](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator)
+2. [TED talk: Why our screens make us less happy](https://www.ted.com/talks/adam_alter_why_our_screens_make_us_less_happy?language=en)
+3. [书籍：《欲罢不能》](https://book.douban.com/subject/30163521/)
+4. [给 iPhone 开启“屏幕使用时间”的方法](https://support.apple.com/zh-cn/HT208982)
 
-	![](/media/files/2020/2020-01-27-screen-time.png)
+![](/media/files/2020/2020-01-27-screen-time.png)
