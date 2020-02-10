@@ -67,7 +67,7 @@ App 开发者故意设计让人上瘾的软件，谁占有用户的时间越多�
 
 <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/tim_urban_inside_the_mind_of_a_master_procrastinator" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 
-Tim Urban 在 Ted 演讲[《拖延症人群的内心世界》](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=zh-cn) 中用一副漫画生动的刻画了每个人面临诱惑时的挣扎。你的脑子中住着两个生物，一个是理性决策者，一个是猴子。
+Tim Urban 在 TED 演讲[《拖延症人群的内心世界》](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=zh-cn) 中用一副漫画生动的刻画了每个人面临诱惑时的挣扎。你的脑子中住着两个生物，一个是理性决策者，一个是猴子。
 
 - 理性决策者制定计划，从长远考虑问题，为自己谋福祉。
 - 而那只猴子完全不考虑未来，它只要当下开心。
