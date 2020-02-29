@@ -68,5 +68,9 @@ HR 收到的每一份简历上都热情洋溢的写着：
 **只要坚持，终归会有可大可小的作品，而作品是判断一个人是否真的是自我驱动的人最简单的方法。**
 
 
+## References
 
+ 1. [开智学堂招聘要求](https://github.com/OpenMindClub/Share/wiki/InfoJob)
+
+2. [怎样花两年时间去面试一个人](http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/)
 
