@@ -1,5 +1,5 @@
 ---
-title: "吕小荣的交易原则"
+title: "适合自己的股票交易原则"
 layout: post
 guid: JEBmuObcsReq
 date: 2020-03-13 22:27:11
