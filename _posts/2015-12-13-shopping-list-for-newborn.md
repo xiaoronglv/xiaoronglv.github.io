@@ -11,18 +11,6 @@ tags:
 
 最近我的好多朋友都要升级做爸爸妈妈了，他们不知道要准备哪些东西，以及用途是什么。热心的向3个人解释过3遍一样的内容后，我就觉得很有必要写一份文档给后人参考。Don't repeat yourself。
 
-小孩出生后需要准备的物品大体可分为三类：
-
-1. 国内买不到的东西，必须从美国亚马逊购买。
-2. 国内可以买到的东西。
-3. 白拿的东西。
-
-因为有些东西在国内买不到，为了娃，纵使你是多么嫌麻烦的一个人，也必须耐着性子学会在美国买东西。而且海淘的到货时间完全看运气，快则2周，慢则1个月，建议提前2个月开始屯第一类物品。
-
-我之所以选择美国亚马逊作为的原因是，大而全。一个网站就可以搞定全部的采购清单，节省了我大量做选择的时间。美国购物的中转公司我选的是 [转运中国](http://www.uszcn.com)，用下来还觉得不错。
-
-
-## Part1 国内买不到的东西
 
 ### 1. Ddrops 维生素D滴剂
 
@@ -36,11 +24,6 @@ tags:
 
 Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一滴400单位，刚好是新生儿一天需要的剂量。使用方法特别简单，滴到妈妈的乳头上，或者直接滴到新生儿的嘴里既可。
 
-东西虽好，中国却买不到，你可以通过以下两个途径海购：
-
-* [网易的考拉海购](http://www.kaola.com/product/25294.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx)
-* [美国亚马逊 Ddrops Baby 400 IU](http://www.amazon.com/dp/B003CT36NE)
-
 
 > 重要提醒：配方奶粉中含有维生素D，喂食配方奶粉后就不要继续补充维生素D了，否则会过量。
 
@@ -51,8 +34,6 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 小孩的吃奶方式有好几种，有的小孩饿虎扑食，进食时间特别短，我的儿子是那种慢条斯理型，吃一会睡一会，磨磨唧唧40分钟。他出生时7斤，媳妇抱他游刃有余。随着他体重的飙升，每次喂完奶我媳妇总是喊腰痛。
 
 当我把这个神奇的哺乳枕送我媳妇时，她特别后悔，后悔没早点买。
-
-购买途径：[美国亚马逊 My Brest Friend Original Nursing Pillow, Fireworks](http://www.amazon.com/gp/product/B003TSDMH8) 
 
 
 ### 3. 德国 Braun 红外线耳温枪
@@ -66,10 +47,8 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 后来我购买了 Braun 儿童耳温枪，测量精度高，仅需1秒，好动的小孩也可轻松搞定，。
 
 
-购买途径: [考拉海购 BRAUN 儿童耳温枪](http://www.kaola.com/product/4758.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx)
 
-
-### 4. Halo 睡袋
+### 4. 襁褓包巾
 
 我儿子刚出生时，睡觉不踏实，总是一惊一乍的，小手一抖就把自己吓醒了，头几天我不太放心，半夜里经常起来看看我儿子是否还活着。现在都三个月了，偶尔还是半夜抽一下，不过我已经想到让他睡的更好的方法 —— 裹襁褓
 
@@ -77,15 +56,13 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 ![How to wrap your newborn baby]({{ site.url }}/media/files/2015/2015-12-13-swaddling.jpg)
 
-比较懒且省事的方法，用 Halo 睡袋。
+比较懒且省事的方法，用襁褓包巾。
 
 ![How to wrap your newborn baby with halo]({{ site.url }}/media/files/2015/2015-12-13-halo.jpg)
 
-购买途径：[考拉海购 HALO SleepSack 睡袋](http://www.kaola.com/product/1226592.html?sharer=E92BxDroPVSEWtAgrMeOO9FA7nbAoPR2CPBeW6kD2Fo=&shareTo=wx) 
 
 
-
-## Part 2 国内可以买得到的东西
+## 其他杂七杂八
 
 1. 尿不湿，我家娃用的花王的。
     * Newborn x 2袋
@@ -95,15 +72,13 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 
 3. 湿巾抽纸。换尿布时，用来擦婴儿屁股上的黄金便便。
 
-4. 襁褓包巾，用于裹襁褓
-
 5. 吸奶器。新生儿睡过夜后，妈妈依然不能偷懒，要半夜起床把奶吸出来。
 
 6. 婴儿指甲剪
 
 7. 婴儿鼻屎夹
 
-8. 手提袋。有钱人可以买 [Kipling Luggage New Baby L Nursery Bag](http://www.amazon.com/Kipling-Luggage-Baby-Nursery-Bright/dp/B010MKJRE2), 我比较穷，在京东买的 [HardieBear 大容量妈妈手提包](http://item.jd.com/1719650469.html)，里面的隔层很多，尿布、奶瓶等等都有专门的隔层，比较方便。
+8. 手提袋。有钱人可以买 Kipling Luggage New Baby L Nursery Bag, 我比较穷，随便买了一个大容量妈妈手提包，里面的隔层很多，尿布、奶瓶等等都有专门的隔层，比较方便。
 
     ![Bag]({{ site.url }}/media/files/2015/2015-12-13-nusery-bag.jpg)
 
@@ -112,7 +87,7 @@ Ddrops 是我们教会所有妈妈的首选，它是液体的维生素 D，一�
 10. 0-12 month 奶粉。一般用不着，屯着备用，一罐 400g 惠氏 S-26 既可。
 
 
-## 3. 白拿的东西
+## 别买衣服
 
 小孩长得太快，新衣服最多穿一个月，买衣服太不划算。我们家穿的衣服都是教会兄弟姐妹送的，一分钱没花。
 
