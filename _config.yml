@@ -19,8 +19,6 @@ links:
     url:          /feed.xml
   - name:         About
     url:          /about.html
-  - name:         tencent
-  - url:          /tencent2075501715799328467.txt
 
 permalink:        /:title.html
 markdown:         kramdown
