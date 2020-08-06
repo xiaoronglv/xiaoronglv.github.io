@@ -7,7 +7,7 @@ tags:
   - Git
 ---
 
-Mac 中每个目录都会有个文件叫`.DS_Store`, 用于存储当前文件夹的一些 Meta 信息。每次提交代码时，我都要在代码仓库的 .gitignore 中声明，忽略这类文件。有方法可以全局性的忽略某种类型的文件吗？
+Mac 中每个目录都会有个文件叫`.DS_Store`, 用于存储当前文件夹的一些 Meta 信息。每次提交代码时，我都要在代码仓库的 .gitignore 中显式的声明忽略这类文件。有没有一劳永逸的方法可以让 git 全局忽略这种类型的文件？
 
 按照以下两步就可实现
 
@@ -46,15 +46,15 @@ Mac 中每个目录都会有个文件叫`.DS_Store`, 用于存储当前文件夹
 
 ```
 [user]
-	name = ryan.lv
-	email = 1982YMOlible@gmail.com
+	name = Your Name
+	email = Your email
 [push]
 	default = matching
 [core]
 	excludesfile = ~/.gitignore_global
 ```
 
-搞定了！在所有的文件夹下 .DS_Store .swp .zip 等文件类型会被 Git 自动忽略。
+搞定了！不管 .DS_Store .swp .zip 在哪个目录下，这种文件都会被 Git 自动忽略。
 
  ![demo](/media/files/2015/2015-03-22-demo.png)
 
