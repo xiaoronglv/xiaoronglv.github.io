@@ -348,5 +348,5 @@ tags:
 
 ## 参考公众号
 
-- [微信公众号: 伍治坚证据主义](http://mp.weixin.qq.com/profile?src=3&timestamp=1553648566&ver=1&signature=EPDmqSdMltAx9XPq3VJt3l9FAnzBO2ht2kU794Ou1sSEp5C9bSxrr5ifqtdf4uqIzY6h-xJ4b2KJwLfitnBcSg==)
+- [微信公众号: 伍治坚证据主义](https://zhuanlan.zhihu.com/wzjevidence)
 
