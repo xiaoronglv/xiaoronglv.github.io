@@ -239,7 +239,7 @@ Ruby 是一门小众语言，翻译的文档很快都会过时，为了提高自
 
 **小广告**
 
-通过吕小荣的这个专属邀请链接注册 iTalki，你和我都能获得10美元用来购买课程。
+通过吕小荣的这个专属邀请链接注册 iTalki，购买超过20美元的课程后，你和我都能获得10美元的奖励。
 
 [https://www.italki.com/i/EeAeAB](https://www.italki.com/i/EeAeAB)
 
