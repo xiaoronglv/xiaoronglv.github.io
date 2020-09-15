@@ -20,7 +20,7 @@ tags:
 
 ![](/media/files/2020/2020-09-15-git-clone.gif)
 
-对于 HTTP 形式的仓库地址，可以在终端里输入以下两行命令，为 Git 设置全局的 http 代理，从而提高 git clone/pull 的速度。
+对于 HTTP 形式的仓库地址，可以在终端里输入以下两行命令，为 Git 设置全局的 HTTP 代理，从而提高 git clone/pull 的速度。
 
 ```
 git config --global http.proxy "http://127.0.0.1:8080"
@@ -42,7 +42,7 @@ git config --global https.proxy "http://127.0.0.1:8080"
 
 ## SSH 形式的仓库地址
 
-大部分开发者会上传公钥到 Github, 使用 ssh 的访问公司的私有仓库，避免 git push 时一次次输入密码。
+大部分开发者会上传公钥到 Github, 使用 SSH 的访问公司的私有仓库，避免 git push 时一次次输入密码。
 
 ![](/media/files/2020/2020-09-15-ssh.jpg)
 
