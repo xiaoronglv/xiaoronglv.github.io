@@ -16,7 +16,7 @@ tags:
 
 ##  HTTP 形式的仓库地址
 
-对于开源的项目仓库，我们通常大部分并不需要 push 权限，只会 git clone/pull。很多人会选择使用 HTTP 方式来访问仓库地址。
+对于别人的开源项目，我们并没有 push 权限，只会 git clone/pull。很多人会选择使用 HTTP 方式来访问仓库地址。
 
 ![](/media/files/2020/2020-09-15-git-clone.gif)
 
@@ -42,11 +42,11 @@ git config --global https.proxy "http://127.0.0.1:8080"
 
 ## SSH 形式的仓库地址
 
-大部分开发者会上传公钥到 Github, 使用 SSH 的访问公司的私有仓库，避免 git push 时一次次输入密码。
+对于自己的仓库，大部分开发者会使用 SSH 的访问方式，并且上传公钥到 Github, 避免 git push 时一次次输入密码。
 
 ![](/media/files/2020/2020-09-15-ssh.jpg)
 
-对于这种方式，我们可以在 ~/.ssh/config 设置代理，提高 git pull/push 的速度。
+对于 SSH 方式，我们可以在 ~/.ssh/config 设置代理，提高 git pull/push 的速度。
 
 ```
 Host github.com
