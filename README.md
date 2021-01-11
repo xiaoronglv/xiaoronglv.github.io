@@ -8,13 +8,13 @@
 - 前医学产品经理
 - Ruby Programmer
 
-性格安静，不喜社交。做事情专心，喜欢计划。
+性格安静，做事情专心，喜欢问为什么。
 
 
 ## Follow me
 
-* [github 不活跃](https://github.com/xiaoronglv)
-* [Weibo 已弃用](http://weibo.com/xiaoronglv/)
-* [Twitter 不活跃](http://twitter.com/xiaoronglv/)
+* [github](https://github.com/xiaoronglv)
+* ~~Weibo 已弃用~~
+* ~~Twitter 不活跃~~
 
 Mail: xiaoronglv(at)gmail(dot)com
