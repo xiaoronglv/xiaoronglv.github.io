@@ -2,7 +2,7 @@
 title: "2021 Plan for Solomon"
 layout: post
 guid: J1pkXdmqxOeC
-date: 2020-12-20 00:00:00
+date: 2021-02-08
 coffee:
 tags:
   -
