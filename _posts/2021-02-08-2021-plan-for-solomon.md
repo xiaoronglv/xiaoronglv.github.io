@@ -38,3 +38,7 @@ week5
 
 week6
 ![](/media/files/2021/2021-02-08-Solomon.jpeg)
+
+week7
+
+![](/media/files/2021/2021-02-16-solomon.jpeg)
