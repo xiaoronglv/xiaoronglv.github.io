@@ -120,16 +120,16 @@ Youtube kids / Khan Academy kids / Farfaria上面介绍的几款英文软件，�
 
 在限制孩子的电子设备之前，家长最好能以身作则，先控制好自己的屏幕时间。否则孩子会很困惑：一方面爸爸妈妈沉迷于手机，另一方面却霸道限制孩子，嘴里说的和行为不一致。
 
-## 如何下载 Apple Store 美区的 App？
+## 如何下载 **美区 Apple Store** 的 App？
 
 Khan Academy Kids 和 Youtube Kids 虽好，但在中国区 Apple Store 并未上架。
 
 你可以在京东/淘宝/拼多多购买一个美国区的 Apple ID，在 iPad 上登陆 Apple Store 后就可以下载美区的软件了。
 
 
-## 建议
+## 结论
 
-如果你乐于折腾，又舍的花钱，那么你可以试一下 Youtube Kids
+如果你乐于折腾fq，又舍的花钱，那么你可以试一下 Youtube Kids
 
 如果你怕麻烦，干脆不要折腾 Youtube Kids。只用 Khan Academy Kids / 洪恩识字 / 洪恩数学 / Farfaria / 叽里呱啦就够了。工具不在多，贵在坚持。
 
