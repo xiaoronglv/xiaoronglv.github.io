@@ -119,6 +119,7 @@ Youtube kids / Khan Academy kids / Farfaria上面介绍的几款英文软件，�
 	- Youtube kids 20 分钟/天
 	- Khan Academy kids + 洪恩识字 + 洪恩数学 + 叽里呱啦 + Farfaria  40分钟/天
 
+在限制孩子的电子设备之前，家长最好能以身作则，先控制好自己的屏幕时间。否则孩子会很困惑：一方面爸爸妈妈沉迷于手机，另一方面却霸道限制孩子，嘴里说的和行为不一致。
 
 ## 如何下载 Apple Store 美区的 App？
 
