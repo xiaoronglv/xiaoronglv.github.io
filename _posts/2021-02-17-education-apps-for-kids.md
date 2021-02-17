@@ -1,5 +1,5 @@
 ---
-title: "推荐几个寓教于乐的儿童学习App"
+title: "我家给孩子用的教育App"
 layout: post
 guid: J1p21kXd1mqxO2eC
 date: 2021-02-17 09:38:59
@@ -26,7 +26,7 @@ tags:
 
 里面还提供了大量精美的英文绘本和视频，也可以晚上用来给孩子讲故事。
 
-这款软件虽然是免费，但是并没有在中国区上架，可以购买一个美区 Apple Store 账户下载此 App。
+这款软件虽然是免费，但是并没有在中国区上架，可以购买一个美区 Apple ID下载此 App。
 
 [![](/media/files/2021/2021-02-17-khan-academy-kids.png)](https://learn.khanacademy.org/khan-academy-kids/)
 
