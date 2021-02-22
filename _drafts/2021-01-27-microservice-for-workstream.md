@@ -10,8 +10,26 @@ tags:
 
 ## 目标是什么？
 
+2周就可以完成一个 integration 的开发。
 
-**业务量一个脑袋就可以装下，减少维护的负担。**
+https://www.zendesk.com/apps/directory
+
+
+## 新框架应该满足的特性
+
+**使用通用技术栈，方便找人**
+
+
+**尽量选用成熟的解决方案，不要重复造轮子。**
+
+- https://github.com/zendesk/ruby-kafka
+- https://github.com/zendesk/racecar
+
+
+**提供项目模版 rails template，方便 developer 在2分钟内把项目轮廓搭好**
+
+
+**每个integration 代码量足够小，一个脑袋就可以装下，减少维护的负担。**
 
 Junior developer 不用关心上游应用的逻辑，只需要处理好 service 内部的逻辑就可以了。
 
@@ -23,35 +41,41 @@ Junior developer 不用关心上游应用的逻辑，只需要处理好 service 
 
 
 
-## 如何管理消息的 schema？
+## 子任务
+
+### 1. 如何管理消息的 schema？
 
 contract 不能变来变去
 
-将来的时候，要支持多种语言，不能随便编
+将来的时候，要支持多种语言，不能随便变
+
+https://github.com/helloworld1812/Protocol
 
 
 
-
-## Event Streaming 的技术选型
+### 2. Event Streaming 的技术选型
 
 
 1. SNS fanout + SQS queues
 
 
-2. Kinesis
+2. Kinesis 
+	- Price
+	- stream management
 
-Price
-
-3. 
-
-
-
-## 从头实现一个框架，需要考虑的因素
-
-部署
-
-Event <-> Consumer 的 Mapping 的维护
+3. Kafka
 
 
+### 3. 主仓库和 microservice 之间的鉴权
 
-## 选用别人
+1. JWK
+
+2. 非对称签名的 JWT
+
+
+
+### 4. 部署
+
+
+### 5. Event <-> Consumer 的 Mapping 的维护
+
