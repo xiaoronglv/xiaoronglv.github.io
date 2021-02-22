@@ -24,21 +24,38 @@ tags:
 
 # Weekly Review Log
 
-week2
-![](/media/files/2021/solomon-weekly-review-w02.jpg)
+**week2**
 
-week3
-![](/media/files/2021/2021-01-17-Solomon.jpg)
+![](https://mednoter.com/media/files/2021/solomon-weekly-review-w02.jpg)
 
-week4
-![](/media/files/2021/2021-01-25-Solomon.jpeg)
+**week3**
 
-week5
-![](/media/files/2021/2021-02-01-solomon.jpeg)
+![](https://mednoter.com/media/files/2021/2021-01-17-Solomon.jpg)
 
-week6
-![](/media/files/2021/2021-02-08-Solomon.jpeg)
+**week4**
 
-week7
+![](https://mednoter.com/media/files/2021/2021-01-25-Solomon.jpeg)
 
-![](/media/files/2021/2021-02-16-solomon.jpeg)
+**week5**
+
+![](https://mednoter.com/media/files/2021/2021-02-01-solomon.jpeg)
+
+**week6**
+
+![](https://mednoter.com/media/files/2021/2021-02-08-Solomon.jpeg)
+
+**week7**
+
+![](https://mednoter.com/media/files/2021/2021-02-16-solomon.jpeg)
+
+**week8**
+
+随着智力的发育，我看到他内心越来越多的小九九。以前并不是安静和善良，而是因为智力还没有发育好。
+
+- 饭吃剩了，他说“爸爸，你还没吃过吧，尝尝吧。
+- 不愿意和 xixi 家老三分享 iPad
+- 对爸爸妈妈的不顺从，撒泼。
+
+我对沐沐的品格不再那么乐观了，为他的心灵去祷告。
+
+![](https://mednoter.com/media/files/2021/2021-02-22-solomon.jpeg)
