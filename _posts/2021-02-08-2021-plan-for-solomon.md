@@ -59,3 +59,7 @@ tags:
 我对沐沐的品格不再那么乐观了，为他的心灵去祷告。
 
 ![](https://mednoter.com/media/files/2021/2021-02-22-solomon.jpeg)
+
+**week9**
+
+![](https://mednoter.com/media/files/2021/2021-03-01-Solomon.jpeg)
