@@ -67,4 +67,10 @@ tags:
 
 **week10**
 
+开始给沐沐讲什么是罪
+
+- 悖逆
+- 自私
+- 报复
+
 ![](https://mednoter.com/media/files/2021/2021-03-07-Solomon.jpeg)
