@@ -64,3 +64,7 @@ tags:
 **week9**
 
 ![](https://mednoter.com/media/files/2021/2021-03-01-Solomon.jpeg)
+
+**week10**
+
+![](https://mednoter.com/media/files/2021/2021-03-07-Solomon.jpeg)
