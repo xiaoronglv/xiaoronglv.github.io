@@ -1,7 +1,7 @@
 ---
 title: 如何备考 AWS Certified Solution Architect Associate(英文)? 
 layout: post
-guid: 
+guid: b7PldUZ(C8T43
 date: 2021-04-08 08:34:08
 coffee:
 tags:
