@@ -8,27 +8,26 @@ tags:
   -
 ---
 
-![](https://mednoter.com/media/files/2021/2021-04-17_18-40-27.jpg)
+![](/media/files/2021/2021-04-17-certification.jpg)
 
 
-## 为什么备考？
-
-我以前在 SAP 工作的时候，基础设施并没有上 AWS / GCP / Azure 共有云。
+我以前在一家大公司工作的时候，基础设施全部在一个简陋的私有云上。简陋到什么程度呢？差不多脏活累活都是自己干。
 
 - 负载均衡是 F5 load balancer -> HAProxy -> Nginx
 - 数据库的备份都是专人负责。
-- 文件存储都是自己 mount volume，满了还要扩容。
-- HTTPs 证书要自己申请，然后配置到负载均衡上。
+- 文件存储都是自己 mount volume，满了要扩容。
+- HTTPs 证书我要先发邮件向安全部门申请，安全部门再向 Symantec 申请新证书，然后配置到负载均衡上。
 
-运维的脏活累活都是自己干。
 
-后来团队招聘了一个 AWS Solution Architect，天天在办公室大谈公有云的好处。RDS 的服务多么稳定，升级如何贴心，S3 存储无限空间。
+后来团队招了一个 AWS Solution Architect，他天天在办公室大谈公有云的好处。RDS 的服务多么稳定，升级如何贴心，S3 存储无限空间。换句话说，我们的私有云真烂。
 
-文人相轻，程序员也一样。我心里常常嘀咕，你懂 MemechedCache 基于客户端的分布式吗？你懂一致性 hash 吗？你懂数据库的 Binlog 吗？你懂 Certificate Chain 吗？你懂 HTTP/2 吗？
+文人相轻，程序员也一样。我心里常常嘀咕，你懂 Memeched 基于客户端的分布式吗？你懂一致性 hash 吗？你懂数据库的 Binlog 吗？你懂 Certificate Chain 吗？你懂 HTTP/2 吗？
 
-你其实就是个 AWS 配置工程师，随便点点按钮，内部原理压根不懂。
+你丫的就是个 AWS 配置工程师，就知道随便点点按钮，内部原理压根不懂。
 
-后来我离开了 SAP，跳出了私有云的大火坑。在新的职场开始使用 AWS 全家桶。不用不知道，一用真是好，AWS 做的云产品甩出 SAP 的私有云十条街。
+## 为什么备考 AWS？
+
+后来我离开了大公司，跳出了私有云的大火坑。新的职场使用 AWS 全家桶，我开始了解 AWS。不用不知道，一用真是好，AWS 做的云产品甩出大公司私有云十条街。
 
 - 数据库可以开启 Multi-AZ，数据中心故障时，可以自动切换到另外一个 Availability Zone
 - 文件可以往 S3 里随便扔，容量无限制，再也不用 mount volume
@@ -38,11 +37,12 @@ tags:
 
 我也冒出了考 AWS Solution Architect 的想法。
 
+
 一，符合我的职业规划。国内的工作机会 996 严重，工作的自由度低。为了平衡家庭和工作，我大概率会在外企这条路继续走下去。2020年 AWS 全球市场份额占 31%，Azure 占 20%。AWS 知识可以在未来的职场不断被使用。
 
 二，我目前所在的公司 workstream.us 重度使用 AWS 的各种产品，备考 AWS Certified Solution Architect 可以帮助我改进公司的现有的架构。备考试题中有大量的模拟场景，我可以学到应对各种场景的最佳实践。
 
-三，AWS Certified Solution Architect – Associate 含金量很高认证，长期处于薪酬最高的程序员[排行榜前2位](https://www.globalknowledge.com/us-en/resources/resource-library/articles/top-paying-certifications/#gref)。有人统计过，持有该证书的工程师平均年薪是 11-14 万美金。如果你在外企工作，看在钱的份上，你也应该考此证书。
+三，AWS Certified Solution Architect – Associate 含金量很高认证，长期处于[最受欢迎的认证排行榜前2位](https://www.globalknowledge.com/us-en/resources/resource-library/articles/top-paying-certifications/#gref)。有人统计过，持有该证书的工程师平均年薪是 11-14 万美金。如果你在外企工作，看在钱的份上，你也应该考此证书。
 
 ## 什么时候开始备考比较合适？
 
@@ -55,7 +55,7 @@ AWS 的产品线非常的广，如果你们公司技术栈没有真实的使用�
 
 我的英文水平：读文档流畅，听力也还凑合，但是说话不流畅。
 
-一开始我直接购买了 AWS 官方推荐的教材 [《AWS Certified Solutions Architect Official Study Guide: Associate Exam (Aws Certified Solutions Architect Official: Associate Exam)》](https://www.amazon.com/Certified-Solutions-Architect-Official-Study/dp/1119138558)，通过学习教材备考。
+一开始我直接购买了 AWS 官方推荐的教材 《AWS Certified Solutions Architect Official Study Guide: Associate Exam (Aws Certified Solutions Architect Official: Associate Exam)》[(链接)](https://www.amazon.com/Certified-Solutions-Architect-Official-Study/dp/1119138558)，通过学习教材备考。
 
 通读全书之后很快发现了几个问题：
 
@@ -68,12 +68,12 @@ AWS 的产品线非常的广，如果你们公司技术栈没有真实的使用�
 
 **1.视频教学课程，作者  Stéphane Maarek**
 
-[《Ultimate AWS Certified Solutions Architect Associate》](https://www.udemy.com/share/102CPBAEMadldSRn8J/)
+《Ultimate AWS Certified Solutions Architect Associate》[(链接)](https://www.udemy.com/share/102CPBAEMadldSRn8J/)
 
 
-**2. 模拟题，作者 Tutorials Dojo**
+**2. 模拟题，作者 Tutorials Dojo** 
 
-[《https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02》](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/)
+《AWS Certified Solutions Architect Associate Practice Exams》[(链接)](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/)
 
 tips: 我刷模拟题得分92-96分，去考场真实考试只有78分。如果你模拟题分数很高，不要对自己过分自信。
 
@@ -93,7 +93,7 @@ tips: 我刷模拟题得分92-96分，去考场真实考试只有78分。如果�
 
 AWS 的大部分云产品是非常优秀的，但是还是会有很多非主流产品。
 
-CodeCommit 是 AWS 开发的简单 git server，可以帮助开发者托管代码。现如今大家都会用 Github/Gitlab, 谁会用 CodeCommit 呢？
+比如 CodeCommit 是 AWS 开发的简单 git server，可以帮助开发者托管代码。现如今大家都会用 Github/Gitlab, 谁会用 CodeCommit 呢？
 
 
 ## 备考时间
@@ -108,7 +108,7 @@ CodeCommit 是 AWS 开发的简单 git server，可以帮助开发者托管代�
 
 这是我2020年每周在 AWS 方面的[学习的记录](https://mednoter.com/plan-for-2020.html#3%E8%80%83%E4%B8%AA-aws-certified-solutions-architect-%E8%AF%81%E4%B9%A6)，别人是日拱一卒，我是”周“拱一卒。
 
-![](https://mednoter.com/media/files/2021/2021-04-27_11-46-41.jpeg)
+![](/media/files/2021/2021-04-27-log.jpg)
 
 ## 如何预约考试？
 
@@ -118,15 +118,23 @@ CodeCommit 是 AWS 开发的简单 git server，可以帮助开发者托管代�
 
 考试费用：150 美金。
 
-![](https://mednoter.com/media/files/2021/2021-04-27-schedule-exam.jpeg)
+![](https://mednoter.com/media/files/2021/2021-04-27-schedule-exam.jpg)
 
 AWS 的考试安排会有两个渠道 “通过 PSI 安排” 和 “通过  Pearson Vue”安排。 我一开始不太懂他们是什么，区别是什么。
 
-大千世界，无奇不有，有公司靠监考赚钱。PSI 和 Pearson Vue 是两个考试机构，你可以理解他们是专门监考的公司，AWS 和他们合作，你去 PSI 或 Pearson 公司去考试，他们会负责核对身份，监考。
+他们是两个考试机构，你可以理解他们是专门监考的公司，AWS 和他们合作，你去 PSI 或 Pearson 公司去考试，他们会负责核对身份，监考。大千世界，无奇不有，有公司靠监考赚钱。
 
 两家考试机构，并无太大区别，你选择一家离你近的考点就可以。
 
+
+这是 PSI 上海人民广场的一个考点，监考员首先会用身份证和其他证件核实身份，考场就是一个6人会议室大小的房间，里面有电脑。到了考试时间，监考员会给你打开电脑，你用指定的电脑开始考试。
+
+![](/media/files/2021/2021-04-27-psi.jpg)
+
+
 **预约中文版还是英文版?**
+
+AWS 考试题有中文版和英文版供选择。
 
 如果预约中文版，考试时每个题目既可以选择中文，也可以选择英文。我的朋友预约的是中文版，他考一个半小时就交卷了。
 
@@ -162,9 +170,9 @@ AWS 的考试安排会有两个渠道 “通过 PSI 安排” 和 “通过  Pea
 
 AWS Certified Solution Architect Associate Exam 考察的知识点非常的全面。
 
-如果有些知识点和你的工作密切相关，建议沉下心来吃透。
+- 如果有些知识点和你的工作密切相关，建议沉下心来吃透。
 
-如果有些知识点一辈子你也不会用到，建议点到为止，快速带过。将来如果用到了，再深入研究即可。
+- 如果有些知识点一辈子你也不会用到，建议点到为止，快速带过。将来如果用到了，再深入研究即可。
 
 祝你考试顺利。
 
