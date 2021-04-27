@@ -8,7 +8,7 @@ tags:
   -
 ---
 
-![](/media/files/2021/2021-04-17-certification.jpg)
+![](https://mednoter.com/media/files/2021/2021-04-17-certification.jpg)
 
 
 我以前在一家大公司工作的时候，基础设施全部在一个简陋的私有云上。简陋到什么程度呢？差不多脏活累活都是自己干。
@@ -108,7 +108,7 @@ AWS 的大部分云产品是非常优秀的，但是还是会有很多非主流�
 
 这是我2020年每周在 AWS 方面的[学习的记录](https://mednoter.com/plan-for-2020.html#3%E8%80%83%E4%B8%AA-aws-certified-solutions-architect-%E8%AF%81%E4%B9%A6)，别人是日拱一卒，我是”周“拱一卒。
 
-![](/media/files/2021/2021-04-27-log.jpg)
+![](https://mednoter.com/media/files/2021/2021-04-27-log.jpg)
 
 ## 如何预约考试？
 
@@ -129,7 +129,7 @@ AWS 的考试安排会有两个渠道 “通过 PSI 安排” 和 “通过  Pea
 
 这是 PSI 上海人民广场的一个考点，监考员首先会用身份证和其他证件核实身份，考场就是一个6人会议室大小的房间，里面有电脑。到了考试时间，监考员会给你打开电脑，你用指定的电脑开始考试。
 
-![](/media/files/2021/2021-04-27-psi.jpg)
+![](https://mednoter.com/media/files/2021/2021-04-27-psi.jpg)
 
 
 **预约中文版还是英文版?**
