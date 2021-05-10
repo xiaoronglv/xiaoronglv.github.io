@@ -143,3 +143,10 @@ tags:
 我开始学习为自己孩子的品格/顺服祷告，为自己的妻子祷告，为自己的耐心祷告。
 
 ![](https://mednoter.com/media/files/2021/2021-04-26-Solomon.jpeg)
+
+**week18**
+
+下载了一个很不错的圣经软件 Bible Kids，沐沐每天都会玩一下，学一下。
+
+![](https://mednoter.com/media/files/2021/2021-05-10-Solomon.jpeg)
+
