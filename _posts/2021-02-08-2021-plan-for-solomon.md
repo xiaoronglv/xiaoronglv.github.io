@@ -150,3 +150,6 @@ tags:
 
 ![](https://mednoter.com/media/files/2021/2021-05-10-Solomon.jpeg)
 
+**week19**
+
+周日到周三是五一假期，回来之后周六也要上班，过的挺辛苦。没有打印材料，也没有复盘。
