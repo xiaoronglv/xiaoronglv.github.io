@@ -27,7 +27,7 @@ tags:
 
 **week2**
 
-![](https://mednoter.com/media/files/2021/solomon-weekly-review-w02.jpg)
+![](https://mednoter.com/media/files/2021/2021-01-09-solomon-weekly-review-w02.jpg)
 
 **week3**
 

@@ -11,12 +11,12 @@ tags:
 ![](https://mednoter.com/media/files/2021/2021-04-17-certification.jpg)
 
 
-我以前在一家大公司工作的时候，基础设施全部在一个简陋的私有云上。简陋到什么程度呢？差不多脏活累活都是自己干。
+我以前在一家大公司工作的时候，基础设施全部在一个简陋的私有云上。简陋到什么程度呢？差不多脏活累活都是手工处理，而不是自动化。
 
 - 负载均衡是 F5 load balancer -> HAProxy -> Nginx
 - 数据库的备份都是专人负责。
-- 文件存储都是自己 mount volume，满了要扩容。
-- HTTPs 证书我要先发邮件向安全部门申请，安全部门再向 Symantec 申请新证书，然后配置到负载均衡上。
+- 文件存储都是 mount volume，满了要扩容。
+- 要先发邮件向安全部门申请HTTPs 证书，安全部门再向 Symantec 申请新证书，然后配置到负载均衡上。
 
 
 后来团队招了一个 AWS Solution Architect，他天天在办公室大谈公有云的好处。RDS 的服务多么稳定，升级如何贴心，S3 存储无限空间。换句话说，我们的私有云真烂。
@@ -42,7 +42,7 @@ tags:
 
 二，我目前所在的公司 workstream.us 重度使用 AWS 的各种产品，备考 AWS Certified Solution Architect 可以帮助我改进公司的现有的架构。备考试题中有大量的模拟场景，我可以学到应对各种场景的最佳实践。
 
-三，AWS Certified Solution Architect – Associate 含金量很高认证，长期处于[最受欢迎的认证排行榜前2位](https://www.globalknowledge.com/us-en/resources/resource-library/articles/top-paying-certifications/#gref)。有人统计过，持有该证书的工程师平均年薪是 11-14 万美金。如果你在外企工作，看在钱的份上，你也应该考此证书。
+三，AWS Certified Solution Architect – Associate 含金量很高，长期处于[最受欢迎的认证排行榜前2位](https://www.globalknowledge.com/us-en/resources/resource-library/articles/top-paying-certifications/#gref)。有人统计过，持有该证书的工程师平均年薪是 11-14 万美金。如果你在外企工作，看在钱的份上，你也应该考此证书。
 
 ## 什么时候开始备考比较合适？
 
