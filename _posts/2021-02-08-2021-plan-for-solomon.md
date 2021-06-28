@@ -177,9 +177,14 @@ tags:
 
 ![](https://mednoter.com/media/files/2021/2021-05-31-Solomon.jpeg)
 
-
 **week24**
 
 - 沐沐在和秦肇迪打闹的时候，把他推倒了。皮擦破了，脑袋也受伤了。我以前注意到他下手没有轻重这个问题，但是没想到这么严重，这事给我提了一个醒，要好好管管。我给沐沐制定的规则是“凡是把小朋友打痛了，就要挨板子”，“凡是把小朋友推倒了，就打板子”。
 
 ![](https://mednoter.com/media/files/2021/2021-06-14-Solomon.jpeg)
+
+**week26**
+
+沐沐的长进：这周沐沐和别人打闹时下手不再没轻没重了。
+
+![](https://mednoter.com/media/files/2021/2021-06-28-Solomon.jpeg)
