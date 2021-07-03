@@ -127,8 +127,8 @@ resource "aws_instance" "server" {
 // 省略无关代码
 ```
 
-所以应该把 Terraform Random 理解为 
+所以应该把 Terraform Random 理解为 “它是一个资源，不是一个函数。”
 
 - 用 random 函数创建了一个值
-- 保存到 terraform state 文件中
-- 这个值就是个资源，其他资源可以引用它。
+- 保存到 terraform state 中
+- 这个资源的值可以被其他资源引用
