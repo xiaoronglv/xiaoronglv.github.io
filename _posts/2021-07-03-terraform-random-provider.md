@@ -16,26 +16,14 @@ Provider 定义了各种资源，比如 EC2，RDS，VPC，NAT 等等。
 
 比如你可以通过 [terraform AWS provider](https://github.com/hashicorp/terraform-provider-aws) 创建AWS 对应的各种资源。
 
-```
-Terraform <-> AWS Provider <-> AWS
-```
-
 你也可以使用 [Google Cloud Platform provider](https://github.com/hashicorp/terraform-provider-google) 创建各种资源。
 
-```
-Terraform <-> GCP Provider <-> AWS
-```
-
-
-![](https://mednoter.com/media/files/2021/2021-07-03-terraform-providers.png)
+![](https://mednoter.com/media/files/2021/2021-07-03_16-16-44.jpg)
 
 
 ## Terraform Random 简介
 
 [Terraform Random](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/uuid) 它是一个"逻辑层"的 provider。之所以称之为”逻辑provider“，是因为它背后并没有对应的云。
-
-![](https://mednoter.com/media/files/2021/2021-07-03_16-16-44.jpg)
-
 
 它提供了以下资源类型。
 
