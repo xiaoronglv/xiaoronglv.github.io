@@ -8,20 +8,20 @@ tags:
   -
 ---
 
-## Provider 简介
-
-Provider 是连接 Terraform 和云的桥梁，Terraform 可以通过不同的插件与不同的云打交道，甚至私有云。
-
-Provider 定义了各种资源，比如 EC2，RDS，VPC，NAT 等等。
-
-比如你可以通过 [terraform AWS provider](https://github.com/hashicorp/terraform-provider-aws) 创建AWS 对应的各种资源。
-
-你也可以使用 [Google Cloud Platform provider](https://github.com/hashicorp/terraform-provider-google) 创建各种资源。
-
 ![](https://mednoter.com/media/files/2021/2021-07-03_16-16-44.jpg)
 
+## Provider
 
-## Terraform Random 简介
+Provider 是连接 Terraform 和云的桥梁，Provider 定义了各种资源，比如 EC2，RDS，VPC，NAT 等等。Terraform 可以通过不同的 provider 与不同的云打交道，甚至私有云。
+
+几个常用的 provider 源码：
+
+- [terraform AWS provider](https://github.com/hashicorp/terraform-provider-aws) 
+- [Google Cloud Platform provider](https://github.com/hashicorp/terraform-provider-google)
+- [Microsoft Azure provider](https://github.com/terraform-providers/terraform-provider-azurerm)
+
+
+## Terraform Random Provider 简介
 
 [Terraform Random](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/uuid) 它是一个"逻辑层"的 provider。之所以称之为”逻辑provider“，是因为它背后并没有对应的云。
 
@@ -55,7 +55,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
-
+## 创建 VPC
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   name            = "test_vpc" 
@@ -66,9 +66,11 @@ module "vpc" {
   enable_nat_gateway = true
 }
 
+## 创建 Random 的动物名字
 resource "random_pet" "server" {
 }
 
+## 创建服务器
 resource "aws_instance" "server" {
   ami = "ami-a0cfeed8"
   instance_type = "t3.nano"
@@ -89,17 +91,22 @@ resource "aws_instance" "server" {
 
 过去所积累的知识可以帮我们快速学习新知识，比如掌握 Ruby 语言，再去学 Python 会更快。掌握了英语，学西班牙语也更快。
 
-然而在这个 Terraform Random 知识点上，却适得其反。编程语言中的 Random 函数反而让我无法理解 Terraform Random。
+然而编程语言中的 Random 函数反而让我难以理解 Terraform Random。
 
 **我的疑惑：如果我的资源包含 Random 的属性，这个属性的值会变来变去吗？**
 
 比如第一次用 Terraform 创建服务器，它名字是“惊讶的花栗鼠”，第二次运行，它的名字变为 “威严的老虎”，第三次运行，它变为 ”澳洲考拉“。
 
-抑或我运行 Terraform 创建数据库，它的密码是 "welldone,Ryan!"，第二次运行后，密码被更新为 "YouAreAwesome,Ryan!"，第三次运行后，密码又被更新。
+亦或第一次运行 Terraform 创建数据库，它的密码是 "NiceWork123"，第二次运行后，密码被更新为 "YouAreAwesome123"，第三次运行后，密码又被更新。
 
-经过多次实验我发现，重复运行 Terraform后，服务器的名字并没有变来变去。
+实验发现，重复运行 `Terraform apply` 后，服务器的名字并没有变来变去。
 
-原来 Terraform 把 random 产生的值保存到了 `terrraform.tfstate` 中。
+原来 Terraform 把 random 生成的值保存到了 `terrraform.tfstate` 中。
+
+- 它用 random 函数创建了一个值。
+- 然后把值保存到 terraform state 中。
+- 这个资源的值可以被其他资源引用
+- 每次运行时读取文件中的值。
 
 ```
 // terraform.tfstate
@@ -130,8 +137,3 @@ resource "aws_instance" "server" {
 ```
 
 这样看来，我们应该把 Terraform Random “一个资源”，而不是一个函数。
-
-- 它用 random 函数创建了一个值。
-- 然后把值保存到 terraform state 中。
-- 这个资源的值可以被其他资源引用
-- 每次运行时读取文件中的值。
