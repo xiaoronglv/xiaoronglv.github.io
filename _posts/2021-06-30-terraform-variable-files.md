@@ -1,5 +1,5 @@
 ---
-title: terraform.tfvars 与 variables.tf 区别
+title: terraform.tfvars 与 variables.tf 的区别
 layout: post
 guid: g807pQj0Yh1ztO35IK4U
 date: 2021-06-30
