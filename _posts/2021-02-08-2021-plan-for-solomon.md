@@ -240,4 +240,6 @@ tags:
 
 **week35**
 
+关于时间管理，我该怎么教导沐沐呢？
+
 ![](https://mednoter.com/media/files/2021/2021-08-30-Solomon.jpeg)
