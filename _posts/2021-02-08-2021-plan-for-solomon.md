@@ -237,9 +237,16 @@ tags:
 
 ![](https://mednoter.com/media/files/2021/2021-08-16-Solomon.jpeg)
 
-
 **week35**
 
 关于时间管理，我该怎么教导沐沐呢？
 
 ![](https://mednoter.com/media/files/2021/2021-08-30-Solomon.jpeg)
+
+**week37**
+
+这周在想教育的意义是什么。
+
+当今世界的教育观是不是畸形的？孩子的脑力知识越来越丰富，品格和心理素质越来越失衡。
+
+
