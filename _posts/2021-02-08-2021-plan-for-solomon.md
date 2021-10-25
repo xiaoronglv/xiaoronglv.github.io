@@ -258,7 +258,7 @@ tags:
 2. 沐沐不喜欢团队合作。哎，可能遗传了我。action：每天鼓励他找朋友帮忙。
 3. 沐沐不爱读书。action：每天晚上要读书写字。
 
-![](https://mednoter.com/media/files/2021/2021-09-27-Solomon.jpeg)
+![](https://mednoter.com/media/files/2021/2021-09-27-Solomon.jpg)
 
 
 **week43**
