@@ -260,3 +260,9 @@ tags:
 
 ![](https://mednoter.com/media/files/2021/2021-09-27-Solomon.jpeg)
 
+
+**week43**
+
+有一天我在带领沐沐读圣经，发现他认识好多字，进步特别明显。这真的要归功于刘小坤每天都在坚持陪沐沐读一本书。
+
+![](https://mednoter.com/media/files/2021/2021-10-25-Solomon.jpeg)
