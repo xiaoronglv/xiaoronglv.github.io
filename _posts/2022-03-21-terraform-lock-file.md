@@ -15,11 +15,16 @@ tags:
 - 对于前端项目，这个文件是 package-lock.json 或 yarn.lock
 - 对于Python 项目，这个文件是 Pipfile.lock
 
-Terraform 也有 ”包“ 的概念，它称之为 [module](https://www.terraform.io/language/modules/develop)。module 是一堆资源的抽象，引入一个module，创建了这个包中的一堆资源。
+Terraform 也有“包”的概念，称之为 [module](https://www.terraform.io/language/modules/develop)。每个module 打包了一堆资源。在代码中引入一个module，就会创建了这个包中的一堆资源。
+
+module 有点像肯德基的全家桶。
+
+你可以啰哩啰嗦的对服务员说 “我要5块吮指原味鸡、6块香辣鸡翅、1盒土豆泥、1根香甜玉米棒和3杯中杯百事可乐”，也可以直接说“我要一份全家桶”
+
 
 ## module 初体验
 
-比如要在 AWS 中创建一个web服务器的安全组（Security Group），需要创建 Security Group 和 Rules。
+比如要在 AWS 中创建一个web服务器的安全组（Security Group），需要创建 Security Group，Ingress Rule，Egress Rule。
 
 ```
 resource "aws_security_group" "web-server" {
@@ -67,7 +72,7 @@ module "web_server_sg" {
 }
 ```
 
-你甚至可以在 module 中打包一份 RDS，Redis，Memcached，EC2， S3的资源集合，一口气创建整个 web 应用的技术栈。
+你甚至可以在 module 中打包一份 RDS，Redis，Memcached，EC2， S3的资源全家桶，一口气创建整个 web 应用的技术栈。
 
 
 ## .terraform.lock.hcl 用途
