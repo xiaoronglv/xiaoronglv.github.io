@@ -196,7 +196,7 @@ module "vpc" {
 
 所以这个文件真是既容易误解，又有点鸡肋。
 
-看完本文，如果非要记住一个结论，那就是 ** .terraform.lock.hcl 并不锁定  module 的版本，它只锁定 provider 的版本。**。
+看完本文，如果非要记住一个结论，那就是 **.terraform.lock.hcl 并不锁定  module 的版本，它只锁定 provider 的版本。**。
 
 
 ## Reference
