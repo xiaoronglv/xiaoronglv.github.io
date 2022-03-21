@@ -141,26 +141,29 @@ module "web_server_sg" {
 
 checksum 用于“文件防篡改”。比如 Java 官方网站会挂出每个版本的下载地址，但是它的下载速度太慢了。于是你在一些非官方的镜像网站下载了 Java，但是又可能怎么保证这些文件是安全的，没有篡改过呢？
 
-你可以用加密函数对文件进行计算，得到一个哈希值。
+你可以用加密函数对下载的文件进行计算，得到一个哈希值。
 
-- 如果你得到的哈希值 和Java 官网一致，说明文件没被篡改。
+- 如果你得到的哈希值与 Java 官网一致，说明文件没被篡改。
 - 如果你得到的哈希值和官网不一致，说明文件被人动过手脚了
 
 ![](https://mednoter.com/media/files/2022/2022-03-21_18-44-02.jpg)
 
 
-Terraform 中的hashes 也是类似道理，当 Terraform 发布某个版本的 provider 时，用特定的哈希算法为该版本创建哈希值。如果你下载的文件和这个 hash 值对不上，就表示文件被篡改了。
-
+Terraform 中的 hashes 也是类似道理，当 Terraform 发布某个版本的 provider 时，用特定的哈希算法为该版本创建哈希值。如果你下载的文件和这个 hash 值对不上，就表示文件被篡改了。
 
 **为什么有的哈希值的前缀是 `h1:`，有些前缀是 `zh`？**
 
-h1和 zh 代表了不同的哈希算法，所以一个文件会产生两份哈希值。
+h1和 zh 代表了不同的哈希算法，所以会产生两份哈希值。
 
 **既然一个特定版本会产生两份哈希值，为什么示例文件有 12 个哈希值？**
 
-我的同事有些工作在 Mac 上，有些工作在 Windows 上，有些工作在 Ubuntu 上，Atlantis 运行在 Ubuntu。所以我执行了以下命令，把所有平台的哈希值都计算好了，这样同事们在自己的电脑或服务器上执行。
+这可能与我运行了以下命令又关系。
 
-我猜可能是因为我执行了以下命令，一次性把所有的平台的哈希值都计算好了。
+我的同事有些使用 Mac 上，有些使用 Windows 上，有些使用 Ubuntu 上，此外 Atlantis 运行在 Ubuntu 上。所以我执行了以下命令，把所有平台的哈希值都计算好了，这样同事们在自己的电脑或服务器上执行。
+
+我猜测：
+
+哈希值的数量 = 版本 * 平台数量 * 哈希函数数量
 
 ```
 terraform providers lock \
@@ -191,13 +194,12 @@ module "vpc" {
 
 ```
 
-这个文件真是既容易误解，又有点鸡肋。
+所以这个文件真是既容易误解，又有点鸡肋。
 
-看文本文，如果非要记住一个结论，那就是 ** .terraform.lock.hcl 并不锁定  module 的版本，它只锁定 provider 的版本。**。
+看完本文，如果非要记住一个结论，那就是 ** .terraform.lock.hcl 并不锁定  module 的版本，它只锁定 provider 的版本。**。
 
 
 ## Reference
-
 
 1. [Stackoverflow: does ".terraform.lock.hcl" lock the version of each terraform module?](https://stackoverflow.com/questions/71554766/terraform-does-terraform-lock-hcl-lock-the-version-of-each-terraform-module)
 2. [Terraform documentation: Dependency Lock File](https://www.terraform.io/language/files/dependency-lock#lock-file-location)
