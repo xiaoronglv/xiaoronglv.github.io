@@ -8,18 +8,17 @@ tags:
   -
 ---
 
-
 每种编程语言都有自己的包管理工具，Javascript 有 npm，Ruby 有 Bundler，Python 有 pip。这类管理工具通常会为项目创建一个类似 `package.lock` 的文件，锁定项目依赖版本，从而保证在不同的机器上运行程序时，依赖环境都相同。
 
 - 对于 Ruby 项目，这个文件是 Gemfile.lock
 - 对于前端项目，这个文件是 package-lock.json 或 yarn.lock
 - 对于Python 项目，这个文件是 Pipfile.lock
 
-Terraform 也有“包”的概念，称之为 [module](https://www.terraform.io/language/modules/develop)。每个module 打包了一堆资源。在代码中引入一个module，就会创建了这个包中的一堆资源。
+Terraform 也有“包”的概念，称之为 [module](https://www.terraform.io/language/modules/develop)。每个 module 打包了一堆资源。在代码中引入一个module，就会创建了这个包中的一堆资源。
 
 module 有点像肯德基的全家桶。
 
-你可以啰哩啰嗦的对服务员说 “我要5块吮指原味鸡、6块香辣鸡翅、1盒土豆泥、1根香甜玉米棒和3杯中杯百事可乐”，也可以直接说“我要一份全家桶”
+你可以啰哩啰嗦的对服务员说 “我要5块吮指原味鸡、6块香辣鸡翅、1盒土豆泥、1根香甜玉米棒和3杯中杯百事可乐”，也可以直接说“我要一份全家桶”。
 
 
 ## module 初体验
