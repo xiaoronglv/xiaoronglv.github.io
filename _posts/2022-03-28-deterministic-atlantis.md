@@ -60,6 +60,8 @@ module "webserver_sg" {
 }
 ```
 
-**其次，把 .terraform.lock.hcl 添加到 git 中，锁死 provider 的版本。**
+**其次，锁定 provider 的版本。**
+
+最简单的办法是把 .terraform.lock.hcl 添加到 git 中，锁死 provider 的版本。
 
 这样 Atlantis 在执行代码时，就会稳定一些，避免了各种玄学问题。
