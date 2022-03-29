@@ -17,8 +17,6 @@ Workstream 的基础架构完全用 Terraform 来编写，就是大家常说的�
 1. Atlantis 经常打印出一堆和代码改动无关的执行计划。比如，我只是给一些资源加了一个标签`team=Kraken`, Atlantis 在做计划时除了增加 tag，它还要给 Security Group 增加一个 Egress 的规则。这就令代码审核人员困惑。
 2. 一个月前的 Terraform 代码，没有人碰过，再次运行会失败。
 
-Atlantis 运行老代码，参数不正确，直接报错。
-
 ![](https://mednoter.com/media/files/2022/2022-03-28-atlantis.jpg)
 
 Atlantis 执行老代码，变成了一种玄学。代码越老，出问题的概率越大。
