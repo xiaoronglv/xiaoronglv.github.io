@@ -8,7 +8,7 @@ tags:
   -
 ---
 
-![](https://mednoter.com/media/files/2022/2022-03-28-atlantis.png)
+![](https://mednoter.com/media/files/2022/2022-03-28-atlantis-workflow.png)
 
 Workstream 的基础架构完全用 Terraform 来编写，就是大家常说的架构即代码 Infrastructure as Code (IaC)，并且用自动化工具 [Atlantis](https://www.runatlantis.io/) 来执行。每次有工程师要修改架构，只需要修改 Terraform 代码，然后在 Github 提交一个Pull Request。如果 PR 通过审核，Atlantis 可以帮助执行 terraform apply，并且合并 Pull Request。
 
