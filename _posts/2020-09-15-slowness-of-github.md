@@ -9,9 +9,11 @@ tags:
 ---
 
 
-> 2020-10-19 更新：假如你使用的是 Mac，请直接跳过正文，直接购买 [Surge](https://nssurge.com/) 一步到位。开启[增强模式](https://surge.mitsea.com/others/enhanced-mode)后，它的虚拟网卡可以自动给 TCP/UDP 分流，从此感知不到墙的存在。不用再为每个应用设置 HTTP 代理。
+> 2020-10-19 更新：假如你使用的是 Mac，请直接跳过正文，直接购买Surge，一步到位。开启[增强模式](https://surge.mitsea.com/others/enhanced-mode)后，它的虚拟网卡可以自动给 TCP/UDP 分流，不用再为每个应用设置 HTTP 代理。
 > 
-> 快点购买 Surge，开启你的幸福人生。
+> 《[提高中国程序员幸福感的网络调试工具——Surge](https://mednoter.com/surge.html)》详细介绍了它的优点。
+
+> 快点购买 Surge，开启你的幸福人生，别瞎折腾了。
 
 ![](/media/files/2020/2020-10-19-surge.jpg)
 
