@@ -17,4 +17,4 @@
 * ~~Weibo 已弃用~~
 * ~~Twitter 不活跃~~
 
-Mail: xiaoronglv(at)gmail(dot)com
+Email: `eGlhb3JvbmcucnVieUBnbWFpbC5jb20=`
