@@ -1,5 +1,3 @@
-2022-07-17-overdraft.md
-
 ---
 title: "透支未来"
 layout: post
