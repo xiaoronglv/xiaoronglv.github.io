@@ -24,6 +24,7 @@ tags:
 - [Visual Studio Code](https://code.visualstudio.com/)，敲代码编辑器。
 - [copilot](https://github.com/features/copilot)，AI 敲代码工具。 
 - Anki，闪卡软件。
+- [Grammarly](https://www.google.com/search?q=Grammerly)，英文纠错，英文润色。
 - [Alfred](https://www.alfredapp.com/)
 - [1Password](https://1password.com/)
 - 一次买断的 [Day One](https://dayoneapp.com/)，写日记。

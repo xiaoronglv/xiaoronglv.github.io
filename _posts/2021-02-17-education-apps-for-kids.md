@@ -133,7 +133,7 @@ Youtube Kids 根据小朋友的年龄展示适合的动画片。当我的儿子3
 - 适用年龄段：7+ 
 
 
-[![](/media/files/2022/2022-07-30-scratch.webp)](https://scratch.mit.edu/)
+[![](/media/files/2022/2022-07-30-scratch.png)](https://scratch.mit.edu/)
 
 
 
