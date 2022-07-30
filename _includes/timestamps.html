@@ -1,0 +1,9 @@
+<div>
+  {% if page.date %}
+    <span class="muted date">{{ page.date | date: "%-d %B, %Y" }}</span>
+  {% endif %}
+  {% if page.updated_on %}
+    <span class="muted date" style="float: right">UPDATED ON: {{ page.updated_on | date: "%-d %B, %Y" }}</span> 
+  {% endif %}
+<!--   <a href="{{site.repository_url}}/blob/master/{{page.path}}">Edit this page</a> -->
+</div>
