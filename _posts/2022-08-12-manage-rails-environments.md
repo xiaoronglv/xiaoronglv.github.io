@@ -239,8 +239,6 @@ kubectl create configmap staging1-configmap \
 
 第四步： docker image + 不同的配置 = 不同的环境。
 
-![](/media/files/2022/2022-08-12-codebase-build-config-deploy.png)
-
 这是一个 Kubenetes 的范例，配置文件注入到了 Pod 中。
 
 ```yaml
@@ -329,14 +327,18 @@ end
 这样就能保证监控工具的正常运转了。
 
 
+## 总结
+
+千言万语，不如一个图直接。
+
+![](/media/files/2022/2022-08-12-codebase-build-config-deploy.png)
+
 
 ## 后记
 
-本文中的方案，来自于 SAP Jam 和 Workstream 同事们的实践经验，我只是提笔记录下来，并非我的原创。
+本文的范例都限定在 Ruby on Rails 框架，但我觉得这思路也可以扩展到其他语言和Web 框架。
 
-本文为了更好地说明，拿 Ruby on Rails 框架举例，这思路其实也适用于其他语言和框架。
+本文中的方案，来自于 SAP Jam 和 Workstream 同事们的实践经验，我只是提笔记录下来，并非我的工作成果。
 
 特别感谢 Louise Xu, Felix Chen, Vincent Huang, Teddy Wang 的审校和反馈。
-
-
 
