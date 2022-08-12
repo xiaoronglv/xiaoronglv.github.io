@@ -2,7 +2,7 @@
 title: "Rails 应用的环境管理经验"
 layout: post
 guid: XKPa1KmnJCcD
-date: UdGnbiDHV8s4ZxGRatYh
+date: 2022-08-12
 coffee:
 tags:
   -
