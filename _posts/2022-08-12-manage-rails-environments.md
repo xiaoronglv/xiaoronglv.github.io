@@ -50,15 +50,15 @@ environments
 - staging-5 给 E 团队使用
 - staging 给 QA 专用，用于上线前的回归测试。
 
-产品做大以后，Rails 环境越来越多，我们该如何管理呢？
+工程师越多，Rails 环境也越多，管理环境是个头疼的问题。
 
-## 第一种方案：把每个环境的配置信息保存在代码仓库中。
+## 第一种方案： 在 Rails 的 `config/environments` 目录下创建6个环境的配置文件。
 
-这种做法是原汁原味的 Rails 实现方案，简单，普遍。
-
-第一步，我们需要在 Rails 的 `app/config/environments` 目录下中创建6个配置文件。
+这种方法简单，粗暴，原汁原味的 Rails 风格。
 
 ![](/media/files/2022/2022-08-12-08-41-03-stagings.jpg)
+
+但除了 `config/environments`，还有许多需要额外的工作。
 
 第二步，在 database.yml 添加6个环境的数据库配置。
 
@@ -95,20 +95,19 @@ config/settings/staging-5.yml
 
 第五步，全局搜索 `Rails.env` ，逐一检查，免得遗漏。
 
-此方案的缺点也多：
+全套走下来，工程量不小，也带来诸多缺点：
 
-1. 很容易遗漏。如果在犄角旮旯里配置了和环境相关的变量，而你没有察觉，新环境会一直报错。
-2. 违背了开放封闭原则（Open–closed principle），很危险。每次增加环境会改动老代码，稍有不慎就会把所有环境毁了。
-3. 安全性差。配置中可能包含 client_secret，token，秘钥，证书。如果代码不幸泄露，各种秘钥也被一锅端。针对这个问题，Rails 6 推出了 [Rails Credential](https://edgeguides.rubyonrails.org/security.html#environmental-security) 这个功能。
+1. 如果在犄角旮旯里配置了和环境相关的变量，而你没有察觉，新环境会一直报错。
+2. 修改常量很危险。每次增加环境会改动老代码，稍有不慎就会把所有环境毁了。违背了开放封闭原则（Open–closed principle）。
+3. 安全性差。配置中可能包含 client_secret，token，私钥。如果代码不幸泄露，各种秘钥也被一锅端。针对这个问题，Rails 6 推出了 [Rails Credential](https://edgeguides.rubyonrails.org/security.html#environmental-security) 这个功能。
 3. docker 镜像混杂了各种配置信息，不再干净。
-4. 创建新环境太耗时。
 
 我想正因为这种方案的诸多缺点，大家在实践时，才会不约而同选择把配置信息放到环境变量中，这不得不提一下 12-factors。
 
 
 ## 12-factors
 
-Heroku 写过一篇奉为圭臬的架构文章 《[12-factors application](https://12factor.net/)》，里面描述了设计 SaaS 应用时12条原则。时至今日，其地位依然无法撼动。
+Heroku 写过一篇奉为圭臬的 SaaS 架构文章 《[12-factors application](https://12factor.net/)》，里面描述了设计 SaaS 应用时12条原则。时至今日，其地位依然无法撼动。
 
 ### 第一条原则：一份基准代码（Codebase），多份部署（deploy）
 
@@ -118,11 +117,11 @@ Heroku 写过一篇奉为圭臬的架构文章 《[12-factors application](https
 
 ### 第二条原则：显式声明依赖关系（ dependency ）
 
-同样的代码，在不同机器，依赖要一致，行为也要一致，比如：
+同样的代码，在不同机器，依赖要一致，行为也要一致。人们为此付出了诸多努力，比如：
 
 - JavaScript 使用 npm 或 yarn 来管理各种库的依赖。
 - Ruby 使用 Bundler 来管理各种库的版本依赖。
-- Docker 则是终极方案，不但打包代码的库的依赖，还打包了操作系统的依赖。任何人获得 docker image 后都可以运行代码，不会出现这种尴尬情况：一份代码只能在我的电脑上跑，不能在你的电脑上跑。
+- Docker 不但打包代码的库的依赖，还打包了操作系统的依赖。任何人获得 docker image 后都可以运行代码，不会出现这种尴尬情况：一份代码只能在我的电脑上跑，不能在你的电脑上跑。
 
 ### 第三条原则：在环境中存储配置
 
@@ -151,9 +150,7 @@ docker run --name postgresql \
 
 chart + config = release （一个部署的实例）
 
-《[12-factor application](https://12factor.net/zh_cn/)》的后面的9条原则，就不再赘述，感兴趣的读者可以自行查看。
-
-如果遵循 12-factor application 原则的话，我们该如何如何创建和管理众多的 Rails 环境呢？
+**由此可见，我们的第一种实现方案，每次添加新环境都要改动代码，完全不符合 12-factor application 的原则。有没有更好的解决思路？**
 
 ## 第二种做法：代码无状态，配置信息放到环境变量中。
 
@@ -163,18 +160,7 @@ chart + config = release （一个部署的实例）
 
 ```yml
 # config/database.yml
-test:
-  <<: *default
-  database: <%= ENV['DATABASE_NAME' %>
-  host: <%= ENV['DATABASE_HOST'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  
-development:
-  <<: *default
-  database: <%= ENV['DATABASE_NAME' %>
-  host: <%= ENV['DATABASE_HOST'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  
+# ...
 production:
   <<: *default
   database: <%= ENV['DATABASE_NAME' %>
@@ -191,13 +177,7 @@ Sidekiq.configure_server do |config|
     port: 6379
   }
 end
-
-Sidekiq.configure_client do |config|
-  config.redis = {
-    host: ENV['REDIS_HOST'],
-    port: 6379
-  }
-end
+# ...
 ```
 
 任何逻辑，但凡和环境相关，其配置都取自环境变量。
@@ -237,9 +217,21 @@ kubectl create configmap staging1-config-map \
 
 ![](/media/files/2022/2022-08-12_14-07-10-production-yml.jpg)
 
-第四步： docker image + 不同的配置 = 不同的环境。
+第四步： 代码 + 不同的配置 = 不同的环境。
 
-这是一个 Kubenetes 的范例，将 staging-1 的配置文件注入到了相应的Pod中，就搭起了 staging-1 这个环境。
+如果你使用的是 Capistrano 部署代码，那么
+
+```
+Code + 不同配置 = 不同的环境
+```
+
+如果你使用的是 Docker 部署，那么：
+
+```
+Docker Image + 不同配置 = 不同的环境。
+```
+
+如果你使用的是 Kubenetes，将不同配置文件注入到了Pod中，就搭起了不同的环境。
 
 ```yaml
 ---
@@ -252,21 +244,21 @@ metadata:
   namespace: default
 spec:
   containers:
-  - name: web-app:staging-1
-    image: web-app
+  - name: web-app
+    image: web-app:staging-1
     envFrom:
-    - configMapRef:
+    - configMapRef:  👈 看这里
         name: staging-1-config-map
-    - secretRef:
+    - secretRef:     👈 看这里
         name: staging-1-secrets
 ```
 
 
 ### 优点
 
-首先，它省时省力。创建环境，只需要准备一份新的配置文件就可以。
+它省时省力。创建环境，只需要准备一份新的配置文件就可以。
 
-其次，这种实现保证了安全性。代码中不包含机密信息，即使代码泄露也不会扩大风险。不同环境配置文件可以设置不同的访问权限，比如仅仅允许 DevOps 团队访问 production 的配置信息。
+这种方案也保证了安全。代码中不包含机密信息，即使代码泄露也不会扩大风险。不同环境配置文件可以设置不同的访问权限，比如仅仅允许 DevOps 团队访问 production 的配置信息。
 
 最后，所有环境的 Rails.env 都是 production，它消除了不同环境的差异（[parity](https://12factor.net/dev-prod-parity)）。
 
@@ -277,7 +269,7 @@ NewRelic, Datadog, Sentry 等监控工具默认会通过 `Rails.env`来读取环
 
 ![](/media/files/2022/2022-08-12_12-47-48.jpg)
 
-第二种方案所有的环境 `Rails.env` 读取的值永远是 "production"。这就导致监控系统中会把各个环境的日志(log)，异常（error)，性能数据(application performance monitoring, apm)都混在 production 下。遇到问题，工程师根本无法区分是哪个环境出了问题。
+第二种方案中，所有的环境 `Rails.env` 读取的值永远是 "production"。这就导致监控系统中会把各个环境的日志(log)，异常（error)，性能数据(application performance monitoring, apm)都混在 production 下。遇到问题，工程师根本无法区分是哪个环境出了问题。
 
 ![](/media/files/2022/2022-08-12_12-56-12-only-production.jpg)
 
@@ -296,7 +288,7 @@ end
 我们可以在 production, staging, staging-1 等不同环境中的配置中，引入一个新的环境变量 "DEPLOYMENT_ID" 来声明环境名称。当 Rails 初始化各种监控工具时，读取 ENV["DEPLOYMENT_ID"] 的值作为环境名称。
  
  
-拿 staging-1 举例，它的配置信息如下：
+拿 staging-1 举例，如果它的配置信息如下：
 
 ```
 DEPLOYMENT_ID=staging-1
@@ -306,7 +298,7 @@ DB_USER=postgres
 ```
 
 
-可以这样配置 Sentry：
+我们可以这样配置 Sentry：
 
 ```ruby
 Sentry.init do |config|
@@ -327,18 +319,19 @@ end
 这样就能保证监控工具的正常运转了。
 
 
-## 总结
+## 设计图
 
-千言万语，不如一个图直接。
+千言万语，不如一个图。
 
 ![](/media/files/2022/2022-08-12-codebase-build-config-deploy.png)
 
 
 ## 后记
 
-本文的范例都限定在 Ruby on Rails 框架，但我觉得这思路也可以扩展到其他语言和Web 框架。
+虽然范例都是 Ruby on Rails 框架，但我觉得这思路也可以扩展到其他语言和Web 框架。
 
-本文中的方案，来自于 SAP Jam 和 Workstream 同事们的实践经验，我只是提笔记录下来，并非我的工作成果。
+本文中的方案，来自于 Workstream 同事们的实践经验，我只是提笔记录下来，并非我的工作成果。
 
 特别感谢 Louise Xu, Felix Chen, Vincent Huang, Teddy Wang 的审校和反馈。
+
 
