@@ -22,7 +22,7 @@ tags:
 
 1. 工程师在本地开发新功能。（developer 环境）
 2. 在CI（或本地）跑测试。（test 环境）
-3. 代码部署到 staging 环境，QA 工程师测试新功能 （staging环境）
+3. 代码部署到 staging 环境，QA 工程师测试新功能。
 4. 如果没有bug，则部署到 production 环境，供客户使用。
 
 ```
@@ -35,11 +35,11 @@ environments
 
 **大量客户 + 多团队协作 + 多 QA**
 
-如果产品市场反响良好，客户越来越多。工程师团队规模也由几个人扩增到几十人或上百人。人员众多，且共用一个 staging 环境，合并代码到 staging 分支时就会有越来越多的冲突。
+如果产品市场反响良好，客户越来越多。工程师团队规模也由几个人扩增到几十人或上百人。人员众多，且共用一个 staging 环境，合并代码到 staging 分支时容易冲突。
 
-有些程序员比较耐心，遇到冲突会联系原作者，一起解决代码冲突。
+有些程序员比较耐心，遇到代码冲突会联系原作者，一起解决。
 
-但是如果是跨国团队，因为时差的原因，一来一回的沟通需要一天时间，非常要命。这时候程序员可能就没有耐心，选择直接重置 staging 分支，这会导致别人正在测试的功能凭空消失，QA 工程师上报 bug，结果细查下来是代码重置导致的。
+如果是跨国团队，因为时差的原因，一来一回沟通需要一天时间，非常要命。这时候程序员可能就没了耐心，直接重置 staging 公共分支，这会导致别人正在测试的功能凭空消失，QA 工程师上报 bug，结果细查下来是代码重置导致的。
 
 为了降低代码冲突和沟通成本，很多公司会选择创建更多的预发布(staging)环境：
 
@@ -52,21 +52,21 @@ environments
 - ...
 - staging-x 给 x 团队使用
 
-工程师越多，需要的 Rails 环境也越多，环境的创建和维护变成 DevOps 的体力活。
+但工程师越多，需要的 Rails 环境也越多，创建和维护环境变成 DevOps 团队的体力活。
 
 如何创建新环境呢？
 
 ## 第一种方案： 在 Rails 的 `config/environments` 目录下创建6个环境的配置文件。
 
-这是 Rails 推荐的配置风格，方法简单，原汁原味。
+这是 Rails 推荐的配置风格，原汁原味。
 
 ![](/media/files/2022/2022-08-12-08-41-03-stagings.jpg)
 
-但除了 `config/environments`，还有许多额外工作。我们需要在 `config/database.yml` 添加6个环境的数据库配置。
+但事情没那么简单，除了 `config/environments`，还有许多额外工作。我们要在 `config/database.yml` 添加6个新环境的数据库配置。
 
 ![](/media/files/2022/2022-08-12-database-yml.jpg)
 
-有些工程师喜欢把一些配置放到常量里。那我们还需要检查各种常量，确保新创建的环境，都有赋值。尤其是在犄角旮旯里定义的变量，如果没有察觉，新环境会一直报错。所以需要全局搜索 `Rails.env`，免得遗漏。
+此外，有些工程师喜欢在常量定义配置，那我们还需要检查各种常量，确保新创建的环境，都有赋值。尤其是在犄角旮旯里定义的变量，如果没有察觉，新环境会一直报错。所以需要全局搜索 `Rails.env`，免得遗漏。
 
 ```
 # config/initializers/sidekiq.rb
@@ -80,7 +80,7 @@ when :staging-2
 ...
 ```
 
-在常量里定义配置，糟糕透顶。所以有品位的工程师会把不同环境的配置抽象出来，放到不同的文件中，并且用一些库来管理配置，Rails 常用的库是 [rubyconfig/config](https://github.com/rubyconfig/config)。我们也需要为新创建的环境添加配置文件。
+在常量里定义配置，糟糕透顶，有品位的工程师会把不同环境的配置抽象出来，放到不同的文件中，并且用一些库来管理配置，Rails 常用的库是 [rubyconfig/config](https://github.com/rubyconfig/config)。如果团队在使用这些库，我们也需要为新环境添加配置文件。
 
 ```
 config/settings.yml
@@ -151,13 +151,12 @@ docker run --name postgresql \
 
 chart + config = release （一个部署的实例）
 
-**前文所述的第一种方案，每次添加新环境都要改动代码，完全不符合 12-factor Application 的原则。**
 
-如何改进？
+前文所述的第一种方案，每次添加新环境都要改动代码，完全不符合 12-factor Application 的原则，所以还需要继续优化，这就引出了第二种方案。
 
 ## 第二种方案：代码无状态，配置信息与代码分离。
 
-第一步，保证代码中所有的配置信息都取自环境变量，代码无状态。
+首先，保证代码中所有的配置信息都取自环境变量，代码无状态。
 
 比如，DB 的配置，要取自环境变量。
 
@@ -218,7 +217,7 @@ kubectl create configmap staging1-config-map \
 
 第三步，我们把 `config/environments` 下的三个文件 production.rb / staging.rb /development.rb / test.rb 看做 Rails 不同的运行模式（mode），而不是看做运行实例。
 
-换言之，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-x，它们既可以选择 `production` 运行模式，也可以选择 `staging` 运行模式，每个人可以根据自己的实际情况来决定。
+换言之，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-x，它们可以选择 `production` 运行模式，亦或选择 `staging` 运行模式，每个人可以根据自己的实际情况来决定。
 
 在本文中，所有的部署都使用 production mode 去运行。
 
@@ -277,11 +276,11 @@ spec:
 
 ### 第二种方案的缺点
 
-NewRelic, Datadog, Sentry 等监控工具默认会把 `Rails.env`并附着在日志(log)，异常（error)，性能数据上，方便过滤。
+NewRelic, Datadog, Sentry 等监控工具默认会把 `Rails.env`附着在日志(log)，异常（error)，性能数据上，方便过滤。
 
 ![](/media/files/2022/2022-08-12_12-47-48.jpg)
 
-第二种方案中，所有的部署的运行模式都为 production mode，这导致监控工具把所有数据都混在 production mode 下。遇到问题，工程师根本无法区分是哪个部署出了问题。
+在第二种方案中，所有的部署的运行模式都为 production mode，这导致所有监控数据都混在 production mode 下。遇到问题，工程师根本无法区分是哪个部署出了问题。
 
 ![](/media/files/2022/2022-08-12_12-56-12-only-production.jpg)
 
@@ -296,7 +295,7 @@ Sentry.init do |config|
 end
 ```
 
-因此我们可以在staging-1, staging-2, staging-x, production 等不同部署中的配置中，引入一个新的变量 "DEPLOYMENT_ID" 来声明部署的名称。初始化各种监控工具时，读取 ENV["DEPLOY_ID"] 的值。
+因此我们可以在 staging-1, staging-2, staging-x, production 等不同部署中的配置中，引入一个新的变量 "DEPLOYMENT_ID" 来声明部署的名称。初始化各种监控工具时，读取 ENV["DEPLOY_ID"] 的值。
  
 假如 staging-1 的配置信息如下：
 
@@ -332,7 +331,7 @@ end
 
 ## 迷惑的概念
 
-或许很多人读完文章之后会对 Deploy 和 Environment 这两个概念更加疑惑。我想，这种的困惑来自于固有印象：每个应用仅有一个 production 部署。
+你在读完文章之后或许对 Deploy 和 Environment 这两个概念更加疑惑。这种的困惑来自于固有印象：每个应用仅有一个 production 部署。
 
 现实世界并非如此。
 
