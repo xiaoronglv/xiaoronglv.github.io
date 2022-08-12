@@ -110,13 +110,13 @@ config/settings/staging-5.yml
 
 Heroku 写过一篇奉为圭臬的架构文章 《[12-factors application](https://12factor.net/)》，里面描述了设计 SaaS 应用时12条原则。时至今日，其地位依然无法撼动。
 
-### 第一条：一份基准代码（Codebase），多份部署（deploy）
+### 第一条原则：一份基准代码（Codebase），多份部署（deploy）
 
-> 尽管每个应用只对应一份基准代码，但可以同时存在多份部署。每份 部署(deploy) 相当于运行了一个应用的实例。通常会有一个生产环境，一个或多个预发布环境。
+> 尽管每个应用只对应一份基准代码，但可以同时存在多份部署(deploy)。每份部署相当于运行了一个应用的实例。通常会有一个生产环境，一个或多个预发布环境。
 
 ![](/media/files/2022/2022-08-12-codebase-deploys.png)
 
-### 第二条：显式声明依赖关系（ dependency ）
+### 第二条原则：显式声明依赖关系（ dependency ）
 
 同样的代码，在不同机器，依赖要一致，行为也要一致，比如：
 
@@ -124,7 +124,7 @@ Heroku 写过一篇奉为圭臬的架构文章 《[12-factors application](https
 - Ruby 使用 Bundler 来管理各种库的版本依赖。
 - Docker 则是终极方案，不但打包代码的库的依赖，还打包了操作系统的依赖。任何人获得 docker image 后都可以运行代码，不会出现这种尴尬情况：一份代码只能在我的电脑上跑，不能在你的电脑上跑。
 
-### 第三条：在环境中存储配置
+### 第三条原则：在环境中存储配置
 
 > [the 12-factor app: config](https://12factor.net/zh_cn/config)
 > 
@@ -144,7 +144,7 @@ docker run --name postgresql \
 
 **Helm**
 
-[Helm](https://helm.sh/) 是一个 Kubernetes 应用的包管理工具，它有三个核心概念，chart，config，release。如果和《12-factor App》也是相通的。
+[Helm](https://helm.sh/) 是一个 Kubernetes 应用的包管理工具，它有三个核心概念，chart，config，release。它也与 12-factor 相通。
 
 - chart 是模版
 - config 是配置信息
