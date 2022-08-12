@@ -226,14 +226,14 @@ aws ssm put-parameter \
 如果你是用的是 Kubernetes，可以把某个环境的配置保存在 [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)，敏感信息保存在 [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) 中。
 
 ```
-kubectl create configmap staging1-configmap \
+kubectl create configmap staging1-config-map \
   --from-literral="DB_HOST=mydb.1234567890.us-east-1.rds.amazonaws.com" \
   --from-literral="DB_USER=postgres" \
   --from-literral="DB_PASSWORD=DdQDQ2RgmRJje9CH1cqn"
 ```
 
 
-第三步，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-100，都共用 `config/environments/production.yml`。各环境 `Rails.env` 返回的永远是 "production"。
+第三步，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-100，都共用 `config/environments/production.rb`，换言之各环境 `Rails.env` 返回的永远是 "production"。
 
 ![](/media/files/2022/2022-08-12_14-07-10-production-yml.jpg)
 
