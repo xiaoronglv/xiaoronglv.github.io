@@ -108,7 +108,7 @@ config/settings/staging-5.yml
 
 ## The 12-factor Application
 
-Heroku 写过一篇奉为圭臬的 SaaS 架构文章 《[12-factor  Application](https://12factor.net/)》，里面描述了设计 SaaS 应用的12条原则。时至今日，依然无出其右。
+Heroku 写过一篇 SaaS 架构文章 《[12-factor  Application](https://12factor.net/)》，里面描述了设计 SaaS 应用的12条原则，被奉为圭臬。时至今日，依然无出其右。
 
 ### 第一条原则：一份基准代码（Codebase），多份部署（deploy）
 
