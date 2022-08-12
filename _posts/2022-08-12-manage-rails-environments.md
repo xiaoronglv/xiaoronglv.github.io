@@ -233,7 +233,7 @@ kubectl create configmap staging1-configmap \
 ```
 
 
-第三步，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-100，都共用 `config/environments/production.yml`。各环境 `Rails.env` 返回的永远是"production"。
+第三步，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-100，都共用 `config/environments/production.yml`。各环境 `Rails.env` 返回的永远是 "production"。
 
 ![](/media/files/2022/2022-08-12_14-07-10-production-yml.jpg)
 
