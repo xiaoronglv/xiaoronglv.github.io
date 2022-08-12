@@ -43,18 +43,18 @@ environments
 
 为了降低冲突和沟通成本，很多公司会选择创建更多的 staging 环境：
 
+- staging 给 QA 专用，用于上线前的回归测试。
 - staging-1 给 A 团队使用
 - staging-2 给 B 团队使用
 - staging-3 给 C 团队使用
 - staging-4 给 D 团队使用
 - staging-5 给 E 团队使用
-- staging 给 QA 专用，用于上线前的回归测试。
 
-工程师越多，Rails 环境也越多，管理环境是个头疼的问题。
+工程师越多，需要创建的 Rails 环境也越多，环境的管理和创建是个头疼的问题。
 
 ## 第一种方案： 在 Rails 的 `config/environments` 目录下创建6个环境的配置文件。
 
-这种方法简单，粗暴，原汁原味的 Rails 风格。
+这种方法简单，且遵循了原汁原味的 Rails 风格。
 
 ![](/media/files/2022/2022-08-12-08-41-03-stagings.jpg)
 
