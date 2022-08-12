@@ -195,7 +195,7 @@ end
 
 第二步，我们不再称呼 staging-1, staging-2, staging-3, staging-4, staging-5, ... staging-x，production 为环境，而是把他们看做代码的运行实例，称之为部署 (deploy)，每个部署都有自己的配置文件。
 
-如果你使用的是 AWS，可以把某个部署(deploy) 的配置保存在 [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)，敏感信息可以保存在 [AWS secret manager](https://aws.amazon.com/secrets-manager/)。
+如果你使用的是 AWS，可以把某个部署的配置保存在 [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)，敏感信息可以保存在 [AWS secret manager](https://aws.amazon.com/secrets-manager/)。
 
 ```
 # 创建 staging-1 的配置信息
@@ -218,9 +218,9 @@ kubectl create configmap staging1-config-map \
 
 第三步，我们把 `config/environments` 下的三个文件 production.rb / staging.rb /development.rb / test.rb 看做 Rails 不同的运行模式（mode），而不是看做运行实例。
 
-换言之无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-100，它们既可以选择 `production` 的运行模式，也可以选择 `staging` 的运行模式，你可以根据自己的实际情况来决定。
+换言之，无论是 production, staging-1， staging-2， staging-3， staging-4，staging-5，还是将来的 staging-x，它们既可以选择 `production` 运行模式，也可以选择 `staging` 运行模式，每个人可以根据自己的实际情况来决定。
 
-在本文中，所有的部署（deploy）都使用 production mode 去运行。
+在本文中，所有的部署都使用 production mode 去运行。
 
 ```
 export .env.staging-1
@@ -229,18 +229,18 @@ RAILS_ENV=production rails s
 
 ![](/media/files/2022/2022-08-12_14-07-10-production-yml.jpg)
 
-第四步： 代码 + 不同的配置 = 不同的部署(deploy)。
+第四步： 代码 + 不同的配置 = 不同的部署
 
 如果你使用的是 Capistrano 部署代码，那么
 
 ```
-Code + 不同配置 = 不同的部署(deploy)
+Code + 不同配置 = 不同的部署
 ```
 
 如果你使用的是 Docker 部署，那么：
 
 ```
-Docker Image + 不同配置 = 不同的部署(deploy)。
+Docker Image + 不同配置 = 不同的部署
 ```
 
 如果你使用的是 Kubenetes，将不同配置文件注入到了Pod 中，就变成了不同的部署 (deploy)。
@@ -268,11 +268,11 @@ spec:
 
 ### 优点
 
-创建部署（deploy），只需要准备一份新的配置文件就可以，省事省力。
+创建部署，只需要准备一份新的配置文件就可以，省事省力。
 
-这种方案也保证了安全。代码中不包含机密信息，即使代码泄露也不会扩大风险。不同部署(deploy) 的配置文件可以设置不同的访问权限，比如仅仅允许 DevOps 团队访问 production deploy 的配置信息。
+这种方案也保证了安全。代码中不包含机密信息，即使代码泄露也不会扩大风险。不同部署的配置文件可以设置不同的访问权限，比如仅仅允许 DevOps 团队访问 production deploy 的配置信息。
 
-在本文中所有部署(Deploy) 的运行模式都是 production mode，以此消除了不同部署 (deploy) 的差异（[parity](https://12factor.net/dev-prod-parity)）。
+在本文中所有部署的运行模式都是 production mode，以此消除了不同部署的差异 ([parity](https://12factor.net/dev-prod-parity))。
 
 
 ### 第二种方案的缺点
@@ -350,9 +350,7 @@ end
 ![](/media/files/2022/2022-08-12-codebase-build-config-deploy.png)
 
 
-## 后记
-
-本文以 Ruby on Rails 为示例代码，但此方案并不局限于 Rails 框架，也适用于到其他语言和Web 框架。
+**Note**
 
 本文中的方案，来自于 Workstream 同事们的实践经验，我只是提笔记录下来，并非我的工作成果。
 
