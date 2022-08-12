@@ -239,7 +239,7 @@ kubectl create configmap staging1-configmap \
 
 第四步： docker image + 不同的配置 = 不同的环境。
 
-这是一个 Kubenetes 的范例，配置文件注入到了 Pod 中。
+这是一个 Kubenetes 的范例，将 staging-1 的配置文件注入到了相应的Pod中，就搭起了 staging-1 这个环境。
 
 ```yaml
 ---
