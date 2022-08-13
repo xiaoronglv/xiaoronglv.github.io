@@ -356,11 +356,7 @@ spec:
 
 ### 缺点
 
-NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控数据上，方便筛选过滤。
-
-![](/media/files/2022/2022-08-12_12-47-48.jpg)
-
-在第二种方案中，所有的部署实例的运行模式都为 production mode，这导致所有监控数据都混在 production 下。遇到事故，工程师根本无法排查是哪个部署实例出了问题。
+NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控数据上，方便筛选过滤。在第二种方案中，所有的部署实例的运行模式都为 production mode，这导致所有监控数据都混在 production 下。遇到事故，工程师根本无法排查是哪个部署实例出了问题。
 
 ![](/media/files/2022/2022-08-12_12-56-12-only-production.jpg)
 
