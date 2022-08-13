@@ -411,10 +411,6 @@ end
 
 **感谢**
 
-本文中的方案，来自于 Workstream 同事们的实践经验，我只是提笔记录下来，并非我的工作成果。
+本文中的方案，来自于 Workstream 同事们 和 SAP 前同事们的实践经验，我只是提笔记录下来。
 
 特别感谢 Louise Xu, Felix Chen, Vincent Huang, Teddy Wang 的审校和反馈。
-
-**备注**
-
-1. Rails 6 推出了 [Rails Credential](https://edgeguides.rubyonrails.org/security.html#environmental-security) ，允许对配置加密。
