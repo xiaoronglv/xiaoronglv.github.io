@@ -413,4 +413,4 @@ end
 
 本文中的方案，来自于 Workstream 同事们 和 SAP 前同事们的实践经验，我只是提笔记录下来。
 
-特别感谢 Louise Xu, Felix Chen, Vincent Huang, Teddy Wang 的审校和反馈。
+特别感谢 Louise Xu, Felix Chen, Vincent Huang, Teddy Wang, Kang Zhang 的审校和反馈。
