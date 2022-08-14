@@ -8,8 +8,6 @@ tags:
   -
 ---
 
-{{TOC}}
-
 当使用命令行 `rails new` 去创建一个新项目时，Rails 默认会创建三个环境：
 
 - development: 本地开发环境。
@@ -118,7 +116,7 @@ when :staging-2
 ...
 ```
 
-在常量里定义配置，太容易出错。多数工程师会把不同部署环境的配置抽出来，放到不同的配置文件中，并且用一些库来管理，Rails 常用的库是 [rubyconfig/config](https://github.com/rubyconfig/config)。如果团队在使用这些库，我们也需要为新的部署环境添加配置文件。
+在常量里定义配置，太容易出错。多数工程师会把不同部署环境的配置抽出来，放到不同的配置文件中，并且用一些库来管理，Rails 常用的库是 "rubyconfig/config"[^ruby-config]。如果团队在使用这些库，我们也需要为新的部署环境添加配置文件。
 
 ```
 config/settings/demo.yml
@@ -153,9 +151,11 @@ config/settings/staging-4.yml
 
 **为了国家安全，一些国家要求本国的公民的数据必须保存在本国的数据中心**。Apple iCloud 既在美国有数据中心，也在中国贵州有数据中心，同一套代码部署在中国和美国，都是以 production 模式运行。抖音在美国部署在 Oracle Cloud上，在中国则部署在自己的机房里，他们也都以 production 模式运行。
 
-**大客户处于安全的考虑，要求私有化部署**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。Gitlab 是一个开源的代码管理平台，客户可以选择使用云版本，也可以私有化部署到内网，无数企业为了安全性选择后者。所有企业的运行模式也都为 production。
+**大客户出于安全的考虑，要求私有化部署 (self-hosted)**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。
 
-所以一套SaaS，在真实的世界中的部署场景应该是这个样子：
+**开源项目的部署**。Gitlab 是一个开源的代码管理平台，中小客户没有运维团队，通常会以在 gitlab.com[^gitlab-com] 注册一个账户直接使用；大客户财力雄厚，通常会部署 Gitlab 到自己的内网，并且只允许公司内网 IP 访问。
+
+所以一套 SaaS，在真实的世界中的部署场景应该是这个样子：
 
 | 运行实例 | 部署的Git分支 | 用途 |
 |:--|:--|:--|
@@ -164,7 +164,7 @@ config/settings/staging-4.yml
 | production-cnpc | release/99  | 客户为中石油，部署在中石油私有机房 |
 | production-china-police | release/100  | 客户为中国警察，部署在公安私有机房 |
 | production-us-police | release/100  | 客户为美国警察，部署在 AWS |
-| production-huawei | release/100  | 客户为华为，私有化部署 |
+| production-huawei | release/100  | 客户为华为，部署在内网 |
 | demo | demo  | 销售给客户做演示。 |
 | staging | main / 下一个 release 分支  | 用于上线前的回归测试 |
 | staging-1 | staging-1 branch | 给 "小熊猫" 团队开发测试使用 |
@@ -174,7 +174,7 @@ config/settings/staging-4.yml
 | staging-... | staging-... branch | 给 ... 团队开发测试使用 |
 
 > note:
-> release 分支：在 [Trunk based development](https://trunkbaseddevelopment.com/) 的工作流中，QA（或CI）会定期从最新的 main 分支创建部署分支，跑测试，如果没有bug，该分支就可以部署到生产环境。
+> release 分支：在 Trunk based development[^trunk-based-development] 的工作流中，QA（或CI）会定期从最新的 main 分支创建部署分支，跑测试，如果没有bug，该分支就可以部署到生产环境。
 
 当有众多 production 环境时，难道要把所有客户的配置都混入到代码里吗？显然不可能！客户也不答应！所以大家不约而同的认为代码应该无状态，配置信息应单独存储，这样创建一个部署环境时就不需要改动一行代码了。
 
@@ -183,26 +183,26 @@ config/settings/staging-4.yml
 
 ## 概念：部署 (deploy)
 
-当一套代码的 production 环境只有一个时，我们可以用 "production "等字眼代指某个运行的实例。
+当代码的 production 环境只有一个时，我们可以用 "production 环境"这个术语指代唯一的那个生产环境。
 
-当一套 Gitlab 代码有成千上万个 production 运行实例时，"production 环境"就无法指代任何事。
+可是 Gitlab 被千千万万个企业运行，production 实例不计其数，在沟通的时候，"production 环境"就个术语就无法指代任何事。为此，Gitlab 不得不发明新概念。[^gitlab-deployment-and-environments]
 
-为了更精确的表达，**我们用部署（deploy）这个概念代指代码的运行实例**。
+为了更精确的表达，在后半篇文章中，我们用**部署（deploy）**这个概念表述代码部署到某个数据中心后运行的实例。
 
-同时 `config/environments` 下的个文件 production.rb / staging.rb / development.rb / test.rb ，我们称之为**代码的运行模式**。
+同时 Rails config/environments 目录下的几个文件 production.rb / staging.rb / development.rb / test.rb ，我们称之为**代码的运行模式**。
 
-当 Gitlab 部署到华为内网时，我们可以这样描述 "Gitlab 在华为创建了一个部署（deploy），它的运行模式为 production"。
+比如，当 Gitlab 部署到华为内网时，我们说 "Gitlab 在华为内网创建了一个部署（deploy），它的运行模式为 production"。
 
 
 ## The 12-factor Application
 
-Heroku 写过一篇 SaaS 架构文章 《[12-factor  Application](https://12factor.net/)》，概括了设计 SaaS 应用的12条原则，被奉为圭臬。时至今日，依然无出其右。
+Heroku 写过一篇 SaaS 架构文章 《12-factor  Application[^12-factor-application]》，概括了设计 SaaS 应用的12条原则，被奉为圭臬，时至今日，依然无出其右。
 
 ### 第一条原则：一份基准代码（Codebase），多份部署（deploy）
 
 每个应用的一份基准代码，可以同时存在多份部署。每份部署相当于运行了一个应用的实例。通常会有一个生产环境，一个或多个预发布环境。
 
-### 第二条原则：显式声明依赖关系（ dependency ）
+### 第二条原则：显式声明依赖关系 (dependency)
 
 同样的代码，在不同机器，依赖要一致，行为也要一致，比如：
 
@@ -210,10 +210,8 @@ Heroku 写过一篇 SaaS 架构文章 《[12-factor  Application](https://12fact
 - Ruby 使用 Bundler 来管理各种库的版本依赖。
 - Docker 不但打包代码的库的依赖，还打包了操作系统的依赖。任何人获得 docker image 后都可以运行代码，不会出现这种尴尬情况：一份代码只能在我的电脑上跑，不能在你的电脑上跑。
 
-### 第三条原则：在环境中存储配置
+### 第三条原则：在环境中存储配置[^12-factor-config]
 
-> [The 12-factor App: 配置](https://12factor.net/zh_cn/config)
->   
 > 12-Factor 推荐将应用的配置存储于环境变量中（ env vars, env ）。环境变量可以非常方便地在不同的部署间做修改，却不动一行代码。
 
 **Docker**
@@ -236,13 +234,13 @@ docker run --name postgresql \
 - config 是配置信息
 - release = chart + config。当把模版和配置拼凑在一起时，就创建了一个部署实例。
 
-我想开源软件之所以更偏爱 12-factor，是因为作者从第一天开始就知道，这份软件会千千万万个个体使用，配置和代码必须分离，绝对不能 hard code。
+几乎所有优秀的开源软件都遵守 12-factor，除了优秀的架构能力，我想另一个原因是作者从第一天开始就知道，这份软件会被千千万万家公司使用，代码和配置必须分离，绝对不能 hard code。
 
-我们可以借鉴 12-factor 思想，用一份代码迅速创建几十个部署，让业务程序员开心，让 DevOps 开心，让客户开心。
+我们的代码不会部署到千万家公司，但是借鉴 12-factor 思想，可以让我们快速创建和维护十几个部署。DevOps 省时省力，业务程序员互不干扰，销售演示功能时自信满满的，客户甘心买单。
 
-## 优化方案
+## 借鉴 12-factor 的方案
 
-第一步，让代码无状态，代码中所有的配置信息都取自环境变量。
+**第一步，让代码无状态，代码中所有的配置信息都取自环境变量。**
 
 比如，DB 的配置要取自环境变量。
 
@@ -279,9 +277,9 @@ class OauthController < ApiController
 end
 ```
 
-第二步，准备配置文件。
+**第二步，准备配置文件。**
 
-为 staging-1, staging-2, staging-3, staging-4,demo，production，production-gov，production-china-police，production-us-police 等部署环境创建配置文件。
+为 staging-1, staging-2, staging-3, staging-4,demo，production，production-gov，production-china-police，production-us-police 等部署创建配置文件。
 
 如果你使用的是 AWS，可以把某个部署的配置保存在 [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)，敏感信息可以保存在 [AWS secret manager](https://aws.amazon.com/secrets-manager/)。
 
@@ -294,28 +292,35 @@ aws ssm put-parameter \
     --tags "DB_HOST=xxx,DB_USER=xxx,DB_PASSWORD=xxx,REDIS_HOST=xxx,GOOGLE_OAUTH_URL=xxxx"
 ```
 
-如果你是用的是 Kubernetes，可以把不同部署的配置信息保存在不同的 [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)，敏感信息保存在 [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) 中。
+如果你使用 Kubernetes，可以把某个部署的配置信息保存在 [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)，敏感信息保存在 [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) 中。
 
 ```
+# 创建 staging-1 的 ConfigMap
 kubectl create configmap staging1-config-map \
   --from-literral="DB_HOST=xxx" \
   --from-literral="DB_USER=postgres" \
   --from-literral="DB_PASSWORD=xxx"
+
+# 创建 staging-1 的 Secret
+kubectl create secret generic staging1-secrets \
+   --from-literral="GOOGLE_CLIENT_ID=xxxx" \
+   --from-literral="GOOGLE_CLIENT_SECRET=xxxx" 
 ```
 
 
-第三步，以 production mode 运行各个部署环境。
+**第三步，以 production mode 运行各个部署环境。**
 
-staging-1, staging-2, staging-3, staging-4, staging-5, ... staging-x，demo，production，production-gov，production-china-police，production-us-police 内部的运行脚本都如下所示：
+12-factors App 中有一个概念叫差异 (Dev/prod parity)[^dev-and-prod-parity]。为了消除不同部署之间的差异，Heroku 建议即使部署到 staging，也以 production 模式去运行。
+
+因此，staging-1, staging-2, staging-3, staging-4, staging-5, ... staging-x，demo，production，production-gov，production-china-police，production-us-police 都以 production 来运行：
 
 ```
-export .env
 RAILS_ENV=production rails s
 ```
 
 ![](/media/files/2022/2022-08-12_14-07-10-production-yml.jpg)
 
-第四步： 把代码和配置组合在一起，创建一个个部署。
+**第四步： 把代码和配置组合在一起，创建一个个部署。**
 
 ![](/media/files/2022/2022-08-12-codebase-build-config-deploy.png)
 
@@ -364,7 +369,7 @@ spec:
 
 4. 可以为不同部署的配置文件可以设置不同的访问权限，比如仅仅允许特定团队访问 production 部署实例的的配置信息。
 
-5. 在本文中所有部署的运行模式都是 production mode，以此消除了不同部署的差异 ([parity](https://12factor.net/dev-prod-parity))。
+5. 所有部署的运行模式都是 production mode，以此消除不同部署之间的差异。 （关于本条，大家可以根据自己的实际情况做决定。有些人喜欢以 staging mode 来运行 staging 部署实例。）
 
 
 ### 缺点
@@ -375,43 +380,48 @@ NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控
 
 **如何解决监控工具的问题？**
 
-其实 NewRelic, Datadog, Sentry 提供了接口，允许我们自定义部署的名字，以 Sentry 举例，它的语法如下：
+其实 Datadog, New Relic, Sentry 提供了接口，允许我们自定义部署的名字，以 Datadog 举例，它的语法如下：
  
  ```ruby
-Sentry.init do |config|
-  #...
-  config.environment = "你喜欢的部署名"
+Datadog.configure do |c|
+  # ...
+  c.env = "你喜欢的部署名"
 end
 ```
 
-因此我们可以在 staging-1, staging-2, staging-x, production-x 等不同部署的配置中，引入一个新的变量 "DEPLOY_ID" 来声明部署的名称，并赋值给监控工具。
+因此我们可以在 staging-1, staging-2, staging-x, production-x 等不同部署的配置中，引入一个新的变量 "DEPLOY_ID" 来声明部署的名称，并传递给监控工具。
  
-假如 staging-1 的配置信息如下：
 
-```
-DEPLOY_ID =staging-1
-DB_HOST=xxx
-DB_USER=xxx
-...
-```
-
-我们可以这样配置 Sentry：
-
-```ruby
-Sentry.init do |config|
-  #...
-  config.environment = ENV['DEPLOY_ID'] # 它的值为 staging-1
-end
-```
-
-可以这样配置 Datadog：
+**把 DEPLOY_ID 传递给 Datadog[^datadog-doc]**
 
 ```ruby
 Datadog.configure do |c|
+  c.env = ENV['DEPLOY_ID'] # prod / staging-1 / demo / prod-huawei
   # ...
-  c.env = ENV['DEPLOY_ID'] # 它的值为 staging-1
 end
 ```
+
+
+**把 DEPLOY_ID 传递给 Sentry[^sentry-doc]**
+
+```ruby
+Sentry.init do |config|
+  #...
+  config.environment = ENV['DEPLOY_ID'] # prod / staging-1 / demo / prod-huawei
+end
+```
+
+
+**把 DEPLOY_ID 传递给 New Relic[^new-relic-doc]**。
+
+
+```
+# config/initializers/newrelic.rb
+NEW_RELIC_ENV=ENV['DEPLOY_ID']
+NEW_RELIC_LICENSE_KEY=ENV['NEW_RELIC_LICENSE_KEY']
+...
+```
+
 
 这样就能保证监控工具的正常显示了。
 
@@ -423,3 +433,27 @@ end
 本文中的方案，来自于 Workstream 同事们 和 SAP 前同事们的实践经验，我只是加工整理，提笔记录下来。
 
 特别感谢 [Louise Xu](https://www.linkedin.com/in/louise-x-87125b227/), Felix Chen, [Vincent Huang](https://www.linkedin.com/in/vincent-huang-13111068/), [Teddy Wang](https://www.linkedin.com/in/teddy-wang-b4191549/), Kang Zhang 的审校和反馈。
+
+
+## 参考资料
+
+[^trunk-based-development]:https://trunkbaseddevelopment.com
+
+[^gitlab-com]: https://www.gitlab.com
+
+[^ruby-config]: Ruby Gem: [rubyconfig](https://github.com/rubyconfig/config)
+
+[^12-factor-application]: [The 12-factor App](https://12factor.net/)
+
+[^12-factor-config]: https://12factor.net/zh_cn/config
+
+[^dev-and-prod-parity]: [Dev/prod parity](https://12factor.net/dev-prod-parity)
+
+[^sentry-doc]: [Sentry: Rails configuration](https://docs.sentry.io/platforms/ruby/guides/rails/)
+
+[^datadog-doc]: [Datadog: Tracing Ruby Applications](https://docs.datadoghq.com/tracing/trace_collection/dd_libraries/ruby/#rails-applications)
+
+[^new-relic-doc]: [New Relic: 通过环境变量来配置](https://docs.newrelic.com/docs/apm/agents/ruby-agent/configuration/ruby-agent-configuration/#license_key)
+
+[^gitlab-deployment-and-environments]: Gitlab 为了区分部署名和运行模式，也不得不发明新的概念，这是当初的 [设计提案](https://gitlab.com/gitlab-org/gitlab/-/issues/300741#proposal)
+
