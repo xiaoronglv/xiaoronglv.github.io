@@ -103,6 +103,8 @@ staging-3:
 
 此外，有些工程师如果在常量定义配置，那我们还需要检查各种常量，确保新创建的环境，都有匹配的赋值。尤其是在犄角旮旯里定义的变量，如果没有察觉，新环境会一直报错。所以需要全局搜索 `Rails.env`，免得遗漏。
 
+比如，以下代码用把各个环境的 Redis 地址写在了常量中。
+
 ```
 # config/initializers/sidekiq.rb
 
@@ -141,16 +143,18 @@ config/settings/staging-5.yml
 
 ## 业务的第三阶段：多租户方案 + 私有化部署 + 百人以上开发团队
 
-很多程序员都有一个假设："production 部署环境只有一个"。有两个原因导致了这种假设：
+很多程序员之所以敢把生产环境的配置 hard code，就是因为脑子里有个假设："production 部署环境只有一个"。
 
-1. 大部分 To C 的产品，只需要一个 production 部署就能满足所有客户的需要。
-2. 即使是 To B 的 SaaS，也是多租户 （multi-tenant）设计，一个 Production 部署环境可以满足所有租户的需要。
+项目早期，确实如此。
+
+1. 如果做的是 To C 的产品，一个 production 部署就能满足所有客户的需要。
+2. 即使是 To B 的 SaaS，早期也是多租户 （multi-tenant）设计，一个 production 部署环境可以满足所有租户的需要。
 
 随着业务的增长，这种假设会被打破。
 
-**一些国家为了国家安全，要求本国的公民的数据必须保存在本国的数据中心**。Apple iCloud 既在美国有数据中心，也在中国贵州有数据中心，同一套代码部署在中国和美国，都是 production 部署实例。抖音在美国部署在 Oracle Cloud上，在中国则部署在自己的机房里，他们的运行模式也都为 production mode。
+**一些国家为了国家安全，要求本国的公民的数据必须保存在本国的数据中心**。Apple iCloud 既在美国有数据中心，也在中国贵州有数据中心，同一套代码部署在中国和美国，都是以 production 模式运行。抖音在美国部署在 Oracle Cloud上，在中国则部署在自己的机房里，他们也都以 production 模式运行。
 
-**大客户处于安全的考虑，要求私有化部署**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。Github 企业版允许企业部署代码到自己的机房，他们的运行模式也都为 production。
+**大客户处于安全的考虑，要求私有化部署**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。Github 企业版允许企业部署代码到自己的机房。私有化部署时，代码的运行模式也都为 production。
 
 
 所以一套SaaS，在真实的世界中的部署场景应该是这个样子：
@@ -360,7 +364,7 @@ NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控
 
 ![](/media/files/2022/2022-08-12_12-56-12-only-production.jpg)
 
-## 如何解决监控工具的问题？
+### 如何解决监控工具的问题？
 
 其实 NewRelic, Datadog, Sentry 提供了接口，允许我们自定义部署实例的名字，以 Sentry 举例，它的语法如下：
  
@@ -407,6 +411,6 @@ end
 
 **感谢**
 
-本文中的方案，来自于 Workstream 同事们 和 SAP 前同事们的实践经验，我只是提笔记录下来。
+本文中的方案，来自于 Workstream 同事们 和 SAP 前同事们的实践经验，我只是加工整理，提笔记录下来。
 
-特别感谢 Louise Xu, Felix Chen, Vincent Huang, Teddy Wang, Kang Zhang 的审校和反馈。
+特别感谢 [Louise Xu](https://www.linkedin.com/in/louise-x-87125b227/), Felix Chen, [Vincent Huang](https://www.linkedin.com/in/vincent-huang-13111068/), [Teddy Wang](https://www.linkedin.com/in/teddy-wang-b4191549/), Kang Zhang 的审校和反馈。
