@@ -153,13 +153,13 @@ config/settings/staging-4.yml
 
 **大客户出于安全的考虑，要求私有化部署 (self-hosted)**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。
 
-**开源项目的部署**。Gitlab 是一个开源的代码管理平台，中小客户没有运维团队，通常会以在 gitlab.com[^gitlab-com] 注册一个账户直接使用；大客户财力雄厚，通常会部署 Gitlab 到自己的内网，并且只允许公司内网 IP 访问。
+**开源项目的部署**。Gitlab 是一个开源的代码管理平台，中小客户没有运维团队，通常会在 gitlab.com 注册一个账户直接使用；大客户财力雄厚，有自己的机房和运维团队，通常会部署 Gitlab 到自己的内网，并且只允许公司内网 IP 访问。
 
 所以一套 SaaS，在真实的世界中的部署场景应该是这个样子：
 
 | 运行实例 | 部署的Git分支 | 用途 |
 |:--|:--|:--|
-| production | release/100\*  | 部署在公有云上，多租户使用的SaaS |
+| production | release/100\*  | 部署在公有云上，多租户使用的 SaaS |
 | production-gov | release/101  | 客户为政府，部署在政府私有机房 |
 | production-cnpc | release/99  | 客户为中石油，部署在中石油私有机房 |
 | production-china-police | release/100  | 客户为中国警察，部署在公安私有机房 |
@@ -183,9 +183,7 @@ config/settings/staging-4.yml
 
 ## 概念：部署 (deploy)
 
-当代码的 production 环境只有一个时，我们可以用 "production 环境"这个术语指代唯一的那个生产环境。
-
-可是 Gitlab 被千千万万个企业运行，production 实例不计其数，在沟通的时候，"production 环境"就个术语就无法指代任何事。为此，Gitlab 不得不发明新概念。[^gitlab-deployment-and-environments]
+当代码的 production 环境只有一个时，我们可以用 "production 环境"这个术语指代唯一的那个生产环境。可是 Gitlab 被千千万万个企业运行，production 实例不计其数，在沟通的时候，"production 环境"就个术语就无法指代任何事[^gitlab-deployment-and-environments]。
 
 为了更精确的表达，在后半篇文章中，我们用**部署（deploy）**这个概念表述代码部署到某个数据中心后运行的实例。
 
@@ -228,15 +226,15 @@ docker run --name postgresql \
 
 **Helm**
 
-[Helm](https://helm.sh/) 是一个 Kubernetes 应用的包管理工具，它也遵循了 12-factor 的前三条原则。它有三个核心概念 chart，config，release。
+Helm[^helm] 是一个 Kubernetes 应用的包管理工具，它也遵循了 12-factor 的前三条原则。它有三个核心概念 chart，config，release。
 
 - chart 是模版，无状态。
 - config 是配置信息
 - release = chart + config。当把模版和配置拼凑在一起时，就创建了一个部署实例。
 
-几乎所有优秀的开源软件都遵守 12-factor，除了优秀的架构能力，我想另一个原因是作者从第一天开始就知道，这份软件会被千千万万家公司使用，代码和配置必须分离，绝对不能 hard code。
+几乎所有优秀的开源软件都遵守 12-factor，除了优秀的架构能力，我猜测作者从第一天就知道，这份软件会被千千万万家公司使用，代码和配置必须分离，绝对不能硬编码。
 
-我们的代码不会部署到千万家公司，但是借鉴 12-factor 思想，可以让我们快速创建和维护十几个部署。DevOps 省时省力，业务程序员互不干扰，销售演示功能时自信满满的，客户甘心买单。
+我们的代码不会部署到千万家公司，但是借鉴 12-factor 思想，可以让我们快速创建和维护十几个部署。DevOps 省时省力，业务程序员专心开发，销售演示功能时自信满满的，互不干扰。
 
 ## 借鉴 12-factor 的方案
 
@@ -258,6 +256,8 @@ production:
 Sidekiq 的配置也取自环境变量。
 
 ```ruby
+# config/initializers/sidekiq.rb
+
 Sidekiq.configure_server do |config|
   config.redis = {
     host: ENV['REDIS_HOST'],
@@ -281,7 +281,7 @@ end
 
 为 staging-1, staging-2, staging-3, staging-4,demo，production，production-gov，production-china-police，production-us-police 等部署创建配置文件。
 
-如果你使用的是 AWS，可以把某个部署的配置保存在 [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)，敏感信息可以保存在 [AWS secret manager](https://aws.amazon.com/secrets-manager/)。
+如果你使用的是 AWS，可以把某个部署的配置保存在 [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)，敏感信息可以保存在 [AWS secret manager](https://aws.amazon.com/secrets-manager/)。
 
 ```
 # 创建 staging-1 的配置信息
@@ -308,11 +308,19 @@ kubectl create secret generic staging1-secrets \
 ```
 
 
-**第三步，以 production mode 运行各个部署环境。**
+**第三步，以 production mode 运行各个部署实例。**
 
-12-factors App 中有一个概念叫差异 (Dev/prod parity)[^dev-and-prod-parity]。为了消除不同部署之间的差异，Heroku 建议即使部署到 staging，也以 production 模式去运行。
+几乎所有的工程师都曾遇到过类似问题：
 
-因此，staging-1, staging-2, staging-3, staging-4, staging-5, ... staging-x，demo，production，production-gov，production-china-police，production-us-police 都以 production 来运行：
+为什么代码可以在同事的机器上运行，但是无法在我的机器上运行？
+
+为什么代码可以在本地运行，但是无法在 staging 运行？
+
+为什么代码在 staging 上没有问题，但是上线后客户后遇到一连串的问题。
+
+很多问题是本地、测试、生产之间的差异导致的，比如本地开发用 Macbook，但生产服务器是 Ubuntu；本地开发数据库是 SQLite，生产数据库则是 PostgreSQL；本地开发拿内存做缓存，生产用 Memcached 作缓存。《12-factors App》称这种差异为 Dev/prod parity[^dev-and-prod-parity]。
+
+为了消除不同部署之间的差异，对于 production, production-huawei，demo，staging-1, staging-2, staging-3 等，我都以 production 模式来运行：
 
 ```
 RAILS_ENV=production rails s
@@ -415,7 +423,7 @@ end
 **把 DEPLOY_ID 传递给 New Relic[^new-relic-doc]**。
 
 
-```
+```ruby
 # config/initializers/newrelic.rb
 NEW_RELIC_ENV=ENV['DEPLOY_ID']
 NEW_RELIC_LICENSE_KEY=ENV['NEW_RELIC_LICENSE_KEY']
@@ -437,15 +445,15 @@ NEW_RELIC_LICENSE_KEY=ENV['NEW_RELIC_LICENSE_KEY']
 
 ## 参考资料
 
-[^trunk-based-development]:https://trunkbaseddevelopment.com
-
-[^gitlab-com]: https://www.gitlab.com
+[^trunk-based-development]: [Trunk based development](https://trunkbaseddevelopment.com)
 
 [^ruby-config]: Ruby Gem: [rubyconfig](https://github.com/rubyconfig/config)
 
+[^helm]: [helm](https://helm.sh/)
+
 [^12-factor-application]: [The 12-factor App](https://12factor.net/)
 
-[^12-factor-config]: https://12factor.net/zh_cn/config
+[^12-factor-config]: [The 12-factor App: config](https://12factor.net/zh_cn/config)
 
 [^dev-and-prod-parity]: [Dev/prod parity](https://12factor.net/dev-prod-parity)
 
@@ -455,5 +463,4 @@ NEW_RELIC_LICENSE_KEY=ENV['NEW_RELIC_LICENSE_KEY']
 
 [^new-relic-doc]: [New Relic: 通过环境变量来配置](https://docs.newrelic.com/docs/apm/agents/ruby-agent/configuration/ruby-agent-configuration/#license_key)
 
-[^gitlab-deployment-and-environments]: Gitlab 为了区分部署名和运行模式，也不得不发明新的概念，这是当初的 [设计提案](https://gitlab.com/gitlab-org/gitlab/-/issues/300741#proposal)
-
+[^gitlab-deployment-and-environments]: Gitlab 为了区分部署名和运行模式，也不得不发明新的概念，这是当初的 [设计提案](https://gitlab.com/gitlab-org/gitlab/-/issues/300741#proposal)。
