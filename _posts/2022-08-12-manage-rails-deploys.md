@@ -50,31 +50,29 @@ environments
 | staging-2 | staging-2-branch | 给 "自杀小分队" 团队使用 |
 | staging-3 | staging-3-branch | 给 "星河战舰" 团队使用 |
 | staging-4 | staging-4-branch | 给 "深海水妖" 团队使用 |
-| staging-5 | staging-5-branch | 给 "阿尔贡" 团队使用 |
 | staging-... | staging-6-branch | 给 ... 团队使用 |
 
 
-工程师越多，需要的 Rails 环境也越多。如何创建更多的部署环境呢？
+工程师越多，需要的 Rails 环境也越多。如果我们要创建6个部署环境 staging，staging-1, staging-2, staging-3, staging-4, demo, 该怎么做呢？
 
-可以在 Rails 的 `config/environments` 目录下创建7个环境的配置文件。这是 Rails 推荐的配置风格，原汁原味。
+可以在 Rails 的 `config/environments` 目录下创建6个环境的配置文件。这是 Rails 推荐的配置风格，原汁原味。
 
 ```
 > tree environments                                                      
 environments
 ├── demo.rb
 ├── development.rb
+├── test.rb
 ├── production.rb
 ├── staging.rb
 ├── staging-1.rb
 ├── staging-2.rb
 ├── staging-3.rb
 ├── staging-4.rb
-├── staging-5.rb
-├── staging-6.rb
-└── test.rb
+...
 ```
 
-但事情没那么简单，除了 `config/environments`，还有许多额外工作。我们要在 `config/database.yml` 添加7个新环境的数据库配置。
+但事情没那么简单，除了 `config/environments`，还有许多额外工作。我们要在 `config/database.yml` 添加 6 个新环境的数据库配置。
 
 ```yaml
 default: &default
@@ -109,6 +107,8 @@ staging-3:
 # config/initializers/sidekiq.rb
 
 case Rails.env
+when :demo
+  REDIS_HOST = 'redis-demo.3922002.redis.aws.com:6379'
 when :staging-1
   REDIS_HOST = 'redis-s1.3922002.redis.aws.com:6379'
 when :staging-2
@@ -119,14 +119,13 @@ when :staging-2
 在常量里定义配置，太容易出错。多数工程师会把不同部署环境的配置抽出来，放到不同的文件中，并且用一些库来管理配置，Rails 常用的库是 [rubyconfig/config](https://github.com/rubyconfig/config)。如果团队在使用这些库，我们也需要为新环境添加配置文件。
 
 ```
+config/settings/demo.yml
 config/settings/production.yml
 config/settings/staging.yml
-config/settings/demo.yml
 config/settings/staging-1.yml
 config/settings/staging-2.yml
 config/settings/staging-3.yml
 config/settings/staging-4.yml
-config/settings/staging-5.yml
 ...
 ```
 
@@ -169,12 +168,11 @@ config/settings/staging-5.yml
 | production-microsoft | release/100  | 客户为微软，私有化部署 |
 | demo | demo  | 销售给客户做演示。 |
 | staging | main / 下一个 release 分支  | 用于上线前的回归测试 |
-| staging-1 | staging-1-branch | 给 "小熊猫" 团队开发测试使用 |
-| staging-2 | staging-2-branch | 给 "自杀小分队" 团队开发测试使用 |
-| staging-3 | staging-3-branch | 给 "星河战舰" 团队开发测试使用 |
-| staging-4 | staging-4-branch | 给 "深海水妖" 团队开发测试使用 |
-| staging-5 | staging-5-branch | 给 "阿尔贡" 团队开发测试使用 |
-| staging-... | staging-6-branch | 给 ... 团队开发测试使用 |
+| staging-1 | staging-1 branch | 给 "小熊猫" 团队开发测试使用 |
+| staging-2 | staging-2 branch | 给 "自杀小分队" 团队开发测试使用 |
+| staging-3 | staging-3 branch | 给 "星河战舰" 团队开发测试使用 |
+| staging-4 | staging-4 branch | 给 "深海水妖" 团队开发测试使用 |
+| staging-... | staging-... branch | 给 ... 团队开发测试使用 |
 
 > note:
 > 
