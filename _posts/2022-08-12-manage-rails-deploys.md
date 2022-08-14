@@ -8,13 +8,15 @@ tags:
   -
 ---
 
+{{TOC}}
+
 当使用命令行 `rails new` 去创建一个新项目时，Rails 默认会创建三个环境：
 
 - development: 本地开发环境。
 - test: 用来跑测试。
 - production: 生产环境，用来服务客户。
 
-在项目的最早期，还处于验证想法阶段。工程师的工作流程也比较粗狂，写代码，跑测试，然后直接部署生产环境。
+在项目的最早期，还处于验证想法阶段。工程师的工作流程也比较粗狂，写代码，跑测试，然后直接部署代码至生产环境。
 
 ## 业务的第一阶段：少量客户阶段
 
@@ -39,7 +41,7 @@ environments
 
 程序员耐心时，遇到代码冲突会联系原作者，一起解决。如果是跨国团队，因为时差的原因，一个来回的沟通需要一天时间。这时候程序员可能就没了耐心，直接重置 git 的 staging 分支。这会导致一系列的误会，别人正在测试的功能凭空消失，QA 工程师上报 bug，结果细查下来是代码重置导致的。
 
-为了降低代码冲突和沟通成本，很多公司会选择为不同团队创建专属的部署实例，而不是吃大锅饭。各团队井水不犯河水，如果某个部署出现 bug，也只会影响到单个团队，不会拖累整个公司开发进度。
+为了降低代码冲突和沟通成本，很多公司会为各团队创建专属的部署环境，而不是吃大锅饭。各团队井水不犯河水，如果某个部署环境出现问题，也只会影响到单个团队，不会拖累整个公司开发进度。
 
 | 实例 | 部署的Git分支 | 用途 |
 |:--|:--|:--|
@@ -53,9 +55,9 @@ environments
 | staging-... | staging-6-branch | 给 ... 团队使用 |
 
 
-工程师越多，需要的 Rails 环境也越多。如果我们要创建6个部署环境 staging，staging-1, staging-2, staging-3, staging-4, demo, 该怎么做呢？
+工程师越多，需要的 Rails 部署环境也越多。如果我们要创建6个部署环境 staging，staging-1, staging-2, staging-3, staging-4, demo, 该怎么做呢？
 
-可以在 Rails 的 `config/environments` 目录下创建6个环境的配置文件。这是 Rails 推荐的配置风格，原汁原味。
+可以在 Rails 的 `config/environments` 目录下创建6个配置文件。这是 Rails 推荐的配置风格，原汁原味。
 
 ```
 > tree environments                                                      
@@ -72,7 +74,7 @@ environments
 ...
 ```
 
-但事情没那么简单，除了 `config/environments`，还有许多额外工作。我们要在 `config/database.yml` 添加 6 个新环境的数据库配置。
+但事情没那么简单，除了 `config/environments`，还有许多额外工作。我们要在 `config/database.yml` 添加 6 个新部署环境的数据库配置。
 
 ```yaml
 default: &default
@@ -99,9 +101,9 @@ staging-3:
 ...
 ```
 
-此外，有些工程师如果在常量定义配置，那我们还需要检查各种常量，确保新创建的环境，都有匹配的赋值。尤其是在犄角旮旯里定义的变量，如果没有察觉，新环境会一直报错。所以需要全局搜索 `Rails.env`，免得遗漏。
+此外，如果有些工程师在常量中定义配置，那我们还需要全局搜索 `Rails.env`，确保新创建的部署环境，都有匹配的赋值。尤其是在犄角旮旯里定义的变量，如果遗漏，新部署会一直报错。
 
-比如，以下代码用把各个环境的 Redis 地址写在了常量中。
+比如，有人会把各个部署环境的 Redis 地址写在了常量中。
 
 ```
 # config/initializers/sidekiq.rb
@@ -116,7 +118,7 @@ when :staging-2
 ...
 ```
 
-在常量里定义配置，太容易出错。多数工程师会把不同部署环境的配置抽出来，放到不同的文件中，并且用一些库来管理配置，Rails 常用的库是 [rubyconfig/config](https://github.com/rubyconfig/config)。如果团队在使用这些库，我们也需要为新环境添加配置文件。
+在常量里定义配置，太容易出错。多数工程师会把不同部署环境的配置抽出来，放到不同的配置文件中，并且用一些库来管理，Rails 常用的库是 [rubyconfig/config](https://github.com/rubyconfig/config)。如果团队在使用这些库，我们也需要为新的部署环境添加配置文件。
 
 ```
 config/settings/demo.yml
@@ -134,7 +136,7 @@ config/settings/staging-4.yml
 
 第一，即使有完备的内部文档，全套走下来，工程量不小，人力成本很高。
 
-第二，每次创建新环境都要修改老代码中的常量。修改正在运行的老代码乃兵家大忌，稍有不慎就会bug缠身，死无葬身之地。
+第二，每次创建新的部署环境都要修改老代码中的常量。修改正在运行的老代码乃兵家大忌，稍有不慎就会bug缠身，死无葬身之地。
 
 第三，安全性差。配置中包含 client_secret，token，私钥，如果代码不幸泄露，各种秘钥被一锅端。使用这种方案创建的 docker 镜像混杂了各种配置信息，不干净。万一泄露，也是个麻烦事。
 
@@ -142,30 +144,27 @@ config/settings/staging-4.yml
 
 ## 业务的第三阶段：多租户方案 + 私有化部署 + 百人以上开发团队
 
-很多程序员之所以敢把生产环境的配置 hard code，就是因为脑子里有个假设："production 部署环境只有一个"。
+项目早期，通常只有一个 production 部署环境。
 
-项目早期，确实如此。
+1. 如果产品面向的是普通客户（To C），一个 production 部署就能满足所有客户的需要。
+2. 面向企业客户的 SaaS 产品，早期也是多租户 （multi-tenant）设计，一个 production 部署环境服务所有的企业。
 
-1. 如果做的是 To C 的产品，一个 production 部署就能满足所有客户的需要。
-2. 即使是 To B 的 SaaS，早期也是多租户 （multi-tenant）设计，一个 production 部署环境可以满足所有租户的需要。
+因此很多程序员脑子里有个假设："production 部署环境只有一个"。随着业务的增长，这种假设会被打破。
 
-随着业务的增长，这种假设会被打破。
+**为了国家安全，一些国家要求本国的公民的数据必须保存在本国的数据中心**。Apple iCloud 既在美国有数据中心，也在中国贵州有数据中心，同一套代码部署在中国和美国，都是以 production 模式运行。抖音在美国部署在 Oracle Cloud上，在中国则部署在自己的机房里，他们也都以 production 模式运行。
 
-**一些国家为了国家安全，要求本国的公民的数据必须保存在本国的数据中心**。Apple iCloud 既在美国有数据中心，也在中国贵州有数据中心，同一套代码部署在中国和美国，都是以 production 模式运行。抖音在美国部署在 Oracle Cloud上，在中国则部署在自己的机房里，他们也都以 production 模式运行。
-
-**大客户处于安全的考虑，要求私有化部署**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。Github 企业版允许企业部署代码到自己的机房。私有化部署时，代码的运行模式也都为 production。
-
+**大客户处于安全的考虑，要求私有化部署**。阿里云同样一套代码，会卖给政府，中国电信，公安系统，代码部署在他们各自的机房。Gitlab 是一个开源的代码管理平台，客户可以选择使用云版本，也可以私有化部署到内网，无数企业为了安全性选择后者。所有企业的运行模式也都为 production。
 
 所以一套SaaS，在真实的世界中的部署场景应该是这个样子：
 
-| 实例 | 部署的Git分支 | 用途 |
+| 运行实例 | 部署的Git分支 | 用途 |
 |:--|:--|:--|
 | production | release/100\*  | 部署在公有云上，多租户使用的SaaS |
 | production-gov | release/101  | 客户为政府，部署在政府私有机房 |
 | production-cnpc | release/99  | 客户为中石油，部署在中石油私有机房 |
 | production-china-police | release/100  | 客户为中国警察，部署在公安私有机房 |
 | production-us-police | release/100  | 客户为美国警察，部署在 AWS |
-| production-microsoft | release/100  | 客户为微软，私有化部署 |
+| production-huawei | release/100  | 客户为华为，私有化部署 |
 | demo | demo  | 销售给客户做演示。 |
 | staging | main / 下一个 release 分支  | 用于上线前的回归测试 |
 | staging-1 | staging-1 branch | 给 "小熊猫" 团队开发测试使用 |
@@ -179,9 +178,23 @@ config/settings/staging-4.yml
 > release/xxx 代表某个已经过QA测试的部署分支。
 
 
-当有众多 production 部署环境时，难道要把所有配置都混入到代码里吗？显然不可能！客户也不答应！
+当有众多 production 环境时，难道要把所有客户的配置都混入到代码里吗？显然不可能！客户也不答应！所以大家不约而同的认为代码应该无状态，配置信息应单独存储，这样创建一个部署环境时就不需要改动一行代码了。
 
-所以大家不约而同的认为代码应该无状态，配置信息应单独存储，这样增加部署时就不需要改动一行代码了。
+![](/media/files/2022/2022-08-12-codebase-deploys.png)
+
+
+## 概念：部署 (deploy)
+
+当一套代码的 production 环境只有一个时，我们可以用 "production "等字眼代指某个运行的实例。
+
+当一套 Gitlab 代码有成千上万个 production 运行实例时，"production 环境"就无法指代任何事。
+
+为了更精确的表达，**我们用部署（deploy）这个概念代指代码的运行实例**。
+
+同时 `config/environments` 下的个文件 production.rb / staging.rb / development.rb / test.rb ，我们称之为**代码的运行模式**。
+
+当 Gitlab 部署到华为内网时，我们可以这样描述 "Gitlab 在华为创建了一个部署（deploy），它的运行模式为 production"。
+
 
 ## The 12-factor Application
 
@@ -189,9 +202,7 @@ Heroku 写过一篇 SaaS 架构文章 《[12-factor  Application](https://12fact
 
 ### 第一条原则：一份基准代码（Codebase），多份部署（deploy）
 
-> 尽管每个应用只对应一份基准代码，但可以同时存在多份部署(deploy)。每份部署相当于运行了一个应用的实例。通常会有一个生产环境，一个或多个预发布环境。
-
-![](/media/files/2022/2022-08-12-codebase-deploys.png)
+每个应用的一份基准代码，可以同时存在多份部署。每份部署相当于运行了一个应用的实例。通常会有一个生产环境，一个或多个预发布环境。
 
 ### 第二条原则：显式声明依赖关系（ dependency ）
 
@@ -221,15 +232,17 @@ docker run --name postgresql \
 
 **Helm**
 
-[Helm](https://helm.sh/) 是一个 Kubernetes 应用的包管理工具，它有三个核心概念，chart，config，release。
+[Helm](https://helm.sh/) 是一个 Kubernetes 应用的包管理工具，它也遵循了 12-factor 的前三条原则。它有三个核心概念 chart，config，release。
 
-- chart 是模版
+- chart 是模版，无状态。
 - config 是配置信息
+- release = chart + config。当把模版和配置拼凑在一起时，就创建了一个部署实例。
 
-chart + config = release （一个部署的实例）
+我想开源软件之所以更偏爱 12-factor，是因为作者从第一天开始就知道，这份软件会千千万万个个体使用，所以绝对不能hard code，配置和代码必须分离。
 
+我们可以借鉴 12-factor 思想，用一份代码代码可以迅速创建几十个部署，让业务程序员开心，让 DevOps 开心，让客户开心。
 
-## 按 12-factor 原则优化方案 
+## 优化方案
 
 第一步，让代码无状态，代码中所有的配置信息都取自环境变量。
 
@@ -257,7 +270,7 @@ end
 # ...
 ```
 
-任何逻辑，但凡和环境相关，其配置都取自环境变量。
+任何逻辑，但凡和部署相关，其配置都取自环境变量。
 
 ```ruby
 class OauthController < ApiController
@@ -269,7 +282,7 @@ end
 
 第二步，准备配置文件。
 
-为 staging-1, staging-2, staging-3, staging-4, staging-5, ... staging-x，demo，production，production-gov，production-china-police，production-us-police 等部署环境创建配置文件。
+为 staging-1, staging-2, staging-3, staging-4,demo，production，production-gov，production-china-police，production-us-police 等部署环境创建配置文件。
 
 如果你使用的是 AWS，可以把某个部署的配置保存在 [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)，敏感信息可以保存在 [AWS secret manager](https://aws.amazon.com/secrets-manager/)。
 
@@ -294,8 +307,6 @@ kubectl create configmap staging1-config-map \
 
 第三步，以 production mode 运行各个部署环境。
 
-因为有众多的 production 环境，也有众多的 staging 环境， `config/environments` 下的个文件 production.rb / staging.rb 和运行实例没有关系，而是代表一种运行的模式。
-
 staging-1, staging-2, staging-3, staging-4, staging-5, ... staging-x，demo，production，production-gov，production-china-police，production-us-police 内部的运行脚本都如下所示：
 
 ```
@@ -305,24 +316,23 @@ RAILS_ENV=production rails s
 
 ![](/media/files/2022/2022-08-12_14-07-10-production-yml.jpg)
 
-第四步： 把代码和配置组合在一起，创建一个部署实例。
-
+第四步： 把代码和配置组合在一起，创建一个个部署。
 
 ![](/media/files/2022/2022-08-12-codebase-build-config-deploy.png)
 
 如果你使用的是 Capistrano 部署代码，那么
 
 ```
-Code + 不同配置 = 部署实例
+Code + 配置 = 部署
 ```
 
-如果你使用的是 Docker 部署，那么：
+如果你使用的是 Docker 部署代码，那么：
 
 ```
-Docker Image + 不同配置 = 部署实例
+Docker Image + 配置 = 部署
 ```
 
-如果你使用的是 Kubenetes，将不同配置文件注入到了Pod 中，就变成了不同的部署实例。
+如果你使用的是 Kubenetes，将不同配置文件注入到了Pod 中，就变成了不同的部署。
 
 ```yaml
 ---
@@ -347,24 +357,26 @@ spec:
 
 ### 优点
 
-创建部署实例，只需要准备一份新的配置文件就可以，省事省力。
+1. 代码无状态，可以被复用。如果想创建部署，只需要准备一份新的配置文件就可以，省事省力。
 
-代码和 Docker image 中不包含机密信息。即使代码泄露也不会扩大风险，其次也方便私有化部署。
+2. 代码和 Docker image 中不包含机密信息。即使代码泄露也不会扩大风险。
 
-可以为不同部署的配置文件可以设置不同的访问权限，比如仅仅允许特定团队访问 production 部署实例的的配置信息。
+3. 方便私有化部署。
 
-在本文中所有部署的运行模式都是 production mode，以此消除了不同部署的差异 ([parity](https://12factor.net/dev-prod-parity))。
+4. 可以为不同部署的配置文件可以设置不同的访问权限，比如仅仅允许特定团队访问 production 部署实例的的配置信息。
+
+5. 在本文中所有部署的运行模式都是 production mode，以此消除了不同部署的差异 ([parity](https://12factor.net/dev-prod-parity))。
 
 
 ### 缺点
 
-NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控数据上，方便筛选过滤。在第二种方案中，所有的部署实例的运行模式都为 production mode，这导致所有监控数据都混在 production 下。遇到事故，工程师根本无法排查是哪个部署实例出了问题。
+NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控数据上，方便筛选过滤。在第二种方案中，所有的部署的运行模式都为 production mode，这导致监控数据都混在 production 下。遇到事故，工程师根本无法排查是哪个部署出了问题。
 
 ![](/media/files/2022/2022-08-12_12-56-12-only-production.jpg)
 
 ### 如何解决监控工具的问题？
 
-其实 NewRelic, Datadog, Sentry 提供了接口，允许我们自定义部署实例的名字，以 Sentry 举例，它的语法如下：
+其实 NewRelic, Datadog, Sentry 提供了接口，允许我们自定义部署的名字，以 Sentry 举例，它的语法如下：
  
  ```ruby
 Sentry.init do |config|
@@ -373,14 +385,14 @@ Sentry.init do |config|
 end
 ```
 
-因此我们可以在 staging-1, staging-2, staging-x, production-x 等不同部署实例的配置中，引入一个新的变量 "DEPLOYMENT_ID" 来声明实例的名称，并赋值给监控工具。
+因此我们可以在 staging-1, staging-2, staging-x, production-x 等不同部署的配置中，引入一个新的变量 "DEPLOY_ID" 来声明部署的名称，并赋值给监控工具。
  
 假如 staging-1 的配置信息如下：
 
 ```
-DEPLOYMENT_ID=staging-1
-DB_HOST=staging-1.db
-DB_USER=postgres
+DEPLOY_ID =staging-1
+DB_HOST=xxx
+DB_USER=xxx
 ...
 ```
 
@@ -389,7 +401,7 @@ DB_USER=postgres
 ```ruby
 Sentry.init do |config|
   #...
-  config.environment = ENV['DEPLOYMENT_ID'] # 它的值为 staging-1
+  config.environment = ENV['DEPLOY_ID'] # 它的值为 staging-1
 end
 ```
 
@@ -398,7 +410,7 @@ end
 ```ruby
 Datadog.configure do |c|
   # ...
-  c.env = ENV['DEPLOYMENT_ID'] # 它的值为 staging-1
+  c.env = ENV['DEPLOY_ID'] # 它的值为 staging-1
 end
 ```
 
