@@ -174,9 +174,7 @@ config/settings/staging-4.yml
 | staging-... | staging-... branch | 给 ... 团队开发测试使用 |
 
 > note:
-> 
-> release/xxx 代表某个已经过QA测试的部署分支。
-
+> release 分支：在 [Trunk based development](https://trunkbaseddevelopment.com/) 的工作流中，QA（或CI）会定期从最新的 main 分支创建部署分支，跑测试，如果没有bug，该分支就可以部署到生产环境。
 
 当有众多 production 环境时，难道要把所有客户的配置都混入到代码里吗？显然不可能！客户也不答应！所以大家不约而同的认为代码应该无状态，配置信息应单独存储，这样创建一个部署环境时就不需要改动一行代码了。
 
@@ -238,9 +236,9 @@ docker run --name postgresql \
 - config 是配置信息
 - release = chart + config。当把模版和配置拼凑在一起时，就创建了一个部署实例。
 
-我想开源软件之所以更偏爱 12-factor，是因为作者从第一天开始就知道，这份软件会千千万万个个体使用，所以绝对不能hard code，配置和代码必须分离。
+我想开源软件之所以更偏爱 12-factor，是因为作者从第一天开始就知道，这份软件会千千万万个个体使用，配置和代码必须分离，绝对不能 hard code。
 
-我们可以借鉴 12-factor 思想，用一份代码代码可以迅速创建几十个部署，让业务程序员开心，让 DevOps 开心，让客户开心。
+我们可以借鉴 12-factor 思想，用一份代码迅速创建几十个部署，让业务程序员开心，让 DevOps 开心，让客户开心。
 
 ## 优化方案
 
@@ -256,6 +254,7 @@ production:
   database: <%= ENV['DATABASE_NAME' %>
   host: <%= ENV['DATABASE_HOST'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
+...
 ```
 
 Sidekiq 的配置也取自环境变量。
@@ -374,7 +373,7 @@ NewRelic, Datadog, Sentry 等监控工具默认会把环境信息附着在监控
 
 ![](/media/files/2022/2022-08-12_12-56-12-only-production.jpg)
 
-### 如何解决监控工具的问题？
+**如何解决监控工具的问题？**
 
 其实 NewRelic, Datadog, Sentry 提供了接口，允许我们自定义部署的名字，以 Sentry 举例，它的语法如下：
  
