@@ -1,4 +1,3 @@
-
 ---
 title: "鼓励别人"
 layout: post
