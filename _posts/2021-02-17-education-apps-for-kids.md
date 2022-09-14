@@ -3,7 +3,7 @@ title: "给孩子用的教育软件"
 layout: post
 guid: J1p21kXd1mqxO2eC
 date: 2021-02-17 09:38:59
-updated_on: 2022-08-06
+updated_on: 2022-09-12
 coffee:
 tags:
   -
@@ -79,32 +79,32 @@ Youtube Kids 根据小朋友的年龄展示适合的动画片。当我的儿子3
     由于墙的存在，一些网站在中国无法访问，Youtube都在此列。即使你安装了 Youtube Kids 这个 App，也是无法使用。
 
     你需要咨询你身边的程序员朋友，帮助你安装代理软件和购买fq服务。两者缺一不可，大概花费100-500/年。
-    
-
-**iPad 两个比较好的fq软件：**
-
-- [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)（免费）
-- [Surge iOS 版本](https://apps.apple.com/us/app/surge-4/id1442620678)(50美金)
-
-**fq 服务商我就不推荐了，推荐一个死一个。**
-
 
 ### 洪恩识字
 
+- 用途：识字。每个汉字都是一个游戏关卡，寓教于乐。
 - 推荐星级：⭐⭐⭐⭐
 - 课程语言：中文
 - 费用：有两种付费模式，订阅或者一次性买断。100-300 人民币  
 - 易用性：小朋友可以自己操作，不需要大人指导。偶尔有弹出式营销广告，小朋友不知所以然。
-- 用途：识字。每个汉字都是一个游戏关卡，寓教于乐。
 - 适用年龄段：3+ 
+
+### 洪恩拼音
+
+- 用途：学拼音，拼音测验。
+- 推荐星级：⭐⭐⭐⭐
+- 课程语言：中文
+- 费用：100-300 人民币  
+- 易用性：小朋友可以自己操作，不需要大人指导。偶尔有弹出式营销广告，小朋友不知所以然。
+- 适用年龄段：5+ 
 
 
 ### Telling the time
 
+- 用途：教孩子学习钟表结构，看时间。
 - 推荐星级：⭐⭐⭐⭐
 - 费用：几块钱
 - 语言：英文
-- 用途：教孩子学习钟表。
 - 适用年龄段：5+ 
 
 [![](/media/files/2022/2022-07-30-telling-the-time.webp)](https://apps.apple.com/us/app/interactive-telling-time/id482452233)
@@ -112,22 +112,22 @@ Youtube Kids 根据小朋友的年龄展示适合的动画片。当我的儿子3
 
 ### Epic!
 
+- 用途：英文阅读
 - 推荐星级：⭐⭐⭐⭐⭐
 - 课程语言：英文
 - 费用：订阅制，79.99 美元/年。
 - 易用性：小朋友可以自己操作，不需要大人指导，无广告。
-- 用途：英文阅读
 - 适用年龄段：3+
 
 [![](/media/files/2022/2022-07-30-epic.webp)](https://www.getepic.com/)
 
 ### Farfaria
 
+- 用途：英文绘本
 - 推荐星级：⭐⭐⭐ 
 - 课程语言：英文
 - 费用：有两种付费模式，一，订阅。二，99美元一次性买断。有时候它会搞活动，特惠 49美元。 
 - 易用性：小朋友可以自己操作，不需要大人指导，无广告。
-- 用途：英文绘本
 - 适用年龄段：3+ 
 
 https://www.farfaria.com/
@@ -142,13 +142,15 @@ https://www.farfaria.com/
 
 ### Sratch
 
-
+- 用途：教孩子学习编程。
 - 推荐星级：⭐⭐⭐⭐
 - 费用：免费
 - 课程语言：英文
-- 用途：教孩子学习编程。
 - 适用年龄段：7+ 
 
+Scratch 明明是个教育软件，还是惨遭被墙。据说是国内的教育机构为了赚钱，故意在 Scrath 上传了敏感内容，然后举报它，导致被封。这样国内的教育机构就可以瓜分少儿编程这个大蛋糕了。
+
+如果你想用的话，必须学会 fq。
 
 [![](/media/files/2022/2022-07-30-scratch.png)](https://scratch.mit.edu/)
 
@@ -207,9 +209,20 @@ Youtube kids / Khan Academy kids / Farfaria上面介绍的几款英文软件，�
 建议每天上1小时户外，下午1小时户外活动时间，对冲电子产品对眼睛的损伤。
 
 
+## 比较好的fq软件
+
+iPad/iPhone
+
+- [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)（免费）
+- [Surge iOS 版本](https://apps.apple.com/us/app/surge-4/id1442620678)(50美金)
+
+
+MacOS 推荐 [Surge （50美金)](https://nssurge.com/)，我以前写过一篇教程 《[Surge 简介](https://mednoter.com/surge.html)》。
+
+
 ## 如何下载 **美区 Apple Store** 的 App？
 
-Youtube Kids 在中国区 Apple Store 并未上架。
+Youtube Kids，Surge 等软件并未在中国区 Apple Store 上架。
 
 你可以在京东/淘宝/拼多多购买一个美国区的 Apple ID，在 iPad 上登陆 Apple Store 后就可以下载美区的软件了。
 
