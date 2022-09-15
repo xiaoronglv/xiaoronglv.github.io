@@ -45,4 +45,4 @@ tags:
 
 ## 参考资料
 
-1. [Stack Overflow Blog: Want to teach your kids to code? Here are three apps that can help.](https://stackoverflow.blog/2021/01/12/want-to-teach-your-kids-to-code-here-are-three-apps-that-can-help/)
+- [Stack Overflow Blog: Want to teach your kids to code? Here are three apps that can help.](https://stackoverflow.blog/2021/01/12/want-to-teach-your-kids-to-code-here-are-three-apps-that-can-help/)
