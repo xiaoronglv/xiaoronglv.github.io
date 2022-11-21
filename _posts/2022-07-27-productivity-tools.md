@@ -1,20 +1,22 @@
 ---
-title: "我在用的工具清单"
+title: "我在用的生产力工具"
 layout: post
 guid: jCsSQyrfUSAqqHSwf3aE
 date: 2022-07-27 17:27:45
+updated_on: 2022-10-28
 coffee:
 tags:
   -
 ---
 
-分享一些干活的软件和硬件。
+我是一个程序员，这是我每天办公用到的软件和硬件。
 
 ## 硬件
 
 - YubiKey Bio 
 - MacBook Pro 16'
-- Dell 4K Monitor
+- LG 40WP95C 显示器, 40寸，5Kx2K
+- 宏基显示器灯 Screen Bar
 - 乐歌升降桌
 - HHKB keyboard hybrid 键盘
 - Herman Miller Embody 椅子
@@ -37,9 +39,9 @@ tags:
 - Moom
 - 老版本 Tower, Git 客户端，当初一次性买断，一直将就着用，从来没升级。 
 - Office365
-- App cleaner
 - [Spark](https://sparkmailapp.com/)，邮件客户端。
-- Sublime Text
+- App cleaner
+- ~~Sublime Text~~ 
 - ~~Mindenode~~
 - ~~Jetbrains~~
 - ~~f.lux~~

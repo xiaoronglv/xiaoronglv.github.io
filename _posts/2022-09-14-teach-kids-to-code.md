@@ -1,35 +1,30 @@
 ---
-title: "教小孩编程的三个趣味App"
+title: "小孩自学编程的软件"
 layout: post
 guid: NsGXpdheDXcBKc
 date: 2022-09-14 22:59:59
+updated_on: 2022-10-28
 coffee:
 tags:
   -
 ---
 
-我在教我儿子编程，不能一上来就教他 if else, loop, object 等复杂概念，要不然吓到他，就没办法教下去了。
+教小孩不能一上来就教他对象，条件判断，变量等复杂概念，要不然吓到他，就没办法教下去了。
 
-国外适用于4-10岁的有三个编程软件，Kodable，CodeSpark，Scratch。
+比较好的编程软件会让小孩觉得打游戏，并且潜移默化的学习了编程思想。
 
-## Kodable
+## 4-10岁编程教学软件
 
-年龄：4-11岁
+国外适用于4-10岁的编程软件:Tynker Jr, Kodable，CodeSpark，Scratch。
 
-收费：订阅制，或一次性买断。
+### Tynker
 
-| Monthly | Yearly  | Lifetime |
-|:--|:--|:--|
-| 9.99 美金/月 | 59.99 美金/月 | 149.99 美金/终生 | 
+Tynker 有两个阶段的课程，第一阶 Introduction to code 适合 7-12岁的儿童。
 
-官网：[https://www.kodable.com/](https://www.kodable.com/)
-
-**试用评价**
-
-暂时还没试用。
+网址：https://www.tynker.com/
 
 
-## Code Spark
+### Code Spark
 
 年龄：5-9岁
 
@@ -48,9 +43,32 @@ tags:
 
 软件有多种学习模式，小孩可以按照路线图一步步闯关，也可以在网上与别人编程对战，自由玩耍。
 
-缺点：Code Spark 的服务器都在美国，在开启新关卡时，下载需要耗时3-5分钟。有时候连不上，需要翻墙。
+**缺点**
 
-## Scratch
+Code Spark 的服务器都在美国，在开启新关卡时，下载需要耗时3-5分钟。有时候连不上，需要翻墙。
+
+它三个栏目，puzzles 比较简单，explore 比较难。
+
+
+
+### Kodable
+
+年龄：4-11岁
+
+收费：订阅制，或一次性买断。
+
+| Monthly | Yearly  | Lifetime |
+|:--|:--|:--|
+| 9.99 美金/月 | 59.99 美金/月 | 149.99 美金/终生 | 
+
+官网：[https://www.kodable.com/](https://www.kodable.com/)
+
+**试用评价**
+
+暂时还没试用。
+
+
+### Scratch
 
 适用年龄：8-16岁
 
@@ -65,6 +83,14 @@ tags:
 
 
 由于中国防火墙的存在，很多优秀的软件在国内是无法使用的。如果你不具备翻墙的能力，建议买 “洪恩编程”等国内的编程教学软件。
+
+
+
+## 13-18岁
+
+### Tynker
+
+Tynker 第二阶段的课程 “LEARN REAL-WORLD CODING” 是真刀真枪的 Javascript 和 Python 代码，适合 13-18岁的小孩。
 
 
 ## 参考资料
