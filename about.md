@@ -14,7 +14,7 @@ Ruby-China.org 社区清洁工
 
 * [Ruby China](https://ruby-china.org/xiaoronglv)
 * [Github](https://github.com/xiaoronglv)
-* Mail: ![](/media/files/misc/contact_me.png)
+* Mail: ![](/media/files/misc/contact_me.png) 
 
 ## Buy me coffee
 
