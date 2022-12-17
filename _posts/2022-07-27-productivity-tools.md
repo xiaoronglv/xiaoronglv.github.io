@@ -24,7 +24,7 @@ tags:
 ## 软件
 
 - [Visual Studio Code](https://code.visualstudio.com/)，敲代码编辑器。
-- [copilot](https://github.com/features/copilot)，AI 敲代码工具。 
+- [Copilot](https://github.com/features/copilot)，AI 敲代码工具。 
 - Anki，闪卡软件。
 - [Grammarly](https://www.google.com/search?q=Grammerly)，英文纠错，英文润色。
 - [Alfred](https://www.alfredapp.com/)
@@ -40,12 +40,12 @@ tags:
 - 老版本 Tower, Git 客户端，当初一次性买断，一直将就着用，从来没升级。 
 - Office365
 - [Spark](https://sparkmailapp.com/)，邮件客户端。
+- Bartender
 - App cleaner
 - ~~Sublime Text~~ 
 - ~~Mindenode~~
 - ~~Jetbrains~~
 - ~~f.lux~~
-- ~~Bartender~~
 - ~~Zotero~~
 - ~~Break time~~
 - ~~Annotate~~
