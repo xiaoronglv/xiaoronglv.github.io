@@ -109,4 +109,4 @@ Love is patient, love is kind. It does not envy, it does not boast, it is not pr
 
 我也可以选择彼此鼓励，烘托情绪和氛围，或者让让这件事情更有趣，让人们更愿意做这件事。如果以上都做不到，至少不要拆台。
 
-以后多多实践 “盼望之爱”。
+凡事盼望，永不止息。
