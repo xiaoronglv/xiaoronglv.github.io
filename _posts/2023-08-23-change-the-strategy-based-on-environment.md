@@ -1,5 +1,5 @@
 ---
-title: "写给沐沐的信: 让我们一起来适应应试教育"
+title: "写给沐沐的信: 让我们一起来搞定应试教育"
 layout: post
 guid: 8CQzDFka3cnu
 date: 2023-08-23
