@@ -3,7 +3,6 @@ title: "Database: What's the difference between set, bag, and list?"
 layout: post
 guid: 9eUvGejnDjAzCLAAio
 date: 2019-02-15 09:16:44
-coffee:
 tags:
   -
 ---

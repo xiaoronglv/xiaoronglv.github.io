@@ -4,7 +4,6 @@ title: "Golang: why sort takes value rather than pointer"
 layout: post
 guid: DiehfXaCBmxjDVT9S1lhLKBi
 date: 2019-04-27 08:28:39
-coffee:
 tags:
   -
 ---

@@ -3,7 +3,6 @@ title: "使用 Rails Generator 提高公司的开发效率"
 layout: post
 guid: VjpvO6uC3EMpL5N2RN1d
 date: 2020-08-22 08:23:13
-coffee:
 tags:
   -
 ---
