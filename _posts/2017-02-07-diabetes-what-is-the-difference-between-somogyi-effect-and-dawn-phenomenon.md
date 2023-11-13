@@ -3,7 +3,6 @@ title: "糖尿病系列: 如何应对早晨空腹高血糖？"
 layout: post
 guid: laSSuikiurXr6HK0VPLs
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

@@ -3,7 +3,6 @@ title: "糖尿病系列: 糖尿病人手脚痛怎么办？"
 layout: post
 guid: qgqVuohcUqcC7vIgD3
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

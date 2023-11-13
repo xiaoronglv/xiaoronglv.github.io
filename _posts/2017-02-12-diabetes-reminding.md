@@ -3,7 +3,6 @@ title: "糖尿病系列: 善意的提醒"
 layout: post
 guid: qgqVHuQohcUqrandom
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

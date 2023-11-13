@@ -3,7 +3,6 @@ title: "The Little Schemer: The Ten Commandments with Notes"
 layout: post
 guid: 4Rz3JwP7Yda232Jw
 date: 2017-05-29 14:19:10
-coffee: y
 tags:
   - 
 ---

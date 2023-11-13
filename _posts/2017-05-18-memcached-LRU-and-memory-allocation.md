@@ -3,7 +3,6 @@ title: "第一次英语技术分享：Memcached LRU"
 layout: post
 guid: bvlB5Rpq5y
 date: 2017-05-12 15:32:47
-coffee: 
 tags:
   -
 ---

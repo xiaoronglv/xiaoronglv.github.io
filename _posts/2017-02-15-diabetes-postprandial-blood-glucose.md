@@ -3,7 +3,6 @@ title: "糖尿病系列: 如何降低餐后血糖？"
 layout: post
 guid: cyRcZNxxR1odfwuZaJuw
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

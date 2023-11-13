@@ -3,7 +3,6 @@ title: "Rails: 如何给每个请求的 log 加上 UUID?"
 layout: post
 guid: KMYoTm92MjoXMX7FoIC
 date: 2017-08-15 10:20:07
-coffee: y
 tags:
   -
 ---

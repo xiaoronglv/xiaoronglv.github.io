@@ -3,7 +3,6 @@ title: "糖尿病系列: 胰岛素的孪生兄弟-C肽"
 layout: post
 guid: qgqVHuQohcUqc327vID3
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

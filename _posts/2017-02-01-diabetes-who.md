@@ -3,7 +3,6 @@ title: "糖尿病系列: 患糖尿病的大人物"
 layout: post
 guid: oas4cW570UkKYlJTUj
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

@@ -3,7 +3,6 @@ title: "Mac 重启后自动 ssh-add 私钥"
 layout: post
 guid: JwPsyr3q335Yda232Jw
 date: 2017-06-02 17:18:49
-coffee: y
 tags:
   - 
 ---

@@ -3,7 +3,6 @@ title: "糖尿病系列：什么是生糖指数？"
 layout: post
 guid: qgqVHuQohcUqcC7vIgD3
 date: 2017-02-10 15:14:05
-coffee: y
 tags:
   - 
 ---

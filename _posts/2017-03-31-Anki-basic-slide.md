@@ -3,7 +3,6 @@ title: "Presentation: Anki Basic"
 layout: post
 guid: O8cRUextSWO8cR6kU
 date: 2017-03-31 16:08:24
-coffee: y
 tags:
   -
 ---
