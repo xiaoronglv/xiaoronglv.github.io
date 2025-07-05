@@ -37,8 +37,8 @@ Table of Content
     - [《Stev and Maggie》](https://www.youtube.com/@Steve_and_Maggie)
     - [《Octonauts 海底小纵队》](https://www.youtube.com/channel/UCXLLQkbYE-G9jYrra7R4Qsw) 
 	- [《PAW Patrol 汪汪队立大功》](https://www.youtube.com/user/OfficialPawPatrol) 
-	- [《BBC Number Blocks》](https://www.youtube.com/@Numberblocks)，之所以挑选这个动画片，是因为它是 BBC 出品的一个数学启蒙动画片，既可以学简单数学，又可以学英语。
-- 听力材料: 旅行的时候我会用手机播放他喜爱的动画片的音频
+	- [《BBC Number Blocks》](https://www.youtube.com/@Numberblocks)，BBC 出品的一个数学启蒙动画片，既可以学简单数学，又可以学英语，适合幼儿园至一年级。
+- 听力材料: 旅行的时候我会用手机播放他喜爱的动画片音频。
 - 寒暑假时，偶尔会参加纯英文的夏令营，有机会说英语。
 - 使用 Khan Academy Kids 学习简单的数学，自然拼读 CVC word。
 - 玩国际版 《Minecraft》游戏，必须读英文版本的游戏手册。设定家规，如果要讨论游戏，必须使用英文。
@@ -47,7 +47,7 @@ Table of Content
 
 1. Youtube Kids，免费。
 2. Khan Academy Kids，免费，可以从幼儿园用到小学二年级。
-3. 百度网盘，可以后台播放音频。
+3. 百度网盘，用于后台动画片的音频。
 
 **用到的硬件设备**
 
