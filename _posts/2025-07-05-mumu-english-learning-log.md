@@ -195,10 +195,10 @@ Magic Tree House，10个人读，10个人爱。我儿子偏偏不爱，强扭的
 
 可能上帝安慰我们家，在确诊读写障碍后的几天，我发现他入章(读章节书)了。在学习其他科目累了之后，他翻阅《Dragon Masters》来放松 ([读书链接](https://www.bilibili.com/video/BV1re3XzFEkJ/))。
 
-![](/media/files/2025/2025-07-05-read-chapter-book.jpeg)]
+![](/media/files/2025/2025-07-05-read-chapter-book.jpeg)
 
 
-**铺路**
+**为下一阶段铺台阶**
 
 这个月带他看了拳王阿里的一些纪录片，激发他的兴趣，为后续的 《who is/was》《what is/was》《where is》 铺路。
 
@@ -222,9 +222,7 @@ Magic Tree House，10个人读，10个人爱。我儿子偏偏不爱，强扭的
 ![](/media/files/2025/2025-07-05-dragon-masters.jpg)
 
 
-**铺垫**
-
-为下一个阶段的铺垫做的事情: 
+**为下一阶段铺台阶**
 
 1. 带他看了《How to train your dragons》的电影
 2. 购买了 《How to train your dragons》系列的书籍，蓝思值 960 左右，单词都太难了，沐沐根本看不进去，估计还要等他几个月。
