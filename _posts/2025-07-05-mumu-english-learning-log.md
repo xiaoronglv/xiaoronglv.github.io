@@ -282,6 +282,9 @@ Magic Tree House，10个人读，9个人爱，偏偏不是我儿子的菜。强�
 - raz 当前阅读水平: H级 (55%)
 - 课外书: 《[The Famous Five 五伙伴历险记](https://www.amazon.com/Famous-Five-21-book-series/dp/B074CGY6YV)》
 - 课外听力材料: The Famous Five 系列
+- 单词: 
+	- 校内单词: 四年级上册的校内单词背了一半，可以达到口头拼写了。
+	- 校外单词: 不做特殊要求，能认识就行。
 
 **背校内单词**
 
