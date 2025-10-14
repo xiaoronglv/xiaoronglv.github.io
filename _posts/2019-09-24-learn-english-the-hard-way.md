@@ -203,8 +203,8 @@ Ruby 是一门小众语言，更新很快，中文社区翻译的文档很快都
 
 如何检测自己是否有音素意识(phonemic awareness)，可以尝试逼迫自己把单词拆分后，放慢朗读，逐个读出发音，每个发音持续3秒钟。(有些发音是摩擦音，可以拉长，比如 ssssssss，有些是爆破音无法拉长，比如 k, t, d)
 
-- we 可以切分为 `www-eee`
-- if 可以切分为  `iii-fff`
+- we 可以切分为 www-eee
+- if 可以切分为  iii-fff
 - she 可以切分为 shshsh-eee
 
 
