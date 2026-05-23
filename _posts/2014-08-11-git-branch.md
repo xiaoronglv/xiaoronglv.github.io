@@ -13,7 +13,7 @@ tags:
 
 我们使用以上命令可以轻松创建一个分支，在这背后Git 都做了什么呢。
 
-    /Users/xiaoronglv/Repositories/xiaoronglv.github.io
+    /Users/ryan/Repositories/ryan.github.io
     > cd .git
 
 .git/refs 目录下有三个子目录：
@@ -38,13 +38,13 @@ tags:
 
 
     # 切换至 master 分支
-    /Users/xiaoronglv/Repositories/xiaoronglv.github.io
+    /Users/ryan/Repositories/ryan.github.io
     > git checkout master
     > cat .git/HEAD
     ref: refs/heads/master
     
     # 切换至 feature/drag 
-    /Users/xiaoronglv/Repositories/xiaoronglv.github.io
+    /Users/ryan/Repositories/ryan.github.io
     > git checkout feature/drag
     > cat .git/HEAD
     ref: refs/heads/feature/drag

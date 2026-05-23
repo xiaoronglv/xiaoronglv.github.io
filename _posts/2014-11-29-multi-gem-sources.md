@@ -28,7 +28,7 @@ https://rubygems.org
 事实上这种 multi-sources 的方式一点都不快，反而变慢了！我把整个安装过程打印了出来发现：如果你有多个 Gem 源，它会挨个访问一遍，安装 Gem 的最新版本。 
 
 ```text
-/Users/xiaoronglv [8:39]
+/Users/ryan [8:39]
 > gem install sidekiq --verbose
 GET http://ruby.taobao.org/latest_specs.4.8.gz
 302 Moved Temporarily

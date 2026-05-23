@@ -27,7 +27,7 @@ tags:
 
 并且当你在 irb 中 require 'rack' 时，它默认使用最高版本的 rack。
 
-    /Users/xiaoronglv [13:05]
+    /Users/ryan [13:05]
     > gem list rack
 
     *** LOCAL GEMS ***
@@ -35,7 +35,7 @@ tags:
     rack (1.5.2, 1.5.1)
     rack-test (0.6.2)
 
-    /Users/xiaoronglv [13:05]
+    /Users/ryan [13:05]
     > irb
     2.1.5 :001 > require 'rack'
      => true
@@ -89,7 +89,7 @@ tags:
     /tmp/christ [12:34]
     > bundle exec irb
     2.1.5 :001 > puts $LOAD_PATH
-    /Users/xiaoronglv/.rvm/gems/ruby-2.1.5/gems/rack-1.5.1/lib
+    /Users/ryan/.rvm/gems/ruby-2.1.5/gems/rack-1.5.1/lib
     ...
 
 
@@ -118,7 +118,7 @@ bundle console 比 bundle exec irb 多做了一些工作。
 
         > bundle console
         2.1.5 :001 > puts $LOAD_PATH
-        /Users/xiaoronglv/.rvm/gems/ruby-2.1.5/gems/rack-1.5.1/lib
+        /Users/ryan/.rvm/gems/ruby-2.1.5/gems/rack-1.5.1/lib
         ...
 
 
@@ -127,7 +127,7 @@ bundle console 比 bundle exec irb 多做了一些工作。
 
         2.1.5 :002 > puts $LOADED_FEATURES
         ....
-        /Users/xiaoronglv/.rvm/gems/ruby-2.1.5/gems/rack-1.5.1/lib/rack.rb
+        /Users/ryan/.rvm/gems/ruby-2.1.5/gems/rack-1.5.1/lib/rack.rb
         ...
 
 

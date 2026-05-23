@@ -189,7 +189,7 @@ It's cool!
 
 ## 参考资料
 
-1. [xiaoronglv's vim config](https://github.com/xiaoronglv/dotfiles)
+1. [ryan's vim config](https://github.com/ryan/dotfiles)
 2. [Why UltiSnips?](http://fueledbylemons.com/blog/2011/07/27/why-ultisnips/#options)
 3. [Github: UltiSnips Source code](https://github.com/SirVer/ultisnips)
 4. [UltiSnips Mannual](https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt)

@@ -24,7 +24,7 @@ Topic: Memcached LRU and Memory Allocation
 * Slab/Page/Chunks
 * LRU per slab class
 
-Keynote: [Download](https://speakerdeck.com/xiaoronglv/memcached-consistent-hashing-lru-and-memory-allocation
+Keynote: [Download](https://speakerdeck.com/ryan/memcached-consistent-hashing-lru-and-memory-allocation
 )
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EFb0wUR5TRo" frameborder="0" allowfullscreen></iframe>

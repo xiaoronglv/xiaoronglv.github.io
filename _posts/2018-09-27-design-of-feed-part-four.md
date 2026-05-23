@@ -213,7 +213,7 @@ CREATE TABLE `tag_feeds` (
 
 **如何把内容储存到队列中？**
 
-1. 吕小荣创建了一个新内容，产生一个 event。
+1. Ryan创建了一个新内容，产生一个 event。
 2. RouteService.route! 在分发时，发现与某个 object 相关。
 3. 如果满足各种条件，就在 object_feeds 里面创建一条记录，关联 object 与 event。
 
@@ -237,17 +237,17 @@ order by event_id desc
 
 ### 2.4 用 `profile_feeds` 来保存「与个人页面相关的 events」
 
-在 Facebook 每个人都有个人主页，在这个页面可以看到他说过的话，分享的视频和图片等等。 e.g. [吕小荣的facebook主页](https://www.weibo.com/1876851727/profile)
+在 Facebook 每个人都有个人主页，在这个页面可以看到他说过的话，分享的视频和图片等等。 e.g. [Ryan的facebook主页](https://www.weibo.com/1876851727/profile)
 
 **如何把内容储存到队列中？**
 
-1. 吕小荣创建了一个新内容，产生新的 event。
+1. Ryan创建了一个新内容，产生新的 event。
 2. RouteService.route! 根据 Policy 决定是否在 profile_feeds 创建一条记录，并关联 event 与 作者。
 3. 如果满足条件，则创建记录。
 
 **如何从队列中读取数据？**
 
-当你访问吕小荣的个人主页时，通过这个简单的查询即可获得所有的内容。
+当你访问Ryan的个人主页时，通过这个简单的查询即可获得所有的内容。
 
 
 ```sql
@@ -267,14 +267,14 @@ order by event_id desc
 
 **如何把内容储存到队列中？**
 
-1. 阳治平创建了一个新内容，并且 @吕小荣，产生新的 event。
-2. RouteService.route! 在分发的时候发现里面 @吕小荣
-3. RouteService.route! 检查吕小荣没有屏蔽阳治平，吕小荣的设置也接受此类提醒。
-4. 在 `mention_feeds` 中创建一条记录，关联该 event 与 吕小荣。
+1. 阳治平创建了一个新内容，并且 @Ryan，产生新的 event。
+2. RouteService.route! 在分发的时候发现里面 @Ryan
+3. RouteService.route! 检查Ryan没有屏蔽阳治平，Ryan的设置也接受此类提醒。
+4. 在 `mention_feeds` 中创建一条记录，关联该 event 与 Ryan。
 
 **如何从队列中读取数据？**
 
-当吕小荣下次登录时，通过这个简单的查询即可获得所有 @吕小荣 的内容。
+当Ryan下次登录时，通过这个简单的查询即可获得所有 @Ryan 的内容。
 
 ```sql
 select * from mention_feeds 

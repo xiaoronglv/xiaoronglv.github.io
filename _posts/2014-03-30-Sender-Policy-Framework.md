@@ -14,7 +14,7 @@ SMTP 是一个比较古老的协议，在创造之初并没有考虑安全性与
 
 1. Mednoter Server（发件服务器）发送邮件 
     
-    from xiaoronglv@mednoter.com  
+    from ryan@mednoter.com  
     to  angela@hotmail.com
     
 2. Hotmail Server（收件服务器）查看验证发件人的 ip

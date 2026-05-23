@@ -199,7 +199,7 @@ angelxiaokun_liu -> 'angelxiaokun_liu'
 
 然后，使用 Term query 精确搜索
 
-    {"term":{"username":"xiaoronglv"}}
+    {"term":{"username":"ryan"}}
 
 
 

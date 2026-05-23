@@ -29,7 +29,7 @@ RestClient 的文档中写了几种常规的用法，但是没有每个参数的
       'http://example.com/resource',  #url
       {:params => {:id => 50, 'foo' => 'bar'}}, #body
       from: "taobao", # header
-      refer_user: "xiaoronglv" # header
+      refer_user: "ryan" # header
       
 
 * 第一个参数: 为 URL

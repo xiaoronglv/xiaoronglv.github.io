@@ -7,7 +7,7 @@ tags:
   -
 ---
 
-团队内分享间隔记忆系统，一种科学省时的学习方法。[Download Slide](https://speakerdeck.com/xiaoronglv/anki-basic)
+团队内分享间隔记忆系统，一种科学省时的学习方法。[Download Slide](https://speakerdeck.com/ryan/anki-basic)
 
 <script async class="speakerdeck-embed" data-id="b61cf73396e14ca3917db768d3957dc9" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
 

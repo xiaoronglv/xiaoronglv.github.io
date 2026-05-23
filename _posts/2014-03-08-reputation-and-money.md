@@ -33,18 +33,18 @@ tags:
 > from: Ryan@gmail.com  
 > to:   user@gmail.com
 > 亲爱的***
-> 您的朋友 Sam、刘小坤 觉得你在红房子的照片不错，并且给你留言了。
+> 您的朋友 Sam、Angela 觉得你在红房子的照片不错，并且给你留言了。
 >  
 > [点击查看]()
 >    
-> 产品狗 吕小荣 敬上
+> 产品狗 Ryan 敬上
 
 
 ## 产品荣誉的特征
 
 1. 以自我为中心，范例：
     
-    [知乎的个人主页](http://www.zhihu.com/people/xiaoronglv)  
+    [知乎的个人主页](http://www.zhihu.com/people/ryan)  
     [我的知乎2013](http://www.zhihu.com/question/22414600)  
     微信 5.0 的开机画面  
 
